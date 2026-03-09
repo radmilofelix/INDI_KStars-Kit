@@ -20,6 +20,5 @@ The script will also install an USB reset script and a file containing UDEV rule
 
 The configuration file (settings.cfg) has several sections:
 In the [settings] section you can change the folders where the components will be built, you can change the versions of the components as well as enable or disablie additional components (Stellar Tester, PHD2 or Xisf file library).
-The [prerequisites] section defines the dependencies needed that will be installed.
 
-
+The [prerequisites] section defines the dependencies needed that will be installed before launching any build.
