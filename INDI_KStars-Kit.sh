@@ -20,12 +20,12 @@ startTime=$secondscount
 UpdateUsefulFunctions()
 {
     cd $CURRENTFOLDER
-    if [[ -d BashUsefulFunctions  ]];
+    if [[ ! -d BashUsefulFunctions  ]];
     then
-	cd BashUsefulFunctions
-	git pull origin main
+        git clone https://github.com/radmilofelix/BashUsefulFunctions
     else
-	git clone https://github.com/radmilofelix/BashUsefulFunctions
+        cd BashUsefulFunctions
+        git pull origin main
     fi
 }
 
@@ -100,18 +100,18 @@ SetINDIcoreVersion() # alreadyInstalled(installed/-)
 {
     if [[ $1 == "installed" ]];
     then
-	GetINDIversion
-	if [ -n "$REPO_VERSION" ];
-	then
-		echo "Building INDI version $REPO_VERSION."
-		cd $CURRENTFOLDER/$BUILDSOURCESFOLDER/indi
-		GitSetRepoCmd "$REPO_VERSION"
-	else
-		echo "There is no INDI/KStars on the system, abandoning script!"
-		GetSystemTime
-		echo $PROGRAM_NAME", "$mtimeymdThms
-		exit 1
-	fi
+        GetINDIversion
+        if [ -n "$REPO_VERSION" ];
+        then
+            echo "Building INDI version $REPO_VERSION."
+            cd $CURRENTFOLDER/$BUILDSOURCESFOLDER/indi
+            GitSetRepoCmd "$REPO_VERSION"
+        else
+            echo "There is no INDI/KStars on the system, abandoning script!"
+            GetSystemTime
+            echo $PROGRAM_NAME", "$mtimeymdThms
+            exit 1
+        fi
     else
 	    SetRepoVersion FORCEINDILIBVERSION indiversion INDIcore indi
     fi
@@ -121,18 +121,18 @@ SetINDI3rdPartyVersion() # alreadyInstalled(installed/-)
 {
     if [[ $1 == "installed" ]];
     then
-	GetINDIversion
-	if [ -n "$REPO_VERSION" ];
-	then
-		echo "Building INDI version $REPO_VERSION."
-		cd $CURRENTFOLDER/$BUILDSOURCESFOLDER/indi-3rdparty
-		GitSetRepoCmd "$REPO_VERSION"
-	else
-		echo "There is no INDI/KStars on the system, abandoning script!"
-		GetSystemTime
-		echo $PROGRAM_NAME", "$mtimeymdThms
-		exit 1
-	fi
+        GetINDIversion
+        if [ -n "$REPO_VERSION" ];
+        then
+            echo "Building INDI version $REPO_VERSION."
+            cd $CURRENTFOLDER/$BUILDSOURCESFOLDER/indi-3rdparty
+            GitSetRepoCmd "$REPO_VERSION"
+        else
+            echo "There is no INDI/KStars on the system, abandoning script!"
+            GetSystemTime
+            echo $PROGRAM_NAME", "$mtimeymdThms
+            exit 1
+        fi
     else
 	    SetRepoVersion FORCEINDILIBVERSION indiversion INDIcore indi-3rdparty
     fi
@@ -142,7 +142,7 @@ SetRepoVersion() # FORCEDVARIABLE versionNameInSettings repoName gitName
 {
     if [ -n "$1" ];
     then
-	forcedVersion=$1
+        forcedVersion=$1
         echo "Forced $3 version defined!"
         ReadSettings $CURRENTFOLDER/settings.cfg [$2]
         FORCED_VERSION_VALUE="${!forcedVersion}"
@@ -163,7 +163,10 @@ BuildIndiCore()
     DisplayMessageInFrame "Build INDI Core" 64 2 time
     mkdir -p $CURRENTFOLDER/$BUILDSOURCESFOLDER/$BUILDFOLDER/$INDIBASEBUILDFOLDER
     cd $CURRENTFOLDER/$BUILDSOURCESFOLDER
-    git clone https://github.com/indilib/indi.git    
+    if [[ ! -d $CURRENTFOLDER/$BUILDSOURCESFOLDER/indi ]];
+    then
+        git clone https://github.com/indilib/indi.git
+    fi
     SetINDIcoreVersion $1
     cd $CURRENTFOLDER/$BUILDSOURCESFOLDER/$BUILDFOLDER/$INDIBASEBUILDFOLDER
     cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=$BUILDTYPE $CURRENTFOLDER/$BUILDSOURCESFOLDER/indi
@@ -179,16 +182,19 @@ BuildINDI3rdParty()
     mkdir -p $CURRENTFOLDER/$BUILDSOURCESFOLDER/$BUILDFOLDER/$INDI3RDPARTYBUILDFOLDER
     mkdir -p $CURRENTFOLDER/$BUILDSOURCESFOLDER/$BUILDFOLDER/$INDI3RDPARTYLIBSBUILDFOLDER
     cd $CURRENTFOLDER/$BUILDSOURCESFOLDER
-    git clone https://github.com/indilib/indi-3rdparty
+    if [[ ! -d $CURRENTFOLDER/$BUILDSOURCESFOLDER/indi-3rdparty ]];
+    then
+        git clone https://github.com/indilib/indi-3rdparty.git
+    fi
     SetINDI3rdPartyVersion $1
 
-    DisplayMessageInFrame "Build libraries" 64 2 time
+    DisplayMessageInFrame "Build INDI 3rd party libraries" 64 2 time
     cd $CURRENTFOLDER/$BUILDSOURCESFOLDER/$BUILDFOLDER/$INDI3RDPARTYLIBSBUILDFOLDER
     cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=$BUILDTYPE -DBUILD_LIBS=1 $CURRENTFOLDER/$BUILDSOURCESFOLDER/indi-3rdparty
     make -j $NCPU
     make install
 
-    DisplayMessageInFrame "Build drivers" 64 2 time
+    DisplayMessageInFrame "Build INDI 3rd party drivers" 64 2 time
     cd $CURRENTFOLDER/$BUILDSOURCESFOLDER/$BUILDFOLDER/$INDI3RDPARTYBUILDFOLDER
     cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=$BUILDTYPE $CURRENTFOLDER/$BUILDSOURCESFOLDER/indi-3rdparty
     make -j $NCPU
@@ -203,16 +209,19 @@ BuildStellarsolver()
     DisplayMessageInFrame "Build StellarSolver" 64 2 time
     mkdir -p $CURRENTFOLDER/$BUILDSOURCESFOLDER/$BUILDFOLDER/$STELLARSOLVERBUILDFOLDER
     cd $CURRENTFOLDER/$BUILDSOURCESFOLDER
-    git clone https://github.com/rlancaste/stellarsolver.git
+    if [[ ! -d $CURRENTFOLDER/$BUILDSOURCESFOLDER/stellarsolver ]];
+    then
+        git clone https://github.com/rlancaste/stellarsolver.git
+    fi
     SetRepoVersion FORCESTELLARVERSION stellarsolverversion StellarSolver stellarsolver
     cd $CURRENTFOLDER/$BUILDSOURCESFOLDER/$BUILDFOLDER/$STELLARSOLVERBUILDFOLDER
     if [ $BUILDSTELLARTESTER == "true" ];
     then
-	echo "Building with StellarSolverTester"
-	cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=$BUILDTYPE -DBUILD_TESTER=ON $CURRENTFOLDER/$BUILDSOURCESFOLDER/stellarsolver
+        echo "Building with StellarSolverTester"
+        cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=$BUILDTYPE -DBUILD_TESTER=ON $CURRENTFOLDER/$BUILDSOURCESFOLDER/stellarsolver
     else
-	echo "Building without StellarSolverTester"
-	cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=$BUILDTYPE $CURRENTFOLDER/$BUILDSOURCESFOLDER/stellarsolver
+        echo "Building without StellarSolverTester"
+        cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=$BUILDTYPE $CURRENTFOLDER/$BUILDSOURCESFOLDER/stellarsolver
     fi
     make -j $NCPU
     make install
@@ -225,8 +234,11 @@ BuildKstars()
     DisplayMessageInFrame "Build KStars" 64 2 time
     mkdir -p $CURRENTFOLDER/$BUILDSOURCESFOLDER/$BUILDFOLDER/$KSTARSBUILDFOLDER
     cd $CURRENTFOLDER/$BUILDSOURCESFOLDER
-    #git clone https://anongit.kde.org/kstars.git
-    git clone https://invent.kde.org/education/kstars.git
+    if [[ ! -d $CURRENTFOLDER/$BUILDSOURCESFOLDER/kstars ]];
+    then
+        #git clone https://anongit.kde.org/kstars.git
+        git clone https://invent.kde.org/education/kstars.git
+    fi
     SetRepoVersion FORCEKSTARSVERSION kstarsversion KStars kstars
     cd $CURRENTFOLDER/$BUILDSOURCESFOLDER/$BUILDFOLDER/$KSTARSBUILDFOLDER
     cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=$BUILDTYPE $CURRENTFOLDER/$BUILDSOURCESFOLDER/kstars
@@ -241,7 +253,10 @@ BuildPhd2()
     DisplayMessageInFrame "Build Phd2" 64 2 time
     mkdir -p $CURRENTFOLDER/$BUILDSOURCESFOLDER/$BUILDFOLDER/$PHD2BUILDFOLDER
     cd $CURRENTFOLDER/$BUILDSOURCESFOLDER
-    git clone https://github.com/OpenPHDGuiding/phd2.git
+    if [[ ! -d $CURRENTFOLDER/$BUILDSOURCESFOLDER/phd2 ]];
+    then
+        git clone https://github.com/OpenPHDGuiding/phd2.git
+    fi
     SetRepoVersion FORCEPHD2VERSION phd2version Phd2 phd2
     cd $CURRENTFOLDER/$BUILDSOURCESFOLDER/$BUILDFOLDER/$PHD2BUILDFOLDER
     cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=$BUILDTYPE $CURRENTFOLDER/$BUILDSOURCESFOLDER/phd2
@@ -255,7 +270,10 @@ BuildLibXisf()
     DisplayMessageInFrame "Build LibXISF" 64 2 time
     mkdir -p $CURRENTFOLDER/$BUILDSOURCESFOLDER/$BUILDFOLDER/$LIBXISFBUILDFOLDER
     cd $CURRENTFOLDER/$BUILDSOURCESFOLDER
-    git clone https://gitea.nouspiro.space/nou/libXISF.git
+    if [[ ! -d $CURRENTFOLDER/$BUILDSOURCESFOLDER/libXISF ]];
+    then
+        git clone https://gitea.nouspiro.space/nou/libXISF.git
+    fi
     SetRepoVersion FORCELIBXISFVERSION libxisfversion LibXISF libXISF
     cd $CURRENTFOLDER/$BUILDSOURCESFOLDER/$BUILDFOLDER/$LIBXISFBUILDFOLDER
     cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=$BUILDTYPE -DUSE_BUNDLED_ZLIB=OFF $CURRENTFOLDER/$BUILDSOURCESFOLDER/libXISF
