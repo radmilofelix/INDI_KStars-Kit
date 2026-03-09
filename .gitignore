@@ -1,0 +1,11 @@
+*.o
+*.exe
+*.gcode
+*.FCStd1
+
+**/*backups/
+**/build*/
+
+_images/
+Software/Deploy/
+tools/
