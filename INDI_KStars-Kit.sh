@@ -103,7 +103,7 @@ SetINDIcoreVersion() # alreadyInstalled(installed/-)
         GetINDIversion
         if [ -n "$REPO_VERSION" ];
         then
-            echo "Building INDI version $REPO_VERSION."
+            echo "Building INDI core version $REPO_VERSION."
             cd $CURRENTFOLDER/$BUILDSOURCESFOLDER/indi
             GitSetRepoCmd "$REPO_VERSION"
         else
@@ -138,7 +138,7 @@ SetINDI3rdPartyVersion() # alreadyInstalled(installed/-)
     fi
 }
 
-SetRepoVersion() # FORCEDVARIABLE versionNameInSettings repoName gitName
+SetRepoVersion() # FORCEDVARIABLE; versionSection settings.cfg; repoName; gitName
 {
     if [ -n "$1" ];
     then
