@@ -1,0 +1,2929 @@
+Work folder(indilib setup): /add1/install/INDI_KStars-Kit
+Number of CPUs: 4
+Running script as root...
+
+
+################################################################
+####################### All build start ########################
+##################### 2026-03-02T05:14:00 ######################
+################################################################
+
+
+################################################################
+######################## Upgrade system ########################
+##################### 2026-03-02T05:14:00 ######################
+################################################################
+Hit:1 http://deb.debian.org/debian trixie InRelease
+Hit:2 http://archive.raspberrypi.com/debian trixie InRelease
+Get:3 http://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+Get:4 http://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+Fetched 90.7 kB in 0s (370 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Time elapsed: 0 hours, 0 minutes, 5 seconds.
+
+
+################################################################
+#################### Install prerequisites #####################
+##################### 2026-03-02T05:14:05 ######################
+################################################################
+COMMAND: apt-get install -y appstream aria2 axel breeze-icon-theme build-essential cdbs cmake dkms extra-cmake-modules fxload gettext git kdoctools5 kinit-dev kio libavcodec-dev libavdevice-dev libbluetooth-dev libboost-dev libboost-regex-dev libcfitsio-dev libcurl4-gnutls-dev libdc1394-dev libeigen3-dev libev-dev libfftw3-dev libftdi1-2 libftdi1-dev libftdi-dev libgmock-dev libgphoto2-dev libgps-dev libgsl0-dev libgsl-dev libgtest-dev libindi-dev libjpeg-dev libkf5auth-dev libkf5config-dev libkf5coreaddons-dev libkf5crash-dev libkf5declarative-dev libkf5doctools-dev libkf5i18n-dev libkf5kio-dev libkf5kcmutils-dev libkf5newstuff-dev libkf5notifications-dev libkf5notifyconfig-dev libkf5package-dev libkf5plotting-dev libkf5xmlgui-dev libkrb5-dev liblimesuite-dev libnova-dev libopencv-dev libqt5core5a libqt5datavisualization5-dev libqt5gui5 libqt5qml5 libqt5svg5-dev libqt5websockets5-dev libqt5widgets5 libraw-dev librtlsdr-dev libsecret-1-dev libtheora-dev libtiff-dev libudev-dev libusb-1.0-0-dev libusb-dev libwxgtk3.2-dev libxisf0 libxisf-dev libzmq3-dev limesuite limesuite-udev pkg-config python3-ftdi1 qml-module-qtquick-controls qt5keychain-dev qt6-base-dev qtbase5-dev qtdeclarative5-dev wcslib-dev wget xplanet xplanet-images zlib1g-dev
+Installing the packages from the list...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+appstream is already the newest version (1.0.5-1).
+aria2 is already the newest version (1.37.0+debian-3).
+axel is already the newest version (2.17.14-2).
+breeze-icon-theme is already the newest version (4:5.116.0-1).
+build-essential is already the newest version (12.12).
+cdbs is already the newest version (0.4.173).
+cmake is already the newest version (3.31.6-2).
+dkms is already the newest version (3.2.2-1~deb13u1).
+extra-cmake-modules is already the newest version (6.13.0-1).
+fxload is already the newest version (0.0.20081013-3).
+gettext is already the newest version (0.23.1-2).
+git is already the newest version (1:2.47.3-0+deb13u1).
+kdoctools5 is already the newest version (5.116.0-1).
+kinit-dev is already the newest version (5.116.0-1).
+kio is already the newest version (5.116.0-1).
+libavcodec-dev is already the newest version (8:7.1.3-0+deb13u1+rpt1).
+libavdevice-dev is already the newest version (8:7.1.3-0+deb13u1+rpt1).
+libbluetooth-dev is already the newest version (5.82-1.1+rpt1).
+libboost-dev is already the newest version (1.83.0.2+b2).
+libboost-regex-dev is already the newest version (1.83.0.2+b2).
+libcfitsio-dev is already the newest version (4.6.2-2).
+libcurl4-gnutls-dev is already the newest version (8.14.1-2+deb13u2).
+libdc1394-dev is already the newest version (2.2.6-5).
+libeigen3-dev is already the newest version (3.4.0-5).
+libev-dev is already the newest version (1:4.33-2.1+b1).
+libfftw3-dev is already the newest version (3.3.10-2+b1).
+libftdi1-2 is already the newest version (1.5-10).
+libftdi1-dev is already the newest version (1.5-10).
+libftdi-dev is already the newest version (0.20-4+b2).
+libgmock-dev is already the newest version (1.16.0-1).
+libgphoto2-dev is already the newest version (2.5.31-4).
+libgps-dev is already the newest version (3.25-5).
+libgsl-dev is already the newest version (2.8+dfsg-5).
+libgtest-dev is already the newest version (1.16.0-1).
+libindi-dev is already the newest version (1.9.9+dfsg-3+b5).
+libjpeg-dev is already the newest version (1:2.1.5-4).
+libkf5auth-dev is already the newest version (5.116.0-1).
+libkf5config-dev is already the newest version (5.116.0-1).
+libkf5coreaddons-dev is already the newest version (5.116.0-1).
+libkf5crash-dev is already the newest version (5.116.0-1).
+libkf5declarative-dev is already the newest version (5.116.0-1).
+libkf5doctools-dev is already the newest version (5.116.0-1).
+libkf5i18n-dev is already the newest version (5.116.0-1).
+libkf5kio-dev is already the newest version (5.116.0-1).
+libkf5kcmutils-dev is already the newest version (5.116.0-1).
+libkf5newstuff-dev is already the newest version (5.116.0-2).
+libkf5notifications-dev is already the newest version (5.116.0-1).
+libkf5notifyconfig-dev is already the newest version (5.116.0-1).
+libkf5package-dev is already the newest version (5.116.0-1).
+libkf5plotting-dev is already the newest version (5.116.0-1).
+libkf5xmlgui-dev is already the newest version (5.116.0-1).
+libkrb5-dev is already the newest version (1.21.3-5).
+liblimesuite-dev is already the newest version (23.11.0+dfsg-3+b2).
+libnova-dev is already the newest version (0.16-5.1+b1).
+libopencv-dev is already the newest version (4.10.0+dfsg-5).
+libqt5core5t64 is already the newest version (5.15.15+dfsg-6).
+libqt5datavisualization5-dev is already the newest version (5.15.15-2+b1).
+libqt5gui5t64 is already the newest version (5.15.15+dfsg-6).
+libqt5qml5 is already the newest version (5.15.15+dfsg-3).
+libqt5svg5-dev is already the newest version (5.15.15-2).
+libqt5websockets5-dev is already the newest version (5.15.15-2).
+libqt5widgets5t64 is already the newest version (5.15.15+dfsg-6).
+libraw-dev is already the newest version (0.21.4-2).
+librtlsdr-dev is already the newest version (2.0.2-2+b1).
+libsecret-1-dev is already the newest version (0.21.7-1).
+libtheora-dev is already the newest version (1.2.0~alpha1+dfsg-6).
+libtiff-dev is already the newest version (4.7.0-3+deb13u1).
+libudev-dev is already the newest version (257.9-1~deb13u1).
+libusb-1.0-0-dev is already the newest version (2:1.0.28-1).
+libusb-dev is already the newest version (2:0.1.12-35+b1).
+libwxgtk3.2-dev is already the newest version (3.2.8+dfsg-2).
+libxisf0 is already the newest version (0.2.13-1).
+libxisf-dev is already the newest version (0.2.13-1).
+libzmq3-dev is already the newest version (4.3.5-1+b3).
+limesuite is already the newest version (23.11.0+dfsg-3+b2).
+limesuite-udev is already the newest version (23.11.0+dfsg-3).
+pkg-config is already the newest version (1.8.1-4).
+python3-ftdi1 is already the newest version (1.5-10).
+qml-module-qtquick-controls is already the newest version (5.15.15-2).
+qt5keychain-dev is already the newest version (0.15.0-1).
+qt6-base-dev is already the newest version (6.8.2+dfsg-9+deb13u1).
+qtbase5-dev is already the newest version (5.15.15+dfsg-6).
+qtdeclarative5-dev is already the newest version (5.15.15+dfsg-3).
+wcslib-dev is already the newest version (8.4+ds-1).
+wget is already the newest version (1.25.0-2).
+xplanet is already the newest version (1.3.1-3+b4).
+xplanet-images is already the newest version (1.3.1-3).
+zlib1g-dev is already the newest version (1:1.3.dfsg+really1.3.1-1+b1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Time elapsed: 0 hours, 0 minutes, 6 seconds.
+
+
+################################################################
+######################## Build LibXISF #########################
+##################### 2026-03-02T05:14:06 ######################
+################################################################
+Forced LibXISF version defined!
+Forced LibXISF version: v0_2_13
+REPO_VERSION: v0.2.13
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /add1/install/INDI_KStars-Kit/BuildSources/build/libxisf
+[ 75%] Built target XISF
+[100%] Built target LibXISFTest
+[ 75%] Built target XISF
+[100%] Built target LibXISFTest
+Install the project...
+-- Install configuration: "Release"
+-- Up-to-date: /usr/include/libxisf.h
+-- Up-to-date: /usr/include/libXISF_global.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/pkgconfig/libxisf.pc
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libXISF.so.0.2.13
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libXISF.so.0
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libXISF.so
+Time elapsed: 0 hours, 0 minutes, 8 seconds.
+
+
+################################################################
+####################### Build INDI Core ########################
+##################### 2026-03-02T05:14:08 ######################
+################################################################
+Forced INDIcore version defined!
+Forced INDIcore version: v2_1_9
+REPO_VERSION: v2.1.9
+-- Using bundled hidapi
+-- Using bundled httplib
+-- Using bundled json library
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Building INDI Client
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Found FFTW3: /usr/lib/aarch64-linux-gnu/libfftw3.so
+-- Checking for module 'udev'
+--   Package 'udev', required by 'virtual:world', not found
+-- Found RTLSDR: /usr/lib/aarch64-linux-gnu/librtlsdr.so
+-- Not building unit tests
+-- Not building integration tests
+-- The following OPTIONAL packages have been found:
+
+ * UDEV
+ * LibXISF
+ * OggTheora
+ * RTLSDR
+ * GTest
+ * GMock
+
+-- The following REQUIRED packages have been found:
+
+ * Libev
+ * ZLIB
+ * CFITSIO, A library for reading and writing data files in FITS (Flexible Image Transport System) data format, <http://heasarc.gsfc.nasa.gov/fitsio/fitsio.html>
+   Provides INDI with FITS I/O support.
+ * Nova, A general purpose, double precision, Celestial Mechanics, Astrometry and Astrodynamics library, <http://libnova.sourceforge.net>
+   Provides INDI with astrodynamics library.
+ * USB1
+ * CURL
+ * GSL
+ * JPEG
+ * FFTW3
+ * Iconv
+ * Threads
+
+-- The following components are going to be built:
+-- ## INDI Server
+-- ## INDI Drivers, Tools, and Examples
+-- ## INDI Client
+-- Configuring done (0.6s)
+-- Generating done (5.7s)
+-- Build files have been written to: /add1/install/INDI_KStars-Kit/BuildSources/build/indi-core
+[  0%] Built target eventloop
+[  1%] Built target sockets
+[  1%] Built target indi_hid
+[  1%] Built target fpack
+[  5%] Built target indicore
+[  5%] Built target dsp
+[  6%] Built target indi_hid_test
+[  6%] Built target indi_getprop
+[  7%] Built target indi_setprop
+[  7%] Built target indi_eval
+[  9%] Built target indidevice
+[  9%] Built target indi_getdevice
+[ 12%] Built target indiserver
+[ 13%] Built target indiabstractclient
+[ 13%] Built target indilx200
+[ 13%] Built target indiclient_OBJECT
+[ 13%] Built target indiclientstatic
+[ 13%] Built target indiclient
+[ 13%] Built target tutorial_client
+[ 13%] Built target AlignmentClient
+[ 15%] Built target AlignmentDriver
+[ 26%] Built target indidriver_OBJECT
+[ 27%] Built target indidriver_STATIC
+[ 27%] Built target indidriver
+[ 28%] Built target indi_lx200basic
+[ 28%] Built target indi_Nearest_MathPlugin
+[ 28%] Built target indi_SVD_MathPlugin
+[ 28%] Built target indi_lx200_TeenAstro
+[ 29%] Built target indi_crux_mount
+[ 30%] Built target indi_rainbow_telescope
+[ 30%] Built target indi_celestron_gps
+[ 30%] Built target indi_temma_telescope
+[ 30%] Built target indi_paramount_telescope
+[ 31%] Built target indi_astrotrac_telescope
+[ 35%] Built target indi_lx200generic
+[ 36%] Built target indi_synscan_telescope
+[ 36%] Built target indi_synscanlegacy_telescope
+[ 36%] Built target indi_skycommander_telescope
+[ 37%] Built target indi_dsc_telescope
+[ 38%] Built target indi_ieqlegacy_telescope
+[ 38%] Built target indi_ieq_telescope
+[ 39%] Built target indi_ioptronv3_telescope
+[ 39%] Built target indi_pmc8_telescope
+[ 39%] Built target indi_simulator_telescope
+[ 39%] Built target indi_script_telescope
+[ 39%] Built target indi_skywatcherAltAzMount
+[ 39%] Built target indi_planewave_telescope
+[ 39%] Built target indi_simulator_ccd
+[ 39%] Built target indi_simulator_guide
+[ 39%] Built target indi_alpaca_ccd
+[ 40%] Built target indi_robo_focus
+[ 40%] Built target indi_simulator_focus
+[ 40%] Built target indi_ieaf_focus
+[ 40%] Built target indi_fcusb_focus
+[ 42%] Built target indi_nstep_focus
+[ 42%] Built target indi_nfocus
+[ 43%] Built target indi_celestron_sct_focus
+[ 43%] Built target indi_efa_focus
+[ 44%] Built target indi_aaf2_focus
+[ 44%] Built target indi_rbfocus_focus
+[ 44%] Built target indi_astromechfoc
+[ 44%] Built target indi_pinefeat_cef_focus
+[ 45%] Built target indi_moonlite_focus
+[ 45%] Built target indi_moonlitedro_focus
+[ 45%] Built target indi_myfocuserpro2_focus
+[ 45%] Built target indi_onfocus_focus
+[ 45%] Built target indi_sestosenso_focus
+[ 45%] Built target indi_teenastro_focus
+[ 46%] Built target indi_sestosenso2_focus
+[ 46%] Built target indi_esatto_focus
+[ 46%] Built target indi_rainbowrsf_focus
+[ 47%] Built target indi_esattoarco_focus
+[ 47%] Built target indi_dreamfocuser_focus
+[ 47%] Built target indi_lakeside_focus
+[ 47%] Built target indi_dmfc_focus
+[ 48%] Built target indi_pegasus_focuscube
+[ 48%] Built target indi_pegasus_prodigyMF
+[ 48%] Built target indi_pegasus_focuscube3
+[ 48%] Built target indi_pegasus_scopsoag
+[ 48%] Built target indi_usbfocusv3_focus
+[ 49%] Built target indi_steeldrive2_focus
+[ 49%] Built target indi_microtouch_focus
+[ 49%] Built target indi_steeldrive_focus
+[ 50%] Built target indi_alluna_tcs2
+[ 50%] Built target indi_perfectstar_focus
+[ 51%] Built target indi_lynx_focus
+[ 51%] Built target indi_siefs_focus
+[ 51%] Built target indi_hitecastrodc_focus
+[ 51%] Built target indi_deepskydad_af1_focus
+[ 52%] Built target indi_deepskydad_af2_focus
+[ 52%] Built target indi_deepskydad_af3_focus
+[ 52%] Built target indi_smartfocus_focus
+[ 53%] Built target indi_tcfs_focus
+[ 53%] Built target indi_lacerta_mfoc_focus
+[ 54%] Built target indi_lacerta_mfoc_fmc_focus
+[ 54%] Built target indi_activefocuser_focus
+[ 54%] Built target indi_simulator_rotator
+[ 54%] Built target indi_nframe_rotator
+[ 55%] Built target indi_gemini_focus
+[ 56%] Built target indi_iafscaa_focus
+[ 57%] Built target indi_pyxis_rotator
+[ 57%] Built target indi_nightcrawler_focus
+[ 57%] Built target indi_camelot_rotator
+[ 58%] Built target indi_wanderer_lite_rotator
+[ 58%] Built target indi_falconv2_rotator
+[ 59%] Built target indi_falcon_rotator
+[ 60%] Built target indi_wanderer_rotator_mini
+[ 61%] Built target indi_integra_focus
+[ 61%] Built target indi_wanderer_rotator_lite_v2
+[ 62%] Built target indi_deepskydad_fr1
+[ 62%] Built target indi_xagyl_wheel
+[ 63%] Built target indi_simulator_wheel
+[ 63%] Built target indi_manual_wheel
+[ 64%] Built target indi_optec_wheel
+[ 64%] Built target indi_quantum_wheel
+[ 64%] Built target indi_trutech_wheel
+[ 64%] Built target indi_qhycfw1_wheel
+[ 64%] Built target indi_qhycfw2_wheel
+[ 66%] Built target indi_qhycfw3_wheel
+[ 66%] Built target indi_pegasusindigo_wheel
+[ 66%] Built target indi_ioptron_wheel
+[ 67%] Built target indi_simulator_dome
+[ 67%] Built target indi_rolloff_dome
+[ 67%] Built target indi_domepro2_dome
+[ 67%] Built target indi_baader_dome
+[ 67%] Built target indi_rigel_dome
+[ 67%] Built target indi_ddw_dome
+[ 67%] Built target indi_script_dome
+[ 68%] Built target indi_scopedome_dome
+[ 68%] Built target indi_nexdome_beaver
+[ 68%] Built target indi_dragonlair_dome
+[ 69%] Built target indi_universalror_dome
+[ 70%] Built target indi_wanderercover_v4_ec
+[ 70%] Built target indi_alpaca_dome
+[ 70%] Built target indi_wanderercover_v4_pro_ec
+[ 70%] Built target indi_wanderer_eclipse
+[ 70%] Built target indi_wandererbox_plus_v3
+[ 70%] Built target indi_astrolink4
+[ 71%] Built target indi_wandererbox_pro_v3
+[ 71%] Built target indi_wanderer_dew_terminator
+[ 72%] Built target indi_wanderer_cover
+[ 72%] Built target indi_skysafari
+[ 73%] Built target indi_safetymonitor
+[ 73%] Built target indi_watchdog
+[ 75%] Built target indi_flipflat
+[ 75%] Built target indi_simulator_lightpanel
+[ 76%] Built target indi_simulator_dustcover
+[ 76%] Built target indi_Excalibur
+[ 78%] Built target indi_snapcap
+[ 78%] Built target indi_astromech_lpm
+[ 78%] Built target indi_astrolink4mini2
+[ 78%] Built target indi_sqm_weather
+[ 79%] Built target indi_astrometry
+[ 79%] Built target indi_simulator_sqm
+[ 80%] Built target indi_arduinost4
+[ 81%] Built target indi_star2000
+[ 82%] Built target indi_gpusb
+[ 82%] Built target indi_planewave_deltat
+[ 82%] Built target indi_joystick
+[ 82%] Built target indi_deepskydad_fp
+[ 83%] Built target indi_simulator_gps
+[ 84%] Built target indi_giotto
+[ 84%] Built target indi_alto
+[ 85%] Built target indi_dragon_light
+[ 85%] Built target indi_gemini_flatpanel
+[ 85%] Built target indi_pegasus_flatmaster
+[ 85%] Built target indi_startech_hub
+[ 86%] Built target indi_terrans_powerboxgo_v2
+[ 86%] Built target indi_terrans_powerboxpro_v2
+[ 86%] Built target indi_pegasus_upb
+[ 86%] Built target indi_pegasus_upb3
+[ 86%] Built target indi_pegasus_ppb
+[ 87%] Built target indi_pegasus_ppba
+[ 88%] Built target indi_pegasus_spb
+[ 89%] Built target indi_usbdewpoint
+[ 89%] Built target indi_ups_safety
+[ 89%] Built target indi_myDewControllerPro
+[ 89%] Built target indi_cheapodc
+[ 90%] Built target indi_mydcp4esp32
+[ 91%] Built target indi_celestron_dewpower
+[ 91%] Built target indi_svbony_powerbox
+[ 91%] Built target indi_wavesharemodbus_relay
+[ 91%] Built target indi_ipx800v4
+[ 91%] Built target indi_simulator_weather
+[ 91%] Built target indi_simulator_receiver
+[ 91%] Built target indi_rtlsdr
+[ 91%] Built target indi_simulator_io
+[ 93%] Built target indi_meta_weather
+[ 93%] Built target indi_aagsolo_weather
+[ 93%] Built target indi_weather_safety_proxy
+[ 93%] Built target indi_watcher_weather
+[ 94%] Built target indi_mbox_weather
+[ 94%] Built target indi_vantage_weather
+[ 94%] Built target indi_uranus_weather
+[ 94%] Built target indi_openweathermap_weather
+[ 94%] Built target indi_hitech_weather
+[ 94%] Built target indi_weatherflow_weather
+[ 94%] Built target indi_weather_safety_alpaca
+[ 94%] Built target indi_imager_agent
+[ 94%] Built target indi_spectracyber
+[ 94%] Built target shelyak_usis
+[ 95%] Built target indi_v4l2_ccd
+[ 96%] Built target tutorial_two
+[ 96%] Built target tutorial_one
+[ 96%] Built target tutorial_three
+[ 96%] Built target tutorial_dome
+[ 96%] Built target tutorial_four
+[ 97%] Built target tutorial_rain
+[ 99%] Built target indi_alpaca_server
+[100%] Built target tutorial_seven
+[100%] Built target tutorial_eight
+[  2%] Built target indicore
+[  4%] Built target indidevice
+[  5%] Built target indiabstractclient
+[  8%] Built target indiserver
+[  9%] Built target sockets
+[  9%] Built target indiclient_OBJECT
+[  9%] Built target indiclientstatic
+[  9%] Built target indiclient
+[  9%] Built target eventloop
+[ 11%] Built target dsp
+[ 11%] Built target fpack
+[ 11%] Built target indi_hid
+[ 12%] Built target indi_hid_test
+[ 14%] Built target AlignmentDriver
+[ 25%] Built target indidriver_OBJECT
+[ 26%] Built target indidriver_STATIC
+[ 26%] Built target indidriver
+[ 26%] Built target AlignmentClient
+[ 26%] Built target indi_Nearest_MathPlugin
+[ 26%] Built target indi_SVD_MathPlugin
+[ 26%] Built target indilx200
+[ 26%] Built target indi_lx200basic
+[ 27%] Built target indi_lx200_TeenAstro
+[ 31%] Built target indi_lx200generic
+[ 31%] Built target indi_celestron_gps
+[ 32%] Built target indi_rainbow_telescope
+[ 33%] Built target indi_crux_mount
+[ 33%] Built target indi_temma_telescope
+[ 33%] Built target indi_paramount_telescope
+[ 34%] Built target indi_astrotrac_telescope
+[ 35%] Built target indi_synscan_telescope
+[ 35%] Built target indi_synscanlegacy_telescope
+[ 35%] Built target indi_skycommander_telescope
+[ 36%] Built target indi_dsc_telescope
+[ 37%] Built target indi_ieqlegacy_telescope
+[ 37%] Built target indi_ieq_telescope
+[ 38%] Built target indi_ioptronv3_telescope
+[ 38%] Built target indi_pmc8_telescope
+[ 38%] Built target indi_simulator_telescope
+[ 38%] Built target indi_script_telescope
+[ 38%] Built target indi_skywatcherAltAzMount
+[ 38%] Built target indi_planewave_telescope
+[ 38%] Built target indi_simulator_ccd
+[ 38%] Built target indi_simulator_guide
+[ 38%] Built target indi_alpaca_ccd
+[ 38%] Built target indi_simulator_focus
+[ 39%] Built target indi_robo_focus
+[ 39%] Built target indi_ieaf_focus
+[ 39%] Built target indi_fcusb_focus
+[ 40%] Built target indi_nfocus
+[ 41%] Built target indi_nstep_focus
+[ 41%] Built target indi_efa_focus
+[ 42%] Built target indi_celestron_sct_focus
+[ 43%] Built target indi_aaf2_focus
+[ 43%] Built target indi_rbfocus_focus
+[ 43%] Built target indi_astromechfoc
+[ 43%] Built target indi_pinefeat_cef_focus
+[ 44%] Built target indi_moonlite_focus
+[ 44%] Built target indi_moonlitedro_focus
+[ 44%] Built target indi_myfocuserpro2_focus
+[ 44%] Built target indi_onfocus_focus
+[ 44%] Built target indi_teenastro_focus
+[ 44%] Built target indi_sestosenso_focus
+[ 45%] Built target indi_sestosenso2_focus
+[ 45%] Built target indi_esatto_focus
+[ 46%] Built target indi_esattoarco_focus
+[ 46%] Built target indi_rainbowrsf_focus
+[ 46%] Built target indi_dreamfocuser_focus
+[ 46%] Built target indi_lakeside_focus
+[ 46%] Built target indi_dmfc_focus
+[ 47%] Built target indi_pegasus_focuscube
+[ 47%] Built target indi_pegasus_focuscube3
+[ 47%] Built target indi_pegasus_prodigyMF
+[ 47%] Built target indi_pegasus_scopsoag
+[ 47%] Built target indi_usbfocusv3_focus
+[ 47%] Built target indi_microtouch_focus
+[ 48%] Built target indi_steeldrive2_focus
+[ 48%] Built target indi_steeldrive_focus
+[ 49%] Built target indi_alluna_tcs2
+[ 50%] Built target indi_lynx_focus
+[ 50%] Built target indi_perfectstar_focus
+[ 50%] Built target indi_siefs_focus
+[ 50%] Built target indi_hitecastrodc_focus
+[ 50%] Built target indi_deepskydad_af1_focus
+[ 51%] Built target indi_deepskydad_af2_focus
+[ 51%] Built target indi_deepskydad_af3_focus
+[ 51%] Built target indi_smartfocus_focus
+[ 52%] Built target indi_tcfs_focus
+[ 52%] Built target indi_lacerta_mfoc_focus
+[ 53%] Built target indi_lacerta_mfoc_fmc_focus
+[ 53%] Built target indi_activefocuser_focus
+[ 53%] Built target indi_nframe_rotator
+[ 53%] Built target indi_simulator_rotator
+[ 54%] Built target indi_gemini_focus
+[ 55%] Built target indi_iafscaa_focus
+[ 55%] Built target indi_nightcrawler_focus
+[ 56%] Built target indi_pyxis_rotator
+[ 57%] Built target indi_falcon_rotator
+[ 57%] Built target indi_camelot_rotator
+[ 57%] Built target indi_falconv2_rotator
+[ 58%] Built target indi_wanderer_lite_rotator
+[ 59%] Built target indi_wanderer_rotator_mini
+[ 59%] Built target indi_wanderer_rotator_lite_v2
+[ 60%] Built target indi_integra_focus
+[ 61%] Built target indi_deepskydad_fr1
+[ 61%] Built target indi_xagyl_wheel
+[ 62%] Built target indi_simulator_wheel
+[ 62%] Built target indi_manual_wheel
+[ 63%] Built target indi_optec_wheel
+[ 63%] Built target indi_quantum_wheel
+[ 63%] Built target indi_trutech_wheel
+[ 63%] Built target indi_qhycfw1_wheel
+[ 63%] Built target indi_qhycfw2_wheel
+[ 64%] Built target indi_qhycfw3_wheel
+[ 65%] Built target indi_pegasusindigo_wheel
+[ 65%] Built target indi_ioptron_wheel
+[ 66%] Built target indi_simulator_dome
+[ 66%] Built target indi_rolloff_dome
+[ 66%] Built target indi_baader_dome
+[ 66%] Built target indi_domepro2_dome
+[ 66%] Built target indi_rigel_dome
+[ 67%] Built target indi_scopedome_dome
+[ 67%] Built target indi_ddw_dome
+[ 67%] Built target indi_script_dome
+[ 67%] Built target indi_nexdome_beaver
+[ 67%] Built target indi_dragonlair_dome
+[ 68%] Built target indi_universalror_dome
+[ 68%] Built target indi_alpaca_dome
+[ 69%] Built target indi_wanderercover_v4_ec
+[ 69%] Built target indi_wanderercover_v4_pro_ec
+[ 69%] Built target indi_wanderer_eclipse
+[ 69%] Built target indi_astrolink4
+[ 69%] Built target indi_wandererbox_plus_v3
+[ 69%] Built target indi_wandererbox_pro_v3
+[ 70%] Built target indi_wanderer_dew_terminator
+[ 70%] Built target indi_wanderer_cover
+[ 71%] Built target indi_skysafari
+[ 71%] Built target indi_watchdog
+[ 72%] Built target indi_safetymonitor
+[ 73%] Built target indi_flipflat
+[ 74%] Built target indi_simulator_lightpanel
+[ 74%] Built target indi_simulator_dustcover
+[ 75%] Built target indi_Excalibur
+[ 76%] Built target indi_snapcap
+[ 77%] Built target indi_astromech_lpm
+[ 77%] Built target indi_astrolink4mini2
+[ 77%] Built target indi_sqm_weather
+[ 78%] Built target indi_simulator_sqm
+[ 78%] Built target indi_astrometry
+[ 79%] Built target indi_star2000
+[ 80%] Built target indi_arduinost4
+[ 81%] Built target indi_planewave_deltat
+[ 81%] Built target indi_gpusb
+[ 81%] Built target indi_joystick
+[ 82%] Built target indi_simulator_gps
+[ 82%] Built target indi_deepskydad_fp
+[ 83%] Built target indi_giotto
+[ 83%] Built target indi_alto
+[ 84%] Built target indi_dragon_light
+[ 84%] Built target indi_gemini_flatpanel
+[ 84%] Built target indi_pegasus_flatmaster
+[ 84%] Built target indi_startech_hub
+[ 85%] Built target indi_terrans_powerboxgo_v2
+[ 85%] Built target indi_terrans_powerboxpro_v2
+[ 85%] Built target indi_pegasus_upb
+[ 85%] Built target indi_pegasus_upb3
+[ 85%] Built target indi_pegasus_ppb
+[ 86%] Built target indi_pegasus_ppba
+[ 87%] Built target indi_pegasus_spb
+[ 87%] Built target indi_ups_safety
+[ 88%] Built target indi_usbdewpoint
+[ 88%] Built target indi_myDewControllerPro
+[ 88%] Built target indi_cheapodc
+[ 89%] Built target indi_mydcp4esp32
+[ 90%] Built target indi_celestron_dewpower
+[ 90%] Built target indi_svbony_powerbox
+[ 90%] Built target indi_wavesharemodbus_relay
+[ 90%] Built target indi_ipx800v4
+[ 90%] Built target indi_simulator_io
+[ 90%] Built target indi_simulator_receiver
+[ 90%] Built target indi_rtlsdr
+[ 90%] Built target indi_simulator_weather
+[ 90%] Built target indi_meta_weather
+[ 91%] Built target indi_watcher_weather
+[ 91%] Built target indi_aagsolo_weather
+[ 92%] Built target indi_weather_safety_proxy
+[ 93%] Built target indi_mbox_weather
+[ 93%] Built target indi_uranus_weather
+[ 93%] Built target indi_vantage_weather
+[ 93%] Built target indi_openweathermap_weather
+[ 93%] Built target indi_weather_safety_alpaca
+[ 93%] Built target indi_weatherflow_weather
+[ 93%] Built target indi_hitech_weather
+[ 93%] Built target indi_imager_agent
+[ 94%] Built target indi_v4l2_ccd
+[ 94%] Built target shelyak_usis
+[ 94%] Built target indi_spectracyber
+[ 96%] Built target indi_alpaca_server
+[ 96%] Built target indi_getprop
+[ 97%] Built target indi_setprop
+[ 97%] Built target indi_eval
+[ 97%] Built target indi_getdevice
+[ 97%] Built target tutorial_one
+[ 98%] Built target tutorial_two
+[ 98%] Built target tutorial_three
+[ 98%] Built target tutorial_four
+[ 98%] Built target tutorial_dome
+[ 99%] Built target tutorial_rain
+[ 99%] Built target tutorial_client
+[ 99%] Built target tutorial_seven
+[100%] Built target tutorial_eight
+Install the project...
+-- Install configuration: "Release"
+-- Up-to-date: /usr/include/libindi/indimacros.h
+-- Up-to-date: /usr/include/libindi/indiapi.h
+-- Up-to-date: /usr/include/libindi/indidevapi.h
+-- Up-to-date: /usr/include/libindi/indiutility.h
+-- Up-to-date: /usr/include/libindi/lilxml.h
+-- Up-to-date: /usr/include/libindi/base64.h
+-- Up-to-date: /usr/include/libindi/indicom.h
+-- Up-to-date: /usr/include/libindi/sharedblob.h
+-- Up-to-date: /usr/include/libindi/libastro.h
+-- Up-to-date: /usr/include/libindi/indibase.h
+-- Up-to-date: /usr/include/libindi/indibasetypes.h
+-- Up-to-date: /usr/include/libindi/basedevice.h
+-- Up-to-date: /usr/include/libindi/parentdevice.h
+-- Up-to-date: /usr/include/libindi/indistandardproperty.h
+-- Up-to-date: /usr/include/libindi/indiproperties.h
+-- Up-to-date: /usr/include/libindi/indiproperty.h
+-- Up-to-date: /usr/include/libindi/indipropertybasic.h
+-- Up-to-date: /usr/include/libindi/indipropertyview.h
+-- Up-to-date: /usr/include/libindi/indipropertytext.h
+-- Up-to-date: /usr/include/libindi/indipropertynumber.h
+-- Up-to-date: /usr/include/libindi/indipropertyswitch.h
+-- Up-to-date: /usr/include/libindi/indipropertylight.h
+-- Up-to-date: /usr/include/libindi/indipropertyblob.h
+-- Up-to-date: /usr/include/libindi/indiwidgetview.h
+-- Up-to-date: /usr/include/libindi/indiwidgettraits.h
+-- Up-to-date: /usr/include/libindi/abstractbaseclient.h
+-- Up-to-date: /usr/bin/indiserver
+-- Up-to-date: /usr/include/libindi/baseclient.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libindiclient.a
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libindiclient.so.2.1.9
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libindiclient.so.2
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libindiclient.so
+-- Up-to-date: /usr/include/libindi/eventloop.h
+-- Up-to-date: /usr/include/libindi/dsp.h
+-- Up-to-date: /usr/include/libindi/fits_extensions.h
+-- Up-to-date: /usr/include/libindi/fits.h
+-- Up-to-date: /usr/include/libindi/sdfits.h
+-- Up-to-date: /usr/include/libindi/fitsidi.h
+-- Up-to-date: /usr/include/libindi/indi_hidapi.h
+-- Up-to-date: /usr/bin/indi_hid_test
+-- Up-to-date: /usr/include/libindi/stream/streammanager.h
+-- Up-to-date: /usr/include/libindi/stream/fpsmeter.h
+-- Up-to-date: /usr/include/libindi/stream/uniquequeue.h
+-- Up-to-date: /usr/include/libindi/stream/gammalut16.h
+-- Up-to-date: /usr/include/libindi/stream/jpegutils.h
+-- Up-to-date: /usr/include/libindi/stream/ccvt.h
+-- Up-to-date: /usr/include/libindi/stream/ccvt_types.h
+-- Up-to-date: /usr/include/libindi/stream/encoder/encodermanager.h
+-- Up-to-date: /usr/include/libindi/stream/encoder/encoderinterface.h
+-- Up-to-date: /usr/include/libindi/stream/encoder/rawencoder.h
+-- Up-to-date: /usr/include/libindi/stream/encoder/mjpegencoder.h
+-- Up-to-date: /usr/include/libindi/stream/recorder/recordermanager.h
+-- Up-to-date: /usr/include/libindi/stream/recorder/recorderinterface.h
+-- Up-to-date: /usr/include/libindi/stream/recorder/serrecorder.h
+-- Up-to-date: /usr/include/libindi/v4l2_decode.h
+-- Up-to-date: /usr/include/libindi/v4l2_builtin_decoder.h
+-- Up-to-date: /usr/include/libindi/v4l2_colorspace.h
+-- Up-to-date: /usr/include/libindi/indidriver.h
+-- Up-to-date: /usr/include/libindi/pid.h
+-- Up-to-date: /usr/include/libindi/defaultdevice.h
+-- Up-to-date: /usr/include/libindi/hotplugcapabledevice.h
+-- Up-to-date: /usr/include/libindi/hotplugmanager.h
+-- Up-to-date: /usr/include/libindi/indiccd.h
+-- Up-to-date: /usr/include/libindi/indiccdchip.h
+-- Up-to-date: /usr/include/libindi/indisensorinterface.h
+-- Up-to-date: /usr/include/libindi/indicorrelator.h
+-- Up-to-date: /usr/include/libindi/indidetector.h
+-- Up-to-date: /usr/include/libindi/indispectrograph.h
+-- Up-to-date: /usr/include/libindi/indireceiver.h
+-- Up-to-date: /usr/include/libindi/indifilterwheel.h
+-- Up-to-date: /usr/include/libindi/indifocuserinterface.h
+-- Up-to-date: /usr/include/libindi/indigpsinterface.h
+-- Up-to-date: /usr/include/libindi/indiweatherinterface.h
+-- Up-to-date: /usr/include/libindi/indifocuser.h
+-- Up-to-date: /usr/include/libindi/indirotator.h
+-- Up-to-date: /usr/include/libindi/inditelescope.h
+-- Up-to-date: /usr/include/libindi/indiguiderinterface.h
+-- Up-to-date: /usr/include/libindi/indifilterinterface.h
+-- Up-to-date: /usr/include/libindi/indirotatorinterface.h
+-- Up-to-date: /usr/include/libindi/indiinputinterface.h
+-- Up-to-date: /usr/include/libindi/indioutputinterface.h
+-- Up-to-date: /usr/include/libindi/indipowerinterface.h
+-- Up-to-date: /usr/include/libindi/inditimer.h
+-- Up-to-date: /usr/include/libindi/indielapsedtimer.h
+-- Up-to-date: /usr/include/libindi/indisinglethreadpool.h
+-- Up-to-date: /usr/include/libindi/indidome.h
+-- Up-to-date: /usr/include/libindi/indigps.h
+-- Up-to-date: /usr/include/libindi/indilightboxinterface.h
+-- Up-to-date: /usr/include/libindi/indidustcapinterface.h
+-- Up-to-date: /usr/include/libindi/indiweather.h
+-- Up-to-date: /usr/include/libindi/indilogger.h
+-- Up-to-date: /usr/include/libindi/indicontroller.h
+-- Up-to-date: /usr/include/libindi/indiimuinterface.h
+-- Up-to-date: /usr/include/libindi/indiimu.h
+-- Up-to-date: /usr/include/libindi/indiusbdevice.h
+-- Up-to-date: /usr/include/libindi/fitskeyword.h
+-- Up-to-date: /usr/include/libindi/connectionplugins/connectioninterface.h
+-- Up-to-date: /usr/include/libindi/connectionplugins/connectionserial.h
+-- Up-to-date: /usr/include/libindi/connectionplugins/connectiontcp.h
+-- Up-to-date: /usr/include/libindi/connectionplugins/connectioni2c.h
+-- Up-to-date: /usr/include/libindi/dsp/manager.h
+-- Up-to-date: /usr/include/libindi/dsp/dspinterface.h
+-- Up-to-date: /usr/include/libindi/dsp/transforms.h
+-- Up-to-date: /usr/include/libindi/dsp/convolution.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libindidriver.a
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libindidriver.so.2.1.9
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libindidriver.so.2
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libindidriver.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libindiAlignmentDriver.so.2.1.9
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libindiAlignmentDriver.so.2
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libindiAlignmentDriver.so
+-- Up-to-date: /usr/include/libindi/alignment/AlignmentSubsystemForMathPlugins.h
+-- Up-to-date: /usr/include/libindi/alignment/AlignmentSubsystemForDrivers.h
+-- Up-to-date: /usr/include/libindi/alignment/BasicMathPlugin.h
+-- Up-to-date: /usr/include/libindi/alignment/BuiltInMathPlugin.h
+-- Up-to-date: /usr/include/libindi/alignment/NearestMathPlugin.h
+-- Up-to-date: /usr/include/libindi/alignment/ClientAPIForAlignmentDatabase.h
+-- Up-to-date: /usr/include/libindi/alignment/ClientAPIForMathPluginManagement.h
+-- Up-to-date: /usr/include/libindi/alignment/Common.h
+-- Up-to-date: /usr/include/libindi/alignment/ConvexHull.h
+-- Up-to-date: /usr/include/libindi/alignment/DriverCommon.h
+-- Up-to-date: /usr/include/libindi/alignment/InMemoryDatabase.h
+-- Up-to-date: /usr/include/libindi/alignment/MathPlugin.h
+-- Up-to-date: /usr/include/libindi/alignment/MathPluginManagement.h
+-- Up-to-date: /usr/include/libindi/alignment/SVDMathPlugin.h
+-- Up-to-date: /usr/include/libindi/alignment/TelescopeDirectionVectorSupportFunctions.h
+-- Up-to-date: /usr/include/libindi/alignment/MapPropertiesToInMemoryDatabase.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libindiAlignmentClient.a
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/indi/MathPlugins/libindi_Nearest_MathPlugin.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/indi/MathPlugins/libindi_SVD_MathPlugin.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libindilx200.so.2.1.9
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libindilx200.so.2
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libindilx200.so
+-- Up-to-date: /usr/include/libindi/mounts/lx200telescope.h
+-- Up-to-date: /usr/include/libindi/mounts/lx200driver.h
+-- Up-to-date: /usr/bin/indi_lx200basic
+-- Up-to-date: /usr/bin/indi_lx200_TeenAstro
+-- Up-to-date: /usr/bin/indi_lx200generic
+-- Up-to-date: /usr/bin/indi_celestron_gps
+-- Up-to-date: /usr/bin/indi_rainbow_telescope
+-- Up-to-date: /usr/bin/indi_crux_mount
+-- Up-to-date: /usr/bin/indi_temma_telescope
+-- Up-to-date: /usr/bin/indi_paramount_telescope
+-- Up-to-date: /usr/bin/indi_astrotrac_telescope
+-- Up-to-date: /usr/bin/indi_synscan_telescope
+-- Up-to-date: /usr/bin/indi_synscanlegacy_telescope
+-- Up-to-date: /usr/bin/indi_skycommander_telescope
+-- Up-to-date: /usr/bin/indi_dsc_telescope
+-- Up-to-date: /usr/bin/indi_ieqlegacy_telescope
+-- Up-to-date: /usr/bin/indi_ieq_telescope
+-- Up-to-date: /usr/bin/indi_ioptronv3_telescope
+-- Up-to-date: /usr/bin/indi_pmc8_telescope
+-- Up-to-date: /usr/bin/indi_simulator_telescope
+-- Up-to-date: /usr/bin/indi_script_telescope
+-- Up-to-date: /usr/bin/indi_skywatcherAltAzMount
+-- Up-to-date: /usr/bin/indi_planewave_telescope
+-- Up-to-date: /usr/bin/indi_simulator_ccd
+-- Up-to-date: /usr/bin/indi_simulator_guide
+-- Up-to-date: /usr/bin/indi_alpaca_ccd
+-- Up-to-date: /usr/bin/indi_simulator_focus
+-- Up-to-date: /usr/bin/indi_robo_focus
+-- Up-to-date: /usr/bin/indi_ieaf_focus
+-- Up-to-date: /usr/bin/indi_fcusb_focus
+-- Up-to-date: /usr/bin/indi_nfocus
+-- Up-to-date: /usr/bin/indi_nstep_focus
+-- Up-to-date: /usr/bin/indi_efa_focus
+-- Up-to-date: /usr/bin/indi_celestron_sct_focus
+-- Up-to-date: /usr/bin/indi_aaf2_focus
+-- Up-to-date: /usr/bin/indi_rbfocus_focus
+-- Up-to-date: /usr/bin/indi_astromechfoc
+-- Up-to-date: /usr/bin/indi_pinefeat_cef_focus
+-- Up-to-date: /usr/bin/indi_moonlite_focus
+-- Up-to-date: /usr/bin/indi_moonlitedro_focus
+-- Up-to-date: /usr/bin/indi_myfocuserpro2_focus
+-- Up-to-date: /usr/bin/indi_onfocus_focus
+-- Up-to-date: /usr/bin/indi_teenastro_focus
+-- Up-to-date: /usr/bin/indi_sestosenso_focus
+-- Up-to-date: /usr/bin/indi_sestosenso2_focus
+-- Up-to-date: /usr/bin/indi_esatto_focus
+-- Up-to-date: /usr/bin/indi_esattoarco_focus
+-- Up-to-date: /usr/bin/indi_rainbowrsf_focus
+-- Up-to-date: /usr/bin/indi_dreamfocuser_focus
+-- Up-to-date: /usr/bin/indi_lakeside_focus
+-- Up-to-date: /usr/bin/indi_dmfc_focus
+-- Up-to-date: /usr/bin/indi_pegasus_focuscube
+-- Up-to-date: /usr/bin/indi_pegasus_focuscube3
+-- Up-to-date: /usr/bin/indi_pegasus_prodigyMF
+-- Up-to-date: /usr/bin/indi_pegasus_scopsoag
+-- Up-to-date: /usr/bin/indi_usbfocusv3_focus
+-- Up-to-date: /usr/bin/indi_microtouch_focus
+-- Up-to-date: /usr/bin/indi_steeldrive2_focus
+-- Up-to-date: /usr/bin/indi_steeldrive_focus
+-- Up-to-date: /usr/bin/indi_alluna_tcs2
+-- Up-to-date: /usr/bin/indi_lynx_focus
+-- Up-to-date: /usr/bin/indi_perfectstar_focus
+-- Up-to-date: /usr/bin/indi_siefs_focus
+-- Up-to-date: /usr/bin/indi_hitecastrodc_focus
+-- Up-to-date: /usr/bin/indi_deepskydad_af1_focus
+-- Up-to-date: /usr/bin/indi_deepskydad_af2_focus
+-- Up-to-date: /usr/bin/indi_deepskydad_af3_focus
+-- Up-to-date: /usr/bin/indi_smartfocus_focus
+-- Up-to-date: /usr/bin/indi_tcfs_focus
+-- Up-to-date: /usr/bin/indi_lacerta_mfoc_focus
+-- Up-to-date: /usr/bin/indi_lacerta_mfoc_fmc_focus
+-- Up-to-date: /usr/bin/indi_activefocuser_focus
+-- Up-to-date: /usr/bin/indi_nframe_rotator
+-- Up-to-date: /usr/bin/indi_simulator_rotator
+-- Up-to-date: /usr/bin/indi_gemini_focus
+-- Up-to-date: /usr/bin/indi_iafscaa_focus
+-- Up-to-date: /usr/bin/indi_nightcrawler_focus
+-- Up-to-date: /usr/bin/indi_pyxis_rotator
+-- Up-to-date: /usr/bin/indi_falcon_rotator
+-- Up-to-date: /usr/bin/indi_camelot_rotator
+-- Up-to-date: /usr/bin/indi_falconv2_rotator
+-- Up-to-date: /usr/bin/indi_wanderer_lite_rotator
+-- Up-to-date: /usr/bin/indi_wanderer_rotator_mini
+-- Up-to-date: /usr/bin/indi_wanderer_rotator_lite_v2
+-- Up-to-date: /usr/bin/indi_integra_focus
+-- Up-to-date: /usr/bin/indi_deepskydad_fr1
+-- Up-to-date: /usr/bin/indi_xagyl_wheel
+-- Up-to-date: /usr/bin/indi_simulator_wheel
+-- Up-to-date: /usr/bin/indi_manual_wheel
+-- Up-to-date: /usr/bin/indi_optec_wheel
+-- Up-to-date: /usr/bin/indi_quantum_wheel
+-- Up-to-date: /usr/bin/indi_trutech_wheel
+-- Up-to-date: /usr/bin/indi_qhycfw1_wheel
+-- Up-to-date: /usr/bin/indi_qhycfw2_wheel
+-- Up-to-date: /usr/bin/indi_qhycfw3_wheel
+-- Up-to-date: /usr/bin/indi_pegasusindigo_wheel
+-- Up-to-date: /usr/bin/indi_ioptron_wheel
+-- Up-to-date: /usr/bin/indi_simulator_dome
+-- Up-to-date: /usr/bin/indi_rolloff_dome
+-- Up-to-date: /usr/bin/indi_baader_dome
+-- Up-to-date: /usr/bin/indi_domepro2_dome
+-- Up-to-date: /usr/bin/indi_rigel_dome
+-- Up-to-date: /usr/bin/indi_scopedome_dome
+-- Up-to-date: /usr/bin/indi_ddw_dome
+-- Up-to-date: /usr/bin/indi_script_dome
+-- Up-to-date: /usr/bin/indi_nexdome_beaver
+-- Up-to-date: /usr/bin/indi_dragonlair_dome
+-- Up-to-date: /usr/bin/indi_universalror_dome
+-- Up-to-date: /usr/bin/indi_alpaca_dome
+-- Up-to-date: /lib/udev/rules.d/99-indi_auxiliary.rules
+-- Up-to-date: /usr/bin/indi_wanderercover_v4_ec
+-- Up-to-date: /usr/bin/indi_wanderercover_v4_pro_ec
+-- Up-to-date: /usr/bin/indi_wanderer_eclipse
+-- Up-to-date: /usr/bin/indi_astrolink4
+-- Up-to-date: /usr/bin/indi_wandererbox_plus_v3
+-- Up-to-date: /usr/bin/indi_wandererbox_pro_v3
+-- Up-to-date: /usr/bin/indi_wanderer_dew_terminator
+-- Up-to-date: /usr/bin/indi_wanderer_cover
+-- Up-to-date: /usr/bin/indi_skysafari
+-- Up-to-date: /usr/bin/indi_watchdog
+-- Up-to-date: /usr/bin/indi_safetymonitor
+-- Up-to-date: /usr/bin/indi_flipflat
+-- Up-to-date: /usr/bin/indi_simulator_lightpanel
+-- Up-to-date: /usr/bin/indi_simulator_dustcover
+-- Up-to-date: /usr/bin/indi_Excalibur
+-- Up-to-date: /usr/bin/indi_snapcap
+-- Up-to-date: /usr/bin/indi_astromech_lpm
+-- Up-to-date: /usr/bin/indi_astrolink4mini2
+-- Up-to-date: /usr/bin/indi_sqm_weather
+-- Up-to-date: /usr/bin/indi_simulator_sqm
+-- Up-to-date: /usr/bin/indi_astrometry
+-- Up-to-date: /usr/bin/indi_star2000
+-- Up-to-date: /usr/bin/indi_arduinost4
+-- Up-to-date: /usr/bin/indi_planewave_deltat
+-- Up-to-date: /usr/bin/indi_gpusb
+-- Up-to-date: /usr/bin/indi_joystick
+-- Up-to-date: /usr/bin/indi_simulator_gps
+-- Up-to-date: /usr/bin/indi_deepskydad_fp
+-- Up-to-date: /usr/bin/indi_giotto
+-- Up-to-date: /usr/bin/indi_alto
+-- Up-to-date: /usr/bin/indi_dragon_light
+-- Up-to-date: /usr/bin/indi_gemini_flatpanel
+-- Up-to-date: /usr/bin/indi_pegasus_flatmaster
+-- Up-to-date: /usr/bin/indi_startech_hub
+-- Up-to-date: /usr/bin/indi_terrans_powerboxgo_v2
+-- Up-to-date: /usr/bin/indi_terrans_powerboxpro_v2
+-- Up-to-date: /usr/bin/indi_pegasus_upb
+-- Up-to-date: /usr/bin/indi_pegasus_upb3
+-- Up-to-date: /usr/bin/indi_pegasus_ppb
+-- Up-to-date: /usr/bin/indi_pegasus_ppba
+-- Up-to-date: /usr/bin/indi_pegasus_spb
+-- Up-to-date: /usr/bin/indi_ups_safety
+-- Up-to-date: /usr/bin/indi_usbdewpoint
+-- Up-to-date: /usr/bin/indi_myDewControllerPro
+-- Up-to-date: /usr/bin/indi_cheapodc
+-- Up-to-date: /usr/bin/indi_mydcp4esp32
+-- Up-to-date: /usr/bin/indi_celestron_dewpower
+-- Up-to-date: /usr/bin/indi_svbony_powerbox
+-- Up-to-date: /usr/bin/indi_wavesharemodbus_relay
+-- Up-to-date: /usr/bin/indi_ipx800v4
+-- Up-to-date: /usr/bin/indi_simulator_io
+-- Up-to-date: /usr/bin/indi_simulator_receiver
+-- Up-to-date: /usr/bin/indi_rtlsdr
+-- Up-to-date: /usr/bin/indi_simulator_weather
+-- Up-to-date: /usr/bin/indi_meta_weather
+-- Up-to-date: /usr/bin/indi_watcher_weather
+-- Up-to-date: /usr/bin/indi_aagsolo_weather
+-- Up-to-date: /usr/bin/indi_weather_safety_proxy
+-- Up-to-date: /usr/bin/indi_mbox_weather
+-- Up-to-date: /usr/bin/indi_uranus_weather
+-- Up-to-date: /usr/bin/indi_vantage_weather
+-- Up-to-date: /usr/bin/indi_openweathermap_weather
+-- Up-to-date: /usr/bin/indi_weather_safety_alpaca
+-- Up-to-date: /usr/bin/indi_weatherflow_weather
+-- Up-to-date: /usr/bin/indi_hitech_weather
+-- Up-to-date: /usr/bin/indi_imager_agent
+-- Up-to-date: /usr/bin/indi_v4l2_ccd
+-- Up-to-date: /lib/udev/rules.d/80-dbk21-camera.rules
+-- Up-to-date: /usr/bin/shelyak_usis
+-- Up-to-date: /usr/share/indi/shelyak_boards.json
+-- Up-to-date: /usr/bin/indi_spectracyber
+-- Up-to-date: /usr/bin/indi_alpaca_server
+-- Up-to-date: /usr/share/indi/drivers.xml
+-- Up-to-date: /usr/share/indi/indi_tcfs_sk.xml
+-- Up-to-date: /usr/bin/indi_getprop
+-- Up-to-date: /usr/bin/indi_setprop
+-- Up-to-date: /usr/bin/indi_eval
+-- Up-to-date: /usr/bin/indi_getdevice
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/pkgconfig/libindi.pc
+-- Up-to-date: /usr/include/libindi/inicpp.h
+-- Up-to-date: /usr/include/libindi/indiversion.h
+-- Up-to-date: /usr/include/libindi/httplib.h
+-- Up-to-date: /usr/include/libindi/indijson.hpp
+Time elapsed: 0 hours, 0 minutes, 27 seconds.
+
+
+################################################################
+################# Build INDI 3rd party drivers #################
+##################### 2026-03-02T05:14:27 ######################
+################################################################
+Forced INDIcore version defined!
+Forced INDIcore version: v2_1_9
+REPO_VERSION: v2.1.9
+
+
+################################################################
+####################### Build libraries ########################
+##################### 2026-03-02T05:14:30 ######################
+################################################################
+-- Found FFMPEG: /usr/lib/aarch64-linux-gnu/libavcodec.so;/usr/lib/aarch64-linux-gnu/libavdevice.so;/usr/lib/aarch64-linux-gnu/libavformat.so;/usr/lib/aarch64-linux-gnu/libavutil.so;/usr/lib/aarch64-linux-gnu/libswscale.so, /usr/include/aarch64-linux-gnu
+-- Since FFMPEG was found, INDI Webcam Driver can be built
+-- Since an up to date nutclient was not found, INDI NUT Driver will not be built
+-- Found libftdi1: /usr/lib/aarch64-linux-gnu/libftdi1.so
+-- Configuring done (0.5s)
+-- Generating done (0.3s)
+-- Build files have been written to: /add1/install/INDI_KStars-Kit/BuildSources/build/indi-3rdparty-libs
+[  3%] Built target imported_ASICamera2
+[  3%] Built target imported_EFWFilter
+[  4%] Built target imported_USB2ST4Conv
+[  6%] Built target imported_CAARotator
+[  6%] Built target imported_EAFFocuser
+[  7%] Built target imported_atikcameras
+[  8%] Built target imported_flycapture
+[  9%] Built target fishcamp
+[ 11%] Built target imported_flipro
+[ 17%] Built target fli
+[ 18%] Built target imported_flialgo
+[ 20%] Built target imported_gxccd
+[ 20%] Built target imported_inovasdk
+[ 21%] Built target imported_qhyccd
+[ 45%] Built target apogee
+[ 46%] Built target imported_sbig
+[ 55%] Built target qsiapi
+[ 74%] Built target qsiapitest
+[ 73%] Built target qsiapidemo
+[ 75%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/libpktriggercord.c.o
+[ 76%] Built target udev_rules
+[ 77%] Built target imported_toupcam
+[ 79%] Built target imported_altaircam
+[ 80%] Built target imported_bressercam
+[ 83%] Built target imported_mallincam
+[ 83%] Built target imported_meadecam
+[ 86%] Built target imported_ogmacam
+[ 86%] Built target imported_nncam
+[ 87%] Built target imported_omegonprocam
+[ 89%] Built target imported_starshootg
+[ 90%] Built target imported_tscam
+[ 91%] Built target imported_svbonycam
+[ 92%] Built target imported_SVBCameraSDK
+[ 93%] Built target imported_PlayerOneCamera
+[ 94%] Built target imported_PlayerOnePW
+[ 95%] Built target imported_oasisfocuser
+[ 96%] Built target imported_oasisfilterwheel
+[ 97%] Linking C shared library libpktriggercord.so
+[100%] Built target pktriggercord
+[ 24%] Built target apogee
+[ 25%] Built target imported_ASICamera2
+[ 27%] Built target imported_EFWFilter
+[ 28%] Built target imported_USB2ST4Conv
+[ 29%] Built target imported_EAFFocuser
+[ 30%] Built target imported_CAARotator
+[ 31%] Built target imported_atikcameras
+[ 32%] Built target imported_flycapture
+[ 33%] Built target fishcamp
+[ 39%] Built target fli
+[ 41%] Built target imported_flipro
+[ 42%] Built target imported_flialgo
+[ 43%] Built target imported_gxccd
+[ 44%] Built target imported_inovasdk
+[ 45%] Built target imported_qhyccd
+[ 54%] Built target qsiapi
+[ 64%] Built target qsiapitest
+[ 73%] Built target qsiapidemo
+[ 74%] Built target imported_sbig
+[ 79%] Built target pktriggercord
+[ 80%] Built target udev_rules
+[ 81%] Built target imported_toupcam
+[ 83%] Built target imported_altaircam
+[ 84%] Built target imported_bressercam
+[ 86%] Built target imported_mallincam
+[ 87%] Built target imported_meadecam
+[ 88%] Built target imported_nncam
+[ 90%] Built target imported_ogmacam
+[ 91%] Built target imported_omegonprocam
+[ 93%] Built target imported_starshootg
+[ 94%] Built target imported_tscam
+[ 95%] Built target imported_svbonycam
+[ 96%] Built target imported_SVBCameraSDK
+[ 97%] Built target imported_PlayerOneCamera
+[ 98%] Built target imported_PlayerOnePW
+[ 99%] Built target imported_oasisfocuser
+[100%] Built target imported_oasisfilterwheel
+Install the project...
+-- Install configuration: "Release"
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libapogee.so.3.2
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libapogee.so.3
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libapogee.so
+-- Up-to-date: /usr/include/libapogee/Alta.h
+-- Up-to-date: /usr/include/libapogee/AltaCcdAcqParams.h
+-- Up-to-date: /usr/include/libapogee/AltaData.h
+-- Up-to-date: /usr/include/libapogee/AltaEthernetIo.h
+-- Up-to-date: /usr/include/libapogee/AltaF.h
+-- Up-to-date: /usr/include/libapogee/AltaIo.h
+-- Up-to-date: /usr/include/libapogee/AltaModeFsm.h
+-- Up-to-date: /usr/include/libapogee/AltaUsbIo.h
+-- Up-to-date: /usr/include/libapogee/ApgLogger.h
+-- Up-to-date: /usr/include/libapogee/ApgTimer.h
+-- Up-to-date: /usr/include/libapogee/ApnCamData.h
+-- Up-to-date: /usr/include/libapogee/ApnUsbSys.h
+-- Up-to-date: /usr/include/libapogee/ApogeeCam.h
+-- Up-to-date: /usr/include/libapogee/ApogeeFilterWheel.h
+-- Up-to-date: /usr/include/libapogee/Ascent.h
+-- Up-to-date: /usr/include/libapogee/AscentBasedIo.h
+-- Up-to-date: /usr/include/libapogee/AscentBasedUsbIo.h
+-- Up-to-date: /usr/include/libapogee/AscentData.h
+-- Up-to-date: /usr/include/libapogee/Aspen.h
+-- Up-to-date: /usr/include/libapogee/AspenData.h
+-- Up-to-date: /usr/include/libapogee/AspenEthernetIo.h
+-- Up-to-date: /usr/include/libapogee/AspenFx2.h
+-- Up-to-date: /usr/include/libapogee/AspenIo.h
+-- Up-to-date: /usr/include/libapogee/AspenUsbIo.h
+-- Up-to-date: /usr/include/libapogee/COMHelper.h
+-- Up-to-date: /usr/include/libapogee/CamCfgMatrix.h
+-- Up-to-date: /usr/include/libapogee/CamGen2Base.h
+-- Up-to-date: /usr/include/libapogee/CamGen2CcdAcqParams.h
+-- Up-to-date: /usr/include/libapogee/CamGen2ModeFsm.h
+-- Up-to-date: /usr/include/libapogee/CamHelpers.h
+-- Up-to-date: /usr/include/libapogee/CamRegMirror.h
+-- Up-to-date: /usr/include/libapogee/CamUsbIo.h
+-- Up-to-date: /usr/include/libapogee/CameraInfo.h
+-- Up-to-date: /usr/include/libapogee/CameraIo.h
+-- Up-to-date: /usr/include/libapogee/CameraStatusRegs.h
+-- Up-to-date: /usr/include/libapogee/CcdAcqParams.h
+-- Up-to-date: /usr/include/libapogee/DefDllExport.h
+-- Up-to-date: /usr/include/libapogee/DeviceStrHelpers.h
+-- Up-to-date: /usr/include/libapogee/FilterWheelIo.h
+-- Up-to-date: /usr/include/libapogee/FindDeviceEthernet.h
+-- Up-to-date: /usr/include/libapogee/FindDeviceUsb.h
+-- Up-to-date: /usr/include/libapogee/HiC.h
+-- Up-to-date: /usr/include/libapogee/IAltaSerialPortIo.h
+-- Up-to-date: /usr/include/libapogee/ICamIo.h
+-- Up-to-date: /usr/include/libapogee/ILog.h
+-- Up-to-date: /usr/include/libapogee/ITimer.h
+-- Up-to-date: /usr/include/libapogee/IUsb.h
+-- Up-to-date: /usr/include/libapogee/ImgFix.h
+-- Up-to-date: /usr/include/libapogee/LoggerException.h
+-- Up-to-date: /usr/include/libapogee/ModeFsm.h
+-- Up-to-date: /usr/include/libapogee/PlatformData.h
+-- Up-to-date: /usr/include/libapogee/PromFx2Io.h
+-- Up-to-date: /usr/include/libapogee/Quad.h
+-- Up-to-date: /usr/include/libapogee/UdpSocketBase.h
+-- Up-to-date: /usr/include/libapogee/apgHelper.h
+-- Up-to-date: /usr/include/libapogee/doc.h
+-- Up-to-date: /usr/include/libapogee/helpers.h
+-- Up-to-date: /usr/include/libapogee/libCurlWrap.h
+-- Up-to-date: /usr/include/libapogee/parseCfgTabDelim.h
+-- Up-to-date: /usr/include/libapogee/resource.h
+-- Up-to-date: /usr/include/libapogee/versionNo.h
+-- Up-to-date: /etc/Apogee/camera/A12HC.txt
+-- Up-to-date: /etc/Apogee/camera/A12HR.txt
+-- Up-to-date: /etc/Apogee/camera/A12HS.txt
+-- Up-to-date: /etc/Apogee/camera/A16HR.txt
+-- Up-to-date: /etc/Apogee/camera/A16HS.txt
+-- Up-to-date: /etc/Apogee/camera/A694S.txt
+-- Up-to-date: /etc/Apogee/camera/A694V.txt
+-- Up-to-date: /etc/Apogee/camera/AR2.txt
+-- Up-to-date: /etc/Apogee/camera/AR2D.txt
+-- Up-to-date: /etc/Apogee/camera/AR2F.txt
+-- Up-to-date: /etc/Apogee/camera/AR2FD.txt
+-- Up-to-date: /etc/Apogee/camera/AR2Fa.txt
+-- Up-to-date: /etc/Apogee/camera/AR2S.txt
+-- Up-to-date: /etc/Apogee/camera/AR2V.txt
+-- Up-to-date: /etc/Apogee/camera/AR2Vb.txt
+-- Up-to-date: /etc/Apogee/camera/AR2a.txt
+-- Up-to-date: /etc/Apogee/camera/AR4.txt
+-- Up-to-date: /etc/Apogee/camera/AR4D.txt
+-- Up-to-date: /etc/Apogee/camera/AR4F.txt
+-- Up-to-date: /etc/Apogee/camera/AR4FD.txt
+-- Up-to-date: /etc/Apogee/camera/AR4Fb.txt
+-- Up-to-date: /etc/Apogee/camera/AR4V.txt
+-- Up-to-date: /etc/Apogee/camera/AR4Vb.txt
+-- Up-to-date: /etc/Apogee/camera/AR5.txt
+-- Up-to-date: /etc/Apogee/camera/AR5F.txt
+-- Up-to-date: /etc/Apogee/camera/AR5FL.txt
+-- Up-to-date: /etc/Apogee/camera/AR5L.txt
+-- Up-to-date: /etc/Apogee/camera/AR5V.txt
+-- Up-to-date: /etc/Apogee/camera/AS2.txt
+-- Up-to-date: /etc/Apogee/camera/AS2S.txt
+-- Up-to-date: /etc/Apogee/camera/AS4.txt
+-- Up-to-date: /etc/Apogee/camera/AS5.txt
+-- Up-to-date: /etc/Apogee/camera/AS5F.txt
+-- Up-to-date: /etc/Apogee/camera/AS5S.txt
+-- Up-to-date: /etc/Apogee/camera/AV1.txt
+-- Up-to-date: /etc/Apogee/camera/AV2.txt
+-- Up-to-date: /etc/Apogee/camera/AV2S.txt
+-- Up-to-date: /etc/Apogee/camera/AV2V.txt
+-- Up-to-date: /etc/Apogee/camera/AV2Vb.txt
+-- Up-to-date: /etc/Apogee/camera/AV4A.txt
+-- Up-to-date: /etc/Apogee/camera/AV4B.txt
+-- Up-to-date: /etc/Apogee/camera/AV4D.txt
+-- Up-to-date: /etc/Apogee/camera/AV4E.txt
+-- Up-to-date: /etc/Apogee/camera/AV4V.txt
+-- Up-to-date: /etc/Apogee/camera/AV4Vb.txt
+-- Up-to-date: /etc/Apogee/camera/AV5.txt
+-- Up-to-date: /etc/Apogee/camera/AV5S.txt
+-- Up-to-date: /etc/Apogee/camera/AV5V.txt
+-- Up-to-date: /etc/Apogee/camera/AV6.txt
+-- Up-to-date: /etc/Apogee/camera/AV7.txt
+-- Up-to-date: /etc/Apogee/camera/CG42AIMOV.txt
+-- Up-to-date: /etc/Apogee/camera/CG42NIMOV.txt
+-- Up-to-date: /etc/Apogee/camera/CG47V.txt
+-- Up-to-date: /etc/Apogee/camera/F10140V.txt
+-- Up-to-date: /etc/Apogee/camera/F16HR1.txt
+-- Up-to-date: /etc/Apogee/camera/F16HR1B.txt
+-- Up-to-date: /etc/Apogee/camera/F16HS1.txt
+-- Up-to-date: /etc/Apogee/camera/F16HS1B.txt
+-- Up-to-date: /etc/Apogee/camera/F29050S.txt
+-- Up-to-date: /etc/Apogee/camera/F29050V.txt
+-- Up-to-date: /etc/Apogee/camera/F3041V.txt
+-- Up-to-date: /etc/Apogee/camera/F30V.txt
+-- Up-to-date: /etc/Apogee/camera/F30VAIMO.txt
+-- Up-to-date: /etc/Apogee/camera/F4000V.txt
+-- Up-to-date: /etc/Apogee/camera/F47DDV.txt
+-- Up-to-date: /etc/Apogee/camera/F47V12.txt
+-- Up-to-date: /etc/Apogee/camera/F6V.txt
+-- Up-to-date: /etc/Apogee/camera/F77V.txt
+-- Up-to-date: /etc/Apogee/camera/FA674R.txt
+-- Up-to-date: /etc/Apogee/camera/FA694R.txt
+-- Up-to-date: /etc/Apogee/camera/FA814R.txt
+-- Up-to-date: /etc/Apogee/camera/FAD674R.txt
+-- Up-to-date: /etc/Apogee/camera/FAD694R.txt
+-- Up-to-date: /etc/Apogee/camera/FAD814R.txt
+-- Up-to-date: /etc/Apogee/camera/FCG16070.txt
+-- Up-to-date: /etc/Apogee/camera/FCG16M.txt
+-- Up-to-date: /etc/Apogee/camera/FCG285.txt
+-- Up-to-date: /etc/Apogee/camera/FCG285A.txt
+-- Up-to-date: /etc/Apogee/camera/FCG42.txt
+-- Up-to-date: /etc/Apogee/camera/FCG42S.txt
+-- Up-to-date: /etc/Apogee/camera/FCG6.txt
+-- Up-to-date: /etc/Apogee/camera/FCG77.txt
+-- Up-to-date: /etc/Apogee/camera/FCG77REGA.txt
+-- Up-to-date: /etc/Apogee/camera/FCG77S.txt
+-- Up-to-date: /etc/Apogee/camera/FCG77SREGA.txt
+-- Up-to-date: /etc/Apogee/camera/FCG8300.txt
+-- Up-to-date: /etc/Apogee/camera/FCG8300S.txt
+-- Up-to-date: /etc/Apogee/camera/FEHR1AQ.txt
+-- Up-to-date: /etc/Apogee/camera/FEHR1BQ.txt
+-- Up-to-date: /etc/Apogee/camera/FEHR2c.txt
+-- Up-to-date: /etc/Apogee/camera/FEHR2i.txt
+-- Up-to-date: /etc/Apogee/camera/FEHS1A.txt
+-- Up-to-date: /etc/Apogee/camera/FEHS1B.txt
+-- Up-to-date: /etc/Apogee/camera/FEHS2c.txt
+-- Up-to-date: /etc/Apogee/camera/FEHS2i.txt
+-- Up-to-date: /etc/Apogee/camera/FEV1.txt
+-- Up-to-date: /etc/Apogee/camera/FEV2.txt
+-- Up-to-date: /etc/Apogee/camera/FF10140S.txt
+-- Up-to-date: /etc/Apogee/camera/FF1109R.txt
+-- Up-to-date: /etc/Apogee/camera/FF16000R.txt
+-- Up-to-date: /etc/Apogee/camera/FF16000R2.txt
+-- Up-to-date: /etc/Apogee/camera/FF16000S.txt
+-- Up-to-date: /etc/Apogee/camera/FF29050R.txt
+-- Up-to-date: /etc/Apogee/camera/FF30R.txt
+-- Up-to-date: /etc/Apogee/camera/FF30S.txt
+-- Up-to-date: /etc/Apogee/camera/FF4000R.txt
+-- Up-to-date: /etc/Apogee/camera/FF4000S.txt
+-- Up-to-date: /etc/Apogee/camera/FF42R.txt
+-- Up-to-date: /etc/Apogee/camera/FF47R.txt
+-- Up-to-date: /etc/Apogee/camera/FF47R12.txt
+-- Up-to-date: /etc/Apogee/camera/FF47S12.txt
+-- Up-to-date: /etc/Apogee/camera/FF50100RD.txt
+-- Up-to-date: /etc/Apogee/camera/FF50100S.txt
+-- Up-to-date: /etc/Apogee/camera/FF6R.txt
+-- Up-to-date: /etc/Apogee/camera/FF6RA.txt
+-- Up-to-date: /etc/Apogee/camera/FF6S.txt
+-- Up-to-date: /etc/Apogee/camera/FF77R.txt
+-- Up-to-date: /etc/Apogee/camera/FF77S.txt
+-- Up-to-date: /etc/Apogee/camera/FF8300R.txt
+-- Up-to-date: /etc/Apogee/camera/FF9R.txt
+-- Up-to-date: /etc/Apogee/camera/FF9S.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR1A.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR1At.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR1B.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR1B8.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR1D.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR1Db.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR1c.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR1i.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR3c8.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR3i.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR4AQ.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR4BQ.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR5A.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR5B.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR5C.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR6A.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR6B.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR6C.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS1.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS1A.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS1B.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS1B8.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS1c.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS1i.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS3c8.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS3i.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS4.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS5.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS6.txt
+-- Up-to-date: /etc/Apogee/camera/FKV1.txt
+-- Up-to-date: /etc/Apogee/camera/FKV1B.txt
+-- Up-to-date: /etc/Apogee/camera/FKV3.txt
+-- Up-to-date: /etc/Apogee/camera/FKV4.txt
+-- Up-to-date: /etc/Apogee/camera/FKV5.txt
+-- Up-to-date: /etc/Apogee/camera/FKV6.txt
+-- Up-to-date: /etc/Apogee/camera/FKV6B.txt
+-- Up-to-date: /etc/Apogee/camera/FM12HC.txt
+-- Up-to-date: /etc/Apogee/camera/FM12HR.txt
+-- Up-to-date: /etc/Apogee/camera/FM12HS.txt
+-- Up-to-date: /etc/Apogee/camera/FM16HR3.txt
+-- Up-to-date: /etc/Apogee/camera/FM16HS1.txt
+-- Up-to-date: /etc/Apogee/camera/FR2.txt
+-- Up-to-date: /etc/Apogee/camera/FR230.txt
+-- Up-to-date: /etc/Apogee/camera/FR230b.txt
+-- Up-to-date: /etc/Apogee/camera/FR2F.txt
+-- Up-to-date: /etc/Apogee/camera/FR3041.txt
+-- Up-to-date: /etc/Apogee/camera/FS230.txt
+-- Up-to-date: /etc/Apogee/camera/FS230b.txt
+-- Up-to-date: /etc/Apogee/camera/FS3041.txt
+-- Up-to-date: /etc/Apogee/camera/FV1.txt
+-- Up-to-date: /etc/Apogee/camera/FV1B.txt
+-- Up-to-date: /etc/Apogee/camera/H12HC.txt
+-- Up-to-date: /etc/Apogee/camera/H12HCi.txt
+-- Up-to-date: /etc/Apogee/camera/H12HR.txt
+-- Up-to-date: /etc/Apogee/camera/H12HRi.txt
+-- Up-to-date: /etc/Apogee/camera/H12HS.txt
+-- Up-to-date: /etc/Apogee/camera/H12HSi.txt
+-- Up-to-date: /etc/Apogee/camera/H16HR.txt
+-- Up-to-date: /etc/Apogee/camera/H16HRi.txt
+-- Up-to-date: /etc/Apogee/camera/H16HS.txt
+-- Up-to-date: /etc/Apogee/camera/H16HSi.txt
+-- Up-to-date: /etc/Apogee/camera/HV1.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC2.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC2B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC3.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC3i.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC4.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC5.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC5B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC7.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC9.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR10B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR2.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR2B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR3.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR3i.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR4.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR5.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR5B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR6.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR6B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR6B2.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR7.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR9.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS10B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS2.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS2B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS3.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS3i.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS4.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS5.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS5B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS6.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS6B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS6B2.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS7.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS9.txt
+-- Up-to-date: /etc/Apogee/camera/K16HC1.txt
+-- Up-to-date: /etc/Apogee/camera/K16HC2.txt
+-- Up-to-date: /etc/Apogee/camera/K16HC2B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR1.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR10B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR2.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR2B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR3.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR31.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR3i.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR3ns.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR5.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR5B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR6.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR6B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR6B4.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR7.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR8.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR9.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS1.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS10B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS2.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS2B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS3.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS3i.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS5.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS5B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS6.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS6B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS7.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS8.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS9.txt
+-- Up-to-date: /etc/Apogee/camera/KV1.txt
+-- Up-to-date: /etc/Apogee/camera/KV2.txt
+-- Up-to-date: /etc/Apogee/camera/KV2B.txt
+-- Up-to-date: /etc/Apogee/camera/KV3.txt
+-- Up-to-date: /etc/Apogee/camera/KV3B.txt
+-- Up-to-date: /etc/Apogee/camera/KV4.txt
+-- Up-to-date: /etc/Apogee/camera/KV4B.txt
+-- Up-to-date: /etc/Apogee/camera/KV5.txt
+-- Up-to-date: /etc/Apogee/camera/KV5ns.txt
+-- Up-to-date: /etc/Apogee/camera/KV6.txt
+-- Up-to-date: /etc/Apogee/camera/KV6B.txt
+-- Up-to-date: /etc/Apogee/camera/KV6B2.txt
+-- Up-to-date: /etc/Apogee/camera/KV7.txt
+-- Up-to-date: /etc/Apogee/camera/KV7B.txt
+-- Up-to-date: /etc/Apogee/camera/KV8B.txt
+-- Up-to-date: /etc/Apogee/camera/KV9.txt
+-- Up-to-date: /etc/Apogee/camera/M12HC.txt
+-- Up-to-date: /etc/Apogee/camera/M12HC7.txt
+-- Up-to-date: /etc/Apogee/camera/M12HC7i.txt
+-- Up-to-date: /etc/Apogee/camera/M12HCB.txt
+-- Up-to-date: /etc/Apogee/camera/M12HCC.txt
+-- Up-to-date: /etc/Apogee/camera/M12HCi.txt
+-- Up-to-date: /etc/Apogee/camera/M12HR.txt
+-- Up-to-date: /etc/Apogee/camera/M12HR7.txt
+-- Up-to-date: /etc/Apogee/camera/M12HR7i.txt
+-- Up-to-date: /etc/Apogee/camera/M12HRB.txt
+-- Up-to-date: /etc/Apogee/camera/M12HRC.txt
+-- Up-to-date: /etc/Apogee/camera/M12HRi.txt
+-- Up-to-date: /etc/Apogee/camera/M12HS.txt
+-- Up-to-date: /etc/Apogee/camera/M12HS7.txt
+-- Up-to-date: /etc/Apogee/camera/M12HS7i.txt
+-- Up-to-date: /etc/Apogee/camera/M12HSB.txt
+-- Up-to-date: /etc/Apogee/camera/M12HSC.txt
+-- Up-to-date: /etc/Apogee/camera/M12HSi.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR230.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR3.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR3B.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR3C.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR3F.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR3i.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR5.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR5B.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR5i.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR7.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR7i.txt
+-- Up-to-date: /etc/Apogee/camera/M16HS1.txt
+-- Up-to-date: /etc/Apogee/camera/M16HS1B.txt
+-- Up-to-date: /etc/Apogee/camera/M16HS1C.txt
+-- Up-to-date: /etc/Apogee/camera/M16HS1F.txt
+-- Up-to-date: /etc/Apogee/camera/M16HS1i.txt
+-- Up-to-date: /etc/Apogee/camera/M16HS230.txt
+-- Up-to-date: /etc/Apogee/camera/M16HS7.txt
+-- Up-to-date: /etc/Apogee/camera/M16HS7i.txt
+-- Up-to-date: /etc/Apogee/camera/MV1.txt
+-- Up-to-date: /etc/Apogee/camera/MV1B.txt
+-- Up-to-date: /etc/Apogee/camera/MV1i.txt
+-- Up-to-date: /etc/Apogee/camera/MV1nimo.txt
+-- Up-to-date: /etc/Apogee/camera/MV2.txt
+-- Up-to-date: /etc/Apogee/camera/MV230.txt
+-- Up-to-date: /etc/Apogee/camera/MV230b.txt
+-- Up-to-date: /etc/Apogee/camera/MV230t.txt
+-- Up-to-date: /etc/Apogee/camera/MV2B.txt
+-- Up-to-date: /etc/Apogee/camera/MV2C.txt
+-- Up-to-date: /etc/Apogee/camera/MV2CN.txt
+-- Up-to-date: /etc/Apogee/camera/MV2i.txt
+-- Up-to-date: /etc/Apogee/camera/MV4.txt
+-- Up-to-date: /etc/Apogee/camera/MV4B.txt
+-- Up-to-date: /etc/Apogee/camera/MV7.txt
+-- Up-to-date: /etc/Apogee/camera/MV7i.txt
+-- Up-to-date: /etc/Apogee/camera/NA674R.txt
+-- Up-to-date: /etc/Apogee/camera/NA694R.txt
+-- Up-to-date: /etc/Apogee/camera/NA814R.txt
+-- Up-to-date: /etc/Apogee/camera/NAD674R.txt
+-- Up-to-date: /etc/Apogee/camera/NAD694R.txt
+-- Up-to-date: /etc/Apogee/camera/NAD814R.txt
+-- Up-to-date: /etc/Apogee/camera/NCG16.txt
+-- Up-to-date: /etc/Apogee/camera/NCG16070.txt
+-- Up-to-date: /etc/Apogee/camera/NCG16070B.txt
+-- Up-to-date: /etc/Apogee/camera/NCG16070S.txt
+-- Up-to-date: /etc/Apogee/camera/NCG16M.txt
+-- Up-to-date: /etc/Apogee/camera/NCG285.txt
+-- Up-to-date: /etc/Apogee/camera/NCG285A.txt
+-- Up-to-date: /etc/Apogee/camera/NCG285S.txt
+-- Up-to-date: /etc/Apogee/camera/NCG285SA.txt
+-- Up-to-date: /etc/Apogee/camera/NCG42.txt
+-- Up-to-date: /etc/Apogee/camera/NCG42S.txt
+-- Up-to-date: /etc/Apogee/camera/NCG47.txt
+-- Up-to-date: /etc/Apogee/camera/NCG6.txt
+-- Up-to-date: /etc/Apogee/camera/NCG77.txt
+-- Up-to-date: /etc/Apogee/camera/NCG77REGA.txt
+-- Up-to-date: /etc/Apogee/camera/NCG77S.txt
+-- Up-to-date: /etc/Apogee/camera/NCG77SREGA.txt
+-- Up-to-date: /etc/Apogee/camera/NCG77V.txt
+-- Up-to-date: /etc/Apogee/camera/NCG77VREGA.txt
+-- Up-to-date: /etc/Apogee/camera/NCG8050S.txt
+-- Up-to-date: /etc/Apogee/camera/NCG8300.txt
+-- Up-to-date: /etc/Apogee/camera/NCG8300S.txt
+-- Up-to-date: /etc/Apogee/camera/NCG9S.txt
+-- Up-to-date: /etc/Apogee/camera/NF10140S.txt
+-- Up-to-date: /etc/Apogee/camera/NF1109R.txt
+-- Up-to-date: /etc/Apogee/camera/NF16000R.txt
+-- Up-to-date: /etc/Apogee/camera/NF16000R2.txt
+-- Up-to-date: /etc/Apogee/camera/NF16000S.txt
+-- Up-to-date: /etc/Apogee/camera/NF29050R.txt
+-- Up-to-date: /etc/Apogee/camera/NF30R.txt
+-- Up-to-date: /etc/Apogee/camera/NF30S.txt
+-- Up-to-date: /etc/Apogee/camera/NF32R.txt
+-- Up-to-date: /etc/Apogee/camera/NF32S.txt
+-- Up-to-date: /etc/Apogee/camera/NF4000R.txt
+-- Up-to-date: /etc/Apogee/camera/NF4000S.txt
+-- Up-to-date: /etc/Apogee/camera/NF42R.txt
+-- Up-to-date: /etc/Apogee/camera/NF47R.txt
+-- Up-to-date: /etc/Apogee/camera/NF47R12.txt
+-- Up-to-date: /etc/Apogee/camera/NF47S12.txt
+-- Up-to-date: /etc/Apogee/camera/NF50100RD.txt
+-- Up-to-date: /etc/Apogee/camera/NF50100S.txt
+-- Up-to-date: /etc/Apogee/camera/NF6R.txt
+-- Up-to-date: /etc/Apogee/camera/NF6RA.txt
+-- Up-to-date: /etc/Apogee/camera/NF6S.txt
+-- Up-to-date: /etc/Apogee/camera/NF77R.txt
+-- Up-to-date: /etc/Apogee/camera/NF77S.txt
+-- Up-to-date: /etc/Apogee/camera/NF8300R.txt
+-- Up-to-date: /etc/Apogee/camera/NF8300S.txt
+-- Up-to-date: /etc/Apogee/camera/NF9R.txt
+-- Up-to-date: /etc/Apogee/camera/NF9S.txt
+-- Up-to-date: /etc/Apogee/camera/NR230.txt
+-- Up-to-date: /etc/Apogee/camera/NR230b.txt
+-- Up-to-date: /etc/Apogee/camera/NR3041.txt
+-- Up-to-date: /etc/Apogee/camera/NS230.txt
+-- Up-to-date: /etc/Apogee/camera/NS230b.txt
+-- Up-to-date: /etc/Apogee/camera/NS3041.txt
+-- Up-to-date: /etc/Apogee/camera/NoOpH.txt
+-- Up-to-date: /etc/Apogee/camera/NoOpV.txt
+-- Up-to-date: /etc/Apogee/camera/VF50100.txt
+-- Up-to-date: /etc/Apogee/camera/XAV1.txt
+-- Up-to-date: /etc/Apogee/camera/apnmatrix.txt
+-- Up-to-date: /lib/udev/rules.d/99-apogee.rules
+-- Up-to-date: /lib/udev/rules.d/99-asi.rules
+-- Up-to-date: /usr/include/libasi/ASICamera2.h
+-- Up-to-date: /usr/include/libasi/EFW_filter.h
+-- Up-to-date: /usr/include/libasi/USB2ST4_Conv.h
+-- Up-to-date: /usr/include/libasi/EAF_focuser.h
+-- Up-to-date: /usr/include/libasi/CAA_API.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libASICamera2.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libASICamera2.so.1
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libASICamera2.so.1.41
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libEFWFilter.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libEFWFilter.so.1
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libEFWFilter.so.1.7.0
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libUSB2ST4Conv.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libUSB2ST4Conv.so.1
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libUSB2ST4Conv.so.1.0
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libEAFFocuser.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libEAFFocuser.so.1
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libEAFFocuser.so.1.7.7
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libCAARotator.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libCAARotator.so.1
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libCAARotator.so.1.5.9
+-- Up-to-date: /lib/udev/rules.d/99-atik.rules
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libatikcameras.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libatikcameras.so.2
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libatikcameras.so.2.2.22
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libflycapture.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libflycapture.so.2
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libflycapture.so.2.13.3.31
+-- Up-to-date: /usr/include/libatik/AtikCameras.h
+-- Up-to-date: /usr/include/libatik/AtikDefs.h
+-- Up-to-date: /usr/include/libfishcamp/fishcamp.h
+-- Up-to-date: /usr/include/libfishcamp/fishcamp_common.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libfishcamp.so.1.1
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libfishcamp.so.1
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libfishcamp.so
+-- Up-to-date: /lib/firmware/gdr_usb.hex
+-- Up-to-date: /lib/firmware/Guider_mono_rev16_intel.srec
+-- Up-to-date: /lib/udev/rules.d/99-fishcamp.rules
+-- Up-to-date: /usr/include/libfli.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libfli.so.2.0
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libfli.so.2
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libfli.so
+-- Up-to-date: /lib/udev/rules.d/99-fli.rules
+-- Up-to-date: /usr/include/libflipro.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libflipro.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libflipro.so.2
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libflipro.so.2.1.4
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libflialgo.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libflialgo.so.2
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libflialgo.so.2.1.4
+-- Up-to-date: /lib/udev/rules.d/99-miccd.rules
+-- Up-to-date: /usr/include/libmicam/gxccd.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libgxccd.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libgxccd.so.0
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libgxccd.so.0.12.1
+-- Up-to-date: /lib/udev/rules.d/99-inovaplx.rules
+-- Up-to-date: /usr/include/inovasdk/inovasdk.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libinovasdk.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libinovasdk.so.1
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libinovasdk.so.1.3.6
+-- Up-to-date: /lib/udev/rules.d/85-qhyccd.rules
+-- Up-to-date: /usr/include/libqhy/qhyccd.h
+-- Up-to-date: /usr/include/libqhy/qhyccderr.h
+-- Up-to-date: /usr/include/libqhy/qhyccdcamdef.h
+-- Up-to-date: /usr/include/libqhy/qhyccdstruct.h
+-- Up-to-date: /lib/firmware/qhy/IC16200A.HEX
+-- Up-to-date: /lib/firmware/qhy/IC16803.HEX
+-- Up-to-date: /lib/firmware/qhy/IC8300.HEX
+-- Up-to-date: /lib/firmware/qhy/IC90A.HEX
+-- Up-to-date: /lib/firmware/qhy/IMG0H.HEX
+-- Up-to-date: /lib/firmware/qhy/IMG2P.HEX
+-- Up-to-date: /lib/firmware/qhy/IMG2S.HEX
+-- Up-to-date: /lib/firmware/qhy/IMG50.HEX
+-- Up-to-date: /lib/firmware/qhy/Origin678C.img
+-- Up-to-date: /lib/firmware/qhy/POLEMASTER.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY0204.img
+-- Up-to-date: /lib/firmware/qhy/QHY09000A.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY10.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY10768.img
+-- Up-to-date: /lib/firmware/qhy/QHY11.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY12.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY1253.img
+-- Up-to-date: /lib/firmware/qhy/QHY128.img
+-- Up-to-date: /lib/firmware/qhy/QHY128PRO.img
+-- Up-to-date: /lib/firmware/qhy/QHY15.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY16.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY16000.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY160002AD.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY16200A.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY163.img
+-- Up-to-date: /lib/firmware/qhy/QHY165.img
+-- Up-to-date: /lib/firmware/qhy/QHY168.img
+-- Up-to-date: /lib/firmware/qhy/QHY16803A.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY174.img
+-- Up-to-date: /lib/firmware/qhy/QHY178.img
+-- Up-to-date: /lib/firmware/qhy/QHY183.img
+-- Up-to-date: /lib/firmware/qhy/QHY183A.img
+-- Up-to-date: /lib/firmware/qhy/QHY1920.img
+-- Up-to-date: /lib/firmware/qhy/QHY2.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY20.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY2020.img
+-- Up-to-date: /lib/firmware/qhy/QHY21.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY22.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY224.img
+-- Up-to-date: /lib/firmware/qhy/QHY23.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY247.img
+-- Up-to-date: /lib/firmware/qhy/QHY268.img
+-- Up-to-date: /lib/firmware/qhy/QHY26800A.img
+-- Up-to-date: /lib/firmware/qhy/QHY27.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY28.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY29.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY290.img
+-- Up-to-date: /lib/firmware/qhy/QHY294.img
+-- Up-to-date: /lib/firmware/qhy/QHY294PRO.img
+-- Up-to-date: /lib/firmware/qhy/QHY2E.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY2PRO.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY342.img
+-- Up-to-date: /lib/firmware/qhy/QHY342PRO.img
+-- Up-to-date: /lib/firmware/qhy/QHY367.img
+-- Up-to-date: /lib/firmware/qhy/QHY367PRO.img
+-- Up-to-date: /lib/firmware/qhy/QHY4040.img
+-- Up-to-date: /lib/firmware/qhy/QHY4040PRO.img
+-- Up-to-date: /lib/firmware/qhy/QHY410.img
+-- Up-to-date: /lib/firmware/qhy/QHY411.img
+-- Up-to-date: /lib/firmware/qhy/QHY411ERIS.img
+-- Up-to-date: /lib/firmware/qhy/QHY42.img
+-- Up-to-date: /lib/firmware/qhy/QHY42PRO.img
+-- Up-to-date: /lib/firmware/qhy/QHY432.img
+-- Up-to-date: /lib/firmware/qhy/QHY461.img
+-- Up-to-date: /lib/firmware/qhy/QHY487.img
+-- Up-to-date: /lib/firmware/qhy/QHY5.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY530.img
+-- Up-to-date: /lib/firmware/qhy/QHY533.img
+-- Up-to-date: /lib/firmware/qhy/QHY550.img
+-- Up-to-date: /lib/firmware/qhy/QHY585.img
+-- Up-to-date: /lib/firmware/qhy/QHY5II.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY5III174.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III178.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III185.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III200.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III224.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III290.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III334.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III415.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III462.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III482.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III485.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III568.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III585.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III678.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III715.img
+-- Up-to-date: /lib/firmware/qhy/QHY5LOADER.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY6.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY600.img
+-- Up-to-date: /lib/firmware/qhy/QHY6060.img
+-- Up-to-date: /lib/firmware/qhy/QHY6060PRO.img
+-- Up-to-date: /lib/firmware/qhy/QHY661.img
+-- Up-to-date: /lib/firmware/qhy/QHY695A.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY7.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY8.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY811.img
+-- Up-to-date: /lib/firmware/qhy/QHY814A.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY8L.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY8M.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY8PRO.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY90A.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY9701.img
+-- Up-to-date: /lib/firmware/qhy/QHY990.img
+-- Up-to-date: /lib/firmware/qhy/QHY991.img
+-- Up-to-date: /lib/firmware/qhy/QHY992.img
+-- Up-to-date: /lib/firmware/qhy/QHY9S.HEX
+-- Up-to-date: /lib/firmware/qhy/miniCam5.HEX
+-- Up-to-date: /lib/firmware/qhy/miniCam8.img
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libqhyccd.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libqhyccd.so.20
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libqhyccd.so.26.2.1
+-- Up-to-date: /usr/include/qsiapi.h
+-- Up-to-date: /usr/include/QSIError.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libqsiapi.so.7.6.1
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libqsiapi.so.7
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libqsiapi.so
+-- Up-to-date: /usr/bin/qsiapitest
+-- Up-to-date: /usr/bin/qsiapidemo
+-- Up-to-date: /lib/udev/rules.d/51-sbig-debian.rules
+-- Up-to-date: /usr/include/libsbig/sbigudrv.h
+-- Up-to-date: /lib/firmware/sbigucam.hex
+-- Up-to-date: /lib/firmware/sbiglcam.hex
+-- Up-to-date: /lib/firmware/sbigfcam.hex
+-- Up-to-date: /lib/firmware/sbigpcam.hex
+-- Up-to-date: /lib/firmware/stfga.bin
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libsbig.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libsbig.so.4
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libsbig.so.4.9.9
+-- Up-to-date: /lib/udev/rules.d/95-pentax.rules
+-- Up-to-date: /lib/udev/rules.d/95-samsung.rules
+-- Up-to-date: /usr/share/pktriggercord/pentax_settings.json
+-- Up-to-date: /usr/include/libpktriggercord
+-- Up-to-date: /usr/include/libpktriggercord/pslr.h
+-- Up-to-date: /usr/include/libpktriggercord/pslr_lens.h
+-- Up-to-date: /usr/include/libpktriggercord/pktriggercord-servermode.h
+-- Up-to-date: /usr/include/libpktriggercord/pslr_log.h
+-- Up-to-date: /usr/include/libpktriggercord/pslr_model.h
+-- Up-to-date: /usr/include/libpktriggercord/pslr_scsi.h
+-- Up-to-date: /usr/include/libpktriggercord/src
+-- Up-to-date: /usr/include/libpktriggercord/src/external
+-- Up-to-date: /usr/include/libpktriggercord/src/external/js0n
+-- Up-to-date: /usr/include/libpktriggercord/src/external/js0n/js0n.h
+-- Up-to-date: /usr/include/libpktriggercord/pslr_utils.h
+-- Up-to-date: /usr/include/libpktriggercord/pslr_enum.h
+-- Up-to-date: /usr/include/libpktriggercord
+-- Up-to-date: /usr/include/libpktriggercord/libpktriggercord.h
+-- Installing: /usr/lib/aarch64-linux-gnu/libpktriggercord.so.0.85.03
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libpktriggercord.so.0
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libpktriggercord.so
+-- Up-to-date: /lib/udev/rules.d/99-toupcam.rules
+-- Up-to-date: /usr/include/libtoupcam/toupcam.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libtoupcam.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libtoupcam.so.59
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libtoupcam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-altaircam.rules
+-- Up-to-date: /usr/include/libaltaircam/altaircam.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libaltaircam.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libaltaircam.so.59
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libaltaircam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-bressercam.rules
+-- Up-to-date: /usr/include/libbressercam/bressercam.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libbressercam.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libbressercam.so.59
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libbressercam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-mallincam.rules
+-- Up-to-date: /usr/include/libmallincam/mallincam.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libmallincam.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libmallincam.so.59
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libmallincam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-meadecam.rules
+-- Up-to-date: /usr/include/libmeadecam/meadecam.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libmeadecam.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libmeadecam.so.59
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libmeadecam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-nncam.rules
+-- Up-to-date: /usr/include/libnncam/nncam.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libnncam.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libnncam.so.59
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libnncam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-ogmacam.rules
+-- Up-to-date: /usr/include/libogmacam/ogmacam.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libogmacam.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libogmacam.so.59
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libogmacam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-omegonprocam.rules
+-- Up-to-date: /usr/include/libomegonprocam/omegonprocam.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libomegonprocam.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libomegonprocam.so.59
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libomegonprocam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-starshootg.rules
+-- Up-to-date: /usr/include/libstarshootg/starshootg.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libstarshootg.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libstarshootg.so.59
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libstarshootg.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-tscam.rules
+-- Up-to-date: /usr/include/libtscam/tscam.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libtscam.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libtscam.so.59
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libtscam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-svbonycam.rules
+-- Up-to-date: /usr/include/libsvbonycam/svbonycam.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libsvbonycam.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libsvbonycam.so.57
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libsvbonycam.so.57.27348
+-- Up-to-date: /lib/udev/rules.d/90-svbonyusb.rules
+-- Up-to-date: /usr/include/libsvbony/SVBCameraSDK.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libSVBCameraSDK.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libSVBCameraSDK.so.1
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libSVBCameraSDK.so.1.13.4
+-- Up-to-date: /lib/udev/rules.d/99-player_one_astronomy.rules
+-- Up-to-date: /usr/include/libplayerone/PlayerOneCamera.h
+-- Up-to-date: /usr/include/libplayerone/PlayerOnePW.h
+-- Up-to-date: /usr/include/libplayerone/ConvFuncs.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libPlayerOneCamera.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libPlayerOneCamera.so.3
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libPlayerOneCamera.so.3.10.0
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libPlayerOnePW.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libPlayerOnePW.so.1
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libPlayerOnePW.so.1.2.3
+-- Up-to-date: /lib/udev/rules.d/99-astroasis.rules
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/liboasisfocuser.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/liboasisfocuser.so.2
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/liboasisfocuser.so.2.0.2
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/liboasisfilterwheel.so
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/liboasisfilterwheel.so.1
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/liboasisfilterwheel.so.1.2.1
+-- Up-to-date: /usr/include/libastroasis/AOFocus.h
+-- Up-to-date: /usr/include/libastroasis/OasisFilterWheel.h
+
+
+################################################################
+######################## Build drivers #########################
+##################### 2026-03-02T05:14:33 ######################
+################################################################
+-- Found FFMPEG: /usr/lib/aarch64-linux-gnu/libavcodec.so;/usr/lib/aarch64-linux-gnu/libavdevice.so;/usr/lib/aarch64-linux-gnu/libavformat.so;/usr/lib/aarch64-linux-gnu/libavutil.so;/usr/lib/aarch64-linux-gnu/libswscale.so, /usr/include/aarch64-linux-gnu
+-- Since FFMPEG was found, INDI Webcam Driver can be built
+-- Since an up to date nutclient was not found, INDI NUT Driver will not be built
+-- Found Libusb-1.0 via pkg-config: Includes=/usr/include/libusb-1.0 Libraries=usb-1.0
+-- Checking for module 'libusbp-1'
+--   Found libusbp-1, version 1.3.1
+-- Using LIBUSBP-1 (libusbp) (from system or bundled source).
+-- USB1 found, but LIBUSBP-1 already configured. Skipping USB1 to avoid conflicts.
+-- LibBluetooth not found. Bluetooth support will be disabled.
+-- Found bundled pololu-tic-software at '/add1/install/INDI_KStars-Kit/BuildSources/indi-3rdparty/indi-ticfocuser-ng/pololu-tic-software'. Attempting to build and link.
+-- Checking for module 'yaml'
+--   Package 'yaml', required by 'virtual:world', not found
+-- System YAML (yaml) not found. Building bundled libyaml.
+-- Could NOT find XKB (missing:  XKB_LIBRARY XKB_INCLUDE_DIR) (Required is at least version "0.5.0")
+-- Qt6 (version 6.8.2) found.
+-- Successfully configured using bundled pololu-tic-software library 'lib'.
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Building unit tests
+-- GTEST_BOTH_LIBRARIES GTest::gtest;GTest::gtest_main
+-- GTEST_MAIN_LIBRARIES GTest::gtest_main
+-- GTEST_LIBRARIES GTest::gtest
+-- GTEST_INCLUDE_DIRS 
+-- GMOCK_LIBRARIES /usr/lib/aarch64-linux-gnu/libgmock.a
+-- GMOCK_INCLUDE_DIRS /usr/include
+-- Found INDI: /usr/lib/aarch64-linux-gnu/libindidriver.so;/usr/lib/aarch64-linux-gnu/libindilx200.so (found version "2.1.9") 
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Found INDI: /usr/lib/aarch64-linux-gnu/libindidriver.so;/usr/lib/aarch64-linux-gnu/libindiAlignmentDriver.so (found version "2.1.9") 
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Using indi bundled hid library
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found CameraTemperature in libraw_metadata_common_t 'libraw/libraw_types.h'
+-- Found SensorTemperature in libraw_metadata_common_t 'libraw/libraw_types.h'
+-- Found libqsiapi: /usr/lib/aarch64-linux-gnu/libqsiapi.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found libqsiapi: /usr/lib/aarch64-linux-gnu/libqsiapi.so
+-- Found libsbig: /usr/lib/aarch64-linux-gnu/libsbig.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found libsbig: /usr/lib/aarch64-linux-gnu/libsbig.so
+-- Found libatik: /usr/lib/aarch64-linux-gnu/libatikcameras.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found libatik: /usr/lib/aarch64-linux-gnu/libatikcameras.so
+-- Found libsbig: /usr/lib/aarch64-linux-gnu/libtoupcam.so
+-- Found libaltaircam: /usr/lib/aarch64-linux-gnu/libaltaircam.so
+-- Found libbressercam: /usr/lib/aarch64-linux-gnu/libbressercam.so
+-- Found libmallincam: /usr/lib/aarch64-linux-gnu/libmallincam.so
+-- Found libmeadecam: /usr/lib/aarch64-linux-gnu/libmeadecam.so
+-- Found libnncam: /usr/lib/aarch64-linux-gnu/libnncam.so
+-- Found libogmacam: /usr/lib/aarch64-linux-gnu/libogmacam.so
+-- Found libomegonprocam: /usr/lib/aarch64-linux-gnu/libomegonprocam.so
+-- Found libstarshootg: /usr/lib/aarch64-linux-gnu/libstarshootg.so
+-- Found libtscam: /usr/lib/aarch64-linux-gnu/libtscam.so
+-- Found libsvbonycam: /usr/lib/aarch64-linux-gnu/libsvbonycam.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found libsbig: /usr/lib/aarch64-linux-gnu/libtoupcam.so
+-- Found libaltaircam: /usr/lib/aarch64-linux-gnu/libaltaircam.so
+-- Found libbressercam: /usr/lib/aarch64-linux-gnu/libbressercam.so
+-- Found libogmacam: /usr/lib/aarch64-linux-gnu/libogmacam.so
+-- Found libtscam: /usr/lib/aarch64-linux-gnu/libtscam.so
+-- Found libsvbonycam: /usr/lib/aarch64-linux-gnu/libsvbonycam.so
+-- Found libstarshootg: /usr/lib/aarch64-linux-gnu/libstarshootg.so
+-- Found libnncam: /usr/lib/aarch64-linux-gnu/libnncam.so
+-- Found libmallincam: /usr/lib/aarch64-linux-gnu/libmallincam.so
+-- Found libomegonprocam: /usr/lib/aarch64-linux-gnu/libomegonprocam.so
+-- Found libmeadecam: /usr/lib/aarch64-linux-gnu/libmeadecam.so
+-- Found libinovasdk: /usr/lib/aarch64-linux-gnu/libinovasdk.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found libinovasdk: /usr/lib/aarch64-linux-gnu/libinovasdk.so
+-- Found libfli: /usr/lib/aarch64-linux-gnu/libfli.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found libfli: /usr/lib/aarch64-linux-gnu/libfli.so
+-- Found libflipro: /usr/lib/aarch64-linux-gnu/libflipro.so
+-- GLIBC version 2.41 found. Building Kepler camera.
+-- Found libapogee: /usr/lib/aarch64-linux-gnu/libapogee.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found libapogee: /usr/lib/aarch64-linux-gnu/libapogee.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found libdc1394: /usr/lib/aarch64-linux-gnu/libdc1394.so
+-- Found libmicam: /usr/lib/aarch64-linux-gnu/libgxccd.so
+-- Found libmicam: /usr/lib/aarch64-linux-gnu/libgxccd.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found FISHCAMP: /usr/lib/aarch64-linux-gnu/libfishcamp.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found FISHCAMP: /usr/lib/aarch64-linux-gnu/libfishcamp.so
+-- Found ASI: /usr/lib/aarch64-linux-gnu/libASICamera2.so;/usr/lib/aarch64-linux-gnu/libEFWFilter.so;/usr/lib/aarch64-linux-gnu/libUSB2ST4Conv.so;/usr/lib/aarch64-linux-gnu/libEAFFocuser.so;/usr/lib/aarch64-linux-gnu/libCAARotator.so
+-- Found libasi: /usr/lib/aarch64-linux-gnu/libASICamera2.so;/usr/lib/aarch64-linux-gnu/libEFWFilter.so;/usr/lib/aarch64-linux-gnu/libUSB2ST4Conv.so;/usr/lib/aarch64-linux-gnu/libEAFFocuser.so;/usr/lib/aarch64-linux-gnu/libCAARotator.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Using indi bundled hid library
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found libqhyccd: /usr/lib/aarch64-linux-gnu/libqhyccd.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found libqhyccd: /usr/lib/aarch64-linux-gnu/libqhyccd.so
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Using indi bundled json library
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Found libgps: /usr/lib/aarch64-linux-gnu/libgps.so
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found libftdi1: /usr/lib/aarch64-linux-gnu/libftdi1.so
+-- Found LIMESUITE: /usr/lib/aarch64-linux-gnu/libLimeSuite.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found LIMESUITE: /usr/lib/aarch64-linux-gnu/libLimeSuite.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Using indi bundled json library
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found libftdi1: /usr/lib/aarch64-linux-gnu/libftdi1.so
+-- Found INDI: /usr/lib/aarch64-linux-gnu/libindidriver.so;/usr/lib/aarch64-linux-gnu/libindilx200.so (found version "2.1.9") 
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Found INDI: /usr/lib/aarch64-linux-gnu/libindidriver.so;/usr/lib/aarch64-linux-gnu/libindiAlignmentDriver.so (found version "2.1.9") 
+-- Found libzmq: /usr/lib/aarch64-linux-gnu/libzmq.so
+-- Using indi bundled json library
+-- Found PENTAX libraries: /usr/lib/aarch64-linux-gnu/libpktriggercord.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found PENTAX libraries: /usr/lib/aarch64-linux-gnu/libpktriggercord.so
+-- Found libsvbony: /usr/lib/aarch64-linux-gnu/libSVBCameraSDK.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found libsvbony: /usr/lib/aarch64-linux-gnu/libSVBCameraSDK.so
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found PLAYERONE: /usr/lib/aarch64-linux-gnu/libPlayerOneCamera.so;/usr/lib/aarch64-linux-gnu/libPlayerOnePW.so
+-- Found libplayerone: /usr/lib/aarch64-linux-gnu/libPlayerOneCamera.so;/usr/lib/aarch64-linux-gnu/libPlayerOnePW.so
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found Astroasis Library: /usr/lib/aarch64-linux-gnu/liboasisfocuser.so;/usr/lib/aarch64-linux-gnu/liboasisfilterwheel.so
+-- Found libastroasis: /usr/lib/aarch64-linux-gnu/liboasisfocuser.so;/usr/lib/aarch64-linux-gnu/liboasisfilterwheel.so
+-- Using indi bundled hid library
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- ############################################################################
+-- ######### All libraries are found. Building all INDI 3rd party drivers now.
+-- ############################################################################
+-- Configuring done (3.1s)
+-- Generating done (1.1s)
+-- Build files have been written to: /add1/install/INDI_KStars-Kit/BuildSources/build/indi-3rdparty
+[  1%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/bootloader/CMakeFiles/bootloader.dir/bootloader.cpp.o
+[  8%] Built target indi_azgti_telescope
+[  8%] Built target indi_eqmod_telescope
+[  8%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/bootloader/CMakeFiles/bootloader.dir/bootloader_data.cpp.o
+[  9%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_baud_rate.c.o
+[ 12%] Built target indi_staradventurergti_telescope
+[ 16%] Built target indi_staradventurer2i_telescope
+[ 16%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_current_limit.c.o
+[ 19%] Built target test_eqmod
+[ 19%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/bootloader/CMakeFiles/bootloader.dir/firmware_archive.cpp.o
+[ 19%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_device.c.o
+[ 19%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_get_settings.c.o
+[ 19%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_set_settings.c.o
+[ 19%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/bootloader/CMakeFiles/bootloader.dir/libtinyxml2/tinyxml2.cpp.o
+[ 20%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_error.c.o
+[ 20%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_handle.c.o
+[ 20%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_names.c.o
+[ 20%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_settings.c.o
+[ 20%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_settings_fix.c.o
+[ 21%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_settings_read_from_string.c.o
+[ 21%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_settings_to_string.c.o
+[ 21%] Built target indi_lx200aok
+[ 22%] Built target indi_starbook_telescope
+[ 22%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_string.c.o
+[ 22%] Built target indi_starbook_ten
+[ 22%] Built target indi_sx_ccd
+[ 23%] Built target indi_sx_wheel
+[ 23%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_variables.c.o
+[ 24%] Built target indi_sx_ao
+[ 25%] Built target sx_ccd_test
+[ 25%] Built target indi_maxdomeii
+[ 25%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/libyaml/yaml.c.o
+[ 25%] Built target indi_nexdome
+[ 25%] Built target indi_talon6
+[ 25%] Built target indi_rolloffino
+[ 25%] Built target indi_shelyakeshel_spectrograph
+[ 25%] Built target indi_shelyakspox_spectrograph
+[ 26%] Built target indi_aagcloudwatcher_ng
+[ 26%] Built target aagcloudwatcher_test_ng
+[ 27%] Built target indi_celestron_aux
+[ 28%] Built target indi_gphoto_ccd
+[ 28%] Built target gphoto_camera_test
+[ 29%] Built target indi_qsi_ccd
+[ 29%] Linking CXX executable indi_sbig_ccd
+[ 30%] Built target indi_atik_ccd
+[ 30%] Built target indi_atik_wheel
+[ 31%] Built target indi_toupcam_ccd
+[ 32%] Built target indi_toupcam_wheel
+[ 32%] Built target indi_toupcam_focuser
+[ 32%] Linking CXX static library libbootloader.a
+[ 33%] Built target toupcam_test
+[ 34%] Built target indi_altaircam_ccd
+[ 34%] Built target bootloader
+[ 34%] Built target indi_altaircam_wheel
+[ 35%] Built target indi_altaircam_focuser
+[ 36%] Built target indi_bressercam_ccd
+[ 36%] Built target indi_bressercam_wheel
+[ 37%] Built target indi_bressercam_focuser
+[ 37%] Built target indi_ogmacam_wheel
+[ 38%] Built target indi_ogmacam_focuser
+[ 39%] Built target indi_ogmacam_ccd
+[ 40%] Built target indi_tscam_ccd
+[ 41%] Built target indi_tscam_wheel
+[ 41%] Built target indi_tscam_focuser
+[ 42%] Built target indi_svbonycam_ccd
+[ 42%] Built target indi_svbonycam_wheel
+[ 43%] Built target indi_svbonycam_focuser
+[ 44%] Built target indi_starshootg_ccd
+[ 45%] Built target indi_starshootg_wheel
+[ 46%] Built target indi_starshootg_focuser
+[ 47%] Built target indi_nncam_ccd
+[ 48%] Built target indi_nncam_wheel
+[ 48%] Built target indi_nncam_focuser
+[ 49%] Built target indi_mallincam_ccd
+[ 50%] Built target indi_mallincam_wheel
+[ 50%] Built target indi_mallincam_focuser
+[ 51%] Built target indi_omegonprocam_ccd
+[ 51%] Built target indi_omegonprocam_wheel
+[ 52%] Built target indi_omegonprocam_focuser
+[ 52%] Built target omegonprocam_test
+[ 53%] Built target indi_meadecam_ccd
+[ 53%] Built target indi_meadecam_wheel
+[ 54%] Built target indi_meadecam_focuser
+[ 55%] Built target indi_inovaplx_ccd
+[ 56%] Built target indi_beefocus
+[ 56%] Built target indi_fli_focus
+[ 56%] Built target indi_sbig_ccd
+[ 57%] Built target indi_fli_ccd
+[ 57%] Built target indi_fli_wheel
+[ 57%] Built target indi_kepler_ccd
+[ 57%] Built target test_kepler_merged
+[ 58%] Built target indi_apogee_ccd
+[ 58%] Built target indi_apogee_wheel
+[ 60%] Built target indi_ffmv_ccd
+[ 60%] Built target indi_mi_ccd
+[ 60%] Built target indi_mi_sfw
+[ 61%] Built target firmata
+[ 62%] Built target indi_weatherradio
+[ 62%] Built target indi_duino_powerbox
+[ 62%] Built target indi_fishcamp_ccd
+[ 62%] Built target indi_asi_single_ccd
+[ 64%] Built target indi_asi_ccd
+[ 64%] Built target indi_asi_wheel
+[ 65%] Built target indi_asi_st4
+[ 65%] Built target indi_asi_focuser
+[ 66%] Built target indi_asi_rotator
+[ 67%] Built target asi_camera_test
+[ 67%] Built target asi_multi_camera_test
+[ 68%] Built target indi_qhy_ccd
+[ 70%] Built target indi_dsi_ccd
+[ 70%] Built target indi_qhy_focuser
+[ 71%] Built target qhy_video_test
+[ 71%] Built target qhy_ccd_test
+[ 72%] Built target indi_gpsd
+[ 73%] Built target indi_rtklib
+[ 73%] Built target indi_gpsnmea
+[ 74%] Built target indi_mgenautoguider
+[ 75%] Built target indi_seletek_rotator
+[ 76%] Built target indi_limesdr_receiver
+[ 76%] Built target indi_dragonfly_dome
+[ 77%] Built target indi_dragonfly
+[ 77%] Built target indi_beaver_dome
+[ 77%] Built target indi_armadillo_focus
+[ 77%] Built target indi_platypus_focus
+[ 77%] Built target indi_webcam_ccd
+[ 77%] Built target indi_weewx_json
+[ 78%] Built target indi_lx200stargo
+[ 81%] Built target indi_nightscape_ccd
+[ 81%] Built target nstest
+[ 81%] Built target indi_avalonud_telescope
+[ 82%] Built target indi_avalonud_focuser
+[ 82%] Built target indi_avalonud_aux
+[ 82%] Linking CXX executable indi_pentax
+[ 82%] Built target indi_svbony_ccd
+[ 83%] Built target indi_bresserexos2
+[ 83%] Built target indi_orion_ssg3_ccd
+[ 84%] Built target indi_playerone_ccd
+[ 85%] Built target indi_playerone_single_ccd
+[ 85%] Built target indi_playerone_wheel
+[ 86%] Built target playerone_camera_test
+[ 87%] Built target indi_oasis_focuser
+[ 87%] Built target indi_oasis_filter_wheel
+[ 87%] Built target indi_ocs
+[ 88%] Built target indi_openogma
+[ 88%] Built target blink_pin
+[ 89%] Built target read_digital_pin
+[ 89%] Built target read_analog_pin
+[ 89%] Built target ask_digital_pin
+[ 90%] Built target ask_analog_pin
+[ 90%] Built target read_string
+[ 91%] Built target indi_duino
+[ 92%] Built target indi_pentax
+[ 93%] Linking C shared library ../../../libpololu-tic-1.so
+[ 93%] Built target lib
+[ 94%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/cli/CMakeFiles/cli.dir/print_status.cpp.o
+[ 94%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/cli/CMakeFiles/cli.dir/cli.cpp.o
+[ 94%] Built target gui_autogen_timestamp_deps
+[ 95%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/TicFocuser.cpp.o
+[ 95%] Built target gui_autogen
+[ 95%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o
+[ 95%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/LibUsbConnection.cpp.o
+[ 95%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/main.cpp.o
+[ 95%] Linking CXX executable ../../../ticcmd
+[ 96%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/PololuUsbConnection.cpp.o
+[ 96%] Built target cli
+[ 96%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/SerialConnection.cpp.o
+[ 96%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/UsbConnectionBase.cpp.o
+[ 96%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/main_controller.cpp.o
+[ 96%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/driver_interfaces/PololuUsbInterface.cpp.o
+[ 96%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/driver_interfaces/TiclibInterface.cpp.o
+[ 96%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/ticlib/StreamSerial.cpp.o
+[ 96%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/ticlib/TicBase.cpp.o
+[ 97%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/ticlib/TicDefs.cpp.o
+[ 97%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/ticlib/TicUsb.cpp.o
+[ 97%] Linking CXX executable indi_ticfocuser-ng
+[ 97%] Built target indi_ticfocuser-ng
+[ 97%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/BallScrollBar.cpp.o
+[ 97%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/InputWizard.cpp.o
+[ 98%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/bootloader_window.cpp.o
+[ 98%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/current_spin_box.cpp.o
+[ 99%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/elided_label.cpp.o
+[ 99%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/main_window.cpp.o
+[ 99%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/time_spin_box.cpp.o
+[ 99%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/to_string.cpp.o
+[ 99%] Linking CXX executable ../../../ticgui
+[100%] Built target gui
+[  4%] Built target lib
+[  7%] Built target indi_ticfocuser-ng
+[  8%] Built target cli
+[  9%] Built target bootloader
+[  9%] Built target gui_autogen_timestamp_deps
+[  9%] Built target gui_autogen
+[ 12%] Built target gui
+[ 15%] Built target indi_eqmod_telescope
+[ 19%] Built target indi_azgti_telescope
+[ 22%] Built target indi_staradventurergti_telescope
+[ 26%] Built target indi_staradventurer2i_telescope
+[ 29%] Built target test_eqmod
+[ 29%] Built target indi_lx200aok
+[ 30%] Built target indi_starbook_telescope
+[ 30%] Built target indi_starbook_ten
+[ 30%] Built target indi_sx_ccd
+[ 31%] Built target indi_sx_wheel
+[ 32%] Built target indi_sx_ao
+[ 33%] Built target sx_ccd_test
+[ 33%] Built target indi_maxdomeii
+[ 33%] Built target indi_nexdome
+[ 33%] Built target indi_talon6
+[ 33%] Built target indi_rolloffino
+[ 33%] Built target indi_shelyakeshel_spectrograph
+[ 33%] Built target indi_shelyakspox_spectrograph
+[ 34%] Built target indi_aagcloudwatcher_ng
+[ 34%] Built target aagcloudwatcher_test_ng
+[ 35%] Built target indi_celestron_aux
+[ 36%] Built target indi_gphoto_ccd
+[ 36%] Built target gphoto_camera_test
+[ 37%] Built target indi_qsi_ccd
+[ 37%] Built target indi_sbig_ccd
+[ 38%] Built target indi_atik_ccd
+[ 38%] Built target indi_atik_wheel
+[ 39%] Built target indi_toupcam_ccd
+[ 40%] Built target indi_toupcam_wheel
+[ 40%] Built target indi_toupcam_focuser
+[ 41%] Built target toupcam_test
+[ 42%] Built target indi_altaircam_ccd
+[ 42%] Built target indi_altaircam_wheel
+[ 43%] Built target indi_altaircam_focuser
+[ 44%] Built target indi_bressercam_ccd
+[ 44%] Built target indi_bressercam_wheel
+[ 45%] Built target indi_bressercam_focuser
+[ 46%] Built target indi_ogmacam_ccd
+[ 46%] Built target indi_ogmacam_wheel
+[ 47%] Built target indi_ogmacam_focuser
+[ 48%] Built target indi_tscam_ccd
+[ 49%] Built target indi_tscam_wheel
+[ 49%] Built target indi_tscam_focuser
+[ 50%] Built target indi_svbonycam_ccd
+[ 50%] Built target indi_svbonycam_wheel
+[ 51%] Built target indi_svbonycam_focuser
+[ 52%] Built target indi_starshootg_ccd
+[ 53%] Built target indi_starshootg_wheel
+[ 54%] Built target indi_starshootg_focuser
+[ 55%] Built target indi_nncam_ccd
+[ 56%] Built target indi_nncam_wheel
+[ 56%] Built target indi_nncam_focuser
+[ 57%] Built target indi_mallincam_ccd
+[ 58%] Built target indi_mallincam_wheel
+[ 58%] Built target indi_mallincam_focuser
+[ 59%] Built target indi_omegonprocam_ccd
+[ 59%] Built target indi_omegonprocam_wheel
+[ 60%] Built target indi_omegonprocam_focuser
+[ 60%] Built target omegonprocam_test
+[ 61%] Built target indi_meadecam_ccd
+[ 61%] Built target indi_meadecam_wheel
+[ 62%] Built target indi_meadecam_focuser
+[ 63%] Built target indi_beefocus
+[ 64%] Built target indi_inovaplx_ccd
+[ 64%] Built target indi_fli_focus
+[ 64%] Built target indi_fli_wheel
+[ 65%] Built target indi_fli_ccd
+[ 65%] Built target indi_kepler_ccd
+[ 65%] Built target test_kepler_merged
+[ 66%] Built target indi_apogee_ccd
+[ 66%] Built target indi_apogee_wheel
+[ 67%] Built target indi_ffmv_ccd
+[ 68%] Built target indi_mi_ccd
+[ 68%] Built target indi_mi_sfw
+[ 69%] Built target firmata
+[ 69%] Built target blink_pin
+[ 70%] Built target read_digital_pin
+[ 70%] Built target read_analog_pin
+[ 70%] Built target ask_digital_pin
+[ 71%] Built target ask_analog_pin
+[ 71%] Built target read_string
+[ 72%] Built target indi_duino
+[ 73%] Built target indi_weatherradio
+[ 73%] Built target indi_duino_powerbox
+[ 73%] Built target indi_fishcamp_ccd
+[ 75%] Built target indi_asi_ccd
+[ 75%] Built target indi_asi_single_ccd
+[ 75%] Built target indi_asi_wheel
+[ 76%] Built target indi_asi_st4
+[ 76%] Built target indi_asi_focuser
+[ 77%] Built target indi_asi_rotator
+[ 78%] Built target asi_camera_test
+[ 78%] Built target asi_multi_camera_test
+[ 80%] Built target indi_dsi_ccd
+[ 81%] Built target indi_qhy_ccd
+[ 81%] Built target qhy_ccd_test
+[ 82%] Built target qhy_video_test
+[ 82%] Built target indi_qhy_focuser
+[ 83%] Built target indi_gpsd
+[ 83%] Built target indi_gpsnmea
+[ 84%] Built target indi_rtklib
+[ 85%] Built target indi_mgenautoguider
+[ 86%] Built target indi_limesdr_receiver
+[ 87%] Built target indi_seletek_rotator
+[ 87%] Built target indi_dragonfly_dome
+[ 88%] Built target indi_dragonfly
+[ 88%] Built target indi_beaver_dome
+[ 88%] Built target indi_armadillo_focus
+[ 88%] Built target indi_platypus_focus
+[ 88%] Built target indi_webcam_ccd
+[ 88%] Built target indi_weewx_json
+[ 90%] Built target indi_nightscape_ccd
+[ 91%] Built target nstest
+[ 92%] Built target indi_lx200stargo
+[ 92%] Built target indi_avalonud_telescope
+[ 92%] Built target indi_avalonud_focuser
+[ 93%] Built target indi_avalonud_aux
+[ 94%] Built target indi_pentax
+[ 94%] Built target indi_svbony_ccd
+[ 95%] Built target indi_bresserexos2
+[ 95%] Built target indi_orion_ssg3_ccd
+[ 96%] Built target indi_playerone_ccd
+[ 97%] Built target indi_playerone_single_ccd
+[ 97%] Built target indi_playerone_wheel
+[ 98%] Built target playerone_camera_test
+[ 99%] Built target indi_oasis_focuser
+[ 99%] Built target indi_oasis_filter_wheel
+[ 99%] Built target indi_ocs
+[100%] Built target indi_openogma
+Install the project...
+-- Install configuration: "Release"
+-- Up-to-date: /usr/include/libpololu-tic-1/tic.h
+-- Up-to-date: /usr/include/libpololu-tic-1/tic.hpp
+-- Up-to-date: /usr/include/libpololu-tic-1/tic_protocol.h
+-- Up-to-date: /usr/lib/pkgconfig/libpololu-tic-1.pc
+-- Installing: /usr/lib/libpololu-tic-1.so.1.8.3
+-- Up-to-date: /usr/lib/libpololu-tic-1.so
+-- Installing: /usr/bin/ticcmd
+-- Set non-toolchain portion of runtime path of "/usr/bin/ticcmd" to ""
+-- Installing: /usr/bin/ticgui
+-- Set non-toolchain portion of runtime path of "/usr/bin/ticgui" to ""
+-- Installing: /usr/bin/indi_ticfocuser-ng
+-- Set non-toolchain portion of runtime path of "/usr/bin/indi_ticfocuser-ng" to ""
+-- Up-to-date: /usr/share/indi/indi_ticfocuser-ng.xml
+-- Up-to-date: /usr/bin/indi_eqmod_telescope
+-- Up-to-date: /usr/share/indi/indi_eqmod.xml
+-- Up-to-date: /usr/share/indi/indi_eqmod_sk.xml
+-- Up-to-date: /usr/share/indi/indi_eqmod_simulator_sk.xml
+-- Up-to-date: /usr/share/indi/indi_align_sk.xml
+-- Up-to-date: /usr/share/indi/indi_eqmod_scope_limits_sk.xml
+-- Up-to-date: /usr/bin/indi_azgti_telescope
+-- Up-to-date: /usr/bin/indi_staradventurergti_telescope
+-- Up-to-date: /usr/bin/indi_staradventurer2i_telescope
+-- Up-to-date: /usr/bin/indi_lx200aok
+-- Up-to-date: /usr/share/indi/indi_aok.xml
+-- Up-to-date: /usr/bin/indi_starbook_telescope
+-- Up-to-date: /usr/share/indi/indi_starbook_telescope.xml
+-- Up-to-date: /usr/bin/indi_starbook_ten
+-- Up-to-date: /usr/share/indi/indi_starbook_ten.xml
+-- Up-to-date: /usr/bin/indi_sx_ccd
+-- Up-to-date: /usr/bin/indi_sx_wheel
+-- Up-to-date: /usr/bin/indi_sx_ao
+-- Up-to-date: /usr/bin/sx_ccd_test
+-- Up-to-date: /usr/share/indi/indi_sx.xml
+-- Up-to-date: /lib/udev/rules.d/99-sx.rules
+-- Up-to-date: /usr/bin/indi_maxdomeii
+-- Up-to-date: /usr/share/indi/indi_maxdomeii.xml
+-- Up-to-date: /usr/bin/indi_nexdome
+-- Up-to-date: /usr/share/indi/indi_nexdome.xml
+-- Up-to-date: /usr/bin/indi_talon6
+-- Up-to-date: /usr/share/indi/indi_talon6.xml
+-- Up-to-date: /usr/bin/indi_rolloffino
+-- Up-to-date: /usr/share/indi/indi_rolloffino.xml
+-- Up-to-date: /usr/bin/indi_shelyakeshel_spectrograph
+-- Up-to-date: /usr/bin/indi_shelyakspox_spectrograph
+-- Up-to-date: /usr/share/indi/indi_shelyak.xml
+-- Up-to-date: /usr/bin/indi_aagcloudwatcher_ng
+-- Up-to-date: /usr/bin/aagcloudwatcher_test_ng
+-- Up-to-date: /usr/share/indi/indi_aagcloudwatcher_ng.xml
+-- Up-to-date: /usr/share/indi/indi_aagcloudwatcher_ng_sk.xml
+-- Up-to-date: /usr/bin/indi_celestron_aux
+-- Up-to-date: /usr/share/indi/indi_celestronaux.xml
+-- Up-to-date: /usr/bin/indi_gphoto_ccd
+-- Up-to-date: /usr/share/indi/indi_gphoto.xml
+-- Up-to-date: /usr/bin/gphoto_camera_test
+-- Up-to-date: /lib/udev/rules.d/85-disable-dslr-automout.rules
+-- Up-to-date: /usr/bin/indi_qsi_ccd
+-- Up-to-date: /usr/share/indi/indi_qsi.xml
+-- Up-to-date: /lib/udev/rules.d/99-qsi.rules
+-- Installing: /usr/bin/indi_sbig_ccd
+-- Up-to-date: /usr/share/indi/indi_sbig.xml
+-- Up-to-date: /usr/bin/indi_atik_ccd
+-- Up-to-date: /usr/bin/indi_atik_wheel
+-- Up-to-date: /usr/share/indi/indi_atik.xml
+-- Up-to-date: /usr/bin/indi_toupcam_ccd
+-- Up-to-date: /usr/bin/indi_toupcam_wheel
+-- Up-to-date: /usr/bin/indi_toupcam_focuser
+-- Up-to-date: /usr/share/indi/indi_toupcam.xml
+-- Up-to-date: /usr/bin/indi_altaircam_ccd
+-- Up-to-date: /usr/bin/indi_altaircam_wheel
+-- Up-to-date: /usr/bin/indi_altaircam_focuser
+-- Up-to-date: /usr/share/indi/indi_altaircam.xml
+-- Up-to-date: /usr/bin/indi_bressercam_ccd
+-- Up-to-date: /usr/bin/indi_bressercam_wheel
+-- Up-to-date: /usr/bin/indi_bressercam_focuser
+-- Up-to-date: /usr/share/indi/indi_bressercam.xml
+-- Up-to-date: /usr/bin/indi_ogmacam_ccd
+-- Up-to-date: /usr/bin/indi_ogmacam_wheel
+-- Up-to-date: /usr/bin/indi_ogmacam_focuser
+-- Up-to-date: /usr/share/indi/indi_ogmacam.xml
+-- Up-to-date: /usr/bin/indi_tscam_ccd
+-- Up-to-date: /usr/bin/indi_tscam_wheel
+-- Up-to-date: /usr/bin/indi_tscam_focuser
+-- Up-to-date: /usr/share/indi/indi_tscam.xml
+-- Up-to-date: /usr/bin/indi_svbonycam_ccd
+-- Up-to-date: /usr/bin/indi_svbonycam_wheel
+-- Up-to-date: /usr/bin/indi_svbonycam_focuser
+-- Up-to-date: /usr/share/indi/indi_svbonycam.xml
+-- Up-to-date: /usr/bin/indi_starshootg_ccd
+-- Up-to-date: /usr/bin/indi_starshootg_wheel
+-- Up-to-date: /usr/bin/indi_starshootg_focuser
+-- Up-to-date: /usr/share/indi/indi_starshootg.xml
+-- Up-to-date: /usr/bin/indi_nncam_ccd
+-- Up-to-date: /usr/bin/indi_nncam_wheel
+-- Up-to-date: /usr/bin/indi_nncam_focuser
+-- Up-to-date: /usr/share/indi/indi_nncam.xml
+-- Up-to-date: /usr/bin/indi_mallincam_ccd
+-- Up-to-date: /usr/bin/indi_mallincam_wheel
+-- Up-to-date: /usr/bin/indi_mallincam_focuser
+-- Up-to-date: /usr/share/indi/indi_mallincam.xml
+-- Up-to-date: /usr/bin/indi_omegonprocam_ccd
+-- Up-to-date: /usr/bin/indi_omegonprocam_wheel
+-- Up-to-date: /usr/bin/indi_omegonprocam_focuser
+-- Up-to-date: /usr/share/indi/indi_omegonprocam.xml
+-- Up-to-date: /usr/bin/indi_meadecam_ccd
+-- Up-to-date: /usr/bin/indi_meadecam_wheel
+-- Up-to-date: /usr/bin/indi_meadecam_focuser
+-- Up-to-date: /usr/share/indi/indi_meadecam.xml
+-- Up-to-date: /usr/bin/indi_beefocus
+-- Up-to-date: /usr/share/indi/indi_beefocus.xml
+-- Up-to-date: /usr/bin/indi_inovaplx_ccd
+-- Up-to-date: /usr/share/indi/indi_inovaplx_ccd.xml
+-- Up-to-date: /usr/bin/indi_fli_focus
+-- Up-to-date: /usr/bin/indi_fli_wheel
+-- Up-to-date: /usr/bin/indi_fli_ccd
+-- Up-to-date: /usr/share/indi/indi_fli.xml
+-- Up-to-date: /usr/bin/indi_kepler_ccd
+-- Up-to-date: /usr/share/indi/indi_flipro.xml
+-- Up-to-date: /usr/bin/indi_apogee_ccd
+-- Up-to-date: /usr/bin/indi_apogee_wheel
+-- Up-to-date: /usr/share/indi/indi_apogee.xml
+-- Up-to-date: /usr/bin/indi_ffmv_ccd
+-- Up-to-date: /usr/share/indi/indi_ffmv.xml
+-- Up-to-date: /lib/udev/rules.d/99-fireflymv.rules
+-- Up-to-date: /usr/bin/indi_mi_ccd
+-- Up-to-date: /usr/bin/indi_mi_sfw
+-- Up-to-date: /usr/share/indi/indi_miccd.xml
+-- Up-to-date: /usr/bin/indi_duino
+-- Up-to-date: /usr/share/indi/indi_duino.xml
+-- Up-to-date: /usr/bin/indi_weatherradio
+-- Up-to-date: /usr/share/indi/indi_weatherradio.xml
+-- Up-to-date: /usr/bin/indi_duino_powerbox
+-- Up-to-date: /usr/share/indi/various_sk.xml
+-- Up-to-date: /usr/share/indi/simple_switcher_sk.xml
+-- Up-to-date: /usr/share/indi/switcher_sk.xml
+-- Up-to-date: /usr/share/indi/digital_inputs_sk.xml
+-- Up-to-date: /usr/share/indi/stepper_sk.xml
+-- Up-to-date: /usr/share/indi/focuser_sk.xml
+-- Up-to-date: /usr/share/indi/cosmos_sk.xml
+-- Up-to-date: /usr/share/indi/meteostation_sk.xml
+-- Up-to-date: /usr/share/indi/meteostationSQM_sk.xml
+-- Up-to-date: /usr/share/indi/servo_sk.xml
+-- Up-to-date: /usr/bin/indi_fishcamp_ccd
+-- Up-to-date: /usr/share/indi/indi_fishcamp.xml
+-- Up-to-date: /usr/bin/indi_asi_ccd
+-- Up-to-date: /usr/bin/indi_asi_single_ccd
+-- Up-to-date: /usr/bin/indi_asi_wheel
+-- Up-to-date: /usr/bin/indi_asi_st4
+-- Up-to-date: /usr/bin/indi_asi_focuser
+-- Up-to-date: /usr/bin/indi_asi_rotator
+-- Up-to-date: /usr/bin/asi_camera_test
+-- Up-to-date: /usr/bin/asi_multi_camera_test
+-- Up-to-date: /usr/share/indi/indi_asi.xml
+-- Up-to-date: /usr/bin/indi_dsi_ccd
+-- Up-to-date: /usr/share/indi/indi_dsi.xml
+-- Up-to-date: /lib/udev/rules.d/99-meadedsi.rules
+-- Up-to-date: /lib/firmware/meade-deepskyimager.hex
+-- Up-to-date: /usr/bin/indi_qhy_ccd
+-- Up-to-date: /usr/share/indi/indi_qhy.xml
+-- Up-to-date: /usr/bin/qhy_ccd_test
+-- Up-to-date: /usr/bin/qhy_video_test
+-- Up-to-date: /usr/bin/indi_qhy_focuser
+-- Up-to-date: /usr/bin/indi_gpsd
+-- Up-to-date: /usr/share/indi/indi_gpsd.xml
+-- Up-to-date: /usr/bin/indi_gpsnmea
+-- Up-to-date: /usr/share/indi/indi_gpsnmea.xml
+-- Up-to-date: /usr/bin/indi_rtklib
+-- Up-to-date: /usr/share/indi/indi_rtklib.xml
+-- Up-to-date: /usr/bin/indi_mgenautoguider
+-- Up-to-date: /usr/share/indi/indi_mgenautoguider.xml
+-- Up-to-date: /usr/bin/indi_limesdr_receiver
+-- Up-to-date: /usr/share/indi/indi_limesdr.xml
+-- Up-to-date: /usr/bin/indi_seletek_rotator
+-- Up-to-date: /usr/bin/indi_dragonfly_dome
+-- Up-to-date: /usr/bin/indi_dragonfly
+-- Up-to-date: /usr/bin/indi_beaver_dome
+-- Up-to-date: /usr/bin/indi_armadillo_focus
+-- Up-to-date: /usr/bin/indi_platypus_focus
+-- Up-to-date: /usr/share/indi/indi_lunatico.xml
+-- Up-to-date: /lib/udev/rules.d/99-armadilloplatypus.rules
+-- Up-to-date: /usr/bin/indi_webcam_ccd
+-- Up-to-date: /usr/share/indi/indi_webcam.xml
+-- Up-to-date: /usr/bin/indi_weewx_json
+-- Up-to-date: /usr/share/indi/indi_weewx_json.xml
+-- Up-to-date: /usr/bin/indi_nightscape_ccd
+-- Up-to-date: /usr/share/indi/indi_nightscape.xml
+-- Up-to-date: /lib/udev/rules.d/99-nightscape.rules
+-- Up-to-date: /usr/bin/indi_lx200stargo
+-- Up-to-date: /usr/share/indi/indi_avalon.xml
+-- Up-to-date: /usr/bin/indi_avalonud_telescope
+-- Up-to-date: /usr/bin/indi_avalonud_focuser
+-- Up-to-date: /usr/bin/indi_avalonud_aux
+-- Up-to-date: /usr/share/indi/indi_avalonud.xml
+-- Installing: /usr/bin/indi_pentax
+-- Up-to-date: /usr/share/indi/indi_pentax.xml
+-- Up-to-date: /usr/bin/indi_svbony_ccd
+-- Up-to-date: /usr/share/indi/indi_svbony_ccd.xml
+-- Up-to-date: /usr/bin/indi_bresserexos2
+-- Up-to-date: /usr/share/indi/indi_bresserexos2.xml
+-- Up-to-date: /usr/bin/indi_orion_ssg3_ccd
+-- Up-to-date: /usr/share/indi/indi_orion_ssg3.xml
+-- Up-to-date: /lib/udev/rules.d/99-orionssg3.rules
+-- Up-to-date: /usr/bin/indi_playerone_ccd
+-- Up-to-date: /usr/bin/indi_playerone_single_ccd
+-- Up-to-date: /usr/bin/indi_playerone_wheel
+-- Up-to-date: /usr/bin/playerone_camera_test
+-- Up-to-date: /usr/share/indi/indi_playerone.xml
+-- Up-to-date: /usr/bin/indi_oasis_focuser
+-- Up-to-date: /usr/bin/indi_oasis_filter_wheel
+-- Up-to-date: /usr/share/indi/indi_astroasis.xml
+-- Up-to-date: /usr/bin/indi_ocs
+-- Up-to-date: /usr/share/indi/indi_ocs.xml
+-- Up-to-date: /usr/bin/indi_openogma
+-- Up-to-date: /usr/share/indi/indi_openogma.xml
+-- Up-to-date: /lib/udev/rules.d/99-openogma.rules
+Time elapsed: 0 hours, 1 minutes, 26 seconds.
+
+
+################################################################
+##################### Build StellarSolver ######################
+##################### 2026-03-02T05:15:26 ######################
+################################################################
+Forced StellarSolver version defined!
+Forced StellarSolver version: v2_7
+REPO_VERSION: 2.7
+Building with StellarSolverTester
+-- Found CFITSIO in cache: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found WCSLIB in cache: /usr/lib/aarch64-linux-gnu/libwcs.so, /usr/include/wcslib
+-- Configuring done (0.5s)
+-- Generating done (0.2s)
+-- Build files have been written to: /add1/install/INDI_KStars-Kit/BuildSources/build/stellarsolver
+[  0%] Built target stellarsolver_autogen_timestamp_deps
+[  0%] Built target SSolverUtilsLib_autogen_timestamp_deps
+[  2%] Automatic MOC for target stellarsolver
+[  2%] Built target SSolverUtilsLib_autogen
+[ 10%] Built target SSolverUtilsLib
+[ 10%] Built target stellarsolver_autogen
+[ 15%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/blind/blind.c.o
+[ 15%] Building CXX object CMakeFiles/stellarsolver.dir/stellarsolver_autogen/mocs_compilation.cpp.o
+[ 15%] Building CXX object CMakeFiles/stellarsolver.dir/stellarsolver/stellarsolver.cpp.o
+[ 15%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/blind/engine.c.o
+[ 16%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/blind/solver.c.o
+[ 17%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/blind/matchobj.c.o
+[ 18%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/blind/tweak2.c.o
+[ 19%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/blind/verify.c.o
+[ 20%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/util/starxy.c.o
+[ 21%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/util/sip-utils.c.o
+[ 22%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/util/fit-wcs.c.o
+[ 23%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/util/sip.c.o
+[ 25%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/util/gslutils.c.o
+[ 26%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/util/fitsioutils.c.o
+[ 27%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/util/fitstable.c.o
+[ 28%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/util/starutil.c.o
+[ 29%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/util/bl-sort.c.o
+[ 30%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/util/healpix.c.o
+[ 31%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/util/permutedsort.c.o
+[ 32%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/util/ioutils.c.o
+[ 33%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/util/os-features.c.o
+[ 34%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/libkd/kdint_ddd.c.o
+[ 35%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/libkd/kdint_fff.c.o
+[ 36%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/libkd/kdint_ddu.c.o
+[ 38%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/libkd/kdint_duu.c.o
+[ 39%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/libkd/kdint_dds.c.o
+[ 40%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/libkd/kdint_dss.c.o
+[ 41%] Building C object CMakeFiles/stellarsolver.dir/stellarsolver/astrometry/libkd/kdtree.c.o
+[ 42%] Linking CXX shared library libstellarsolver.so
+[ 91%] Built target stellarsolver
+[ 91%] Built target StellarSolverTester_autogen_timestamp_deps
+[ 92%] Automatic MOC and UIC for target StellarSolverTester
+[ 92%] Built target StellarSolverTester_autogen
+[ 94%] Building CXX object CMakeFiles/StellarSolverTester.dir/tester/main.cpp.o
+[ 94%] Building CXX object CMakeFiles/StellarSolverTester.dir/tester/mainwindow.cpp.o
+[ 95%] Building CXX object CMakeFiles/StellarSolverTester.dir/StellarSolverTester_autogen/mocs_compilation.cpp.o
+[ 96%] Linking CXX executable StellarSolverTester
+[100%] Built target StellarSolverTester
+[  0%] Built target stellarsolver_autogen_timestamp_deps
+[  1%] Built target stellarsolver_autogen
+[ 81%] Built target stellarsolver
+[ 81%] Built target SSolverUtilsLib_autogen_timestamp_deps
+[ 82%] Built target SSolverUtilsLib_autogen
+[ 91%] Built target SSolverUtilsLib
+[ 91%] Built target StellarSolverTester_autogen_timestamp_deps
+[ 92%] Built target StellarSolverTester_autogen
+[100%] Built target StellarSolverTester
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/lib/aarch64-linux-gnu/libstellarsolver.so.2.7
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libstellarsolver.so.2
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/libstellarsolver.so
+-- Up-to-date: /usr/include/libstellarsolver/stellarsolver.h
+-- Up-to-date: /usr/include/libstellarsolver/structuredefinitions.h
+-- Up-to-date: /usr/include/libstellarsolver/extractorsolver.h
+-- Up-to-date: /usr/include/libstellarsolver/parameters.h
+-- Up-to-date: /usr/include/libstellarsolver/wcsdata.h
+-- Installing: /usr/include/libstellarsolver/version.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/qfits_config.h
+-- Installing: /usr/include/libstellarsolver/astrometry/os-features-config.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/matchobj.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/log.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/bl.inc
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/bl-nl.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/solver.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/an-bool.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/verify.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/ioutils.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/starkd.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/index.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/blind.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/codefile.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/errors.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/codekd.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/qfits_table.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/bl.ph
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/bl-sort.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/keywords.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/datalog.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/starutil.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/qfits_byteswap.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/tweak2.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/starutil.inc
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/qfits_keywords.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/fitstable.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/quad-utils.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/qfits_tools.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/qfits_md5.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/os-features.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/quadfile.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/qfits_card.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/sip-utils.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/qfits_time.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/kdtree.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/permutedsort.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/fit-wcs.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/qfits_memory.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/qfits_std.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/qfits_error.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/fitsbin.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/qfits_convert.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/tic.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/qfits_header.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/kdtree_fits_io.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/qfits_rw.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/fitsfile.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/healpix.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/qfits_image.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/bl-nl.inc
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/sip.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/fitsioutils.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/gslutils.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/mathutil.inc
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/anqfits.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/starxy.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/qfits_float.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/engine.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/bl.h
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/bl-nl.ph
+-- Up-to-date: /usr/include/libstellarsolver/astrometry/mathutil.h
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/pkgconfig/stellarsolver.pc
+-- Installing: /usr/bin/StellarSolverTester
+-- Set non-toolchain portion of runtime path of "/usr/bin/StellarSolverTester" to ""
+-- Up-to-date: /usr/share/icons
+-- Up-to-date: /usr/share/icons/hicolor
+-- Up-to-date: /usr/share/icons/hicolor/32x32
+-- Up-to-date: /usr/share/icons/hicolor/32x32/apps
+-- Up-to-date: /usr/share/icons/hicolor/32x32/apps/StellarSolverIcon.png
+-- Up-to-date: /usr/share/icons/hicolor/48x48
+-- Up-to-date: /usr/share/icons/hicolor/48x48/apps
+-- Up-to-date: /usr/share/icons/hicolor/48x48/apps/StellarSolverIcon.png
+-- Up-to-date: /usr/share/icons/hicolor/16x16
+-- Up-to-date: /usr/share/icons/hicolor/16x16/apps
+-- Up-to-date: /usr/share/icons/hicolor/16x16/apps/StellarSolverIcon.png
+-- Up-to-date: /usr/share/icons/hicolor/128x128
+-- Up-to-date: /usr/share/icons/hicolor/128x128/apps
+-- Up-to-date: /usr/share/icons/hicolor/128x128/apps/StellarSolverIcon.png
+-- Up-to-date: /usr/share/icons/hicolor/64x64
+-- Up-to-date: /usr/share/icons/hicolor/64x64/apps
+-- Up-to-date: /usr/share/icons/hicolor/64x64/apps/StellarSolverIcon.png
+-- Up-to-date: /usr/share/applications/com.github.rlancaste.stellarsolver.desktop
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/cmake/StellarSolver/StellarSolverConfig.cmake
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/cmake/StellarSolver/StellarSolverConfig-release.cmake
+-- Up-to-date: /usr/lib/aarch64-linux-gnu/cmake/StellarSolver/StellarSolverConfigVersion.cmake
+Time elapsed: 0 hours, 2 minutes, 0 seconds.
+
+
+################################################################
+######################### Build KStars #########################
+##################### 2026-03-02T05:16:00 ######################
+################################################################
+Forced KStars version defined!
+Forced KStars version: v3_8_1
+REPO_VERSION: origin/stable-3.8.1
+-- Found KF5: success (found suitable version "5.116.0", minimum required is "5.68.0") found components: NotifyConfig
+-- Found KF5: success (found suitable version "5.116.0", minimum required is "5.68.0") found components: Config Crash WidgetsAddons NewStuff I18n KIO XmlGui Plotting Notifications
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found INDI: , /usr/include/libindi
+-- Found INDI Client Library: /usr/lib/aarch64-linux-gnu/libindiclient.so
+-- Found INDI: /usr/lib/aarch64-linux-gnu/libindiclient.so, /usr/include/libindi
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Could NOT find ERFA (missing: ERFA_LIBRARIES ERFA_INCLUDE_DIRS) 
+-- Found WCSLIB: /usr/lib/aarch64-linux-gnu/libwcs.so, /usr/include/wcslib
+-- Found Xplanet: /usr/bin/xplanet
+-- Checking whether the linker supports -Wl,-z,nodump ...
+--   supports -Wl,-z,nodump: TRUE
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- The following RUNTIME packages have been found:
+
+ * Xplanet, Renders an image of all the major planets and most satellites, <http://xplanet.sourceforge.net>
+   Gives KStars support for xplanet.
+
+-- The following OPTIONAL packages have been found:
+
+ * KF5NotifyConfig (required version >= 5.68.0)
+ * CFitsio, FITS IO Library, <https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html>
+   Support for the FITS (Flexible Image Transport System) data format in KStars.
+ * CURL
+ * INDI (required version >= 2.0.0), Astronomical instrumentation control, <https://www.indilib.org>
+   Support for controlling astronomical devices on Linux with KStars.
+ * PkgConfig
+ * LibRaw, Library for reading RAW files, <https://www.libraw.org/>
+   Support for reading and displaying RAW files in KStars.
+ * WCSLIB, World Coordinate System library, <https://www.atnf.csiro.au/people/mcalabre/WCS>
+   WCS enables KStars to read and process world coordinate systems in FITS header.
+ * Qt5DataVisualization
+ * LibXISF, Library for loading and saving XISF images, <https://nouspiro.space>
+ * Qt5Core
+ * Qt5Keychain
+ * OpenCV, OpenCV library, <https://opencv.org>
+   Standard library of image processing functions.
+ * OpenGL, Open Graphics Library, <https://www.opengl.org/>
+   Support for hardware rendering in KStars.
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 5.68.0)
+ * Qt5Qml
+ * Qt5QmlModels (required version >= 5.15.15)
+ * Qt5Quick
+ * Qt5Sql
+ * Qt5Svg
+ * Qt5PrintSupport
+ * Qt5WebSockets
+ * Qt5 (required version >= 5.12.7)
+ * Qt5Widgets (required version >= 5.15.2)
+ * Qt5Xml (required version >= 5.15.2)
+ * KF5Crash (required version >= 5.68.0)
+ * KF5Config (required version >= 5.116.0)
+ * KF5WidgetsAddons (required version >= 5.116.0)
+ * Qt5Network (required version >= 5.15.2)
+ * KF5NewStuff (required version >= 5.68.0)
+ * Gettext
+ * KF5I18n (required version >= 5.68.0)
+ * Qt5Gui (required version >= 5.15.2)
+ * Qt5Concurrent (required version >= 5.15.2)
+ * KF5KIO (required version >= 5.68.0)
+ * KF5XmlGui (required version >= 5.68.0)
+ * KF5Plotting (required version >= 5.68.0)
+ * KF5Notifications (required version >= 5.68.0)
+ * KF5 (required version >= 5.68.0)
+ * Eigen3
+ * StellarSolver
+ * ZLIB
+ * Threads
+ * GSL
+ * Nova
+ * Qt5Test
+
+-- The following OPTIONAL packages have not been found:
+
+ * ERFA, Essential Routines for Fundamental Astronomy, <https://github.com/liberfa/erfa/>
+   BSD-compatible version of SOFA, used to test core computations of KStars (only needed by tests)
+
+-- Configuring done (0.8s)
+-- Generating done (1.4s)
+-- Build files have been written to: /add1/install/INDI_KStars-Kit/BuildSources/build/kstars
+[  1%] Generating mo...
+[  1%] Generating ts...
+[  1%] Built target LibKSDataHandlers_autogen_timestamp_deps
+[  1%] Built target htmesh_autogen_timestamp_deps
+[  1%] Built target pofiles-65d3a977c6b0592982f27021340706b0
+[  1%] Built target tsfiles-65d3a977c6b0592982f27021340706b0
+[  2%] Built target htmesh_autogen
+[  2%] Built target LibKSDataHandlers_autogen
+[  2%] Built target LibKSDataHandlers
+[  3%] Built target htmesh
+[  3%] Built target KStarsLib_autogen_timestamp_deps
+[  4%] Automatic MOC for target KStarsLib
+[  4%] Built target KStarsLib_autogen
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/KStarsLib_autogen/mocs_compilation.cpp.o
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/drivermanager.cpp.o
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/guimanager.cpp.o
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indidevice.cpp.o
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indiproperty.cpp.o
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indielement.cpp.o
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indistd.cpp.o
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indilistener.cpp.o
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indimount.cpp.o
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indicamera.cpp.o
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indicamerachip.cpp.o
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indidome.cpp.o
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/opsindi.cpp.o
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/streamwg.cpp.o
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/videowg.cpp.o
+[  5%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/customdrivers.cpp.o
+[  5%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/collimationoverlayoptions.cpp.o
+[  5%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/fitsviewer/fitslabel.cpp.o
+[  5%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/fitsviewer/fitsviewer.cpp.o
+[  5%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/fitsviewer/fitstab.cpp.o
+[  5%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/fitsviewer/platesolve.cpp.o
+[  5%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/fitsviewer/fitsdebayer.cpp.o
+[  5%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/fitsviewer/opsfits.cpp.o
+[  5%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/fitsviewer/starprofileviewer.cpp.o
+[  5%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/fitsviewer/fitsstack.cpp.o
+[  5%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/profileeditor.cpp.o
+[  5%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/profilewizard.cpp.o
+[  5%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/opsekos.cpp.o
+[  5%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/manager.cpp.o
+[  6%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/manager/focusprogresswidget.cpp.o
+[  6%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/manager/guidemanager.cpp.o
+[  6%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/extensions.cpp.o
+[  6%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/auxiliary/darklibrary.cpp.o
+[  6%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/auxiliary/darkprocessor.cpp.o
+[  6%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/auxiliary/darkview.cpp.o
+[  6%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/auxiliary/defectmap.cpp.o
+[  6%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/auxiliary/opticaltrainmanager.cpp.o
+[  6%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/auxiliary/profilesettings.cpp.o
+[  6%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/auxiliary/opticaltrainsettings.cpp.o
+[  6%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/auxiliary/filtermanager.cpp.o
+[  7%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/auxiliary/buildfilteroffsets.cpp.o
+[  7%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/auxiliary/opslogs.cpp.o
+[  7%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/capture.cpp.o
+[  7%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/capturehistory.cpp.o
+[  7%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/capturemodulestate.cpp.o
+[  7%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/cameraprocess.cpp.o
+[  7%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/camerastate.cpp.o
+[  8%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/capturedeviceadaptor.cpp.o
+[  8%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/camera.cpp.o
+[  8%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/camera_actions.cpp.o
+[  8%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/camera_config.cpp.o
+[  8%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/camera_device.cpp.o
+[  8%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/camera_jobs.cpp.o
+[  8%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/capturepreviewwidget.cpp.o
+[  8%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/capturehistorynavigation.cpp.o
+[  8%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/capturecountswidget.cpp.o
+[  8%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/captureprocessoverlay.cpp.o
+[  8%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/sequencejob.cpp.o
+[  9%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/sequencejobstate.cpp.o
+[  9%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/sequencequeue.cpp.o
+[  9%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/dslrinfodialog.cpp.o
+[  9%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/rotatorsettings.cpp.o
+[  9%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/customproperties.cpp.o
+[  9%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/placeholderpath.cpp.o
+[  9%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/sequenceeditor.cpp.o
+[  9%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/opsdslrsettings.cpp.o
+[  9%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/capture/opsmiscsettings.cpp.o
+[  9%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/analyze/analyze.cpp.o
+[  9%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/schedulerjob.cpp.o
+[ 10%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/scheduler.cpp.o
+[ 10%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/schedulermodulestate.cpp.o
+[ 10%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/schedulerprocess.cpp.o
+[ 10%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/schedulerutils.cpp.o
+[ 10%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/framingassistantui.cpp.o
+[ 10%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/greedyscheduler.cpp.o
+[ 10%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/scheduleraltitudegraph.cpp.o
+[ 10%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/opsalignmentsettings.cpp.o
+[ 10%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/opsscriptssettings.cpp.o
+[ 10%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/opsweathersettings.cpp.o
+[ 11%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/opsjobssettings.cpp.o
+[ 11%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/opsoffsetsettings.cpp.o
+[ 11%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/schedulersettings.cpp.o
+[ 11%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/taskqueue/templatemanager.cpp.o
+[ 11%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/taskqueue/queue/queueexecutor.cpp.o
+[ 11%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/taskqueue/ui/deviceselectiondialog.cpp.o
+[ 11%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/scheduler/taskqueue/ui/propertytemplatebuilder.cpp.o
+[ 11%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/focus/focus.cpp.o
+[ 11%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/focus/focusmodule.cpp.o
+[ 12%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/focus/focusfitsview.cpp.o
+[ 12%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/focus/focusalgorithms.cpp.o
+[ 12%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/focus/focusstars.cpp.o
+[ 12%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/focus/focusfwhm.cpp.o
+[ 12%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/focus/focusfourierpower.cpp.o
+[ 12%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/focus/adaptivefocus.cpp.o
+[ 12%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/focus/focusadvisor.cpp.o
+[ 13%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/focus/opsfocusbase.cpp.o
+[ 13%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/mount/mount.cpp.o
+[ 13%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/mount/mountcontrolpanel.cpp.o
+[ 13%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/mount/mounttargetwidget.cpp.o
+[ 13%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/align/align.cpp.o
+[ 13%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/align/alignview.cpp.o
+[ 13%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/align/opsastrometry.cpp.o
+[ 13%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/align/opsalign.cpp.o
+[ 13%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/align/opsprograms.cpp.o
+[ 13%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/align/opsastrometryindexfiles.cpp.o
+[ 13%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/align/remoteastrometryparser.cpp.o
+[ 13%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/align/polaralign.cpp.o
+[ 13%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/align/mountmodel.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/align/polaralignmentassistant.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/align/manualrotator.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/align/polaralignwidget.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/align/pushtoassistant.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/guide/guide.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/guide/guideinterface.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/guide/opscalibration.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/guide/opsguide.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/guide/opsdither.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/guide/opsgpg.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/guide/internalguide/gmath.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/guide/internalguide/guidealgorithms.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/guide/internalguide/calibrationprocess.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/guide/internalguide/internalguider.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/guide/internalguide/guidelog.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/guide/internalguide/starcorrespondence.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/guide/internalguide/gpg.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/guide/internalguide/guidestars.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/guide/guideview.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/guide/externalguide/phd2.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/ekoslive/ekosliveclient.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/ekoslive/message.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/ekoslive/media.cpp.o
+[ 14%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/ekoslive/cloud.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/ekoslive/node.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/ekoslive/nodemanager.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/imagingplanner.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/focus/aberrationinspector.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/focus/focusblurriness.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/auxiliary/stellarsolverprofileeditor.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/auxiliary/stellarsolverprofile.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/ekos/auxiliary/solverutils.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/widgets/mapcanvas.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/skycomponents/skymapcomposite.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/skycomponents/asteroidscomponent.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/skycomponents/cometscomponent.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/skycomponents/starcomponent.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/skycomponents/catalogscomponent.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/skycomponents/supernovaecomponent.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/skycomponents/imageoverlaycomponent.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/conjunctions.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/eclipsetool.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/jmoontool.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/modcalcangdist.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/modcalcapcoord.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/modcalcaltaz.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/modcalceclipticcoords.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/modcalcgeodcoord.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/modcalcvlsr.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/observinglist.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/obslistpopupmenu.cpp.o
+[ 15%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/scriptbuilder.cpp.o
+[ 16%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/wutdialog.cpp.o
+[ 16%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/flagmanager.cpp.o
+[ 16%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/horizonmanager.cpp.o
+[ 16%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/eyepiecefield.cpp.o
+[ 16%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/starhopperdialog.cpp.o
+[ 16%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/greatcircle.cpp.o
+[ 16%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/whatsinteresting/wiview.cpp.o
+[ 17%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/whatsinteresting/modelmanager.cpp.o
+[ 17%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/whatsinteresting/wilpsettings.cpp.o
+[ 17%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/tools/whatsinteresting/wiequipsettings.cpp.o
+[ 18%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/auxiliary/ksfilereader.cpp.o
+[ 18%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/auxiliary/ksuserdb.cpp.o

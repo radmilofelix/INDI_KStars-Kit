@@ -1,0 +1,134 @@
+Work folder(indilib setup): /home/pi/installations/INDI_KStars-Kit
+Number of CPUs: 4
+Running script as root...
+
+
+###############################################################
+######################## Build KStars #########################
+###############################################################
+Forced KStars version defined!
+FORCEKSTARSVERSION: v3_8_1
+KSTARS_VERSION: origin/stable-3.8.1
+-- Found KF5: success (found suitable version "5.116.0", minimum required is "5.68.0") found components: NotifyConfig
+-- Found KF5: success (found suitable version "5.116.0", minimum required is "5.68.0") found components: Config Crash WidgetsAddons NewStuff I18n KIO XmlGui Plotting Notifications
+-- Found CFITSIO: /usr/lib/aarch64-linux-gnu/libcfitsio.so
+-- Found INDI: , /usr/include/libindi
+-- Found INDI Client Library: /usr/lib/aarch64-linux-gnu/libindiclient.so
+-- Found INDI: /usr/lib/aarch64-linux-gnu/libindiclient.so, /usr/include/libindi
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- Could NOT find ERFA (missing: ERFA_LIBRARIES ERFA_INCLUDE_DIRS) 
+-- Found WCSLIB: /usr/lib/aarch64-linux-gnu/libwcs.so, /usr/include/wcslib
+-- Found Xplanet: /usr/bin/xplanet
+-- Checking whether the linker supports -Wl,-z,nodump ...
+--   supports -Wl,-z,nodump: TRUE
+-- Found libnova: /usr/lib/aarch64-linux-gnu/libnova.so
+-- The following RUNTIME packages have been found:
+
+ * Xplanet, Renders an image of all the major planets and most satellites, <http://xplanet.sourceforge.net>
+   Gives KStars support for xplanet.
+
+-- The following OPTIONAL packages have been found:
+
+ * KF5NotifyConfig (required version >= 5.68.0)
+ * CFitsio, FITS IO Library, <https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html>
+   Support for the FITS (Flexible Image Transport System) data format in KStars.
+ * CURL
+ * INDI (required version >= 2.0.0), Astronomical instrumentation control, <https://www.indilib.org>
+   Support for controlling astronomical devices on Linux with KStars.
+ * PkgConfig
+ * LibRaw, Library for reading RAW files, <https://www.libraw.org/>
+   Support for reading and displaying RAW files in KStars.
+ * WCSLIB, World Coordinate System library, <https://www.atnf.csiro.au/people/mcalabre/WCS>
+   WCS enables KStars to read and process world coordinate systems in FITS header.
+ * Qt5DataVisualization
+ * LibXISF, Library for loading and saving XISF images, <https://nouspiro.space>
+ * Qt5Core
+ * Qt5Keychain
+ * OpenCV, OpenCV library, <https://opencv.org>
+   Standard library of image processing functions.
+ * OpenGL, Open Graphics Library, <https://www.opengl.org/>
+   Support for hardware rendering in KStars.
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 5.68.0)
+ * Qt5Qml
+ * Qt5QmlModels (required version >= 5.15.15)
+ * Qt5Quick
+ * Qt5Sql
+ * Qt5Svg
+ * Qt5PrintSupport
+ * Qt5WebSockets
+ * Qt5 (required version >= 5.12.7)
+ * Qt5Widgets (required version >= 5.15.2)
+ * Qt5Xml (required version >= 5.15.2)
+ * KF5Crash (required version >= 5.68.0)
+ * KF5Config (required version >= 5.116.0)
+ * KF5WidgetsAddons (required version >= 5.116.0)
+ * Qt5Network (required version >= 5.15.2)
+ * KF5NewStuff (required version >= 5.68.0)
+ * Gettext
+ * KF5I18n (required version >= 5.68.0)
+ * Qt5Gui (required version >= 5.15.2)
+ * Qt5Concurrent (required version >= 5.15.2)
+ * KF5KIO (required version >= 5.68.0)
+ * KF5XmlGui (required version >= 5.68.0)
+ * KF5Plotting (required version >= 5.68.0)
+ * KF5Notifications (required version >= 5.68.0)
+ * KF5 (required version >= 5.68.0)
+ * Eigen3
+ * StellarSolver
+ * ZLIB
+ * Threads
+ * GSL
+ * Nova
+ * Qt5Test
+
+-- The following OPTIONAL packages have not been found:
+
+ * ERFA, Essential Routines for Fundamental Astronomy, <https://github.com/liberfa/erfa/>
+   BSD-compatible version of SOFA, used to test core computations of KStars (only needed by tests)
+
+-- Configuring done (0.5s)
+-- Generating done (1.3s)
+-- Build files have been written to: /home/pi/installations/INDI_KStars-Kit/IndiSources/build/kstars
+[  1%] Built target htmesh_autogen_timestamp_deps
+[  1%] Built target LibKSDataHandlers_autogen_timestamp_deps
+[  1%] Generating mo...
+[  1%] Generating ts...
+[  1%] Built target LibKSDataHandlers_autogen
+[  1%] Built target htmesh_autogen
+[  1%] Built target pofiles-a899195de3054a4e0ce67e6391ddb878
+[  1%] Built target tsfiles-a899195de3054a4e0ce67e6391ddb878
+[  1%] Built target LibKSDataHandlers
+[  3%] Built target htmesh
+[  3%] Built target KStarsLib_autogen_timestamp_deps
+[  3%] Automatic MOC for target KStarsLib
+[  3%] Built target KStarsLib_autogen
+[  3%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/KStarsLib_autogen/mocs_compilation.cpp.o
+[  3%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/drivermanager.cpp.o
+[  3%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/guimanager.cpp.o
+[  3%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indidevice.cpp.o
+[  3%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indiproperty.cpp.o
+[  3%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indielement.cpp.o
+[  3%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indistd.cpp.o
+[  3%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indilistener.cpp.o
+[  3%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indimount.cpp.o
+[  3%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indicamera.cpp.o
+[  3%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indidome.cpp.o
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indilightbox.cpp.o
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indicorrelator.cpp.o
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indispectrograph.cpp.o
+[  0%] Generating mo...
+[  0%] Built target pofiles-a899195de3054a4e0ce67e6391ddb878
+[  1%] Generating ts...
+[  1%] Built target tsfiles-a899195de3054a4e0ce67e6391ddb878
+[  1%] Built target LibKSDataHandlers_autogen_timestamp_deps
+[  1%] Built target LibKSDataHandlers_autogen
+[  1%] Built target LibKSDataHandlers
+[  1%] Built target htmesh_autogen_timestamp_deps
+[  1%] Built target htmesh_autogen
+[  3%] Built target htmesh
+[  3%] Built target KStarsLib_autogen_timestamp_deps
+[  3%] Built target KStarsLib_autogen
+[  4%] Building CXX object kstars/CMakeFiles/KStarsLib.dir/indi/indilightbox.cpp.o

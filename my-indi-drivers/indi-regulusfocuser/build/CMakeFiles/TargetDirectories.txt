@@ -1,0 +1,7 @@
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-regulusfocuser/build/CMakeFiles/indi_regulusfocuser.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-regulusfocuser/build/CMakeFiles/edit_cache.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-regulusfocuser/build/CMakeFiles/rebuild_cache.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-regulusfocuser/build/CMakeFiles/list_install_components.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-regulusfocuser/build/CMakeFiles/install.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-regulusfocuser/build/CMakeFiles/install/local.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-regulusfocuser/build/CMakeFiles/install/strip.dir

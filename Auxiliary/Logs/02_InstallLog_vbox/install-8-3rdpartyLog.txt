@@ -1,0 +1,2388 @@
+Work folder(indilib setup): /home/pajafleger/INDI_KStars-Kit
+FILE: settings.cfg
+SECTION: [settings]
+key = INDISOURCESFOLDER
+value = IndiSources
+key = MYDRIVERSFOLDER
+value = my-indi-drivers
+key = UDEVFOLDER
+value = udev
+key = USBRESETSCRIPTFOLDER
+value = USB-ResetScript
+key = FORCEINDILIBVERSION
+value = v2_1_8
+
+
+
+###############################################################
+############### Build INDI 3rd party drivers ##################
+###############################################################
+###############################################################
+################### Build libraries ###########################
+###############################################################
+-- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test COMPATIBLE_FORTIFY_SOURCE
+-- Performing Test COMPATIBLE_FORTIFY_SOURCE - Success
+-- Performing Test COMPATIBLE_STRINGOP_TRUNCATION
+-- Performing Test COMPATIBLE_STRINGOP_TRUNCATION - Success
+-- Performing Test COMPATIBLE_UNUSED_PARAMETER
+-- Performing Test COMPATIBLE_UNUSED_PARAMETER - Success
+-- Performing Test COMPATIBLE_UNUSED_BUT_SET_VARIABLE
+-- Performing Test COMPATIBLE_UNUSED_BUT_SET_VARIABLE - Success
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1")
+-- Checking for module 'libavcodec>=57.64.101'
+--   Found libavcodec, version 61.19.101
+-- Checking for module 'libavdevice>=57.1.100'
+--   Found libavdevice, version 61.3.100
+-- Checking for module 'libavformat>=57.56.100'
+--   Found libavformat, version 61.7.100
+-- Checking for module 'libavutil>=55.34.100'
+--   Found libavutil, version 59.39.100
+-- Checking for module 'libswscale>=4.2.100'
+--   Found libswscale, version 8.3.100
+-- Found FFMPEG: /usr/lib/x86_64-linux-gnu/libavcodec.so;/usr/lib/x86_64-linux-gnu/libavdevice.so;/usr/lib/x86_64-linux-gnu/libavformat.so;/usr/lib/x86_64-linux-gnu/libavutil.so;/usr/lib/x86_64-linux-gnu/libswscale.so, /usr/include/x86_64-linux-gnu
+-- Since FFMPEG was found, INDI Webcam Driver can be built
+-- Since an up to date nutclient was not found, INDI NUT Driver will not be built
+-- Found USB1: /usr/lib/x86_64-linux-gnu/libusb-1.0.so (found version "1.0.28") 
+-- Performing Test USB1_HAS_LIBUSB_ERROR_NAME
+-- Performing Test USB1_HAS_LIBUSB_ERROR_NAME - Success
+-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "8.14.1")
+-- Found INDI: /usr/lib/x86_64-linux-gnu/libindidriver.so;/usr/lib/x86_64-linux-gnu/libindiAlignmentDriver.so (found version "2.1.9") 
+-- Found FTDI1: /usr/lib/x86_64-linux-gnu/libftdi1.so
+-- Configuring done (1.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/pajafleger/INDI_KStars-Kit/IndiSources/build/indi-3rdparty-libs
+[  0%] Building CXX object libapogee/CMakeFiles/apogee.dir/Alta.cpp.o
+[  0%] Building CXX object libapogee/CMakeFiles/apogee.dir/AltaCcdAcqParams.cpp.o
+[  1%] Building CXX object libapogee/CMakeFiles/apogee.dir/AltaData.cpp.o
+[  1%] Building CXX object libapogee/CMakeFiles/apogee.dir/AltaEthernetIo.cpp.o
+[  2%] Building CXX object libapogee/CMakeFiles/apogee.dir/AltaF.cpp.o
+[  2%] Building CXX object libapogee/CMakeFiles/apogee.dir/AltaIo.cpp.o
+[  2%] Building CXX object libapogee/CMakeFiles/apogee.dir/AltaModeFsm.cpp.o
+[  3%] Building CXX object libapogee/CMakeFiles/apogee.dir/AltaUsbIo.cpp.o
+[  3%] Building CXX object libapogee/CMakeFiles/apogee.dir/ApgLogger.cpp.o
+[  4%] Building CXX object libapogee/CMakeFiles/apogee.dir/ApgTimer.cpp.o
+[  4%] Building CXX object libapogee/CMakeFiles/apogee.dir/ApnCamData.cpp.o
+[  4%] Building CXX object libapogee/CMakeFiles/apogee.dir/ApogeeCam.cpp.o
+[  5%] Building CXX object libapogee/CMakeFiles/apogee.dir/ApogeeFilterWheel.cpp.o
+[  5%] Building CXX object libapogee/CMakeFiles/apogee.dir/Ascent.cpp.o
+[  6%] Building CXX object libapogee/CMakeFiles/apogee.dir/AscentBasedIo.cpp.o
+[  6%] Building CXX object libapogee/CMakeFiles/apogee.dir/AscentBasedUsbIo.cpp.o
+[  6%] Building CXX object libapogee/CMakeFiles/apogee.dir/AscentData.cpp.o
+[  7%] Building CXX object libapogee/CMakeFiles/apogee.dir/Aspen.cpp.o
+[  7%] Building CXX object libapogee/CMakeFiles/apogee.dir/AspenData.cpp.o
+[  8%] Building CXX object libapogee/CMakeFiles/apogee.dir/AspenEthernetIo.cpp.o
+[  8%] Building CXX object libapogee/CMakeFiles/apogee.dir/AspenIo.cpp.o
+[  8%] Building CXX object libapogee/CMakeFiles/apogee.dir/AspenUsbIo.cpp.o
+[  9%] Building CXX object libapogee/CMakeFiles/apogee.dir/CamCfgMatrix.cpp.o
+[  9%] Building CXX object libapogee/CMakeFiles/apogee.dir/CamGen2Base.cpp.o
+[ 10%] Building CXX object libapogee/CMakeFiles/apogee.dir/CamGen2CcdAcqParams.cpp.o
+[ 10%] Building CXX object libapogee/CMakeFiles/apogee.dir/CamGen2ModeFsm.cpp.o
+[ 10%] Building CXX object libapogee/CMakeFiles/apogee.dir/CamHelpers.cpp.o
+[ 11%] Building CXX object libapogee/CMakeFiles/apogee.dir/CamRegMirror.cpp.o
+[ 11%] Building CXX object libapogee/CMakeFiles/apogee.dir/CamUsbIo.cpp.o
+[ 12%] Building CXX object libapogee/CMakeFiles/apogee.dir/CameraInfo.cpp.o
+[ 12%] Building CXX object libapogee/CMakeFiles/apogee.dir/CameraIo.cpp.o
+[ 12%] Building CXX object libapogee/CMakeFiles/apogee.dir/CameraStatusRegs.cpp.o
+[ 13%] Building CXX object libapogee/CMakeFiles/apogee.dir/CcdAcqParams.cpp.o
+[ 13%] Building CXX object libapogee/CMakeFiles/apogee.dir/DeviceStrHelpers.cpp.o
+[ 14%] Building CXX object libapogee/CMakeFiles/apogee.dir/FilterWheelIo.cpp.o
+[ 14%] Building CXX object libapogee/CMakeFiles/apogee.dir/FindDeviceEthernet.cpp.o
+[ 14%] Building CXX object libapogee/CMakeFiles/apogee.dir/FindDeviceUsb.cpp.o
+[ 15%] Building CXX object libapogee/CMakeFiles/apogee.dir/HiC.cpp.o
+[ 15%] Building CXX object libapogee/CMakeFiles/apogee.dir/IAltaSerialPortIo.cpp.o
+[ 16%] Building CXX object libapogee/CMakeFiles/apogee.dir/ICamIo.cpp.o
+[ 16%] Building CXX object libapogee/CMakeFiles/apogee.dir/ILog.cpp.o
+[ 16%] Building CXX object libapogee/CMakeFiles/apogee.dir/ITimer.cpp.o
+[ 17%] Building CXX object libapogee/CMakeFiles/apogee.dir/IUsb.cpp.o
+[ 17%] Building CXX object libapogee/CMakeFiles/apogee.dir/ImgFix.cpp.o
+[ 18%] Building CXX object libapogee/CMakeFiles/apogee.dir/LoggerException.cpp.o
+[ 18%] Building CXX object libapogee/CMakeFiles/apogee.dir/ModeFsm.cpp.o
+[ 18%] Building CXX object libapogee/CMakeFiles/apogee.dir/PlatformData.cpp.o
+[ 19%] Building CXX object libapogee/CMakeFiles/apogee.dir/PromFx2Io.cpp.o
+[ 19%] Building CXX object libapogee/CMakeFiles/apogee.dir/Quad.cpp.o
+[ 20%] Building CXX object libapogee/CMakeFiles/apogee.dir/UdpSocketBase.cpp.o
+[ 20%] Building CXX object libapogee/CMakeFiles/apogee.dir/apgHelper.cpp.o
+[ 20%] Building CXX object libapogee/CMakeFiles/apogee.dir/helpers.cpp.o
+[ 21%] Building CXX object libapogee/CMakeFiles/apogee.dir/libCurlWrap.cpp.o
+[ 21%] Building CXX object libapogee/CMakeFiles/apogee.dir/linux/GenOneLinuxUSB.cpp.o
+[ 22%] Building CXX object libapogee/CMakeFiles/apogee.dir/linux/LinuxTimer.cpp.o
+[ 22%] Building CXX object libapogee/CMakeFiles/apogee.dir/linux/LoggerSyslog.cpp.o
+[ 22%] Building CXX object libapogee/CMakeFiles/apogee.dir/linux/UdpSocketLinux.cpp.o
+[ 23%] Building CXX object libapogee/CMakeFiles/apogee.dir/linux/linuxHelpers.cpp.o
+[ 23%] Building CXX object libapogee/CMakeFiles/apogee.dir/parseCfgTabDelim.cpp.o
+[ 24%] Linking CXX shared library libapogee.so
+[ 24%] Built target apogee
+[ 24%] Generating libASICamera2.so.1.41
+[ 25%] Generating libASICamera2.so.1
+[ 25%] Generating libASICamera2.so
+[ 25%] Built target imported_ASICamera2
+[ 26%] Generating libEFWFilter.so.1.7.0
+[ 26%] Generating libEFWFilter.so.1
+[ 26%] Generating libEFWFilter.so
+[ 26%] Built target imported_EFWFilter
+[ 27%] Generating libUSB2ST4Conv.so.1.0
+[ 27%] Generating libUSB2ST4Conv.so.1
+[ 27%] Generating libUSB2ST4Conv.so
+[ 27%] Built target imported_USB2ST4Conv
+[ 28%] Generating libEAFFocuser.so.1.7.7
+[ 28%] Generating libEAFFocuser.so.1
+[ 29%] Generating libEAFFocuser.so
+[ 29%] Built target imported_EAFFocuser
+[ 29%] Generating libCAARotator.so.1.5.9
+[ 29%] Generating libCAARotator.so.1
+[ 30%] Generating libCAARotator.so
+[ 30%] Built target imported_CAARotator
+[ 30%] Generating libatikcameras.so.2.2.22
+[ 31%] Generating libatikcameras.so.2
+[ 31%] Generating libatikcameras.so
+[ 31%] Built target imported_atikcameras
+[ 31%] Generating libflycapture.so.2.13.3.31
+[ 32%] Generating libflycapture.so.2
+[ 32%] Generating libflycapture.so
+[ 32%] Built target imported_flycapture
+[ 32%] Building C object libfishcamp/CMakeFiles/fishcamp.dir/fishcamp.c.o
+[ 32%] Linking C shared library libfishcamp.so
+[ 32%] Built target fishcamp
+[ 33%] Building C object libfli/CMakeFiles/fli.dir/libfli.c.o
+[ 33%] Building C object libfli/CMakeFiles/fli.dir/libfli-camera.c.o
+[ 34%] Building C object libfli/CMakeFiles/fli.dir/libfli-camera-parport.c.o
+[ 34%] Building C object libfli/CMakeFiles/fli.dir/libfli-camera-usb.c.o
+[ 34%] Building C object libfli/CMakeFiles/fli.dir/libfli-filter-focuser.c.o
+[ 35%] Building C object libfli/CMakeFiles/fli.dir/libfli-mem.c.o
+[ 35%] Building C object libfli/CMakeFiles/fli.dir/libfli-raw.c.o
+[ 36%] Building C object libfli/CMakeFiles/fli.dir/unix/libfli-usb.c.o
+[ 36%] Building C object libfli/CMakeFiles/fli.dir/unix/libfli-debug.c.o
+[ 36%] Building C object libfli/CMakeFiles/fli.dir/unix/libfli-serial.c.o
+[ 37%] Building C object libfli/CMakeFiles/fli.dir/unix/libfli-sys.c.o
+[ 37%] Building C object libfli/CMakeFiles/fli.dir/unix/libusb/libfli-usb-sys.c.o
+[ 38%] Building C object libfli/CMakeFiles/fli.dir/unix/linux/libfli-parport.c.o
+[ 38%] Linking C shared library libfli.so
+[ 38%] Built target fli
+[ 39%] Generating libflipro.so.2.1.4
+[ 39%] Generating libflipro.so.2
+[ 39%] Generating libflipro.so
+[ 39%] Built target imported_flipro
+[ 40%] Generating libflialgo.so.2.1.4
+[ 40%] Generating libflialgo.so.2
+[ 41%] Generating libflialgo.so
+[ 41%] Built target imported_flialgo
+[ 41%] Generating libgxccd.so.0.12.1
+[ 42%] Generating libgxccd.so.0
+[ 42%] Generating libgxccd.so
+[ 42%] Built target imported_gxccd
+[ 42%] Generating libinovasdk.so.1.3.6
+[ 42%] Generating libinovasdk.so.1
+[ 43%] Generating libinovasdk.so
+[ 43%] Built target imported_inovasdk
+[ 43%] Generating libqhyccd.so.26.2.1
+[ 44%] Generating libqhyccd.so.20
+[ 44%] Generating libqhyccd.so
+[ 44%] Built target imported_qhyccd
+[ 44%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/CCDCamera.cpp.o
+[ 44%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/CameraID.cpp.o
+[ 45%] Building C object libqsi/CMakeFiles/qsiapi.dir/ConvertUTF.c.o
+[ 45%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/Filter.cpp.o
+[ 46%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/FilterWheel.cpp.o
+[ 46%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/HotPixelMap.cpp.o
+[ 46%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/QSI_PacketWrapper.cpp.o
+[ 47%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/QSI_USBWrapper.cpp.o
+[ 47%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/qsiapi.cpp.o
+[ 48%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/QSIFeatures.cpp.o
+[ 48%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/VidPid.cpp.o
+[ 48%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/QSIModelInfo.cpp.o
+[ 49%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/ICameraEeprom.cpp.o
+[ 49%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/QSI_Interface.cpp.o
+[ 50%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/QSILog.cpp.o
+[ 50%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/HostIO_TCP.cpp.o
+[ 50%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/HostIO_USB.cpp.o
+[ 51%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/IHostIO.cpp.o
+[ 51%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/HostConnection.cpp.o
+[ 52%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/QSIError.cpp.o
+[ 52%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/HostIO_CyUSB.cpp.o
+[ 52%] Linking CXX shared library libqsiapi.so
+[ 52%] Built target qsiapi
+[ 52%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/CCDCamera.cpp.o
+[ 52%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/CameraID.cpp.o
+[ 53%] Building C object libqsi/CMakeFiles/qsiapitest.dir/ConvertUTF.c.o
+[ 53%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/Filter.cpp.o
+[ 54%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/FilterWheel.cpp.o
+[ 54%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/HotPixelMap.cpp.o
+[ 54%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/QSI_PacketWrapper.cpp.o
+[ 55%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/QSI_USBWrapper.cpp.o
+[ 55%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/qsiapi.cpp.o
+[ 56%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/QSIFeatures.cpp.o
+[ 56%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/VidPid.cpp.o
+[ 56%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/QSIModelInfo.cpp.o
+[ 57%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/ICameraEeprom.cpp.o
+[ 57%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/QSI_Interface.cpp.o
+[ 58%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/QSILog.cpp.o
+[ 58%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/HostIO_TCP.cpp.o
+[ 58%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/HostIO_USB.cpp.o
+[ 59%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/IHostIO.cpp.o
+[ 59%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/HostConnection.cpp.o
+[ 60%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/QSIError.cpp.o
+[ 60%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/HostIO_CyUSB.cpp.o
+[ 60%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/demo_src/qsiapitest.cpp.o
+[ 61%] Linking CXX executable qsiapitest
+[ 61%] Built target qsiapitest
+[ 62%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/CCDCamera.cpp.o
+[ 62%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/CameraID.cpp.o
+[ 63%] Building C object libqsi/CMakeFiles/qsiapidemo.dir/ConvertUTF.c.o
+[ 63%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/Filter.cpp.o
+[ 63%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/FilterWheel.cpp.o
+[ 64%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/HotPixelMap.cpp.o
+[ 64%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/QSI_PacketWrapper.cpp.o
+[ 65%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/QSI_USBWrapper.cpp.o
+[ 65%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/qsiapi.cpp.o
+[ 65%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/QSIFeatures.cpp.o
+[ 66%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/VidPid.cpp.o
+[ 66%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/QSIModelInfo.cpp.o
+[ 67%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/ICameraEeprom.cpp.o
+[ 67%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/QSI_Interface.cpp.o
+[ 67%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/QSILog.cpp.o
+[ 68%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/HostIO_TCP.cpp.o
+[ 68%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/HostIO_USB.cpp.o
+[ 69%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/IHostIO.cpp.o
+[ 69%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/HostConnection.cpp.o
+[ 69%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/QSIError.cpp.o
+[ 70%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/HostIO_CyUSB.cpp.o
+[ 70%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/demo_src/qsidemo.cpp.o
+[ 71%] Linking CXX executable qsiapidemo
+[ 71%] Built target qsiapidemo
+[ 71%] Generating libsbig.so.4.9.9
+[ 71%] Generating libsbig.so.4
+[ 72%] Generating libsbig.so
+[ 72%] Built target imported_sbig
+[ 72%] Generating libRicohCameraSDKCpp.so.1.1.0
+[ 72%] Generating libRicohCameraSDKCpp.so.1
+[ 73%] Generating libRicohCameraSDKCpp.so
+[ 73%] Built target imported_RicohCameraSDKCpp
+[ 73%] Generating libmtpricoh.so.9.3.0
+[ 74%] Generating libmtpricoh.so.9
+[ 74%] Generating libmtpricoh.so
+[ 74%] Built target imported_mtpricoh
+[ 75%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/libpktriggercord.c.o
+[ 75%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/pslr.c.o
+[ 75%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/pslr_model.c.o
+[ 76%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/pslr_lens.c.o
+[ 76%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/pslr_enum.c.o
+[ 77%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/pslr_utils.c.o
+[ 77%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/pslr_log.c.o
+[ 77%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/pslr_scsi.c.o
+[ 78%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/src/external/js0n/js0n.c.o
+[ 78%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/pktriggercord-servermode.c.o
+[ 79%] Linking C shared library libpktriggercord.so
+[ 79%] Built target pktriggercord
+[ 79%] Generating 95-pentax.rules
+[ 80%] Generating 95-samsung.rules
+[ 80%] Built target udev_rules
+[ 80%] Generating libtoupcam.so.59.30594
+[ 81%] Generating libtoupcam.so.59
+[ 81%] Generating libtoupcam.so
+[ 81%] Built target imported_toupcam
+[ 81%] Generating libaltaircam.so.59.30594
+[ 82%] Generating libaltaircam.so.59
+[ 82%] Generating libaltaircam.so
+[ 82%] Built target imported_altaircam
+[ 82%] Generating libbressercam.so.59.30594
+[ 82%] Generating libbressercam.so.59
+[ 83%] Generating libbressercam.so
+[ 83%] Built target imported_bressercam
+[ 84%] Generating libmallincam.so.59.30594
+[ 84%] Generating libmallincam.so.59
+[ 85%] Generating libmallincam.so
+[ 85%] Built target imported_mallincam
+[ 86%] Generating libmeadecam.so.59.30594
+[ 86%] Generating libmeadecam.so.59
+[ 86%] Generating libmeadecam.so
+[ 86%] Built target imported_meadecam
+[ 86%] Generating libnncam.so.59.30594
+[ 87%] Generating libnncam.so.59
+[ 87%] Generating libnncam.so
+[ 87%] Built target imported_nncam
+[ 88%] Generating libogmacam.so.59.30594
+[ 88%] Generating libogmacam.so.59
+[ 88%] Generating libogmacam.so
+[ 88%] Built target imported_ogmacam
+[ 88%] Generating libomegonprocam.so.59.30594
+[ 89%] Generating libomegonprocam.so.59
+[ 89%] Generating libomegonprocam.so
+[ 89%] Built target imported_omegonprocam
+[ 90%] Generating libstarshootg.so.59.30594
+[ 90%] Generating libstarshootg.so.59
+[ 91%] Generating libstarshootg.so
+[ 91%] Built target imported_starshootg
+[ 91%] Generating libtscam.so.59.30594
+[ 92%] Generating libtscam.so.59
+[ 92%] Generating libtscam.so
+[ 92%] Built target imported_tscam
+[ 93%] Generating libsvbonycam.so.57.27348
+[ 93%] Generating libsvbonycam.so.57
+[ 93%] Generating libsvbonycam.so
+[ 93%] Built target imported_svbonycam
+[ 94%] Generating libSVBCameraSDK.so.1.13.4
+[ 94%] Generating libSVBCameraSDK.so.1
+[ 95%] Generating libSVBCameraSDK.so
+[ 95%] Built target imported_SVBCameraSDK
+[ 95%] Generating libPlayerOneCamera.so.3.10.0
+[ 96%] Generating libPlayerOneCamera.so.3
+[ 96%] Generating libPlayerOneCamera.so
+[ 96%] Built target imported_PlayerOneCamera
+[ 96%] Generating libPlayerOnePW.so.1.2.3
+[ 97%] Generating libPlayerOnePW.so.1
+[ 97%] Generating libPlayerOnePW.so
+[ 97%] Built target imported_PlayerOnePW
+[ 98%] Generating liboasisfocuser.so.2.0.2
+[ 98%] Generating liboasisfocuser.so.2
+[ 99%] Generating liboasisfocuser.so
+[ 99%] Built target imported_oasisfocuser
+[ 99%] Generating liboasisfilterwheel.so.1.2.1
+[ 99%] Generating liboasisfilterwheel.so.1
+[100%] Generating liboasisfilterwheel.so
+[100%] Built target imported_oasisfilterwheel
+[ 24%] Built target apogee
+[ 25%] Built target imported_ASICamera2
+[ 26%] Built target imported_EFWFilter
+[ 27%] Built target imported_USB2ST4Conv
+[ 29%] Built target imported_EAFFocuser
+[ 30%] Built target imported_CAARotator
+[ 31%] Built target imported_atikcameras
+[ 32%] Built target imported_flycapture
+[ 32%] Built target fishcamp
+[ 38%] Built target fli
+[ 39%] Built target imported_flipro
+[ 41%] Built target imported_flialgo
+[ 42%] Built target imported_gxccd
+[ 43%] Built target imported_inovasdk
+[ 44%] Built target imported_qhyccd
+[ 52%] Built target qsiapi
+[ 61%] Built target qsiapitest
+[ 71%] Built target qsiapidemo
+[ 72%] Built target imported_sbig
+[ 73%] Built target imported_RicohCameraSDKCpp
+[ 74%] Built target imported_mtpricoh
+[ 79%] Built target pktriggercord
+[ 80%] Built target udev_rules
+[ 81%] Built target imported_toupcam
+[ 82%] Built target imported_altaircam
+[ 83%] Built target imported_bressercam
+[ 85%] Built target imported_mallincam
+[ 86%] Built target imported_meadecam
+[ 87%] Built target imported_nncam
+[ 88%] Built target imported_ogmacam
+[ 89%] Built target imported_omegonprocam
+[ 91%] Built target imported_starshootg
+[ 92%] Built target imported_tscam
+[ 93%] Built target imported_svbonycam
+[ 95%] Built target imported_SVBCameraSDK
+[ 96%] Built target imported_PlayerOneCamera
+[ 97%] Built target imported_PlayerOnePW
+[ 99%] Built target imported_oasisfocuser
+[100%] Built target imported_oasisfilterwheel
+Install the project...
+-- Install configuration: "Debug"
+-- Installing: /usr/lib/x86_64-linux-gnu/libapogee.so.3.2
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libapogee.so.3
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libapogee.so
+-- Installing: /usr/include/libapogee/Alta.h
+-- Installing: /usr/include/libapogee/AltaCcdAcqParams.h
+-- Installing: /usr/include/libapogee/AltaData.h
+-- Installing: /usr/include/libapogee/AltaEthernetIo.h
+-- Installing: /usr/include/libapogee/AltaF.h
+-- Installing: /usr/include/libapogee/AltaIo.h
+-- Installing: /usr/include/libapogee/AltaModeFsm.h
+-- Installing: /usr/include/libapogee/AltaUsbIo.h
+-- Installing: /usr/include/libapogee/ApgLogger.h
+-- Installing: /usr/include/libapogee/ApgTimer.h
+-- Installing: /usr/include/libapogee/ApnCamData.h
+-- Installing: /usr/include/libapogee/ApnUsbSys.h
+-- Installing: /usr/include/libapogee/ApogeeCam.h
+-- Installing: /usr/include/libapogee/ApogeeFilterWheel.h
+-- Installing: /usr/include/libapogee/Ascent.h
+-- Installing: /usr/include/libapogee/AscentBasedIo.h
+-- Installing: /usr/include/libapogee/AscentBasedUsbIo.h
+-- Installing: /usr/include/libapogee/AscentData.h
+-- Installing: /usr/include/libapogee/Aspen.h
+-- Installing: /usr/include/libapogee/AspenData.h
+-- Installing: /usr/include/libapogee/AspenEthernetIo.h
+-- Installing: /usr/include/libapogee/AspenFx2.h
+-- Installing: /usr/include/libapogee/AspenIo.h
+-- Installing: /usr/include/libapogee/AspenUsbIo.h
+-- Installing: /usr/include/libapogee/COMHelper.h
+-- Installing: /usr/include/libapogee/CamCfgMatrix.h
+-- Installing: /usr/include/libapogee/CamGen2Base.h
+-- Installing: /usr/include/libapogee/CamGen2CcdAcqParams.h
+-- Installing: /usr/include/libapogee/CamGen2ModeFsm.h
+-- Installing: /usr/include/libapogee/CamHelpers.h
+-- Installing: /usr/include/libapogee/CamRegMirror.h
+-- Installing: /usr/include/libapogee/CamUsbIo.h
+-- Installing: /usr/include/libapogee/CameraInfo.h
+-- Installing: /usr/include/libapogee/CameraIo.h
+-- Installing: /usr/include/libapogee/CameraStatusRegs.h
+-- Installing: /usr/include/libapogee/CcdAcqParams.h
+-- Installing: /usr/include/libapogee/DefDllExport.h
+-- Installing: /usr/include/libapogee/DeviceStrHelpers.h
+-- Installing: /usr/include/libapogee/FilterWheelIo.h
+-- Installing: /usr/include/libapogee/FindDeviceEthernet.h
+-- Installing: /usr/include/libapogee/FindDeviceUsb.h
+-- Installing: /usr/include/libapogee/HiC.h
+-- Installing: /usr/include/libapogee/IAltaSerialPortIo.h
+-- Installing: /usr/include/libapogee/ICamIo.h
+-- Installing: /usr/include/libapogee/ILog.h
+-- Installing: /usr/include/libapogee/ITimer.h
+-- Installing: /usr/include/libapogee/IUsb.h
+-- Installing: /usr/include/libapogee/ImgFix.h
+-- Installing: /usr/include/libapogee/LoggerException.h
+-- Installing: /usr/include/libapogee/ModeFsm.h
+-- Installing: /usr/include/libapogee/PlatformData.h
+-- Installing: /usr/include/libapogee/PromFx2Io.h
+-- Installing: /usr/include/libapogee/Quad.h
+-- Installing: /usr/include/libapogee/UdpSocketBase.h
+-- Installing: /usr/include/libapogee/apgHelper.h
+-- Installing: /usr/include/libapogee/doc.h
+-- Installing: /usr/include/libapogee/helpers.h
+-- Installing: /usr/include/libapogee/libCurlWrap.h
+-- Installing: /usr/include/libapogee/parseCfgTabDelim.h
+-- Installing: /usr/include/libapogee/resource.h
+-- Installing: /usr/include/libapogee/versionNo.h
+-- Installing: /etc/Apogee/camera/A12HC.txt
+-- Installing: /etc/Apogee/camera/A12HR.txt
+-- Installing: /etc/Apogee/camera/A12HS.txt
+-- Installing: /etc/Apogee/camera/A16HR.txt
+-- Installing: /etc/Apogee/camera/A16HS.txt
+-- Installing: /etc/Apogee/camera/A694S.txt
+-- Installing: /etc/Apogee/camera/A694V.txt
+-- Installing: /etc/Apogee/camera/AR2.txt
+-- Installing: /etc/Apogee/camera/AR2D.txt
+-- Installing: /etc/Apogee/camera/AR2F.txt
+-- Installing: /etc/Apogee/camera/AR2FD.txt
+-- Installing: /etc/Apogee/camera/AR2Fa.txt
+-- Installing: /etc/Apogee/camera/AR2S.txt
+-- Installing: /etc/Apogee/camera/AR2V.txt
+-- Installing: /etc/Apogee/camera/AR2Vb.txt
+-- Installing: /etc/Apogee/camera/AR2a.txt
+-- Installing: /etc/Apogee/camera/AR4.txt
+-- Installing: /etc/Apogee/camera/AR4D.txt
+-- Installing: /etc/Apogee/camera/AR4F.txt
+-- Installing: /etc/Apogee/camera/AR4FD.txt
+-- Installing: /etc/Apogee/camera/AR4Fb.txt
+-- Installing: /etc/Apogee/camera/AR4V.txt
+-- Installing: /etc/Apogee/camera/AR4Vb.txt
+-- Installing: /etc/Apogee/camera/AR5.txt
+-- Installing: /etc/Apogee/camera/AR5F.txt
+-- Installing: /etc/Apogee/camera/AR5FL.txt
+-- Installing: /etc/Apogee/camera/AR5L.txt
+-- Installing: /etc/Apogee/camera/AR5V.txt
+-- Installing: /etc/Apogee/camera/AS2.txt
+-- Installing: /etc/Apogee/camera/AS2S.txt
+-- Installing: /etc/Apogee/camera/AS4.txt
+-- Installing: /etc/Apogee/camera/AS5.txt
+-- Installing: /etc/Apogee/camera/AS5F.txt
+-- Installing: /etc/Apogee/camera/AS5S.txt
+-- Installing: /etc/Apogee/camera/AV1.txt
+-- Installing: /etc/Apogee/camera/AV2.txt
+-- Installing: /etc/Apogee/camera/AV2S.txt
+-- Installing: /etc/Apogee/camera/AV2V.txt
+-- Installing: /etc/Apogee/camera/AV2Vb.txt
+-- Installing: /etc/Apogee/camera/AV4A.txt
+-- Installing: /etc/Apogee/camera/AV4B.txt
+-- Installing: /etc/Apogee/camera/AV4D.txt
+-- Installing: /etc/Apogee/camera/AV4E.txt
+-- Installing: /etc/Apogee/camera/AV4V.txt
+-- Installing: /etc/Apogee/camera/AV4Vb.txt
+-- Installing: /etc/Apogee/camera/AV5.txt
+-- Installing: /etc/Apogee/camera/AV5S.txt
+-- Installing: /etc/Apogee/camera/AV5V.txt
+-- Installing: /etc/Apogee/camera/AV6.txt
+-- Installing: /etc/Apogee/camera/AV7.txt
+-- Installing: /etc/Apogee/camera/CG42AIMOV.txt
+-- Installing: /etc/Apogee/camera/CG42NIMOV.txt
+-- Installing: /etc/Apogee/camera/CG47V.txt
+-- Installing: /etc/Apogee/camera/F10140V.txt
+-- Installing: /etc/Apogee/camera/F16HR1.txt
+-- Installing: /etc/Apogee/camera/F16HR1B.txt
+-- Installing: /etc/Apogee/camera/F16HS1.txt
+-- Installing: /etc/Apogee/camera/F16HS1B.txt
+-- Installing: /etc/Apogee/camera/F29050S.txt
+-- Installing: /etc/Apogee/camera/F29050V.txt
+-- Installing: /etc/Apogee/camera/F3041V.txt
+-- Installing: /etc/Apogee/camera/F30V.txt
+-- Installing: /etc/Apogee/camera/F30VAIMO.txt
+-- Installing: /etc/Apogee/camera/F4000V.txt
+-- Installing: /etc/Apogee/camera/F47DDV.txt
+-- Installing: /etc/Apogee/camera/F47V12.txt
+-- Installing: /etc/Apogee/camera/F6V.txt
+-- Installing: /etc/Apogee/camera/F77V.txt
+-- Installing: /etc/Apogee/camera/FA674R.txt
+-- Installing: /etc/Apogee/camera/FA694R.txt
+-- Installing: /etc/Apogee/camera/FA814R.txt
+-- Installing: /etc/Apogee/camera/FAD674R.txt
+-- Installing: /etc/Apogee/camera/FAD694R.txt
+-- Installing: /etc/Apogee/camera/FAD814R.txt
+-- Installing: /etc/Apogee/camera/FCG16070.txt
+-- Installing: /etc/Apogee/camera/FCG16M.txt
+-- Installing: /etc/Apogee/camera/FCG285.txt
+-- Installing: /etc/Apogee/camera/FCG285A.txt
+-- Installing: /etc/Apogee/camera/FCG42.txt
+-- Installing: /etc/Apogee/camera/FCG42S.txt
+-- Installing: /etc/Apogee/camera/FCG6.txt
+-- Installing: /etc/Apogee/camera/FCG77.txt
+-- Installing: /etc/Apogee/camera/FCG77REGA.txt
+-- Installing: /etc/Apogee/camera/FCG77S.txt
+-- Installing: /etc/Apogee/camera/FCG77SREGA.txt
+-- Installing: /etc/Apogee/camera/FCG8300.txt
+-- Installing: /etc/Apogee/camera/FCG8300S.txt
+-- Installing: /etc/Apogee/camera/FEHR1AQ.txt
+-- Installing: /etc/Apogee/camera/FEHR1BQ.txt
+-- Installing: /etc/Apogee/camera/FEHR2c.txt
+-- Installing: /etc/Apogee/camera/FEHR2i.txt
+-- Installing: /etc/Apogee/camera/FEHS1A.txt
+-- Installing: /etc/Apogee/camera/FEHS1B.txt
+-- Installing: /etc/Apogee/camera/FEHS2c.txt
+-- Installing: /etc/Apogee/camera/FEHS2i.txt
+-- Installing: /etc/Apogee/camera/FEV1.txt
+-- Installing: /etc/Apogee/camera/FEV2.txt
+-- Installing: /etc/Apogee/camera/FF10140S.txt
+-- Installing: /etc/Apogee/camera/FF1109R.txt
+-- Installing: /etc/Apogee/camera/FF16000R.txt
+-- Installing: /etc/Apogee/camera/FF16000R2.txt
+-- Installing: /etc/Apogee/camera/FF16000S.txt
+-- Installing: /etc/Apogee/camera/FF29050R.txt
+-- Installing: /etc/Apogee/camera/FF30R.txt
+-- Installing: /etc/Apogee/camera/FF30S.txt
+-- Installing: /etc/Apogee/camera/FF4000R.txt
+-- Installing: /etc/Apogee/camera/FF4000S.txt
+-- Installing: /etc/Apogee/camera/FF42R.txt
+-- Installing: /etc/Apogee/camera/FF47R.txt
+-- Installing: /etc/Apogee/camera/FF47R12.txt
+-- Installing: /etc/Apogee/camera/FF47S12.txt
+-- Installing: /etc/Apogee/camera/FF50100RD.txt
+-- Installing: /etc/Apogee/camera/FF50100S.txt
+-- Installing: /etc/Apogee/camera/FF6R.txt
+-- Installing: /etc/Apogee/camera/FF6RA.txt
+-- Installing: /etc/Apogee/camera/FF6S.txt
+-- Installing: /etc/Apogee/camera/FF77R.txt
+-- Installing: /etc/Apogee/camera/FF77S.txt
+-- Installing: /etc/Apogee/camera/FF8300R.txt
+-- Installing: /etc/Apogee/camera/FF9R.txt
+-- Installing: /etc/Apogee/camera/FF9S.txt
+-- Installing: /etc/Apogee/camera/FKHR1A.txt
+-- Installing: /etc/Apogee/camera/FKHR1At.txt
+-- Installing: /etc/Apogee/camera/FKHR1B.txt
+-- Installing: /etc/Apogee/camera/FKHR1B8.txt
+-- Installing: /etc/Apogee/camera/FKHR1D.txt
+-- Installing: /etc/Apogee/camera/FKHR1Db.txt
+-- Installing: /etc/Apogee/camera/FKHR1c.txt
+-- Installing: /etc/Apogee/camera/FKHR1i.txt
+-- Installing: /etc/Apogee/camera/FKHR3c8.txt
+-- Installing: /etc/Apogee/camera/FKHR3i.txt
+-- Installing: /etc/Apogee/camera/FKHR4AQ.txt
+-- Installing: /etc/Apogee/camera/FKHR4BQ.txt
+-- Installing: /etc/Apogee/camera/FKHR5A.txt
+-- Installing: /etc/Apogee/camera/FKHR5B.txt
+-- Installing: /etc/Apogee/camera/FKHR5C.txt
+-- Installing: /etc/Apogee/camera/FKHR6A.txt
+-- Installing: /etc/Apogee/camera/FKHR6B.txt
+-- Installing: /etc/Apogee/camera/FKHR6C.txt
+-- Installing: /etc/Apogee/camera/FKHS1.txt
+-- Installing: /etc/Apogee/camera/FKHS1A.txt
+-- Installing: /etc/Apogee/camera/FKHS1B.txt
+-- Installing: /etc/Apogee/camera/FKHS1B8.txt
+-- Installing: /etc/Apogee/camera/FKHS1c.txt
+-- Installing: /etc/Apogee/camera/FKHS1i.txt
+-- Installing: /etc/Apogee/camera/FKHS3c8.txt
+-- Installing: /etc/Apogee/camera/FKHS3i.txt
+-- Installing: /etc/Apogee/camera/FKHS4.txt
+-- Installing: /etc/Apogee/camera/FKHS5.txt
+-- Installing: /etc/Apogee/camera/FKHS6.txt
+-- Installing: /etc/Apogee/camera/FKV1.txt
+-- Installing: /etc/Apogee/camera/FKV1B.txt
+-- Installing: /etc/Apogee/camera/FKV3.txt
+-- Installing: /etc/Apogee/camera/FKV4.txt
+-- Installing: /etc/Apogee/camera/FKV5.txt
+-- Installing: /etc/Apogee/camera/FKV6.txt
+-- Installing: /etc/Apogee/camera/FKV6B.txt
+-- Installing: /etc/Apogee/camera/FM12HC.txt
+-- Installing: /etc/Apogee/camera/FM12HR.txt
+-- Installing: /etc/Apogee/camera/FM12HS.txt
+-- Installing: /etc/Apogee/camera/FM16HR3.txt
+-- Installing: /etc/Apogee/camera/FM16HS1.txt
+-- Installing: /etc/Apogee/camera/FR2.txt
+-- Installing: /etc/Apogee/camera/FR230.txt
+-- Installing: /etc/Apogee/camera/FR230b.txt
+-- Installing: /etc/Apogee/camera/FR2F.txt
+-- Installing: /etc/Apogee/camera/FR3041.txt
+-- Installing: /etc/Apogee/camera/FS230.txt
+-- Installing: /etc/Apogee/camera/FS230b.txt
+-- Installing: /etc/Apogee/camera/FS3041.txt
+-- Installing: /etc/Apogee/camera/FV1.txt
+-- Installing: /etc/Apogee/camera/FV1B.txt
+-- Installing: /etc/Apogee/camera/H12HC.txt
+-- Installing: /etc/Apogee/camera/H12HCi.txt
+-- Installing: /etc/Apogee/camera/H12HR.txt
+-- Installing: /etc/Apogee/camera/H12HRi.txt
+-- Installing: /etc/Apogee/camera/H12HS.txt
+-- Installing: /etc/Apogee/camera/H12HSi.txt
+-- Installing: /etc/Apogee/camera/H16HR.txt
+-- Installing: /etc/Apogee/camera/H16HRi.txt
+-- Installing: /etc/Apogee/camera/H16HS.txt
+-- Installing: /etc/Apogee/camera/H16HSi.txt
+-- Installing: /etc/Apogee/camera/HV1.txt
+-- Installing: /etc/Apogee/camera/K12HC2.txt
+-- Installing: /etc/Apogee/camera/K12HC2B.txt
+-- Installing: /etc/Apogee/camera/K12HC3.txt
+-- Installing: /etc/Apogee/camera/K12HC3i.txt
+-- Installing: /etc/Apogee/camera/K12HC4.txt
+-- Installing: /etc/Apogee/camera/K12HC5.txt
+-- Installing: /etc/Apogee/camera/K12HC5B.txt
+-- Installing: /etc/Apogee/camera/K12HC7.txt
+-- Installing: /etc/Apogee/camera/K12HC9.txt
+-- Installing: /etc/Apogee/camera/K12HR10B.txt
+-- Installing: /etc/Apogee/camera/K12HR2.txt
+-- Installing: /etc/Apogee/camera/K12HR2B.txt
+-- Installing: /etc/Apogee/camera/K12HR3.txt
+-- Installing: /etc/Apogee/camera/K12HR3i.txt
+-- Installing: /etc/Apogee/camera/K12HR4.txt
+-- Installing: /etc/Apogee/camera/K12HR5.txt
+-- Installing: /etc/Apogee/camera/K12HR5B.txt
+-- Installing: /etc/Apogee/camera/K12HR6.txt
+-- Installing: /etc/Apogee/camera/K12HR6B.txt
+-- Installing: /etc/Apogee/camera/K12HR6B2.txt
+-- Installing: /etc/Apogee/camera/K12HR7.txt
+-- Installing: /etc/Apogee/camera/K12HR9.txt
+-- Installing: /etc/Apogee/camera/K12HS10B.txt
+-- Installing: /etc/Apogee/camera/K12HS2.txt
+-- Installing: /etc/Apogee/camera/K12HS2B.txt
+-- Installing: /etc/Apogee/camera/K12HS3.txt
+-- Installing: /etc/Apogee/camera/K12HS3i.txt
+-- Installing: /etc/Apogee/camera/K12HS4.txt
+-- Installing: /etc/Apogee/camera/K12HS5.txt
+-- Installing: /etc/Apogee/camera/K12HS5B.txt
+-- Installing: /etc/Apogee/camera/K12HS6.txt
+-- Installing: /etc/Apogee/camera/K12HS6B.txt
+-- Installing: /etc/Apogee/camera/K12HS6B2.txt
+-- Installing: /etc/Apogee/camera/K12HS7.txt
+-- Installing: /etc/Apogee/camera/K12HS9.txt
+-- Installing: /etc/Apogee/camera/K16HC1.txt
+-- Installing: /etc/Apogee/camera/K16HC2.txt
+-- Installing: /etc/Apogee/camera/K16HC2B.txt
+-- Installing: /etc/Apogee/camera/K16HR1.txt
+-- Installing: /etc/Apogee/camera/K16HR10B.txt
+-- Installing: /etc/Apogee/camera/K16HR2.txt
+-- Installing: /etc/Apogee/camera/K16HR2B.txt
+-- Installing: /etc/Apogee/camera/K16HR3.txt
+-- Installing: /etc/Apogee/camera/K16HR31.txt
+-- Installing: /etc/Apogee/camera/K16HR3i.txt
+-- Installing: /etc/Apogee/camera/K16HR3ns.txt
+-- Installing: /etc/Apogee/camera/K16HR5.txt
+-- Installing: /etc/Apogee/camera/K16HR5B.txt
+-- Installing: /etc/Apogee/camera/K16HR6.txt
+-- Installing: /etc/Apogee/camera/K16HR6B.txt
+-- Installing: /etc/Apogee/camera/K16HR6B4.txt
+-- Installing: /etc/Apogee/camera/K16HR7.txt
+-- Installing: /etc/Apogee/camera/K16HR8.txt
+-- Installing: /etc/Apogee/camera/K16HR9.txt
+-- Installing: /etc/Apogee/camera/K16HS1.txt
+-- Installing: /etc/Apogee/camera/K16HS10B.txt
+-- Installing: /etc/Apogee/camera/K16HS2.txt
+-- Installing: /etc/Apogee/camera/K16HS2B.txt
+-- Installing: /etc/Apogee/camera/K16HS3.txt
+-- Installing: /etc/Apogee/camera/K16HS3i.txt
+-- Installing: /etc/Apogee/camera/K16HS5.txt
+-- Installing: /etc/Apogee/camera/K16HS5B.txt
+-- Installing: /etc/Apogee/camera/K16HS6.txt
+-- Installing: /etc/Apogee/camera/K16HS6B.txt
+-- Installing: /etc/Apogee/camera/K16HS7.txt
+-- Installing: /etc/Apogee/camera/K16HS8.txt
+-- Installing: /etc/Apogee/camera/K16HS9.txt
+-- Installing: /etc/Apogee/camera/KV1.txt
+-- Installing: /etc/Apogee/camera/KV2.txt
+-- Installing: /etc/Apogee/camera/KV2B.txt
+-- Installing: /etc/Apogee/camera/KV3.txt
+-- Installing: /etc/Apogee/camera/KV3B.txt
+-- Installing: /etc/Apogee/camera/KV4.txt
+-- Installing: /etc/Apogee/camera/KV4B.txt
+-- Installing: /etc/Apogee/camera/KV5.txt
+-- Installing: /etc/Apogee/camera/KV5ns.txt
+-- Installing: /etc/Apogee/camera/KV6.txt
+-- Installing: /etc/Apogee/camera/KV6B.txt
+-- Installing: /etc/Apogee/camera/KV6B2.txt
+-- Installing: /etc/Apogee/camera/KV7.txt
+-- Installing: /etc/Apogee/camera/KV7B.txt
+-- Installing: /etc/Apogee/camera/KV8B.txt
+-- Installing: /etc/Apogee/camera/KV9.txt
+-- Installing: /etc/Apogee/camera/M12HC.txt
+-- Installing: /etc/Apogee/camera/M12HC7.txt
+-- Installing: /etc/Apogee/camera/M12HC7i.txt
+-- Installing: /etc/Apogee/camera/M12HCB.txt
+-- Installing: /etc/Apogee/camera/M12HCC.txt
+-- Installing: /etc/Apogee/camera/M12HCi.txt
+-- Installing: /etc/Apogee/camera/M12HR.txt
+-- Installing: /etc/Apogee/camera/M12HR7.txt
+-- Installing: /etc/Apogee/camera/M12HR7i.txt
+-- Installing: /etc/Apogee/camera/M12HRB.txt
+-- Installing: /etc/Apogee/camera/M12HRC.txt
+-- Installing: /etc/Apogee/camera/M12HRi.txt
+-- Installing: /etc/Apogee/camera/M12HS.txt
+-- Installing: /etc/Apogee/camera/M12HS7.txt
+-- Installing: /etc/Apogee/camera/M12HS7i.txt
+-- Installing: /etc/Apogee/camera/M12HSB.txt
+-- Installing: /etc/Apogee/camera/M12HSC.txt
+-- Installing: /etc/Apogee/camera/M12HSi.txt
+-- Installing: /etc/Apogee/camera/M16HR230.txt
+-- Installing: /etc/Apogee/camera/M16HR3.txt
+-- Installing: /etc/Apogee/camera/M16HR3B.txt
+-- Installing: /etc/Apogee/camera/M16HR3C.txt
+-- Installing: /etc/Apogee/camera/M16HR3F.txt
+-- Installing: /etc/Apogee/camera/M16HR3i.txt
+-- Installing: /etc/Apogee/camera/M16HR5.txt
+-- Installing: /etc/Apogee/camera/M16HR5B.txt
+-- Installing: /etc/Apogee/camera/M16HR5i.txt
+-- Installing: /etc/Apogee/camera/M16HR7.txt
+-- Installing: /etc/Apogee/camera/M16HR7i.txt
+-- Installing: /etc/Apogee/camera/M16HS1.txt
+-- Installing: /etc/Apogee/camera/M16HS1B.txt
+-- Installing: /etc/Apogee/camera/M16HS1C.txt
+-- Installing: /etc/Apogee/camera/M16HS1F.txt
+-- Installing: /etc/Apogee/camera/M16HS1i.txt
+-- Installing: /etc/Apogee/camera/M16HS230.txt
+-- Installing: /etc/Apogee/camera/M16HS7.txt
+-- Installing: /etc/Apogee/camera/M16HS7i.txt
+-- Installing: /etc/Apogee/camera/MV1.txt
+-- Installing: /etc/Apogee/camera/MV1B.txt
+-- Installing: /etc/Apogee/camera/MV1i.txt
+-- Installing: /etc/Apogee/camera/MV1nimo.txt
+-- Installing: /etc/Apogee/camera/MV2.txt
+-- Installing: /etc/Apogee/camera/MV230.txt
+-- Installing: /etc/Apogee/camera/MV230b.txt
+-- Installing: /etc/Apogee/camera/MV230t.txt
+-- Installing: /etc/Apogee/camera/MV2B.txt
+-- Installing: /etc/Apogee/camera/MV2C.txt
+-- Installing: /etc/Apogee/camera/MV2CN.txt
+-- Installing: /etc/Apogee/camera/MV2i.txt
+-- Installing: /etc/Apogee/camera/MV4.txt
+-- Installing: /etc/Apogee/camera/MV4B.txt
+-- Installing: /etc/Apogee/camera/MV7.txt
+-- Installing: /etc/Apogee/camera/MV7i.txt
+-- Installing: /etc/Apogee/camera/NA674R.txt
+-- Installing: /etc/Apogee/camera/NA694R.txt
+-- Installing: /etc/Apogee/camera/NA814R.txt
+-- Installing: /etc/Apogee/camera/NAD674R.txt
+-- Installing: /etc/Apogee/camera/NAD694R.txt
+-- Installing: /etc/Apogee/camera/NAD814R.txt
+-- Installing: /etc/Apogee/camera/NCG16.txt
+-- Installing: /etc/Apogee/camera/NCG16070.txt
+-- Installing: /etc/Apogee/camera/NCG16070B.txt
+-- Installing: /etc/Apogee/camera/NCG16070S.txt
+-- Installing: /etc/Apogee/camera/NCG16M.txt
+-- Installing: /etc/Apogee/camera/NCG285.txt
+-- Installing: /etc/Apogee/camera/NCG285A.txt
+-- Installing: /etc/Apogee/camera/NCG285S.txt
+-- Installing: /etc/Apogee/camera/NCG285SA.txt
+-- Installing: /etc/Apogee/camera/NCG42.txt
+-- Installing: /etc/Apogee/camera/NCG42S.txt
+-- Installing: /etc/Apogee/camera/NCG47.txt
+-- Installing: /etc/Apogee/camera/NCG6.txt
+-- Installing: /etc/Apogee/camera/NCG77.txt
+-- Installing: /etc/Apogee/camera/NCG77REGA.txt
+-- Installing: /etc/Apogee/camera/NCG77S.txt
+-- Installing: /etc/Apogee/camera/NCG77SREGA.txt
+-- Installing: /etc/Apogee/camera/NCG77V.txt
+-- Installing: /etc/Apogee/camera/NCG77VREGA.txt
+-- Installing: /etc/Apogee/camera/NCG8050S.txt
+-- Installing: /etc/Apogee/camera/NCG8300.txt
+-- Installing: /etc/Apogee/camera/NCG8300S.txt
+-- Installing: /etc/Apogee/camera/NCG9S.txt
+-- Installing: /etc/Apogee/camera/NF10140S.txt
+-- Installing: /etc/Apogee/camera/NF1109R.txt
+-- Installing: /etc/Apogee/camera/NF16000R.txt
+-- Installing: /etc/Apogee/camera/NF16000R2.txt
+-- Installing: /etc/Apogee/camera/NF16000S.txt
+-- Installing: /etc/Apogee/camera/NF29050R.txt
+-- Installing: /etc/Apogee/camera/NF30R.txt
+-- Installing: /etc/Apogee/camera/NF30S.txt
+-- Installing: /etc/Apogee/camera/NF32R.txt
+-- Installing: /etc/Apogee/camera/NF32S.txt
+-- Installing: /etc/Apogee/camera/NF4000R.txt
+-- Installing: /etc/Apogee/camera/NF4000S.txt
+-- Installing: /etc/Apogee/camera/NF42R.txt
+-- Installing: /etc/Apogee/camera/NF47R.txt
+-- Installing: /etc/Apogee/camera/NF47R12.txt
+-- Installing: /etc/Apogee/camera/NF47S12.txt
+-- Installing: /etc/Apogee/camera/NF50100RD.txt
+-- Installing: /etc/Apogee/camera/NF50100S.txt
+-- Installing: /etc/Apogee/camera/NF6R.txt
+-- Installing: /etc/Apogee/camera/NF6RA.txt
+-- Installing: /etc/Apogee/camera/NF6S.txt
+-- Installing: /etc/Apogee/camera/NF77R.txt
+-- Installing: /etc/Apogee/camera/NF77S.txt
+-- Installing: /etc/Apogee/camera/NF8300R.txt
+-- Installing: /etc/Apogee/camera/NF8300S.txt
+-- Installing: /etc/Apogee/camera/NF9R.txt
+-- Installing: /etc/Apogee/camera/NF9S.txt
+-- Installing: /etc/Apogee/camera/NR230.txt
+-- Installing: /etc/Apogee/camera/NR230b.txt
+-- Installing: /etc/Apogee/camera/NR3041.txt
+-- Installing: /etc/Apogee/camera/NS230.txt
+-- Installing: /etc/Apogee/camera/NS230b.txt
+-- Installing: /etc/Apogee/camera/NS3041.txt
+-- Installing: /etc/Apogee/camera/NoOpH.txt
+-- Installing: /etc/Apogee/camera/NoOpV.txt
+-- Installing: /etc/Apogee/camera/VF50100.txt
+-- Installing: /etc/Apogee/camera/XAV1.txt
+-- Installing: /etc/Apogee/camera/apnmatrix.txt
+-- Installing: /lib/udev/rules.d/99-apogee.rules
+-- Installing: /lib/udev/rules.d/99-asi.rules
+-- Installing: /usr/include/libasi/ASICamera2.h
+-- Installing: /usr/include/libasi/EFW_filter.h
+-- Installing: /usr/include/libasi/USB2ST4_Conv.h
+-- Installing: /usr/include/libasi/EAF_focuser.h
+-- Installing: /usr/include/libasi/CAA_API.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libASICamera2.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libASICamera2.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libASICamera2.so.1.41
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libEFWFilter.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libEFWFilter.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libEFWFilter.so.1.7.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libUSB2ST4Conv.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libUSB2ST4Conv.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libUSB2ST4Conv.so.1.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libEAFFocuser.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libEAFFocuser.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libEAFFocuser.so.1.7.7
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libCAARotator.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libCAARotator.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libCAARotator.so.1.5.9
+-- Installing: /lib/udev/rules.d/99-atik.rules
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libatikcameras.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libatikcameras.so.2
+-- Installing: /usr/lib/x86_64-linux-gnu/libatikcameras.so.2.2.22
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflycapture.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflycapture.so.2
+-- Installing: /usr/lib/x86_64-linux-gnu/libflycapture.so.2.13.3.31
+-- Installing: /usr/include/libatik/AtikCameras.h
+-- Installing: /usr/include/libatik/AtikDefs.h
+-- Installing: /usr/include/libfishcamp/fishcamp.h
+-- Installing: /usr/include/libfishcamp/fishcamp_common.h
+-- Installing: /usr/lib/x86_64-linux-gnu/libfishcamp.so.1.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libfishcamp.so.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libfishcamp.so
+-- Installing: /lib/firmware/gdr_usb.hex
+-- Installing: /lib/firmware/Guider_mono_rev16_intel.srec
+-- Installing: /lib/udev/rules.d/99-fishcamp.rules
+-- Installing: /usr/include/libfli.h
+-- Installing: /usr/lib/x86_64-linux-gnu/libfli.so.2.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libfli.so.2
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libfli.so
+-- Installing: /lib/udev/rules.d/99-fli.rules
+-- Installing: /usr/include/libflipro.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflipro.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflipro.so.2
+-- Installing: /usr/lib/x86_64-linux-gnu/libflipro.so.2.1.4
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflialgo.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflialgo.so.2
+-- Installing: /usr/lib/x86_64-linux-gnu/libflialgo.so.2.1.4
+-- Installing: /lib/udev/rules.d/99-miccd.rules
+-- Installing: /usr/include/libmicam/gxccd.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libgxccd.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libgxccd.so.0
+-- Installing: /usr/lib/x86_64-linux-gnu/libgxccd.so.0.12.1
+-- Installing: /lib/udev/rules.d/99-inovaplx.rules
+-- Installing: /usr/include/inovasdk/inovasdk.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libinovasdk.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libinovasdk.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libinovasdk.so.1.3.6
+-- Installing: /lib/udev/rules.d/85-qhyccd.rules
+-- Installing: /usr/include/libqhy/qhyccd.h
+-- Installing: /usr/include/libqhy/qhyccderr.h
+-- Installing: /usr/include/libqhy/qhyccdcamdef.h
+-- Installing: /usr/include/libqhy/qhyccdstruct.h
+-- Installing: /lib/firmware/qhy/IC16200A.HEX
+-- Installing: /lib/firmware/qhy/IC16803.HEX
+-- Installing: /lib/firmware/qhy/IC8300.HEX
+-- Installing: /lib/firmware/qhy/IC90A.HEX
+-- Installing: /lib/firmware/qhy/IMG0H.HEX
+-- Installing: /lib/firmware/qhy/IMG2P.HEX
+-- Installing: /lib/firmware/qhy/IMG2S.HEX
+-- Installing: /lib/firmware/qhy/IMG50.HEX
+-- Installing: /lib/firmware/qhy/Origin678C.img
+-- Installing: /lib/firmware/qhy/POLEMASTER.HEX
+-- Installing: /lib/firmware/qhy/QHY0204.img
+-- Installing: /lib/firmware/qhy/QHY09000A.HEX
+-- Installing: /lib/firmware/qhy/QHY10.HEX
+-- Installing: /lib/firmware/qhy/QHY10768.img
+-- Installing: /lib/firmware/qhy/QHY11.HEX
+-- Installing: /lib/firmware/qhy/QHY12.HEX
+-- Installing: /lib/firmware/qhy/QHY1253.img
+-- Installing: /lib/firmware/qhy/QHY128.img
+-- Installing: /lib/firmware/qhy/QHY128PRO.img
+-- Installing: /lib/firmware/qhy/QHY15.HEX
+-- Installing: /lib/firmware/qhy/QHY16.HEX
+-- Installing: /lib/firmware/qhy/QHY16000.HEX
+-- Installing: /lib/firmware/qhy/QHY160002AD.HEX
+-- Installing: /lib/firmware/qhy/QHY16200A.HEX
+-- Installing: /lib/firmware/qhy/QHY163.img
+-- Installing: /lib/firmware/qhy/QHY165.img
+-- Installing: /lib/firmware/qhy/QHY168.img
+-- Installing: /lib/firmware/qhy/QHY16803A.HEX
+-- Installing: /lib/firmware/qhy/QHY174.img
+-- Installing: /lib/firmware/qhy/QHY178.img
+-- Installing: /lib/firmware/qhy/QHY183.img
+-- Installing: /lib/firmware/qhy/QHY183A.img
+-- Installing: /lib/firmware/qhy/QHY1920.img
+-- Installing: /lib/firmware/qhy/QHY2.HEX
+-- Installing: /lib/firmware/qhy/QHY20.HEX
+-- Installing: /lib/firmware/qhy/QHY2020.img
+-- Installing: /lib/firmware/qhy/QHY21.HEX
+-- Installing: /lib/firmware/qhy/QHY22.HEX
+-- Installing: /lib/firmware/qhy/QHY224.img
+-- Installing: /lib/firmware/qhy/QHY23.HEX
+-- Installing: /lib/firmware/qhy/QHY247.img
+-- Installing: /lib/firmware/qhy/QHY268.img
+-- Installing: /lib/firmware/qhy/QHY26800A.img
+-- Installing: /lib/firmware/qhy/QHY27.HEX
+-- Installing: /lib/firmware/qhy/QHY28.HEX
+-- Installing: /lib/firmware/qhy/QHY29.HEX
+-- Installing: /lib/firmware/qhy/QHY290.img
+-- Installing: /lib/firmware/qhy/QHY294.img
+-- Installing: /lib/firmware/qhy/QHY294PRO.img
+-- Installing: /lib/firmware/qhy/QHY2E.HEX
+-- Installing: /lib/firmware/qhy/QHY2PRO.HEX
+-- Installing: /lib/firmware/qhy/QHY342.img
+-- Installing: /lib/firmware/qhy/QHY342PRO.img
+-- Installing: /lib/firmware/qhy/QHY367.img
+-- Installing: /lib/firmware/qhy/QHY367PRO.img
+-- Installing: /lib/firmware/qhy/QHY4040.img
+-- Installing: /lib/firmware/qhy/QHY4040PRO.img
+-- Installing: /lib/firmware/qhy/QHY410.img
+-- Installing: /lib/firmware/qhy/QHY411.img
+-- Installing: /lib/firmware/qhy/QHY411ERIS.img
+-- Installing: /lib/firmware/qhy/QHY42.img
+-- Installing: /lib/firmware/qhy/QHY42PRO.img
+-- Installing: /lib/firmware/qhy/QHY432.img
+-- Installing: /lib/firmware/qhy/QHY461.img
+-- Installing: /lib/firmware/qhy/QHY487.img
+-- Installing: /lib/firmware/qhy/QHY5.HEX
+-- Installing: /lib/firmware/qhy/QHY530.img
+-- Installing: /lib/firmware/qhy/QHY533.img
+-- Installing: /lib/firmware/qhy/QHY550.img
+-- Installing: /lib/firmware/qhy/QHY585.img
+-- Installing: /lib/firmware/qhy/QHY5II.HEX
+-- Installing: /lib/firmware/qhy/QHY5III174.img
+-- Installing: /lib/firmware/qhy/QHY5III178.img
+-- Installing: /lib/firmware/qhy/QHY5III185.img
+-- Installing: /lib/firmware/qhy/QHY5III200.img
+-- Installing: /lib/firmware/qhy/QHY5III224.img
+-- Installing: /lib/firmware/qhy/QHY5III290.img
+-- Installing: /lib/firmware/qhy/QHY5III334.img
+-- Installing: /lib/firmware/qhy/QHY5III415.img
+-- Installing: /lib/firmware/qhy/QHY5III462.img
+-- Installing: /lib/firmware/qhy/QHY5III482.img
+-- Installing: /lib/firmware/qhy/QHY5III485.img
+-- Installing: /lib/firmware/qhy/QHY5III568.img
+-- Installing: /lib/firmware/qhy/QHY5III585.img
+-- Installing: /lib/firmware/qhy/QHY5III678.img
+-- Installing: /lib/firmware/qhy/QHY5III715.img
+-- Installing: /lib/firmware/qhy/QHY5LOADER.HEX
+-- Installing: /lib/firmware/qhy/QHY6.HEX
+-- Installing: /lib/firmware/qhy/QHY600.img
+-- Installing: /lib/firmware/qhy/QHY6060.img
+-- Installing: /lib/firmware/qhy/QHY6060PRO.img
+-- Installing: /lib/firmware/qhy/QHY661.img
+-- Installing: /lib/firmware/qhy/QHY695A.HEX
+-- Installing: /lib/firmware/qhy/QHY7.HEX
+-- Installing: /lib/firmware/qhy/QHY8.HEX
+-- Installing: /lib/firmware/qhy/QHY811.img
+-- Installing: /lib/firmware/qhy/QHY814A.HEX
+-- Installing: /lib/firmware/qhy/QHY8L.HEX
+-- Installing: /lib/firmware/qhy/QHY8M.HEX
+-- Installing: /lib/firmware/qhy/QHY8PRO.HEX
+-- Installing: /lib/firmware/qhy/QHY90A.HEX
+-- Installing: /lib/firmware/qhy/QHY9701.img
+-- Installing: /lib/firmware/qhy/QHY990.img
+-- Installing: /lib/firmware/qhy/QHY991.img
+-- Installing: /lib/firmware/qhy/QHY992.img
+-- Installing: /lib/firmware/qhy/QHY9S.HEX
+-- Installing: /lib/firmware/qhy/miniCam5.HEX
+-- Installing: /lib/firmware/qhy/miniCam8.img
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libqhyccd.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libqhyccd.so.20
+-- Installing: /usr/lib/x86_64-linux-gnu/libqhyccd.so.26.2.1
+-- Installing: /usr/include/qsiapi.h
+-- Installing: /usr/include/QSIError.h
+-- Installing: /usr/lib/x86_64-linux-gnu/libqsiapi.so.7.6.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libqsiapi.so.7
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libqsiapi.so
+-- Installing: /usr/bin/qsiapitest
+-- Installing: /usr/bin/qsiapidemo
+-- Installing: /lib/udev/rules.d/51-sbig-debian.rules
+-- Installing: /usr/include/libsbig/sbigudrv.h
+-- Installing: /lib/firmware/sbigucam.hex
+-- Installing: /lib/firmware/sbiglcam.hex
+-- Installing: /lib/firmware/sbigfcam.hex
+-- Installing: /lib/firmware/sbigpcam.hex
+-- Installing: /lib/firmware/stfga.bin
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libsbig.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libsbig.so.4
+-- Installing: /usr/lib/x86_64-linux-gnu/libsbig.so.4.9.9
+-- Installing: /lib/udev/rules.d/99-pentax.rules
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_event_listener.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/shutter_speed.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/still_image_capture_format.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_time.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/iso.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_image_list.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_device.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/white_balance.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/error.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/capture_setting.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/hyper_operation_enable.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_storage.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/storage_writing.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/point.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/still_image_quality.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/response.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/f_number.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/export.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_image.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/exposure_compensation.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_device_detector.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_device_setting.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/live_view_specification.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/exposure_program.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/version.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/user_capture_settings_mode.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/capture_method.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/capture.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_status.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_storage_list.hpp
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libRicohCameraSDKCpp.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libRicohCameraSDKCpp.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libRicohCameraSDKCpp.so.1.1.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmtpricoh.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmtpricoh.so.9
+-- Installing: /usr/lib/x86_64-linux-gnu/libmtpricoh.so.9.3.0
+-- Installing: /lib/udev/rules.d/95-pentax.rules
+-- Installing: /lib/udev/rules.d/95-samsung.rules
+-- Installing: /usr/share/pktriggercord/pentax_settings.json
+-- Up-to-date: /usr/include/libpktriggercord
+-- Installing: /usr/include/libpktriggercord/pslr_lens.h
+-- Installing: /usr/include/libpktriggercord/pslr_utils.h
+-- Installing: /usr/include/libpktriggercord/pktriggercord-servermode.h
+-- Installing: /usr/include/libpktriggercord/pslr_log.h
+-- Installing: /usr/include/libpktriggercord/pslr.h
+-- Installing: /usr/include/libpktriggercord/pslr_scsi.h
+-- Up-to-date: /usr/include/libpktriggercord/src
+-- Up-to-date: /usr/include/libpktriggercord/src/external
+-- Up-to-date: /usr/include/libpktriggercord/src/external/js0n
+-- Installing: /usr/include/libpktriggercord/src/external/js0n/js0n.h
+-- Installing: /usr/include/libpktriggercord/pslr_enum.h
+-- Installing: /usr/include/libpktriggercord/pslr_model.h
+-- Up-to-date: /usr/include/libpktriggercord
+-- Installing: /usr/include/libpktriggercord/libpktriggercord.h
+-- Installing: /usr/lib/x86_64-linux-gnu/libpktriggercord.so.0.85.03
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libpktriggercord.so.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libpktriggercord.so
+-- Installing: /lib/udev/rules.d/99-toupcam.rules
+-- Installing: /usr/include/libtoupcam/toupcam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libtoupcam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libtoupcam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libtoupcam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-altaircam.rules
+-- Installing: /usr/include/libaltaircam/altaircam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libaltaircam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libaltaircam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libaltaircam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-bressercam.rules
+-- Installing: /usr/include/libbressercam/bressercam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libbressercam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libbressercam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libbressercam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-mallincam.rules
+-- Installing: /usr/include/libmallincam/mallincam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmallincam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmallincam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libmallincam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-meadecam.rules
+-- Installing: /usr/include/libmeadecam/meadecam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmeadecam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmeadecam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libmeadecam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-nncam.rules
+-- Installing: /usr/include/libnncam/nncam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libnncam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libnncam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libnncam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-ogmacam.rules
+-- Installing: /usr/include/libogmacam/ogmacam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libogmacam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libogmacam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libogmacam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-omegonprocam.rules
+-- Installing: /usr/include/libomegonprocam/omegonprocam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libomegonprocam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libomegonprocam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libomegonprocam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-starshootg.rules
+-- Installing: /usr/include/libstarshootg/starshootg.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libstarshootg.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libstarshootg.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libstarshootg.so.59.30594
+-- Installing: /lib/udev/rules.d/99-tscam.rules
+-- Installing: /usr/include/libtscam/tscam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libtscam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libtscam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libtscam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-svbonycam.rules
+-- Installing: /usr/include/libsvbonycam/svbonycam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libsvbonycam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libsvbonycam.so.57
+-- Installing: /usr/lib/x86_64-linux-gnu/libsvbonycam.so.57.27348
+-- Installing: /lib/udev/rules.d/90-svbonyusb.rules
+-- Installing: /usr/include/libsvbony/SVBCameraSDK.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libSVBCameraSDK.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libSVBCameraSDK.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libSVBCameraSDK.so.1.13.4
+-- Installing: /lib/udev/rules.d/99-player_one_astronomy.rules
+-- Installing: /usr/include/libplayerone/PlayerOneCamera.h
+-- Installing: /usr/include/libplayerone/PlayerOnePW.h
+-- Installing: /usr/include/libplayerone/ConvFuncs.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libPlayerOneCamera.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libPlayerOneCamera.so.3
+-- Installing: /usr/lib/x86_64-linux-gnu/libPlayerOneCamera.so.3.10.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libPlayerOnePW.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libPlayerOnePW.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libPlayerOnePW.so.1.2.3
+-- Installing: /lib/udev/rules.d/99-astroasis.rules
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/liboasisfocuser.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/liboasisfocuser.so.2
+-- Installing: /usr/lib/x86_64-linux-gnu/liboasisfocuser.so.2.0.2
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/liboasisfilterwheel.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/liboasisfilterwheel.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/liboasisfilterwheel.so.1.2.1
+-- Installing: /usr/include/libastroasis/AOFocus.h
+-- Installing: /usr/include/libastroasis/OasisFilterWheel.h
+###############################################################
+################### Build drivers #############################
+###############################################################
+-- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test COMPATIBLE_FORTIFY_SOURCE
+-- Performing Test COMPATIBLE_FORTIFY_SOURCE - Success
+-- Performing Test COMPATIBLE_STRINGOP_TRUNCATION
+-- Performing Test COMPATIBLE_STRINGOP_TRUNCATION - Success
+-- Performing Test COMPATIBLE_UNUSED_PARAMETER
+-- Performing Test COMPATIBLE_UNUSED_PARAMETER - Success
+-- Performing Test COMPATIBLE_UNUSED_BUT_SET_VARIABLE
+-- Performing Test COMPATIBLE_UNUSED_BUT_SET_VARIABLE - Success
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1")
+-- Checking for module 'libavcodec>=57.64.101'
+--   Found libavcodec, version 61.19.101
+-- Checking for module 'libavdevice>=57.1.100'
+--   Found libavdevice, version 61.3.100
+-- Checking for module 'libavformat>=57.56.100'
+--   Found libavformat, version 61.7.100
+-- Checking for module 'libavutil>=55.34.100'
+--   Found libavutil, version 59.39.100
+-- Checking for module 'libswscale>=4.2.100'
+--   Found libswscale, version 8.3.100
+-- Found FFMPEG: /usr/lib/x86_64-linux-gnu/libavcodec.so;/usr/lib/x86_64-linux-gnu/libavdevice.so;/usr/lib/x86_64-linux-gnu/libavformat.so;/usr/lib/x86_64-linux-gnu/libavutil.so;/usr/lib/x86_64-linux-gnu/libswscale.so, /usr/include/x86_64-linux-gnu
+-- Since FFMPEG was found, INDI Webcam Driver can be built
+-- Since an up to date nutclient was not found, INDI NUT Driver will not be built
+-- Found INDI: /usr/lib/x86_64-linux-gnu/libindidriver.so;/usr/lib/x86_64-linux-gnu/libindiAlignmentDriver.so (found version "2.1.9") 
+-- Checking for module 'libusb-1.0'
+--   Found libusb-1.0, version 1.0.28
+-- Found Libusb-1.0 via pkg-config: Includes=/usr/include/libusb-1.0 Libraries=usb-1.0
+-- Checking for module 'libusbp-1'
+--   Package 'libusbp-1', required by 'virtual:world', not found
+-- LIBUSBP-1 (libusbp) not found on system via pkg-config. Trying to build from bundled libusbp.
+-- Found bundled libusbp at '/home/pajafleger/INDI_KStars-Kit/IndiSources/indi-3rdparty/indi-ticfocuser-ng/libusbp'.
+-- Checking for module 'libudev'
+--   Found libudev, version 257
+-- Successfully configured using bundled libusbp library 'usbp'.
+-- Using LIBUSBP-1 (libusbp) (from system or bundled source).
+-- Found USB1: /usr/lib/x86_64-linux-gnu/libusb-1.0.so (found version "1.0.28") 
+-- Performing Test USB1_HAS_LIBUSB_ERROR_NAME
+-- Performing Test USB1_HAS_LIBUSB_ERROR_NAME - Success
+-- USB1 found, but LIBUSBP-1 already configured. Skipping USB1 to avoid conflicts.
+-- LibBluetooth not found. Bluetooth support will be disabled.
+-- Found bundled pololu-tic-software at '/home/pajafleger/INDI_KStars-Kit/IndiSources/indi-3rdparty/indi-ticfocuser-ng/pololu-tic-software'. Attempting to build and link.
+-- Checking for module 'yaml'
+--   Package 'yaml', required by 'virtual:world', not found
+-- System YAML (yaml) not found. Building bundled libyaml.
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE  
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+-- Found WrapOpenGL: TRUE  
+-- Could NOT find XKB (missing:  XKB_LIBRARY XKB_INCLUDE_DIR) (Required is at least version "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include  
+-- Qt6 (version 6.8.2) found.
+-- Successfully configured using bundled pololu-tic-software library 'lib'.
+-- Found NOVA: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3.1")
+-- Found GSL: /usr/include (found version "2.8")
+-- Found GTest: /usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake (found version "1.15.0")
+-- Found GMock: /usr/lib/x86_64-linux-gnu/libgmock.a
+-- Building unit tests
+-- GTEST_BOTH_LIBRARIES GTest::gtest;GTest::gtest_main
+-- GTEST_MAIN_LIBRARIES GTest::gtest_main
+-- GTEST_LIBRARIES GTest::gtest
+-- GTEST_INCLUDE_DIRS 
+-- GMOCK_LIBRARIES /usr/lib/x86_64-linux-gnu/libgmock.a
+-- GMOCK_INCLUDE_DIRS /usr/include
+-- Found INDI: /usr/lib/x86_64-linux-gnu/libindidriver.so;/usr/lib/x86_64-linux-gnu/libindilx200.so (found version "2.1.9") 
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found INDI: /usr/lib/x86_64-linux-gnu/libindidriver.so;/usr/lib/x86_64-linux-gnu/libindiAlignmentDriver.so (found version "2.1.9") 
+-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "8.14.1")
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found CFITSIO 4.6.2: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Using indi bundled hid library
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found GPHOTO2: /usr/lib/x86_64-linux-gnu/libgphoto2.so  
+-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so  
+-- Checking for module 'libraw'
+--   Found libraw, version 0.21.4
+-- Checking for module 'libraw_r'
+--   Found libraw_r, version 0.21.4
+-- Found LibRaw: /usr/lib/x86_64-linux-gnu/libraw.so (found version "0.21.4") 
+-- Performing Test HAVE_LIBRAW_CAMERA_TEMPERATURE
+-- Performing Test HAVE_LIBRAW_CAMERA_TEMPERATURE - Failed
+-- Performing Test HAVE_LIBRAW_SENSOR_TEMPERATURE
+-- Performing Test HAVE_LIBRAW_SENSOR_TEMPERATURE - Failed
+-- Performing Test HAVE_LIBRAW_CAMERA_TEMPERATURE2
+-- Performing Test HAVE_LIBRAW_CAMERA_TEMPERATURE2 - Success
+-- Found CameraTemperature in libraw_metadata_common_t 'libraw/libraw_types.h'
+-- Performing Test HAVE_LIBRAW_SENSOR_TEMPERATURE2
+-- Performing Test HAVE_LIBRAW_SENSOR_TEMPERATURE2 - Success
+-- Found SensorTemperature in libraw_metadata_common_t 'libraw/libraw_types.h'
+-- Found QSI: /usr/lib/x86_64-linux-gnu/libqsiapi.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libqsiapi: /usr/lib/x86_64-linux-gnu/libqsiapi.so
+-- Found SBIG: /usr/lib/x86_64-linux-gnu/libsbig.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libsbig: /usr/lib/x86_64-linux-gnu/libsbig.so
+-- Found Atik Library: /usr/lib/x86_64-linux-gnu/libatikcameras.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libatik: /usr/lib/x86_64-linux-gnu/libatikcameras.so
+-- Found Toupcam: /usr/lib/x86_64-linux-gnu/libtoupcam.so
+-- Found Altaircam: /usr/lib/x86_64-linux-gnu/libaltaircam.so
+-- Found Bressercam: /usr/lib/x86_64-linux-gnu/libbressercam.so
+-- Found MALLINCAM: /usr/lib/x86_64-linux-gnu/libmallincam.so
+-- Found MeadeCam: /usr/lib/x86_64-linux-gnu/libmeadecam.so
+-- Found Nncam: /usr/lib/x86_64-linux-gnu/libnncam.so
+-- Found Ogmacam: /usr/lib/x86_64-linux-gnu/libogmacam.so
+-- Found OmegonProCam: /usr/lib/x86_64-linux-gnu/libomegonprocam.so
+-- Found StarshootG: /usr/lib/x86_64-linux-gnu/libstarshootg.so
+-- Found Tscam: /usr/lib/x86_64-linux-gnu/libtscam.so
+-- Found Svbonycam: /usr/lib/x86_64-linux-gnu/libsvbonycam.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libsbig: /usr/lib/x86_64-linux-gnu/libtoupcam.so
+-- Found libaltaircam: /usr/lib/x86_64-linux-gnu/libaltaircam.so
+-- Found libbressercam: /usr/lib/x86_64-linux-gnu/libbressercam.so
+-- Found libogmacam: /usr/lib/x86_64-linux-gnu/libogmacam.so
+-- Found libtscam: /usr/lib/x86_64-linux-gnu/libtscam.so
+-- Found libsvbonycam: /usr/lib/x86_64-linux-gnu/libsvbonycam.so
+-- Found libstarshootg: /usr/lib/x86_64-linux-gnu/libstarshootg.so
+-- Found libnncam: /usr/lib/x86_64-linux-gnu/libnncam.so
+-- Found libmallincam: /usr/lib/x86_64-linux-gnu/libmallincam.so
+-- Found libomegonprocam: /usr/lib/x86_64-linux-gnu/libomegonprocam.so
+-- Found libmeadecam: /usr/lib/x86_64-linux-gnu/libmeadecam.so
+-- Found INOVASDK: /usr/lib/x86_64-linux-gnu/libinovasdk.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libinovasdk: /usr/lib/x86_64-linux-gnu/libinovasdk.so
+-- Found FLI: /usr/lib/x86_64-linux-gnu/libfli.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libfli: /usr/lib/x86_64-linux-gnu/libfli.so
+-- Found FLIPRO: /usr/lib/x86_64-linux-gnu/libflipro.so
+-- GLIBC version 2.41 found. Building Kepler camera.
+-- Found APOGEE: /usr/lib/x86_64-linux-gnu/libapogee.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libapogee: /usr/lib/x86_64-linux-gnu/libapogee.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found DC1394: /usr/lib/x86_64-linux-gnu/libdc1394.so
+-- Found MI Library: /usr/lib/x86_64-linux-gnu/libgxccd.so
+-- Found libmicam: /usr/lib/x86_64-linux-gnu/libgxccd.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found FISHCAMP: /usr/lib/x86_64-linux-gnu/libfishcamp.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found FISHCAMP: /usr/lib/x86_64-linux-gnu/libfishcamp.so
+-- Found ASI: /usr/lib/x86_64-linux-gnu/libASICamera2.so;/usr/lib/x86_64-linux-gnu/libEFWFilter.so;/usr/lib/x86_64-linux-gnu/libUSB2ST4Conv.so;/usr/lib/x86_64-linux-gnu/libEAFFocuser.so;/usr/lib/x86_64-linux-gnu/libCAARotator.so
+-- Found libasi: /usr/lib/x86_64-linux-gnu/libASICamera2.so;/usr/lib/x86_64-linux-gnu/libEFWFilter.so;/usr/lib/x86_64-linux-gnu/libUSB2ST4Conv.so;/usr/lib/x86_64-linux-gnu/libEAFFocuser.so;/usr/lib/x86_64-linux-gnu/libCAARotator.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Using indi bundled hid library
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found QHY: /usr/lib/x86_64-linux-gnu/libqhyccd.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libqhyccd: /usr/lib/x86_64-linux-gnu/libqhyccd.so
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Using indi bundled json library
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found GPSD: /usr/lib/x86_64-linux-gnu/libgps.so  
+-- Found libgps: /usr/lib/x86_64-linux-gnu/libgps.so
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found FTDI1: /usr/lib/x86_64-linux-gnu/libftdi1.so
+-- Found LIMESUITE: /usr/lib/x86_64-linux-gnu/libLimeSuite.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found LIMESUITE: /usr/lib/x86_64-linux-gnu/libLimeSuite.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Using indi bundled json library
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libftdi1: /usr/lib/x86_64-linux-gnu/libftdi1.so
+-- Found INDI: /usr/lib/x86_64-linux-gnu/libindidriver.so;/usr/lib/x86_64-linux-gnu/libindilx200.so (found version "2.1.9") 
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found INDI: /usr/lib/x86_64-linux-gnu/libindidriver.so;/usr/lib/x86_64-linux-gnu/libindiAlignmentDriver.so (found version "2.1.9") 
+-- Found ZMQ /usr/lib/x86_64-linux-gnu/libzmq.so
+-- Using indi bundled json library
+-- Found PENTAX libraries: /usr/lib/x86_64-linux-gnu/libRicohCameraSDKCpp.so;/usr/lib/x86_64-linux-gnu/libmtpricoh.so.9.3.0;/usr/lib/x86_64-linux-gnu/libpktriggercord.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found PENTAX libraries: /usr/lib/x86_64-linux-gnu/libRicohCameraSDKCpp.so;/usr/lib/x86_64-linux-gnu/libmtpricoh.so.9.3.0;/usr/lib/x86_64-linux-gnu/libpktriggercord.so
+-- Found SVBONY libraries : /usr/lib/x86_64-linux-gnu/libSVBCameraSDK.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libsvbony: /usr/lib/x86_64-linux-gnu/libSVBCameraSDK.so
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found PLAYERONE: /usr/lib/x86_64-linux-gnu/libPlayerOneCamera.so;/usr/lib/x86_64-linux-gnu/libPlayerOnePW.so
+-- Found libplayerone: /usr/lib/x86_64-linux-gnu/libPlayerOneCamera.so;/usr/lib/x86_64-linux-gnu/libPlayerOnePW.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found Astroasis Library: /usr/lib/x86_64-linux-gnu/liboasisfocuser.so;/usr/lib/x86_64-linux-gnu/liboasisfilterwheel.so
+-- Found libastroasis: /usr/lib/x86_64-linux-gnu/liboasisfocuser.so;/usr/lib/x86_64-linux-gnu/liboasisfilterwheel.so
+-- Using indi bundled hid library
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- ############################################################################
+-- ######### All libraries are found. Building all INDI 3rd party drivers now.
+-- ############################################################################
+-- Configuring done (3.3s)
+-- Generating done (0.3s)
+-- Build files have been written to: /home/pajafleger/INDI_KStars-Kit/IndiSources/build/indi-3rdparty
+[  0%] Building C object indi-ticfocuser-ng/libusbp_build_dir/src/CMakeFiles/usbp-1.dir/async_in_pipe.c.o
+[  1%] Building C object indi-ticfocuser-ng/libusbp_build_dir/src/CMakeFiles/usbp-1.dir/error.c.o
+[  1%] Building C object indi-ticfocuser-ng/libusbp_build_dir/src/CMakeFiles/usbp-1.dir/error_hresult.c.o
+[  1%] Building C object indi-ticfocuser-ng/libusbp_build_dir/src/CMakeFiles/usbp-1.dir/find_device.c.o
+[  1%] Building C object indi-ticfocuser-ng/libusbp_build_dir/src/CMakeFiles/usbp-1.dir/list.c.o
+[  1%] Building C object indi-ticfocuser-ng/libusbp_build_dir/src/CMakeFiles/usbp-1.dir/pipe_id.c.o
+[  2%] Building C object indi-ticfocuser-ng/libusbp_build_dir/src/CMakeFiles/usbp-1.dir/string.c.o
+[  2%] Building C object indi-ticfocuser-ng/libusbp_build_dir/src/CMakeFiles/usbp-1.dir/linux/list_linux.c.o
+[  2%] Building C object indi-ticfocuser-ng/libusbp_build_dir/src/CMakeFiles/usbp-1.dir/linux/device_linux.c.o
+[  2%] Building C object indi-ticfocuser-ng/libusbp_build_dir/src/CMakeFiles/usbp-1.dir/linux/generic_interface_linux.c.o
+[  2%] Building C object indi-ticfocuser-ng/libusbp_build_dir/src/CMakeFiles/usbp-1.dir/linux/generic_handle_linux.c.o
+[  3%] Building C object indi-ticfocuser-ng/libusbp_build_dir/src/CMakeFiles/usbp-1.dir/linux/error_linux.c.o
+[  3%] Building C object indi-ticfocuser-ng/libusbp_build_dir/src/CMakeFiles/usbp-1.dir/linux/udev_linux.c.o
+[  3%] Building C object indi-ticfocuser-ng/libusbp_build_dir/src/CMakeFiles/usbp-1.dir/linux/usbfd_linux.c.o
+[  3%] Building C object indi-ticfocuser-ng/libusbp_build_dir/src/CMakeFiles/usbp-1.dir/linux/async_in_transfer_linux.c.o
+[  3%] Building C object indi-ticfocuser-ng/libusbp_build_dir/src/CMakeFiles/usbp-1.dir/linux/serial_port_linux.c.o
+[  4%] Linking C static library libusbp-1.a
+[  4%] Built target usbp-1
+[  5%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_baud_rate.c.o
+[  5%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_current_limit.c.o
+[  5%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_device.c.o
+[  5%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_get_settings.c.o
+[  5%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_set_settings.c.o
+[  6%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_error.c.o
+[  6%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_handle.c.o
+[  6%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_names.c.o
+[  6%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_settings.c.o
+[  6%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_settings_fix.c.o
+[  7%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_settings_read_from_string.c.o
+[  7%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_settings_to_string.c.o
+[  7%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_string.c.o
+[  7%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_variables.c.o
+[  7%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/libyaml/yaml.c.o
+[  8%] Linking C shared library ../../../libpololu-tic-1.so
+[  8%] Built target lib
+[  8%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/TicFocuser.cpp.o
+[  8%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/UsbConnectionBase.cpp.o
+[  8%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/SerialConnection.cpp.o
+[  8%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/driver_interfaces/TiclibInterface.cpp.o
+[  9%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/ticlib/TicBase.cpp.o
+[  9%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/ticlib/TicDefs.cpp.o
+[  9%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/ticlib/StreamSerial.cpp.o
+[  9%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/LibUsbConnection.cpp.o
+[  9%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/ticlib/TicUsb.cpp.o
+[ 10%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/driver_interfaces/PololuUsbInterface.cpp.o
+[ 10%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/PololuUsbConnection.cpp.o
+[ 10%] Linking CXX executable indi_ticfocuser-ng
+[ 10%] Built target indi_ticfocuser-ng
+[ 10%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/cli/CMakeFiles/cli.dir/cli.cpp.o
+[ 11%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/cli/CMakeFiles/cli.dir/print_status.cpp.o
+[ 11%] Linking CXX executable ../../../ticcmd
+[ 11%] Built target cli
+[ 11%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/bootloader/CMakeFiles/bootloader.dir/bootloader.cpp.o
+[ 12%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/bootloader/CMakeFiles/bootloader.dir/bootloader_data.cpp.o
+[ 12%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/bootloader/CMakeFiles/bootloader.dir/firmware_archive.cpp.o
+[ 12%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/bootloader/CMakeFiles/bootloader.dir/libtinyxml2/tinyxml2.cpp.o
+[ 12%] Linking CXX static library libbootloader.a
+[ 12%] Built target bootloader
+[ 12%] Built target gui_autogen_timestamp_deps
+[ 12%] Automatic MOC and UIC for target gui
+[ 12%] Built target gui_autogen
+[ 13%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o
+[ 13%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/main.cpp.o
+[ 13%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/main_controller.cpp.o
+[ 13%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/bootloader_window.cpp.o
+[ 13%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/main_window.cpp.o
+[ 14%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/BallScrollBar.cpp.o
+[ 14%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/InputWizard.cpp.o
+[ 14%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/current_spin_box.cpp.o
+[ 14%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/elided_label.cpp.o
+[ 14%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/time_spin_box.cpp.o
+[ 15%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/to_string.cpp.o
+[ 15%] Linking CXX executable ../../../ticgui
+[ 15%] Built target gui
+[ 15%] Building C object indi-eqmod/CMakeFiles/indi_eqmod_telescope.dir/align/htm.c.o
+[ 16%] Building C object indi-eqmod/CMakeFiles/indi_eqmod_telescope.dir/align/chull/chull.c.o
+[ 16%] Building CXX object indi-eqmod/CMakeFiles/indi_eqmod_telescope.dir/eqmod.cpp.o
+[ 16%] Building CXX object indi-eqmod/CMakeFiles/indi_eqmod_telescope.dir/eqmodbase.cpp.o
+[ 16%] Building CXX object indi-eqmod/CMakeFiles/indi_eqmod_telescope.dir/eqmoderror.cpp.o
+[ 16%] Building CXX object indi-eqmod/CMakeFiles/indi_eqmod_telescope.dir/skywatcher.cpp.o
+[ 17%] Building CXX object indi-eqmod/CMakeFiles/indi_eqmod_telescope.dir/simulator/simulator.cpp.o
+[ 17%] Building CXX object indi-eqmod/CMakeFiles/indi_eqmod_telescope.dir/simulator/skywatcher-simulator.cpp.o
+[ 17%] Building CXX object indi-eqmod/CMakeFiles/indi_eqmod_telescope.dir/align/align.cpp.o
+[ 17%] Building CXX object indi-eqmod/CMakeFiles/indi_eqmod_telescope.dir/align/pointset.cpp.o
+[ 17%] Building CXX object indi-eqmod/CMakeFiles/indi_eqmod_telescope.dir/align/triangulate.cpp.o
+[ 18%] Building CXX object indi-eqmod/CMakeFiles/indi_eqmod_telescope.dir/align/triangulate_chull.cpp.o
+[ 18%] Building CXX object indi-eqmod/CMakeFiles/indi_eqmod_telescope.dir/scope-limits/scope-limits.cpp.o
+[ 18%] Linking CXX executable indi_eqmod_telescope
+[ 18%] Built target indi_eqmod_telescope
+[ 18%] Building C object indi-eqmod/CMakeFiles/indi_azgti_telescope.dir/align/htm.c.o
+[ 18%] Building C object indi-eqmod/CMakeFiles/indi_azgti_telescope.dir/align/chull/chull.c.o
+[ 18%] Building CXX object indi-eqmod/CMakeFiles/indi_azgti_telescope.dir/azgti.cpp.o
+[ 19%] Building CXX object indi-eqmod/CMakeFiles/indi_azgti_telescope.dir/azgtibase.cpp.o
+[ 19%] Building CXX object indi-eqmod/CMakeFiles/indi_azgti_telescope.dir/eqmodbase.cpp.o
+[ 19%] Building CXX object indi-eqmod/CMakeFiles/indi_azgti_telescope.dir/eqmoderror.cpp.o
+[ 19%] Building CXX object indi-eqmod/CMakeFiles/indi_azgti_telescope.dir/skywatcher.cpp.o
+[ 19%] Building CXX object indi-eqmod/CMakeFiles/indi_azgti_telescope.dir/simulator/simulator.cpp.o
+[ 20%] Building CXX object indi-eqmod/CMakeFiles/indi_azgti_telescope.dir/simulator/skywatcher-simulator.cpp.o
+[ 20%] Building CXX object indi-eqmod/CMakeFiles/indi_azgti_telescope.dir/align/align.cpp.o
+[ 20%] Building CXX object indi-eqmod/CMakeFiles/indi_azgti_telescope.dir/align/pointset.cpp.o
+[ 20%] Building CXX object indi-eqmod/CMakeFiles/indi_azgti_telescope.dir/align/triangulate.cpp.o
+[ 20%] Building CXX object indi-eqmod/CMakeFiles/indi_azgti_telescope.dir/align/triangulate_chull.cpp.o
+[ 21%] Building CXX object indi-eqmod/CMakeFiles/indi_azgti_telescope.dir/scope-limits/scope-limits.cpp.o
+[ 21%] Linking CXX executable indi_azgti_telescope
+[ 21%] Built target indi_azgti_telescope
+[ 22%] Building C object indi-eqmod/CMakeFiles/indi_staradventurergti_telescope.dir/align/htm.c.o
+[ 22%] Building C object indi-eqmod/CMakeFiles/indi_staradventurergti_telescope.dir/align/chull/chull.c.o
+[ 22%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurergti_telescope.dir/staradventurergti.cpp.o
+[ 22%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurergti_telescope.dir/staradventurergtibase.cpp.o
+[ 22%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurergti_telescope.dir/eqmodbase.cpp.o
+[ 23%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurergti_telescope.dir/eqmoderror.cpp.o
+[ 23%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurergti_telescope.dir/skywatcher.cpp.o
+[ 23%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurergti_telescope.dir/simulator/simulator.cpp.o
+[ 23%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurergti_telescope.dir/simulator/skywatcher-simulator.cpp.o
+[ 23%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurergti_telescope.dir/align/align.cpp.o
+[ 24%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurergti_telescope.dir/align/pointset.cpp.o
+[ 24%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurergti_telescope.dir/align/triangulate.cpp.o
+[ 24%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurergti_telescope.dir/align/triangulate_chull.cpp.o
+[ 24%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurergti_telescope.dir/scope-limits/scope-limits.cpp.o
+[ 24%] Linking CXX executable indi_staradventurergti_telescope
+[ 24%] Built target indi_staradventurergti_telescope
+[ 25%] Building C object indi-eqmod/CMakeFiles/indi_staradventurer2i_telescope.dir/align/htm.c.o
+[ 25%] Building C object indi-eqmod/CMakeFiles/indi_staradventurer2i_telescope.dir/align/chull/chull.c.o
+[ 25%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurer2i_telescope.dir/staradventurer2i.cpp.o
+[ 25%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurer2i_telescope.dir/staradventurer2ibase.cpp.o
+[ 25%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurer2i_telescope.dir/eqmodbase.cpp.o
+[ 26%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurer2i_telescope.dir/eqmoderror.cpp.o
+[ 26%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurer2i_telescope.dir/skywatcher.cpp.o
+[ 26%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurer2i_telescope.dir/simulator/simulator.cpp.o
+[ 26%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurer2i_telescope.dir/simulator/skywatcher-simulator.cpp.o
+[ 26%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurer2i_telescope.dir/align/align.cpp.o
+[ 27%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurer2i_telescope.dir/align/pointset.cpp.o
+[ 27%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurer2i_telescope.dir/align/triangulate.cpp.o
+[ 27%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurer2i_telescope.dir/align/triangulate_chull.cpp.o
+[ 27%] Building CXX object indi-eqmod/CMakeFiles/indi_staradventurer2i_telescope.dir/scope-limits/scope-limits.cpp.o
+[ 27%] Linking CXX executable indi_staradventurer2i_telescope
+[ 27%] Built target indi_staradventurer2i_telescope
+[ 28%] Building CXX object indi-eqmod/test/CMakeFiles/test_eqmod.dir/test_eqmod.cpp.o
+[ 28%] Building C object indi-eqmod/test/CMakeFiles/test_eqmod.dir/__/align/htm.c.o
+[ 28%] Building C object indi-eqmod/test/CMakeFiles/test_eqmod.dir/__/align/chull/chull.c.o
+[ 28%] Building CXX object indi-eqmod/test/CMakeFiles/test_eqmod.dir/__/eqmod.cpp.o
+[ 28%] Building CXX object indi-eqmod/test/CMakeFiles/test_eqmod.dir/__/eqmodbase.cpp.o
+[ 29%] Building CXX object indi-eqmod/test/CMakeFiles/test_eqmod.dir/__/eqmoderror.cpp.o
+[ 29%] Building CXX object indi-eqmod/test/CMakeFiles/test_eqmod.dir/__/skywatcher.cpp.o
+[ 29%] Building CXX object indi-eqmod/test/CMakeFiles/test_eqmod.dir/__/simulator/simulator.cpp.o
+[ 29%] Building CXX object indi-eqmod/test/CMakeFiles/test_eqmod.dir/__/simulator/skywatcher-simulator.cpp.o
+[ 29%] Building CXX object indi-eqmod/test/CMakeFiles/test_eqmod.dir/__/align/align.cpp.o
+[ 30%] Building CXX object indi-eqmod/test/CMakeFiles/test_eqmod.dir/__/align/pointset.cpp.o
+[ 30%] Building CXX object indi-eqmod/test/CMakeFiles/test_eqmod.dir/__/align/triangulate.cpp.o
+[ 30%] Building CXX object indi-eqmod/test/CMakeFiles/test_eqmod.dir/__/align/triangulate_chull.cpp.o
+[ 30%] Building CXX object indi-eqmod/test/CMakeFiles/test_eqmod.dir/__/scope-limits/scope-limits.cpp.o
+[ 30%] Linking CXX executable test_eqmod
+[ 30%] Built target test_eqmod
+[ 30%] Building CXX object indi-aok/CMakeFiles/indi_lx200aok.dir/lx200aok.cpp.o
+[ 31%] Linking CXX executable indi_lx200aok
+[ 31%] Built target indi_lx200aok
+[ 32%] Building CXX object indi-starbook/CMakeFiles/indi_starbook_telescope.dir/indi_starbook.cpp.o
+[ 32%] Building CXX object indi-starbook/CMakeFiles/indi_starbook_telescope.dir/starbook_types.cpp.o
+[ 32%] Building CXX object indi-starbook/CMakeFiles/indi_starbook_telescope.dir/connectioncurl.cpp.o
+[ 32%] Building CXX object indi-starbook/CMakeFiles/indi_starbook_telescope.dir/command_interface.cpp.o
+[ 32%] Linking CXX executable indi_starbook_telescope
+[ 32%] Built target indi_starbook_telescope
+[ 33%] Building CXX object indi-starbook-ten/CMakeFiles/indi_starbook_ten.dir/connectionhttp.cpp.o
+[ 33%] Building CXX object indi-starbook-ten/CMakeFiles/indi_starbook_ten.dir/indi_starbook_ten.cpp.o
+[ 33%] Building CXX object indi-starbook-ten/CMakeFiles/indi_starbook_ten.dir/starbook_ten.cpp.o
+[ 33%] Linking CXX executable indi_starbook_ten
+[ 33%] Built target indi_starbook_ten
+[ 33%] Building CXX object indi-sx/CMakeFiles/indi_sx_ccd.dir/sxccd.cpp.o
+[ 34%] Building CXX object indi-sx/CMakeFiles/indi_sx_ccd.dir/sxccdusb.cpp.o
+[ 34%] Linking CXX executable indi_sx_ccd
+[ 34%] Built target indi_sx_ccd
+[ 34%] Building CXX object indi-sx/CMakeFiles/indi_sx_wheel.dir/sxwheel.cpp.o
+[ 34%] Linking CXX executable indi_sx_wheel
+[ 34%] Built target indi_sx_wheel
+[ 34%] Building CXX object indi-sx/CMakeFiles/indi_sx_ao.dir/sxao.cpp.o
+[ 34%] Linking CXX executable indi_sx_ao
+[ 34%] Built target indi_sx_ao
+[ 34%] Building CXX object indi-sx/CMakeFiles/sx_ccd_test.dir/sxccdtest.cpp.o
+[ 34%] Building CXX object indi-sx/CMakeFiles/sx_ccd_test.dir/sxccdusb.cpp.o
+[ 34%] Linking CXX executable sx_ccd_test
+[ 34%] Built target sx_ccd_test
+[ 34%] Building CXX object indi-maxdomeii/CMakeFiles/indi_maxdomeii.dir/maxdomeiidriver.cpp.o
+[ 35%] Building CXX object indi-maxdomeii/CMakeFiles/indi_maxdomeii.dir/maxdomeii.cpp.o
+[ 35%] Linking CXX executable indi_maxdomeii
+[ 35%] Built target indi_maxdomeii
+[ 35%] Building CXX object indi-nexdome/CMakeFiles/indi_nexdome.dir/nex_dome.cpp.o
+[ 36%] Linking CXX executable indi_nexdome
+[ 36%] Built target indi_nexdome
+[ 36%] Building CXX object indi-talon6/CMakeFiles/indi_talon6.dir/talon6.cpp.o
+[ 37%] Linking CXX executable indi_talon6
+[ 37%] Built target indi_talon6
+[ 37%] Building CXX object indi-rolloffino/CMakeFiles/indi_rolloffino.dir/rolloffino.cpp.o
+[ 37%] Linking CXX executable indi_rolloffino
+[ 37%] Built target indi_rolloffino
+[ 37%] Building CXX object indi-shelyak/CMakeFiles/indi_shelyakeshel_spectrograph.dir/indi_shelyakeshel_spectrograph.cpp.o
+[ 37%] Linking CXX executable indi_shelyakeshel_spectrograph
+[ 37%] Built target indi_shelyakeshel_spectrograph
+[ 37%] Building CXX object indi-shelyak/CMakeFiles/indi_shelyakspox_spectrograph.dir/indi_shelyakspox_spectrograph.cpp.o
+[ 37%] Linking CXX executable indi_shelyakspox_spectrograph
+[ 37%] Built target indi_shelyakspox_spectrograph
+[ 37%] Building CXX object indi-aagcloudwatcher-ng/CMakeFiles/indi_aagcloudwatcher_ng.dir/indi_aagcloudwatcher_ng.cpp.o
+[ 37%] Building CXX object indi-aagcloudwatcher-ng/CMakeFiles/indi_aagcloudwatcher_ng.dir/CloudWatcherController_ng.cpp.o
+[ 38%] Building CXX object indi-aagcloudwatcher-ng/CMakeFiles/indi_aagcloudwatcher_ng.dir/HeaterPID.cpp.o
+[ 38%] Linking CXX executable indi_aagcloudwatcher_ng
+[ 38%] Built target indi_aagcloudwatcher_ng
+[ 38%] Building CXX object indi-aagcloudwatcher-ng/CMakeFiles/aagcloudwatcher_test_ng.dir/main.cpp.o
+[ 38%] Building CXX object indi-aagcloudwatcher-ng/CMakeFiles/aagcloudwatcher_test_ng.dir/CloudWatcherController_ng.cpp.o
+[ 38%] Building CXX object indi-aagcloudwatcher-ng/CMakeFiles/aagcloudwatcher_test_ng.dir/HeaterPID.cpp.o
+[ 38%] Linking CXX executable aagcloudwatcher_test_ng
+[ 38%] Built target aagcloudwatcher_test_ng
+[ 38%] Building CXX object indi-celestronaux/CMakeFiles/indi_celestron_aux.dir/auxproto.cpp.o
+[ 39%] Building CXX object indi-celestronaux/CMakeFiles/indi_celestron_aux.dir/celestronaux.cpp.o
+[ 39%] Building CXX object indi-celestronaux/CMakeFiles/indi_celestron_aux.dir/adaptive_tuner.cpp.o
+[ 39%] Linking CXX executable indi_celestron_aux
+[ 39%] Built target indi_celestron_aux
+[ 39%] Building CXX object indi-gphoto/CMakeFiles/indi_gphoto_ccd.dir/gphoto_ccd.cpp.o
+[ 39%] Building CXX object indi-gphoto/CMakeFiles/indi_gphoto_ccd.dir/gphoto_driver.cpp.o
+[ 40%] Building CXX object indi-gphoto/CMakeFiles/indi_gphoto_ccd.dir/gphoto_readimage.cpp.o
+[ 40%] Building CXX object indi-gphoto/CMakeFiles/indi_gphoto_ccd.dir/dsusbdriver.cpp.o
+[ 40%] Linking CXX executable indi_gphoto_ccd
+[ 40%] Built target indi_gphoto_ccd
+[ 41%] Building CXX object indi-gphoto/CMakeFiles/gphoto_camera_test.dir/gphoto_camera_test.cpp.o
+[ 41%] Building CXX object indi-gphoto/CMakeFiles/gphoto_camera_test.dir/gphoto_driver.cpp.o
+[ 41%] Building CXX object indi-gphoto/CMakeFiles/gphoto_camera_test.dir/dsusbdriver.cpp.o
+[ 41%] Linking CXX executable gphoto_camera_test
+[ 41%] Built target gphoto_camera_test
+[ 42%] Building CXX object indi-qsi/CMakeFiles/indi_qsi_ccd.dir/qsi_ccd.cpp.o
+[ 42%] Linking CXX executable indi_qsi_ccd
+[ 42%] Built target indi_qsi_ccd
+[ 42%] Building CXX object indi-sbig/CMakeFiles/indi_sbig_ccd.dir/sbig_ccd.cpp.o
+[ 42%] Linking CXX executable indi_sbig_ccd
+[ 42%] Built target indi_sbig_ccd
+[ 42%] Building CXX object indi-atik/CMakeFiles/indi_atik_ccd.dir/atik_ccd.cpp.o
+[ 42%] Linking CXX executable indi_atik_ccd
+[ 42%] Built target indi_atik_ccd
+[ 42%] Building CXX object indi-atik/CMakeFiles/indi_atik_wheel.dir/atik_wheel.cpp.o
+[ 43%] Linking CXX executable indi_atik_wheel
+[ 43%] Built target indi_atik_wheel
+[ 43%] Building CXX object indi-toupbase/CMakeFiles/indi_toupcam_ccd.dir/indi_toupbase.cpp.o
+[ 43%] Building CXX object indi-toupbase/CMakeFiles/indi_toupcam_ccd.dir/libtoupbase.cpp.o
+[ 44%] Building CXX object indi-toupbase/CMakeFiles/indi_toupcam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 44%] Linking CXX executable indi_toupcam_ccd
+[ 44%] Built target indi_toupcam_ccd
+[ 45%] Building CXX object indi-toupbase/CMakeFiles/indi_toupcam_wheel.dir/indi_toupwheel.cpp.o
+[ 45%] Building CXX object indi-toupbase/CMakeFiles/indi_toupcam_wheel.dir/libtoupbase.cpp.o
+[ 45%] Linking CXX executable indi_toupcam_wheel
+[ 45%] Built target indi_toupcam_wheel
+[ 45%] Building CXX object indi-toupbase/CMakeFiles/indi_toupcam_focuser.dir/indi_focuser.cpp.o
+[ 45%] Building CXX object indi-toupbase/CMakeFiles/indi_toupcam_focuser.dir/libtoupbase.cpp.o
+[ 45%] Linking CXX executable indi_toupcam_focuser
+[ 45%] Built target indi_toupcam_focuser
+[ 45%] Building CXX object indi-toupbase/CMakeFiles/toupcam_test.dir/toupcam_test.cpp.o
+[ 45%] Linking CXX executable toupcam_test
+[ 45%] Built target toupcam_test
+[ 45%] Building CXX object indi-toupbase/CMakeFiles/indi_altaircam_ccd.dir/indi_toupbase.cpp.o
+[ 45%] Building CXX object indi-toupbase/CMakeFiles/indi_altaircam_ccd.dir/libtoupbase.cpp.o
+[ 45%] Building CXX object indi-toupbase/CMakeFiles/indi_altaircam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 46%] Linking CXX executable indi_altaircam_ccd
+[ 46%] Built target indi_altaircam_ccd
+[ 46%] Building CXX object indi-toupbase/CMakeFiles/indi_altaircam_wheel.dir/indi_toupwheel.cpp.o
+[ 47%] Building CXX object indi-toupbase/CMakeFiles/indi_altaircam_wheel.dir/libtoupbase.cpp.o
+[ 47%] Linking CXX executable indi_altaircam_wheel
+[ 47%] Built target indi_altaircam_wheel
+[ 47%] Building CXX object indi-toupbase/CMakeFiles/indi_altaircam_focuser.dir/indi_focuser.cpp.o
+[ 47%] Building CXX object indi-toupbase/CMakeFiles/indi_altaircam_focuser.dir/libtoupbase.cpp.o
+[ 47%] Linking CXX executable indi_altaircam_focuser
+[ 47%] Built target indi_altaircam_focuser
+[ 47%] Building CXX object indi-toupbase/CMakeFiles/indi_bressercam_ccd.dir/indi_toupbase.cpp.o
+[ 47%] Building CXX object indi-toupbase/CMakeFiles/indi_bressercam_ccd.dir/libtoupbase.cpp.o
+[ 47%] Building CXX object indi-toupbase/CMakeFiles/indi_bressercam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 47%] Linking CXX executable indi_bressercam_ccd
+[ 47%] Built target indi_bressercam_ccd
+[ 47%] Building CXX object indi-toupbase/CMakeFiles/indi_bressercam_wheel.dir/indi_toupwheel.cpp.o
+[ 47%] Building CXX object indi-toupbase/CMakeFiles/indi_bressercam_wheel.dir/libtoupbase.cpp.o
+[ 48%] Linking CXX executable indi_bressercam_wheel
+[ 48%] Built target indi_bressercam_wheel
+[ 49%] Building CXX object indi-toupbase/CMakeFiles/indi_bressercam_focuser.dir/indi_focuser.cpp.o
+[ 49%] Building CXX object indi-toupbase/CMakeFiles/indi_bressercam_focuser.dir/libtoupbase.cpp.o
+[ 49%] Linking CXX executable indi_bressercam_focuser
+[ 49%] Built target indi_bressercam_focuser
+[ 49%] Building CXX object indi-toupbase/CMakeFiles/indi_ogmacam_ccd.dir/indi_toupbase.cpp.o
+[ 49%] Building CXX object indi-toupbase/CMakeFiles/indi_ogmacam_ccd.dir/libtoupbase.cpp.o
+[ 50%] Building CXX object indi-toupbase/CMakeFiles/indi_ogmacam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 50%] Linking CXX executable indi_ogmacam_ccd
+[ 50%] Built target indi_ogmacam_ccd
+[ 51%] Building CXX object indi-toupbase/CMakeFiles/indi_ogmacam_wheel.dir/indi_toupwheel.cpp.o
+[ 51%] Building CXX object indi-toupbase/CMakeFiles/indi_ogmacam_wheel.dir/libtoupbase.cpp.o
+[ 51%] Linking CXX executable indi_ogmacam_wheel
+[ 51%] Built target indi_ogmacam_wheel
+[ 51%] Building CXX object indi-toupbase/CMakeFiles/indi_ogmacam_focuser.dir/indi_focuser.cpp.o
+[ 51%] Building CXX object indi-toupbase/CMakeFiles/indi_ogmacam_focuser.dir/libtoupbase.cpp.o
+[ 51%] Linking CXX executable indi_ogmacam_focuser
+[ 51%] Built target indi_ogmacam_focuser
+[ 51%] Building CXX object indi-toupbase/CMakeFiles/indi_tscam_ccd.dir/indi_toupbase.cpp.o
+[ 51%] Building CXX object indi-toupbase/CMakeFiles/indi_tscam_ccd.dir/libtoupbase.cpp.o
+[ 52%] Building CXX object indi-toupbase/CMakeFiles/indi_tscam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 52%] Linking CXX executable indi_tscam_ccd
+[ 52%] Built target indi_tscam_ccd
+[ 53%] Building CXX object indi-toupbase/CMakeFiles/indi_tscam_wheel.dir/indi_toupwheel.cpp.o
+[ 53%] Building CXX object indi-toupbase/CMakeFiles/indi_tscam_wheel.dir/libtoupbase.cpp.o
+[ 53%] Linking CXX executable indi_tscam_wheel
+[ 53%] Built target indi_tscam_wheel
+[ 53%] Building CXX object indi-toupbase/CMakeFiles/indi_tscam_focuser.dir/indi_focuser.cpp.o
+[ 53%] Building CXX object indi-toupbase/CMakeFiles/indi_tscam_focuser.dir/libtoupbase.cpp.o
+[ 53%] Linking CXX executable indi_tscam_focuser
+[ 53%] Built target indi_tscam_focuser
+[ 53%] Building CXX object indi-toupbase/CMakeFiles/indi_svbonycam_ccd.dir/indi_toupbase.cpp.o
+[ 53%] Building CXX object indi-toupbase/CMakeFiles/indi_svbonycam_ccd.dir/libtoupbase.cpp.o
+[ 54%] Building CXX object indi-toupbase/CMakeFiles/indi_svbonycam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 54%] Linking CXX executable indi_svbonycam_ccd
+[ 54%] Built target indi_svbonycam_ccd
+[ 55%] Building CXX object indi-toupbase/CMakeFiles/indi_svbonycam_wheel.dir/indi_toupwheel.cpp.o
+[ 55%] Building CXX object indi-toupbase/CMakeFiles/indi_svbonycam_wheel.dir/libtoupbase.cpp.o
+[ 55%] Linking CXX executable indi_svbonycam_wheel
+[ 55%] Built target indi_svbonycam_wheel
+[ 55%] Building CXX object indi-toupbase/CMakeFiles/indi_svbonycam_focuser.dir/indi_focuser.cpp.o
+[ 55%] Building CXX object indi-toupbase/CMakeFiles/indi_svbonycam_focuser.dir/libtoupbase.cpp.o
+[ 55%] Linking CXX executable indi_svbonycam_focuser
+[ 55%] Built target indi_svbonycam_focuser
+[ 55%] Building CXX object indi-toupbase/CMakeFiles/indi_starshootg_ccd.dir/indi_toupbase.cpp.o
+[ 56%] Building CXX object indi-toupbase/CMakeFiles/indi_starshootg_ccd.dir/libtoupbase.cpp.o
+[ 56%] Building CXX object indi-toupbase/CMakeFiles/indi_starshootg_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 56%] Linking CXX executable indi_starshootg_ccd
+[ 56%] Built target indi_starshootg_ccd
+[ 56%] Building CXX object indi-toupbase/CMakeFiles/indi_starshootg_wheel.dir/indi_toupwheel.cpp.o
+[ 56%] Building CXX object indi-toupbase/CMakeFiles/indi_starshootg_wheel.dir/libtoupbase.cpp.o
+[ 56%] Linking CXX executable indi_starshootg_wheel
+[ 56%] Built target indi_starshootg_wheel
+[ 56%] Building CXX object indi-toupbase/CMakeFiles/indi_starshootg_focuser.dir/indi_focuser.cpp.o
+[ 56%] Building CXX object indi-toupbase/CMakeFiles/indi_starshootg_focuser.dir/libtoupbase.cpp.o
+[ 57%] Linking CXX executable indi_starshootg_focuser
+[ 57%] Built target indi_starshootg_focuser
+[ 57%] Building CXX object indi-toupbase/CMakeFiles/indi_nncam_ccd.dir/indi_toupbase.cpp.o
+[ 57%] Building CXX object indi-toupbase/CMakeFiles/indi_nncam_ccd.dir/libtoupbase.cpp.o
+[ 58%] Building CXX object indi-toupbase/CMakeFiles/indi_nncam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 58%] Linking CXX executable indi_nncam_ccd
+[ 58%] Built target indi_nncam_ccd
+[ 59%] Building CXX object indi-toupbase/CMakeFiles/indi_nncam_wheel.dir/indi_toupwheel.cpp.o
+[ 59%] Building CXX object indi-toupbase/CMakeFiles/indi_nncam_wheel.dir/libtoupbase.cpp.o
+[ 59%] Linking CXX executable indi_nncam_wheel
+[ 59%] Built target indi_nncam_wheel
+[ 59%] Building CXX object indi-toupbase/CMakeFiles/indi_nncam_focuser.dir/indi_focuser.cpp.o
+[ 59%] Building CXX object indi-toupbase/CMakeFiles/indi_nncam_focuser.dir/libtoupbase.cpp.o
+[ 59%] Linking CXX executable indi_nncam_focuser
+[ 59%] Built target indi_nncam_focuser
+[ 59%] Building CXX object indi-toupbase/CMakeFiles/indi_mallincam_ccd.dir/indi_toupbase.cpp.o
+[ 60%] Building CXX object indi-toupbase/CMakeFiles/indi_mallincam_ccd.dir/libtoupbase.cpp.o
+[ 60%] Building CXX object indi-toupbase/CMakeFiles/indi_mallincam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 60%] Linking CXX executable indi_mallincam_ccd
+[ 60%] Built target indi_mallincam_ccd
+[ 60%] Building CXX object indi-toupbase/CMakeFiles/indi_mallincam_wheel.dir/indi_toupwheel.cpp.o
+[ 60%] Building CXX object indi-toupbase/CMakeFiles/indi_mallincam_wheel.dir/libtoupbase.cpp.o
+[ 60%] Linking CXX executable indi_mallincam_wheel
+[ 60%] Built target indi_mallincam_wheel
+[ 60%] Building CXX object indi-toupbase/CMakeFiles/indi_mallincam_focuser.dir/indi_focuser.cpp.o
+[ 60%] Building CXX object indi-toupbase/CMakeFiles/indi_mallincam_focuser.dir/libtoupbase.cpp.o
+[ 61%] Linking CXX executable indi_mallincam_focuser
+[ 61%] Built target indi_mallincam_focuser
+[ 61%] Building CXX object indi-toupbase/CMakeFiles/indi_omegonprocam_ccd.dir/indi_toupbase.cpp.o
+[ 61%] Building CXX object indi-toupbase/CMakeFiles/indi_omegonprocam_ccd.dir/libtoupbase.cpp.o
+[ 62%] Building CXX object indi-toupbase/CMakeFiles/indi_omegonprocam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 62%] Linking CXX executable indi_omegonprocam_ccd
+[ 62%] Built target indi_omegonprocam_ccd
+[ 63%] Building CXX object indi-toupbase/CMakeFiles/indi_omegonprocam_wheel.dir/indi_toupwheel.cpp.o
+[ 63%] Building CXX object indi-toupbase/CMakeFiles/indi_omegonprocam_wheel.dir/libtoupbase.cpp.o
+[ 63%] Linking CXX executable indi_omegonprocam_wheel
+[ 63%] Built target indi_omegonprocam_wheel
+[ 63%] Building CXX object indi-toupbase/CMakeFiles/indi_omegonprocam_focuser.dir/indi_focuser.cpp.o
+[ 63%] Building CXX object indi-toupbase/CMakeFiles/indi_omegonprocam_focuser.dir/libtoupbase.cpp.o
+[ 63%] Linking CXX executable indi_omegonprocam_focuser
+[ 63%] Built target indi_omegonprocam_focuser
+[ 63%] Building CXX object indi-toupbase/CMakeFiles/omegonprocam_test.dir/omegonprocam_test.cpp.o
+[ 63%] Linking CXX executable omegonprocam_test
+[ 63%] Built target omegonprocam_test
+[ 63%] Building CXX object indi-toupbase/CMakeFiles/indi_meadecam_ccd.dir/indi_toupbase.cpp.o
+[ 63%] Building CXX object indi-toupbase/CMakeFiles/indi_meadecam_ccd.dir/libtoupbase.cpp.o
+[ 63%] Building CXX object indi-toupbase/CMakeFiles/indi_meadecam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 64%] Linking CXX executable indi_meadecam_ccd
+[ 64%] Built target indi_meadecam_ccd
+[ 64%] Building CXX object indi-toupbase/CMakeFiles/indi_meadecam_wheel.dir/indi_toupwheel.cpp.o
+[ 65%] Building CXX object indi-toupbase/CMakeFiles/indi_meadecam_wheel.dir/libtoupbase.cpp.o
+[ 65%] Linking CXX executable indi_meadecam_wheel
+[ 65%] Built target indi_meadecam_wheel
+[ 65%] Building CXX object indi-toupbase/CMakeFiles/indi_meadecam_focuser.dir/indi_focuser.cpp.o
+[ 65%] Building CXX object indi-toupbase/CMakeFiles/indi_meadecam_focuser.dir/libtoupbase.cpp.o
+[ 65%] Linking CXX executable indi_meadecam_focuser
+[ 65%] Built target indi_meadecam_focuser
+[ 65%] Building CXX object indi-beefocus/CMakeFiles/indi_beefocus.dir/driver/beefocus.cpp.o
+[ 66%] Building CXX object indi-beefocus/CMakeFiles/indi_beefocus.dir/driver/beeconnect.cpp.o
+[ 66%] Building CXX object indi-beefocus/CMakeFiles/indi_beefocus.dir/driver/beesimfirmware.cpp.o
+[ 66%] Building CXX object indi-beefocus/CMakeFiles/indi_beefocus.dir/firmware/command_parser.cpp.o
+[ 66%] Building CXX object indi-beefocus/CMakeFiles/indi_beefocus.dir/firmware/focuser_state.cpp.o
+[ 66%] Building CXX object indi-beefocus/CMakeFiles/indi_beefocus.dir/firmware/hardware_interface.cpp.o
+[ 67%] Linking CXX executable indi_beefocus
+[ 67%] Built target indi_beefocus
+[ 67%] Building CXX object indi-inovaplx/CMakeFiles/indi_inovaplx_ccd.dir/inovaplx_ccd.cpp.o
+[ 67%] Linking CXX executable indi_inovaplx_ccd
+[ 67%] Built target indi_inovaplx_ccd
+[ 67%] Building CXX object indi-fli/CMakeFiles/indi_fli_focus.dir/fli_pdf.cpp.o
+[ 68%] Linking CXX executable indi_fli_focus
+[ 68%] Built target indi_fli_focus
+[ 68%] Building CXX object indi-fli/CMakeFiles/indi_fli_wheel.dir/fli_cfw.cpp.o
+[ 68%] Linking CXX executable indi_fli_wheel
+[ 68%] Built target indi_fli_wheel
+[ 68%] Building CXX object indi-fli/CMakeFiles/indi_fli_ccd.dir/fli_ccd.cpp.o
+[ 68%] Linking CXX executable indi_fli_ccd
+[ 68%] Built target indi_fli_ccd
+[ 69%] Building CXX object indi-fli/CMakeFiles/indi_kepler_ccd.dir/kepler.cpp.o
+[ 69%] Linking CXX executable indi_kepler_ccd
+[ 69%] Built target indi_kepler_ccd
+[ 70%] Building CXX object indi-fli/CMakeFiles/test_kepler_merged.dir/test_kepler_merged.cpp.o
+[ 70%] Linking CXX executable test_kepler_merged
+[ 70%] Built target test_kepler_merged
+[ 70%] Building CXX object indi-apogee/CMakeFiles/indi_apogee_ccd.dir/apogee_ccd.cpp.o
+[ 70%] Linking CXX executable indi_apogee_ccd
+[ 70%] Built target indi_apogee_ccd
+[ 70%] Building CXX object indi-apogee/CMakeFiles/indi_apogee_wheel.dir/apogee_cfw.cpp.o
+[ 71%] Linking CXX executable indi_apogee_wheel
+[ 71%] Built target indi_apogee_wheel
+[ 71%] Building CXX object indi-ffmv/CMakeFiles/indi_ffmv_ccd.dir/ffmv_ccd.cpp.o
+[ 71%] Linking CXX executable indi_ffmv_ccd
+[ 71%] Built target indi_ffmv_ccd
+[ 72%] Building CXX object indi-mi/CMakeFiles/indi_mi_ccd.dir/mi_ccd.cpp.o
+[ 72%] Linking CXX executable indi_mi_ccd
+[ 72%] Built target indi_mi_ccd
+[ 72%] Building CXX object indi-mi/CMakeFiles/indi_mi_sfw.dir/mi_sfw.cpp.o
+[ 72%] Linking CXX executable indi_mi_sfw
+[ 72%] Built target indi_mi_sfw
+[ 72%] Building CXX object indi-duino/CMakeFiles/firmata.dir/libfirmata/src/firmata.cpp.o
+[ 72%] Building CXX object indi-duino/CMakeFiles/firmata.dir/libfirmata/src/arduino.cpp.o
+[ 72%] Linking CXX static library libfirmata.a
+[ 72%] Built target firmata
+[ 72%] Building CXX object indi-duino/CMakeFiles/blink_pin.dir/libfirmata/examples/blink_pin.cpp.o
+[ 72%] Linking CXX executable blink_pin
+[ 72%] Built target blink_pin
+[ 72%] Building CXX object indi-duino/CMakeFiles/read_digital_pin.dir/libfirmata/examples/read_digital_pin.cpp.o
+[ 72%] Linking CXX executable read_digital_pin
+[ 72%] Built target read_digital_pin
+[ 72%] Building CXX object indi-duino/CMakeFiles/read_analog_pin.dir/libfirmata/examples/read_analog_pin.cpp.o
+[ 72%] Linking CXX executable read_analog_pin
+[ 72%] Built target read_analog_pin
+[ 73%] Building CXX object indi-duino/CMakeFiles/ask_digital_pin.dir/libfirmata/examples/ask_digital_pin.cpp.o
+[ 73%] Linking CXX executable ask_digital_pin
+[ 73%] Built target ask_digital_pin
+[ 73%] Building CXX object indi-duino/CMakeFiles/ask_analog_pin.dir/libfirmata/examples/ask_analog_pin.cpp.o
+[ 73%] Linking CXX executable ask_analog_pin
+[ 73%] Built target ask_analog_pin
+[ 74%] Building CXX object indi-duino/CMakeFiles/read_string.dir/libfirmata/examples/read_string.cpp.o
+[ 74%] Linking CXX executable read_string
+[ 74%] Built target read_string
+[ 74%] Building CXX object indi-duino/CMakeFiles/indi_duino.dir/indiduino.cpp.o
+[ 75%] Linking CXX executable indi_duino
+[ 75%] Built target indi_duino
+[ 75%] Building CXX object indi-duino/CMakeFiles/indi_weatherradio.dir/gason/gason.cpp.o
+[ 75%] Building CXX object indi-duino/CMakeFiles/indi_weatherradio.dir/weatherradio.cpp.o
+[ 76%] Linking CXX executable indi_weatherradio
+[ 76%] Built target indi_weatherradio
+[ 76%] Building CXX object indi-duino/CMakeFiles/indi_duino_powerbox.dir/gason/gason.cpp.o
+[ 76%] Building CXX object indi-duino/CMakeFiles/indi_duino_powerbox.dir/powerbox.cpp.o
+[ 76%] Linking CXX executable indi_duino_powerbox
+[ 76%] Built target indi_duino_powerbox
+[ 77%] Building CXX object indi-fishcamp/CMakeFiles/indi_fishcamp_ccd.dir/indi_fishcamp.cpp.o
+[ 77%] Linking CXX executable indi_fishcamp_ccd
+[ 77%] Built target indi_fishcamp_ccd
+[ 77%] Building CXX object indi-asi/CMakeFiles/indi_asi_ccd.dir/asi_base.cpp.o
+[ 77%] Building CXX object indi-asi/CMakeFiles/indi_asi_ccd.dir/asi_ccd.cpp.o
+[ 78%] Building CXX object indi-asi/CMakeFiles/indi_asi_ccd.dir/asi_ccd_hotplug_handler.cpp.o
+[ 78%] Building CXX object indi-asi/CMakeFiles/indi_asi_ccd.dir/usb_utils.cpp.o
+[ 78%] Linking CXX executable indi_asi_ccd
+[ 78%] Built target indi_asi_ccd
+[ 78%] Building CXX object indi-asi/CMakeFiles/indi_asi_single_ccd.dir/asi_base.cpp.o
+[ 78%] Building CXX object indi-asi/CMakeFiles/indi_asi_single_ccd.dir/asi_single_ccd.cpp.o
+[ 79%] Building CXX object indi-asi/CMakeFiles/indi_asi_single_ccd.dir/usb_utils.cpp.o
+[ 79%] Linking CXX executable indi_asi_single_ccd
+[ 79%] Built target indi_asi_single_ccd
+[ 79%] Building CXX object indi-asi/CMakeFiles/indi_asi_wheel.dir/asi_wheel.cpp.o
+[ 80%] Building CXX object indi-asi/CMakeFiles/indi_asi_wheel.dir/asi_wheel_hotplug_handler.cpp.o
+[ 80%] Linking CXX executable indi_asi_wheel
+[ 80%] Built target indi_asi_wheel
+[ 80%] Building CXX object indi-asi/CMakeFiles/indi_asi_st4.dir/asi_st4.cpp.o
+[ 80%] Linking CXX executable indi_asi_st4
+[ 80%] Built target indi_asi_st4
+[ 80%] Building CXX object indi-asi/CMakeFiles/indi_asi_focuser.dir/asi_focuser.cpp.o
+[ 80%] Building CXX object indi-asi/CMakeFiles/indi_asi_focuser.dir/asi_focuser_hotplug_handler.cpp.o
+[ 81%] Linking CXX executable indi_asi_focuser
+[ 81%] Built target indi_asi_focuser
+[ 81%] Building CXX object indi-asi/CMakeFiles/indi_asi_rotator.dir/asi_rotator.cpp.o
+[ 81%] Linking CXX executable indi_asi_rotator
+[ 81%] Built target indi_asi_rotator
+[ 81%] Building CXX object indi-asi/CMakeFiles/asi_camera_test.dir/asi_camera_test.cpp.o
+[ 82%] Linking CXX executable asi_camera_test
+[ 82%] Built target asi_camera_test
+[ 82%] Building CXX object indi-asi/CMakeFiles/asi_multi_camera_test.dir/asi_multi_camera_test.cpp.o
+[ 82%] Linking CXX executable asi_multi_camera_test
+[ 82%] Built target asi_multi_camera_test
+[ 82%] Building CXX object indi-dsi/CMakeFiles/indi_dsi_ccd.dir/dsi_ccd.cpp.o
+[ 82%] Building CXX object indi-dsi/CMakeFiles/indi_dsi_ccd.dir/DsiDevice.cpp.o
+[ 82%] Building CXX object indi-dsi/CMakeFiles/indi_dsi_ccd.dir/DsiDeviceFactory.cpp.o
+[ 83%] Building CXX object indi-dsi/CMakeFiles/indi_dsi_ccd.dir/DsiPro.cpp.o
+[ 83%] Building CXX object indi-dsi/CMakeFiles/indi_dsi_ccd.dir/DsiColor.cpp.o
+[ 83%] Building CXX object indi-dsi/CMakeFiles/indi_dsi_ccd.dir/DsiProII.cpp.o
+[ 83%] Building CXX object indi-dsi/CMakeFiles/indi_dsi_ccd.dir/DsiProIII.cpp.o
+[ 83%] Building CXX object indi-dsi/CMakeFiles/indi_dsi_ccd.dir/DsiColorII.cpp.o
+[ 84%] Building CXX object indi-dsi/CMakeFiles/indi_dsi_ccd.dir/DsiColorIII.cpp.o
+[ 84%] Building CXX object indi-dsi/CMakeFiles/indi_dsi_ccd.dir/DsiTypes.cpp.o
+[ 84%] Building CXX object indi-dsi/CMakeFiles/indi_dsi_ccd.dir/Util.cpp.o
+[ 84%] Linking CXX executable indi_dsi_ccd
+[ 84%] Built target indi_dsi_ccd
+[ 85%] Building CXX object indi-qhy/CMakeFiles/indi_qhy_ccd.dir/qhy_ccd.cpp.o
+[ 85%] Building CXX object indi-qhy/CMakeFiles/indi_qhy_ccd.dir/qhy_ccd_hotplug_handler.cpp.o
+[ 85%] Linking CXX executable indi_qhy_ccd
+[ 85%] Built target indi_qhy_ccd
+[ 85%] Building CXX object indi-qhy/CMakeFiles/qhy_ccd_test.dir/qhy_ccd_test.cpp.o
+[ 85%] Linking CXX executable qhy_ccd_test
+[ 85%] Built target qhy_ccd_test
+[ 85%] Building CXX object indi-qhy/CMakeFiles/qhy_video_test.dir/qhy_video_test.cpp.o
+[ 86%] Linking CXX executable qhy_video_test
+[ 86%] Built target qhy_video_test
+[ 86%] Building CXX object indi-qhy/CMakeFiles/indi_qhy_focuser.dir/qhy_focuser.cpp.o
+[ 86%] Linking CXX executable indi_qhy_focuser
+[ 86%] Built target indi_qhy_focuser
+[ 86%] Building CXX object indi-gpsd/CMakeFiles/indi_gpsd.dir/gps_driver.cpp.o
+[ 86%] Linking CXX executable indi_gpsd
+[ 86%] Built target indi_gpsd
+[ 87%] Building CXX object indi-gpsnmea/CMakeFiles/indi_gpsnmea.dir/gpsnmea_driver.cpp.o
+[ 87%] Building C object indi-gpsnmea/CMakeFiles/indi_gpsnmea.dir/minmea.c.o
+[ 87%] Linking CXX executable indi_gpsnmea
+[ 87%] Built target indi_gpsnmea
+[ 87%] Building CXX object indi-rtklib/CMakeFiles/indi_rtklib.dir/rtklib_driver.cpp.o
+[ 88%] Building C object indi-rtklib/CMakeFiles/indi_rtklib.dir/rtkrcv_parser.c.o
+[ 88%] Linking CXX executable indi_rtklib
+[ 88%] Built target indi_rtklib
+[ 88%] Building CXX object indi-mgen/CMakeFiles/indi_mgenautoguider.dir/mgenautoguider.cpp.o
+[ 88%] Building CXX object indi-mgen/CMakeFiles/indi_mgenautoguider.dir/mgen_device.cpp.o
+[ 88%] Linking CXX executable indi_mgenautoguider
+[ 88%] Built target indi_mgenautoguider
+[ 88%] Building CXX object indi-limesdr/CMakeFiles/indi_limesdr_receiver.dir/indi_limesdr_receiver.cpp.o
+[ 88%] Linking CXX executable indi_limesdr_receiver
+[ 88%] Built target indi_limesdr_receiver
+[ 88%] Building CXX object indi-armadillo-platypus/CMakeFiles/indi_seletek_rotator.dir/seletek_rotator.cpp.o
+[ 89%] Linking CXX executable indi_seletek_rotator
+[ 89%] Built target indi_seletek_rotator
+[ 90%] Building CXX object indi-armadillo-platypus/CMakeFiles/indi_dragonfly_dome.dir/dragonfly_dome.cpp.o
+[ 90%] Linking CXX executable indi_dragonfly_dome
+[ 90%] Built target indi_dragonfly_dome
+[ 90%] Building CXX object indi-armadillo-platypus/CMakeFiles/indi_dragonfly.dir/dragonfly_controller.cpp.o
+[ 90%] Linking CXX executable indi_dragonfly
+[ 90%] Built target indi_dragonfly
+[ 90%] Building CXX object indi-armadillo-platypus/CMakeFiles/indi_beaver_dome.dir/beaver_dome.cpp.o
+[ 90%] Linking CXX executable indi_beaver_dome
+[ 90%] Built target indi_beaver_dome
+[ 90%] Building CXX object indi-armadillo-platypus/CMakeFiles/indi_armadillo_focus.dir/armadillo_focuser.cpp.o
+[ 90%] Linking CXX executable indi_armadillo_focus
+[ 90%] Built target indi_armadillo_focus
+[ 90%] Building CXX object indi-armadillo-platypus/CMakeFiles/indi_platypus_focus.dir/platypus_focuser.cpp.o
+[ 91%] Linking CXX executable indi_platypus_focus
+[ 91%] Built target indi_platypus_focus
+[ 91%] Building CXX object indi-webcam/CMakeFiles/indi_webcam_ccd.dir/indi_webcam.cpp.o
+[ 91%] Linking CXX executable indi_webcam_ccd
+[ 91%] Built target indi_webcam_ccd
+[ 91%] Building CXX object indi-weewx-json/CMakeFiles/indi_weewx_json.dir/indi_weewx_json.cpp.o
+[ 91%] Linking CXX executable indi_weewx_json
+[ 91%] Built target indi_weewx_json
+[ 91%] Building CXX object indi-nightscape/CMakeFiles/indi_nightscape_ccd.dir/nschannel.cpp.o
+[ 91%] Building CXX object indi-nightscape/CMakeFiles/indi_nightscape_ccd.dir/nschannel-u.cpp.o
+[ 91%] Building CXX object indi-nightscape/CMakeFiles/indi_nightscape_ccd.dir/nsmsg.cpp.o
+[ 91%] Building CXX object indi-nightscape/CMakeFiles/indi_nightscape_ccd.dir/nsdownload.cpp.o
+[ 92%] Building CXX object indi-nightscape/CMakeFiles/indi_nightscape_ccd.dir/nsstatus.cpp.o
+[ 92%] Building CXX object indi-nightscape/CMakeFiles/indi_nightscape_ccd.dir/nightscape.cpp.o
+[ 92%] Linking CXX executable indi_nightscape_ccd
+[ 92%] Built target indi_nightscape_ccd
+[ 92%] Building CXX object indi-nightscape/CMakeFiles/nstest.dir/nschannel.cpp.o
+[ 92%] Building CXX object indi-nightscape/CMakeFiles/nstest.dir/nschannel-u.cpp.o
+[ 92%] Building CXX object indi-nightscape/CMakeFiles/nstest.dir/nsmsg.cpp.o
+[ 92%] Building CXX object indi-nightscape/CMakeFiles/nstest.dir/nsdownload.cpp.o
+[ 93%] Building CXX object indi-nightscape/CMakeFiles/nstest.dir/nsstatus.cpp.o
+[ 93%] Building CXX object indi-nightscape/CMakeFiles/nstest.dir/nstest-main.cpp.o
+[ 93%] Linking CXX executable nstest
+[ 93%] Built target nstest
+[ 93%] Building CXX object indi-avalon/CMakeFiles/indi_lx200stargo.dir/lx200stargofocuser.cpp.o
+[ 93%] Building CXX object indi-avalon/CMakeFiles/indi_lx200stargo.dir/lx200stargo.cpp.o
+[ 93%] Linking CXX executable indi_lx200stargo
+[ 93%] Built target indi_lx200stargo
+[ 94%] Building CXX object indi-avalonud/CMakeFiles/indi_avalonud_telescope.dir/indi_avalonud_telescope.cpp.o
+[ 94%] Linking CXX executable indi_avalonud_telescope
+[ 94%] Built target indi_avalonud_telescope
+[ 94%] Building CXX object indi-avalonud/CMakeFiles/indi_avalonud_focuser.dir/indi_avalonud_focuser.cpp.o
+[ 94%] Linking CXX executable indi_avalonud_focuser
+[ 94%] Built target indi_avalonud_focuser
+[ 94%] Building CXX object indi-avalonud/CMakeFiles/indi_avalonud_aux.dir/indi_avalonud_aux.cpp.o
+[ 94%] Linking CXX executable indi_avalonud_aux
+[ 94%] Built target indi_avalonud_aux
+[ 94%] Building CXX object indi-pentax/CMakeFiles/indi_pentax.dir/indi_pentax.cpp.o
+[ 94%] Building CXX object indi-pentax/CMakeFiles/indi_pentax.dir/pktriggercord_ccd.cpp.o
+[ 95%] Building CXX object indi-pentax/CMakeFiles/indi_pentax.dir/gphoto_readimage.cpp.o
+[ 95%] Building CXX object indi-pentax/CMakeFiles/indi_pentax.dir/pentax_ccd.cpp.o
+[ 95%] Building CXX object indi-pentax/CMakeFiles/indi_pentax.dir/pentax_event_handler.cpp.o
+[ 95%] Linking CXX executable indi_pentax
+[ 95%] Built target indi_pentax
+[ 95%] Building CXX object indi-svbony/CMakeFiles/indi_svbony_ccd.dir/svbony_base.cpp.o
+[ 96%] Building CXX object indi-svbony/CMakeFiles/indi_svbony_ccd.dir/svbony_ccd.cpp.o
+[ 96%] Building CXX object indi-svbony/CMakeFiles/indi_svbony_ccd.dir/svbony_ccd_hotplug_handler.cpp.o
+[ 96%] Linking CXX executable indi_svbony_ccd
+[ 96%] Built target indi_svbony_ccd
+[ 96%] Building CXX object indi-bresserexos2/CMakeFiles/indi_bresserexos2.dir/BresserExosIIGoToDriver.cpp.o
+[ 96%] Building CXX object indi-bresserexos2/CMakeFiles/indi_bresserexos2.dir/IndiSerialWrapper.cpp.o
+[ 96%] Building CXX object indi-bresserexos2/CMakeFiles/indi_bresserexos2.dir/SerialCommand.cpp.o
+[ 96%] Linking CXX executable indi_bresserexos2
+[ 96%] Built target indi_bresserexos2
+[ 97%] Building C object indi-orion-ssg3/CMakeFiles/indi_orion_ssg3_ccd.dir/orion_ssg3.c.o
+[ 97%] Building CXX object indi-orion-ssg3/CMakeFiles/indi_orion_ssg3_ccd.dir/orion_ssg3_ccd.cpp.o
+[ 97%] Linking CXX executable indi_orion_ssg3_ccd
+[ 97%] Built target indi_orion_ssg3_ccd
+[ 97%] Building CXX object indi-playerone/CMakeFiles/indi_playerone_ccd.dir/playerone_base.cpp.o
+[ 97%] Building CXX object indi-playerone/CMakeFiles/indi_playerone_ccd.dir/playerone_ccd.cpp.o
+[ 97%] Building CXX object indi-playerone/CMakeFiles/indi_playerone_ccd.dir/playerone_ccd_hotplug_handler.cpp.o
+[ 97%] Linking CXX executable indi_playerone_ccd
+[ 97%] Built target indi_playerone_ccd
+[ 98%] Building CXX object indi-playerone/CMakeFiles/indi_playerone_single_ccd.dir/playerone_base.cpp.o
+[ 98%] Building CXX object indi-playerone/CMakeFiles/indi_playerone_single_ccd.dir/playerone_single_ccd.cpp.o
+[ 98%] Linking CXX executable indi_playerone_single_ccd
+[ 98%] Built target indi_playerone_single_ccd
+[ 98%] Building CXX object indi-playerone/CMakeFiles/indi_playerone_wheel.dir/playerone_wheel.cpp.o
+[ 98%] Linking CXX executable indi_playerone_wheel
+[ 98%] Built target indi_playerone_wheel
+[ 99%] Building CXX object indi-playerone/CMakeFiles/playerone_camera_test.dir/playerone_camera_test.cpp.o
+[ 99%] Linking CXX executable playerone_camera_test
+[ 99%] Built target playerone_camera_test
+[100%] Building CXX object indi-astroasis/CMakeFiles/indi_oasis_focuser.dir/oasis_focuser.cpp.o
+[100%] Linking CXX executable indi_oasis_focuser
+[100%] Built target indi_oasis_focuser
+[100%] Building CXX object indi-astroasis/CMakeFiles/indi_oasis_filter_wheel.dir/oasis_filter_wheel.cpp.o
+[100%] Linking CXX executable indi_oasis_filter_wheel
+[100%] Built target indi_oasis_filter_wheel
+[100%] Building CXX object indi-ocs/CMakeFiles/indi_ocs.dir/ocs.cpp.o
+[100%] Linking CXX executable indi_ocs
+[100%] Built target indi_ocs
+[100%] Building CXX object indi-openogma/CMakeFiles/indi_openogma.dir/indi_openogma.cpp.o
+[100%] Linking CXX executable indi_openogma
+[100%] Built target indi_openogma
+[  4%] Built target usbp-1
+[  8%] Built target lib
+[ 10%] Built target indi_ticfocuser-ng
+[ 11%] Built target cli
+[ 12%] Built target bootloader
+[ 12%] Built target gui_autogen_timestamp_deps
+[ 12%] Built target gui_autogen
+[ 15%] Built target gui
+[ 18%] Built target indi_eqmod_telescope
+[ 21%] Built target indi_azgti_telescope
+[ 24%] Built target indi_staradventurergti_telescope
+[ 27%] Built target indi_staradventurer2i_telescope
+[ 30%] Built target test_eqmod
+[ 31%] Built target indi_lx200aok
+[ 32%] Built target indi_starbook_telescope
+[ 33%] Built target indi_starbook_ten
+[ 34%] Built target indi_sx_ccd
+[ 34%] Built target indi_sx_wheel
+[ 34%] Built target indi_sx_ao
+[ 34%] Built target sx_ccd_test
+[ 35%] Built target indi_maxdomeii
+[ 36%] Built target indi_nexdome
+[ 37%] Built target indi_talon6
+[ 37%] Built target indi_rolloffino
+[ 37%] Built target indi_shelyakeshel_spectrograph
+[ 37%] Built target indi_shelyakspox_spectrograph
+[ 38%] Built target indi_aagcloudwatcher_ng
+[ 38%] Built target aagcloudwatcher_test_ng
+[ 39%] Built target indi_celestron_aux
+[ 40%] Built target indi_gphoto_ccd
+[ 41%] Built target gphoto_camera_test
+[ 42%] Built target indi_qsi_ccd
+[ 42%] Built target indi_sbig_ccd
+[ 42%] Built target indi_atik_ccd
+[ 43%] Built target indi_atik_wheel
+[ 44%] Built target indi_toupcam_ccd
+[ 45%] Built target indi_toupcam_wheel
+[ 45%] Built target indi_toupcam_focuser
+[ 45%] Built target toupcam_test
+[ 46%] Built target indi_altaircam_ccd
+[ 47%] Built target indi_altaircam_wheel
+[ 47%] Built target indi_altaircam_focuser
+[ 47%] Built target indi_bressercam_ccd
+[ 48%] Built target indi_bressercam_wheel
+[ 49%] Built target indi_bressercam_focuser
+[ 50%] Built target indi_ogmacam_ccd
+[ 51%] Built target indi_ogmacam_wheel
+[ 51%] Built target indi_ogmacam_focuser
+[ 52%] Built target indi_tscam_ccd
+[ 53%] Built target indi_tscam_wheel
+[ 53%] Built target indi_tscam_focuser
+[ 54%] Built target indi_svbonycam_ccd
+[ 55%] Built target indi_svbonycam_wheel
+[ 55%] Built target indi_svbonycam_focuser
+[ 56%] Built target indi_starshootg_ccd
+[ 56%] Built target indi_starshootg_wheel
+[ 57%] Built target indi_starshootg_focuser
+[ 58%] Built target indi_nncam_ccd
+[ 59%] Built target indi_nncam_wheel
+[ 59%] Built target indi_nncam_focuser
+[ 60%] Built target indi_mallincam_ccd
+[ 60%] Built target indi_mallincam_wheel
+[ 61%] Built target indi_mallincam_focuser
+[ 62%] Built target indi_omegonprocam_ccd
+[ 63%] Built target indi_omegonprocam_wheel
+[ 63%] Built target indi_omegonprocam_focuser
+[ 63%] Built target omegonprocam_test
+[ 64%] Built target indi_meadecam_ccd
+[ 65%] Built target indi_meadecam_wheel
+[ 65%] Built target indi_meadecam_focuser
+[ 67%] Built target indi_beefocus
+[ 67%] Built target indi_inovaplx_ccd
+[ 68%] Built target indi_fli_focus
+[ 68%] Built target indi_fli_wheel
+[ 68%] Built target indi_fli_ccd
+[ 69%] Built target indi_kepler_ccd
+[ 70%] Built target test_kepler_merged
+[ 70%] Built target indi_apogee_ccd
+[ 71%] Built target indi_apogee_wheel
+[ 71%] Built target indi_ffmv_ccd
+[ 72%] Built target indi_mi_ccd
+[ 72%] Built target indi_mi_sfw
+[ 72%] Built target firmata
+[ 72%] Built target blink_pin
+[ 72%] Built target read_digital_pin
+[ 72%] Built target read_analog_pin
+[ 73%] Built target ask_digital_pin
+[ 73%] Built target ask_analog_pin
+[ 74%] Built target read_string
+[ 75%] Built target indi_duino
+[ 76%] Built target indi_weatherradio
+[ 76%] Built target indi_duino_powerbox
+[ 77%] Built target indi_fishcamp_ccd
+[ 78%] Built target indi_asi_ccd
+[ 79%] Built target indi_asi_single_ccd
+[ 80%] Built target indi_asi_wheel
+[ 80%] Built target indi_asi_st4
+[ 81%] Built target indi_asi_focuser
+[ 81%] Built target indi_asi_rotator
+[ 82%] Built target asi_camera_test
+[ 82%] Built target asi_multi_camera_test
+[ 84%] Built target indi_dsi_ccd
+[ 85%] Built target indi_qhy_ccd
+[ 85%] Built target qhy_ccd_test
+[ 86%] Built target qhy_video_test
+[ 86%] Built target indi_qhy_focuser
+[ 86%] Built target indi_gpsd
+[ 87%] Built target indi_gpsnmea
+[ 88%] Built target indi_rtklib
+[ 88%] Built target indi_mgenautoguider
+[ 88%] Built target indi_limesdr_receiver
+[ 89%] Built target indi_seletek_rotator
+[ 90%] Built target indi_dragonfly_dome
+[ 90%] Built target indi_dragonfly
+[ 90%] Built target indi_beaver_dome
+[ 90%] Built target indi_armadillo_focus
+[ 91%] Built target indi_platypus_focus
+[ 91%] Built target indi_webcam_ccd
+[ 91%] Built target indi_weewx_json
+[ 92%] Built target indi_nightscape_ccd
+[ 93%] Built target nstest
+[ 93%] Built target indi_lx200stargo
+[ 94%] Built target indi_avalonud_telescope
+[ 94%] Built target indi_avalonud_focuser
+[ 94%] Built target indi_avalonud_aux
+[ 95%] Built target indi_pentax
+[ 96%] Built target indi_svbony_ccd
+[ 96%] Built target indi_bresserexos2
+[ 97%] Built target indi_orion_ssg3_ccd
+[ 97%] Built target indi_playerone_ccd
+[ 98%] Built target indi_playerone_single_ccd
+[ 98%] Built target indi_playerone_wheel
+[ 99%] Built target playerone_camera_test
+[100%] Built target indi_oasis_focuser
+[100%] Built target indi_oasis_filter_wheel
+[100%] Built target indi_ocs
+[100%] Built target indi_openogma
+Install the project...
+-- Install configuration: "Debug"
+-- Installing: /usr/include/libusbp-1/libusbp.h
+-- Installing: /usr/include/libusbp-1/libusbp.hpp
+-- Installing: /usr/lib/pkgconfig/libusbp-1.pc
+-- Installing: /usr/lib/libusbp-1.a
+-- Installing: /usr/include/libpololu-tic-1/tic.h
+-- Installing: /usr/include/libpololu-tic-1/tic.hpp
+-- Installing: /usr/include/libpololu-tic-1/tic_protocol.h
+-- Installing: /usr/lib/pkgconfig/libpololu-tic-1.pc
+-- Installing: /usr/lib/libpololu-tic-1.so.1.8.3
+-- Installing: /usr/lib/libpololu-tic-1.so
+-- Installing: /usr/bin/ticcmd
+-- Set non-toolchain portion of runtime path of "/usr/bin/ticcmd" to ""
+-- Installing: /usr/bin/ticgui
+-- Set non-toolchain portion of runtime path of "/usr/bin/ticgui" to ""
+-- Installing: /usr/bin/indi_ticfocuser-ng
+-- Set non-toolchain portion of runtime path of "/usr/bin/indi_ticfocuser-ng" to ""
+-- Installing: /usr/share/indi/indi_ticfocuser-ng.xml
+-- Installing: /usr/bin/indi_eqmod_telescope
+-- Installing: /usr/share/indi/indi_eqmod.xml
+-- Installing: /usr/share/indi/indi_eqmod_sk.xml
+-- Installing: /usr/share/indi/indi_eqmod_simulator_sk.xml
+-- Installing: /usr/share/indi/indi_align_sk.xml
+-- Installing: /usr/share/indi/indi_eqmod_scope_limits_sk.xml
+-- Installing: /usr/bin/indi_azgti_telescope
+-- Installing: /usr/bin/indi_staradventurergti_telescope
+-- Installing: /usr/bin/indi_staradventurer2i_telescope
+-- Installing: /usr/bin/indi_lx200aok
+-- Installing: /usr/share/indi/indi_aok.xml
+-- Installing: /usr/bin/indi_starbook_telescope
+-- Installing: /usr/share/indi/indi_starbook_telescope.xml
+-- Installing: /usr/bin/indi_starbook_ten
+-- Installing: /usr/share/indi/indi_starbook_ten.xml
+-- Installing: /usr/bin/indi_sx_ccd
+-- Installing: /usr/bin/indi_sx_wheel
+-- Installing: /usr/bin/indi_sx_ao
+-- Installing: /usr/bin/sx_ccd_test
+-- Installing: /usr/share/indi/indi_sx.xml
+-- Installing: /lib/udev/rules.d/99-sx.rules
+-- Installing: /usr/bin/indi_maxdomeii
+-- Installing: /usr/share/indi/indi_maxdomeii.xml
+-- Installing: /usr/bin/indi_nexdome
+-- Installing: /usr/share/indi/indi_nexdome.xml
+-- Installing: /usr/bin/indi_talon6
+-- Installing: /usr/share/indi/indi_talon6.xml
+-- Installing: /usr/bin/indi_rolloffino
+-- Installing: /usr/share/indi/indi_rolloffino.xml
+-- Installing: /usr/bin/indi_shelyakeshel_spectrograph
+-- Installing: /usr/bin/indi_shelyakspox_spectrograph
+-- Installing: /usr/share/indi/indi_shelyak.xml
+-- Installing: /usr/bin/indi_aagcloudwatcher_ng
+-- Installing: /usr/bin/aagcloudwatcher_test_ng
+-- Installing: /usr/share/indi/indi_aagcloudwatcher_ng.xml
+-- Installing: /usr/share/indi/indi_aagcloudwatcher_ng_sk.xml
+-- Installing: /usr/bin/indi_celestron_aux
+-- Installing: /usr/share/indi/indi_celestronaux.xml
+-- Installing: /usr/bin/indi_gphoto_ccd
+-- Installing: /usr/share/indi/indi_gphoto.xml
+-- Installing: /usr/bin/gphoto_camera_test
+-- Installing: /lib/udev/rules.d/85-disable-dslr-automout.rules
+-- Installing: /usr/bin/indi_qsi_ccd
+-- Installing: /usr/share/indi/indi_qsi.xml
+-- Installing: /lib/udev/rules.d/99-qsi.rules
+-- Installing: /usr/bin/indi_sbig_ccd
+-- Installing: /usr/share/indi/indi_sbig.xml
+-- Installing: /usr/bin/indi_atik_ccd
+-- Installing: /usr/bin/indi_atik_wheel
+-- Installing: /usr/share/indi/indi_atik.xml
+-- Installing: /usr/bin/indi_toupcam_ccd
+-- Installing: /usr/bin/indi_toupcam_wheel
+-- Installing: /usr/bin/indi_toupcam_focuser
+-- Installing: /usr/share/indi/indi_toupcam.xml
+-- Installing: /usr/bin/indi_altaircam_ccd
+-- Installing: /usr/bin/indi_altaircam_wheel
+-- Installing: /usr/bin/indi_altaircam_focuser
+-- Installing: /usr/share/indi/indi_altaircam.xml
+-- Installing: /usr/bin/indi_bressercam_ccd
+-- Installing: /usr/bin/indi_bressercam_wheel
+-- Installing: /usr/bin/indi_bressercam_focuser
+-- Installing: /usr/share/indi/indi_bressercam.xml
+-- Installing: /usr/bin/indi_ogmacam_ccd
+-- Installing: /usr/bin/indi_ogmacam_wheel
+-- Installing: /usr/bin/indi_ogmacam_focuser
+-- Installing: /usr/share/indi/indi_ogmacam.xml
+-- Installing: /usr/bin/indi_tscam_ccd
+-- Installing: /usr/bin/indi_tscam_wheel
+-- Installing: /usr/bin/indi_tscam_focuser
+-- Installing: /usr/share/indi/indi_tscam.xml
+-- Installing: /usr/bin/indi_svbonycam_ccd
+-- Installing: /usr/bin/indi_svbonycam_wheel
+-- Installing: /usr/bin/indi_svbonycam_focuser
+-- Installing: /usr/share/indi/indi_svbonycam.xml
+-- Installing: /usr/bin/indi_starshootg_ccd
+-- Installing: /usr/bin/indi_starshootg_wheel
+-- Installing: /usr/bin/indi_starshootg_focuser
+-- Installing: /usr/share/indi/indi_starshootg.xml
+-- Installing: /usr/bin/indi_nncam_ccd
+-- Installing: /usr/bin/indi_nncam_wheel
+-- Installing: /usr/bin/indi_nncam_focuser
+-- Installing: /usr/share/indi/indi_nncam.xml
+-- Installing: /usr/bin/indi_mallincam_ccd
+-- Installing: /usr/bin/indi_mallincam_wheel
+-- Installing: /usr/bin/indi_mallincam_focuser
+-- Installing: /usr/share/indi/indi_mallincam.xml
+-- Installing: /usr/bin/indi_omegonprocam_ccd
+-- Installing: /usr/bin/indi_omegonprocam_wheel
+-- Installing: /usr/bin/indi_omegonprocam_focuser
+-- Installing: /usr/share/indi/indi_omegonprocam.xml
+-- Installing: /usr/bin/indi_meadecam_ccd
+-- Installing: /usr/bin/indi_meadecam_wheel
+-- Installing: /usr/bin/indi_meadecam_focuser
+-- Installing: /usr/share/indi/indi_meadecam.xml
+-- Installing: /usr/bin/indi_beefocus
+-- Installing: /usr/share/indi/indi_beefocus.xml
+-- Installing: /usr/bin/indi_inovaplx_ccd
+-- Installing: /usr/share/indi/indi_inovaplx_ccd.xml
+-- Installing: /usr/bin/indi_fli_focus
+-- Installing: /usr/bin/indi_fli_wheel
+-- Installing: /usr/bin/indi_fli_ccd
+-- Installing: /usr/share/indi/indi_fli.xml
+-- Installing: /usr/bin/indi_kepler_ccd
+-- Installing: /usr/share/indi/indi_flipro.xml
+-- Installing: /usr/bin/indi_apogee_ccd
+-- Installing: /usr/bin/indi_apogee_wheel
+-- Installing: /usr/share/indi/indi_apogee.xml
+-- Installing: /usr/bin/indi_ffmv_ccd
+-- Installing: /usr/share/indi/indi_ffmv.xml
+-- Installing: /lib/udev/rules.d/99-fireflymv.rules
+-- Installing: /usr/bin/indi_mi_ccd
+-- Installing: /usr/bin/indi_mi_sfw
+-- Installing: /usr/share/indi/indi_miccd.xml
+-- Installing: /usr/bin/indi_duino
+-- Installing: /usr/share/indi/indi_duino.xml
+-- Installing: /usr/bin/indi_weatherradio
+-- Installing: /usr/share/indi/indi_weatherradio.xml
+-- Installing: /usr/bin/indi_duino_powerbox
+-- Installing: /usr/share/indi/various_sk.xml
+-- Installing: /usr/share/indi/simple_switcher_sk.xml
+-- Installing: /usr/share/indi/switcher_sk.xml
+-- Installing: /usr/share/indi/digital_inputs_sk.xml
+-- Installing: /usr/share/indi/stepper_sk.xml
+-- Installing: /usr/share/indi/focuser_sk.xml
+-- Installing: /usr/share/indi/cosmos_sk.xml
+-- Installing: /usr/share/indi/meteostation_sk.xml
+-- Installing: /usr/share/indi/meteostationSQM_sk.xml
+-- Installing: /usr/share/indi/servo_sk.xml
+-- Installing: /usr/bin/indi_fishcamp_ccd
+-- Installing: /usr/share/indi/indi_fishcamp.xml
+-- Installing: /usr/bin/indi_asi_ccd
+-- Installing: /usr/bin/indi_asi_single_ccd
+-- Installing: /usr/bin/indi_asi_wheel
+-- Installing: /usr/bin/indi_asi_st4
+-- Installing: /usr/bin/indi_asi_focuser
+-- Installing: /usr/bin/indi_asi_rotator
+-- Installing: /usr/bin/asi_camera_test
+-- Installing: /usr/bin/asi_multi_camera_test
+-- Installing: /usr/share/indi/indi_asi.xml
+-- Installing: /usr/bin/indi_dsi_ccd
+-- Installing: /usr/share/indi/indi_dsi.xml
+-- Installing: /lib/udev/rules.d/99-meadedsi.rules
+-- Installing: /lib/firmware/meade-deepskyimager.hex
+-- Installing: /usr/bin/indi_qhy_ccd
+-- Installing: /usr/share/indi/indi_qhy.xml
+-- Installing: /usr/bin/qhy_ccd_test
+-- Installing: /usr/bin/qhy_video_test
+-- Installing: /usr/bin/indi_qhy_focuser
+-- Installing: /usr/bin/indi_gpsd
+-- Installing: /usr/share/indi/indi_gpsd.xml
+-- Installing: /usr/bin/indi_gpsnmea
+-- Installing: /usr/share/indi/indi_gpsnmea.xml
+-- Installing: /usr/bin/indi_rtklib
+-- Installing: /usr/share/indi/indi_rtklib.xml
+-- Installing: /usr/bin/indi_mgenautoguider
+-- Installing: /usr/share/indi/indi_mgenautoguider.xml
+-- Installing: /usr/bin/indi_limesdr_receiver
+-- Installing: /usr/share/indi/indi_limesdr.xml
+-- Installing: /usr/bin/indi_seletek_rotator
+-- Installing: /usr/bin/indi_dragonfly_dome
+-- Installing: /usr/bin/indi_dragonfly
+-- Installing: /usr/bin/indi_beaver_dome
+-- Installing: /usr/bin/indi_armadillo_focus
+-- Installing: /usr/bin/indi_platypus_focus
+-- Installing: /usr/share/indi/indi_lunatico.xml
+-- Installing: /lib/udev/rules.d/99-armadilloplatypus.rules
+-- Installing: /usr/bin/indi_webcam_ccd
+-- Installing: /usr/share/indi/indi_webcam.xml
+-- Installing: /usr/bin/indi_weewx_json
+-- Installing: /usr/share/indi/indi_weewx_json.xml
+-- Installing: /usr/bin/indi_nightscape_ccd
+-- Installing: /usr/share/indi/indi_nightscape.xml
+-- Installing: /lib/udev/rules.d/99-nightscape.rules
+-- Installing: /usr/bin/indi_lx200stargo
+-- Installing: /usr/share/indi/indi_avalon.xml
+-- Installing: /usr/bin/indi_avalonud_telescope
+-- Installing: /usr/bin/indi_avalonud_focuser
+-- Installing: /usr/bin/indi_avalonud_aux
+-- Installing: /usr/share/indi/indi_avalonud.xml
+-- Installing: /usr/bin/indi_pentax
+-- Installing: /usr/share/indi/indi_pentax.xml
+-- Installing: /usr/bin/indi_svbony_ccd
+-- Installing: /usr/share/indi/indi_svbony_ccd.xml
+-- Installing: /usr/bin/indi_bresserexos2
+-- Installing: /usr/share/indi/indi_bresserexos2.xml
+-- Installing: /usr/bin/indi_orion_ssg3_ccd
+-- Installing: /usr/share/indi/indi_orion_ssg3.xml
+-- Installing: /lib/udev/rules.d/99-orionssg3.rules
+-- Installing: /usr/bin/indi_playerone_ccd
+-- Installing: /usr/bin/indi_playerone_single_ccd
+-- Installing: /usr/bin/indi_playerone_wheel
+-- Installing: /usr/bin/playerone_camera_test
+-- Installing: /usr/share/indi/indi_playerone.xml
+-- Installing: /usr/bin/indi_oasis_focuser
+-- Installing: /usr/bin/indi_oasis_filter_wheel
+-- Installing: /usr/share/indi/indi_astroasis.xml
+-- Installing: /usr/bin/indi_ocs
+-- Installing: /usr/share/indi/indi_ocs.xml
+-- Installing: /usr/bin/indi_openogma
+-- Installing: /usr/share/indi/indi_openogma.xml
+-- Installing: /lib/udev/rules.d/99-openogma.rules

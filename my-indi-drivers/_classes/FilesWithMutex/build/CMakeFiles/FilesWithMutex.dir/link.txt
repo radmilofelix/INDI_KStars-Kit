@@ -1,0 +1,2 @@
+/usr/bin/ar qc libFilesWithMutex.a CMakeFiles/FilesWithMutex.dir/FilesWithMutex.cpp.o
+/usr/bin/ranlib libFilesWithMutex.a

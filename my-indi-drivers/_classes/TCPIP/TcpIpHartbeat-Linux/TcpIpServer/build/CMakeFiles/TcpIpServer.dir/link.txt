@@ -1,0 +1,2 @@
+/usr/bin/ar qc libTcpIpServer.a CMakeFiles/TcpIpServer.dir/TcpIpServer.cpp.o
+/usr/bin/ranlib libTcpIpServer.a

@@ -1,0 +1,2041 @@
+Work folder(indilib setup): /home/pajafleger/INDI_KStars-Kit
+
+
+
+###############################################################
+############### Build INDI 3rd party drivers ##################
+###############################################################
+###############################################################
+################### Build libraries ###########################
+###############################################################
+-- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test COMPATIBLE_FORTIFY_SOURCE
+-- Performing Test COMPATIBLE_FORTIFY_SOURCE - Success
+-- Performing Test COMPATIBLE_STRINGOP_TRUNCATION
+-- Performing Test COMPATIBLE_STRINGOP_TRUNCATION - Success
+-- Performing Test COMPATIBLE_UNUSED_PARAMETER
+-- Performing Test COMPATIBLE_UNUSED_PARAMETER - Success
+-- Performing Test COMPATIBLE_UNUSED_BUT_SET_VARIABLE
+-- Performing Test COMPATIBLE_UNUSED_BUT_SET_VARIABLE - Success
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1")
+-- Checking for module 'libavcodec>=57.64.101'
+--   Found libavcodec, version 61.19.101
+-- Checking for module 'libavdevice>=57.1.100'
+--   Found libavdevice, version 61.3.100
+-- Checking for module 'libavformat>=57.56.100'
+--   Found libavformat, version 61.7.100
+-- Checking for module 'libavutil>=55.34.100'
+--   Found libavutil, version 59.39.100
+-- Checking for module 'libswscale>=4.2.100'
+--   Found libswscale, version 8.3.100
+-- Found FFMPEG: /usr/lib/x86_64-linux-gnu/libavcodec.so;/usr/lib/x86_64-linux-gnu/libavdevice.so;/usr/lib/x86_64-linux-gnu/libavformat.so;/usr/lib/x86_64-linux-gnu/libavutil.so;/usr/lib/x86_64-linux-gnu/libswscale.so, /usr/include/x86_64-linux-gnu
+-- Since FFMPEG was found, INDI Webcam Driver can be built
+-- Since an up to date nutclient was not found, INDI NUT Driver will not be built
+-- Found USB1: /usr/lib/x86_64-linux-gnu/libusb-1.0.so (found version "1.0.28") 
+-- Performing Test USB1_HAS_LIBUSB_ERROR_NAME
+-- Performing Test USB1_HAS_LIBUSB_ERROR_NAME - Success
+-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "8.14.1")
+-- Found INDI: /usr/lib/x86_64-linux-gnu/libindidriver.so;/usr/lib/x86_64-linux-gnu/libindiAlignmentDriver.so (found version "2.1.9") 
+-- Found FTDI1: /usr/lib/x86_64-linux-gnu/libftdi1.so
+-- Configuring done (1.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/pajafleger/INDI_KStars-Kit/default/build/indi-3rdparty
+[  0%] Building CXX object libapogee/CMakeFiles/apogee.dir/Alta.cpp.o
+[  0%] Building CXX object libapogee/CMakeFiles/apogee.dir/AltaCcdAcqParams.cpp.o
+[  1%] Building CXX object libapogee/CMakeFiles/apogee.dir/AltaData.cpp.o
+[  1%] Building CXX object libapogee/CMakeFiles/apogee.dir/AltaEthernetIo.cpp.o
+[  2%] Building CXX object libapogee/CMakeFiles/apogee.dir/AltaF.cpp.o
+[  2%] Building CXX object libapogee/CMakeFiles/apogee.dir/AltaIo.cpp.o
+[  2%] Building CXX object libapogee/CMakeFiles/apogee.dir/AltaModeFsm.cpp.o
+[  3%] Building CXX object libapogee/CMakeFiles/apogee.dir/AltaUsbIo.cpp.o
+[  3%] Building CXX object libapogee/CMakeFiles/apogee.dir/ApgLogger.cpp.o
+[  4%] Building CXX object libapogee/CMakeFiles/apogee.dir/ApgTimer.cpp.o
+[  4%] Building CXX object libapogee/CMakeFiles/apogee.dir/ApnCamData.cpp.o
+[  4%] Building CXX object libapogee/CMakeFiles/apogee.dir/ApogeeCam.cpp.o
+[  5%] Building CXX object libapogee/CMakeFiles/apogee.dir/ApogeeFilterWheel.cpp.o
+[  5%] Building CXX object libapogee/CMakeFiles/apogee.dir/Ascent.cpp.o
+[  6%] Building CXX object libapogee/CMakeFiles/apogee.dir/AscentBasedIo.cpp.o
+[  6%] Building CXX object libapogee/CMakeFiles/apogee.dir/AscentBasedUsbIo.cpp.o
+[  6%] Building CXX object libapogee/CMakeFiles/apogee.dir/AscentData.cpp.o
+[  7%] Building CXX object libapogee/CMakeFiles/apogee.dir/Aspen.cpp.o
+[  7%] Building CXX object libapogee/CMakeFiles/apogee.dir/AspenData.cpp.o
+[  8%] Building CXX object libapogee/CMakeFiles/apogee.dir/AspenEthernetIo.cpp.o
+[  8%] Building CXX object libapogee/CMakeFiles/apogee.dir/AspenIo.cpp.o
+[  8%] Building CXX object libapogee/CMakeFiles/apogee.dir/AspenUsbIo.cpp.o
+[  9%] Building CXX object libapogee/CMakeFiles/apogee.dir/CamCfgMatrix.cpp.o
+[  9%] Building CXX object libapogee/CMakeFiles/apogee.dir/CamGen2Base.cpp.o
+[ 10%] Building CXX object libapogee/CMakeFiles/apogee.dir/CamGen2CcdAcqParams.cpp.o
+[ 10%] Building CXX object libapogee/CMakeFiles/apogee.dir/CamGen2ModeFsm.cpp.o
+[ 10%] Building CXX object libapogee/CMakeFiles/apogee.dir/CamHelpers.cpp.o
+[ 11%] Building CXX object libapogee/CMakeFiles/apogee.dir/CamRegMirror.cpp.o
+[ 11%] Building CXX object libapogee/CMakeFiles/apogee.dir/CamUsbIo.cpp.o
+[ 12%] Building CXX object libapogee/CMakeFiles/apogee.dir/CameraInfo.cpp.o
+[ 12%] Building CXX object libapogee/CMakeFiles/apogee.dir/CameraIo.cpp.o
+[ 12%] Building CXX object libapogee/CMakeFiles/apogee.dir/CameraStatusRegs.cpp.o
+[ 13%] Building CXX object libapogee/CMakeFiles/apogee.dir/CcdAcqParams.cpp.o
+[ 13%] Building CXX object libapogee/CMakeFiles/apogee.dir/DeviceStrHelpers.cpp.o
+[ 14%] Building CXX object libapogee/CMakeFiles/apogee.dir/FilterWheelIo.cpp.o
+[ 14%] Building CXX object libapogee/CMakeFiles/apogee.dir/FindDeviceEthernet.cpp.o
+[ 14%] Building CXX object libapogee/CMakeFiles/apogee.dir/FindDeviceUsb.cpp.o
+[ 15%] Building CXX object libapogee/CMakeFiles/apogee.dir/HiC.cpp.o
+[ 15%] Building CXX object libapogee/CMakeFiles/apogee.dir/IAltaSerialPortIo.cpp.o
+[ 16%] Building CXX object libapogee/CMakeFiles/apogee.dir/ICamIo.cpp.o
+[ 16%] Building CXX object libapogee/CMakeFiles/apogee.dir/ILog.cpp.o
+[ 16%] Building CXX object libapogee/CMakeFiles/apogee.dir/ITimer.cpp.o
+[ 17%] Building CXX object libapogee/CMakeFiles/apogee.dir/IUsb.cpp.o
+[ 17%] Building CXX object libapogee/CMakeFiles/apogee.dir/ImgFix.cpp.o
+[ 18%] Building CXX object libapogee/CMakeFiles/apogee.dir/LoggerException.cpp.o
+[ 18%] Building CXX object libapogee/CMakeFiles/apogee.dir/ModeFsm.cpp.o
+[ 18%] Building CXX object libapogee/CMakeFiles/apogee.dir/PlatformData.cpp.o
+[ 19%] Building CXX object libapogee/CMakeFiles/apogee.dir/PromFx2Io.cpp.o
+[ 19%] Building CXX object libapogee/CMakeFiles/apogee.dir/Quad.cpp.o
+[ 20%] Building CXX object libapogee/CMakeFiles/apogee.dir/UdpSocketBase.cpp.o
+[ 20%] Building CXX object libapogee/CMakeFiles/apogee.dir/apgHelper.cpp.o
+[ 20%] Building CXX object libapogee/CMakeFiles/apogee.dir/helpers.cpp.o
+[ 21%] Building CXX object libapogee/CMakeFiles/apogee.dir/libCurlWrap.cpp.o
+[ 21%] Building CXX object libapogee/CMakeFiles/apogee.dir/linux/GenOneLinuxUSB.cpp.o
+[ 22%] Building CXX object libapogee/CMakeFiles/apogee.dir/linux/LinuxTimer.cpp.o
+[ 22%] Building CXX object libapogee/CMakeFiles/apogee.dir/linux/LoggerSyslog.cpp.o
+[ 22%] Building CXX object libapogee/CMakeFiles/apogee.dir/linux/UdpSocketLinux.cpp.o
+[ 23%] Building CXX object libapogee/CMakeFiles/apogee.dir/linux/linuxHelpers.cpp.o
+[ 23%] Building CXX object libapogee/CMakeFiles/apogee.dir/parseCfgTabDelim.cpp.o
+[ 24%] Linking CXX shared library libapogee.so
+[ 24%] Built target apogee
+[ 24%] Generating libASICamera2.so.1.41
+[ 25%] Generating libASICamera2.so.1
+[ 25%] Generating libASICamera2.so
+[ 25%] Built target imported_ASICamera2
+[ 26%] Generating libEFWFilter.so.1.7.0
+[ 26%] Generating libEFWFilter.so.1
+[ 26%] Generating libEFWFilter.so
+[ 26%] Built target imported_EFWFilter
+[ 27%] Generating libUSB2ST4Conv.so.1.0
+[ 27%] Generating libUSB2ST4Conv.so.1
+[ 27%] Generating libUSB2ST4Conv.so
+[ 27%] Built target imported_USB2ST4Conv
+[ 28%] Generating libEAFFocuser.so.1.7.7
+[ 28%] Generating libEAFFocuser.so.1
+[ 29%] Generating libEAFFocuser.so
+[ 29%] Built target imported_EAFFocuser
+[ 29%] Generating libCAARotator.so.1.5.9
+[ 29%] Generating libCAARotator.so.1
+[ 30%] Generating libCAARotator.so
+[ 30%] Built target imported_CAARotator
+[ 30%] Generating libatikcameras.so.2.2.22
+[ 31%] Generating libatikcameras.so.2
+[ 31%] Generating libatikcameras.so
+[ 31%] Built target imported_atikcameras
+[ 31%] Generating libflycapture.so.2.13.3.31
+[ 32%] Generating libflycapture.so.2
+[ 32%] Generating libflycapture.so
+[ 32%] Built target imported_flycapture
+[ 32%] Building C object libfishcamp/CMakeFiles/fishcamp.dir/fishcamp.c.o
+[ 32%] Linking C shared library libfishcamp.so
+[ 32%] Built target fishcamp
+[ 33%] Building C object libfli/CMakeFiles/fli.dir/libfli.c.o
+[ 33%] Building C object libfli/CMakeFiles/fli.dir/libfli-camera.c.o
+[ 34%] Building C object libfli/CMakeFiles/fli.dir/libfli-camera-parport.c.o
+[ 34%] Building C object libfli/CMakeFiles/fli.dir/libfli-camera-usb.c.o
+[ 34%] Building C object libfli/CMakeFiles/fli.dir/libfli-filter-focuser.c.o
+[ 35%] Building C object libfli/CMakeFiles/fli.dir/libfli-mem.c.o
+[ 35%] Building C object libfli/CMakeFiles/fli.dir/libfli-raw.c.o
+[ 36%] Building C object libfli/CMakeFiles/fli.dir/unix/libfli-usb.c.o
+[ 36%] Building C object libfli/CMakeFiles/fli.dir/unix/libfli-debug.c.o
+[ 36%] Building C object libfli/CMakeFiles/fli.dir/unix/libfli-serial.c.o
+[ 37%] Building C object libfli/CMakeFiles/fli.dir/unix/libfli-sys.c.o
+[ 37%] Building C object libfli/CMakeFiles/fli.dir/unix/libusb/libfli-usb-sys.c.o
+[ 38%] Building C object libfli/CMakeFiles/fli.dir/unix/linux/libfli-parport.c.o
+[ 38%] Linking C shared library libfli.so
+[ 38%] Built target fli
+[ 39%] Generating libflipro.so.2.1.4
+[ 39%] Generating libflipro.so.2
+[ 39%] Generating libflipro.so
+[ 39%] Built target imported_flipro
+[ 40%] Generating libflialgo.so.2.1.4
+[ 40%] Generating libflialgo.so.2
+[ 41%] Generating libflialgo.so
+[ 41%] Built target imported_flialgo
+[ 41%] Generating libgxccd.so.0.12.1
+[ 42%] Generating libgxccd.so.0
+[ 42%] Generating libgxccd.so
+[ 42%] Built target imported_gxccd
+[ 42%] Generating libinovasdk.so.1.3.6
+[ 42%] Generating libinovasdk.so.1
+[ 43%] Generating libinovasdk.so
+[ 43%] Built target imported_inovasdk
+[ 43%] Generating libqhyccd.so.26.2.1
+[ 44%] Generating libqhyccd.so.20
+[ 44%] Generating libqhyccd.so
+[ 44%] Built target imported_qhyccd
+[ 44%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/CCDCamera.cpp.o
+[ 44%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/CameraID.cpp.o
+[ 45%] Building C object libqsi/CMakeFiles/qsiapi.dir/ConvertUTF.c.o
+[ 45%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/Filter.cpp.o
+[ 46%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/FilterWheel.cpp.o
+[ 46%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/HotPixelMap.cpp.o
+[ 46%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/QSI_PacketWrapper.cpp.o
+[ 47%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/QSI_USBWrapper.cpp.o
+[ 47%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/qsiapi.cpp.o
+[ 48%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/QSIFeatures.cpp.o
+[ 48%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/VidPid.cpp.o
+[ 48%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/QSIModelInfo.cpp.o
+[ 49%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/ICameraEeprom.cpp.o
+[ 49%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/QSI_Interface.cpp.o
+[ 50%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/QSILog.cpp.o
+[ 50%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/HostIO_TCP.cpp.o
+[ 50%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/HostIO_USB.cpp.o
+[ 51%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/IHostIO.cpp.o
+[ 51%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/HostConnection.cpp.o
+[ 52%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/QSIError.cpp.o
+[ 52%] Building CXX object libqsi/CMakeFiles/qsiapi.dir/HostIO_CyUSB.cpp.o
+[ 52%] Linking CXX shared library libqsiapi.so
+[ 52%] Built target qsiapi
+[ 52%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/CCDCamera.cpp.o
+[ 52%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/CameraID.cpp.o
+[ 53%] Building C object libqsi/CMakeFiles/qsiapitest.dir/ConvertUTF.c.o
+[ 53%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/Filter.cpp.o
+[ 54%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/FilterWheel.cpp.o
+[ 54%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/HotPixelMap.cpp.o
+[ 54%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/QSI_PacketWrapper.cpp.o
+[ 55%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/QSI_USBWrapper.cpp.o
+[ 55%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/qsiapi.cpp.o
+[ 56%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/QSIFeatures.cpp.o
+[ 56%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/VidPid.cpp.o
+[ 56%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/QSIModelInfo.cpp.o
+[ 57%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/ICameraEeprom.cpp.o
+[ 57%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/QSI_Interface.cpp.o
+[ 58%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/QSILog.cpp.o
+[ 58%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/HostIO_TCP.cpp.o
+[ 58%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/HostIO_USB.cpp.o
+[ 59%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/IHostIO.cpp.o
+[ 59%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/HostConnection.cpp.o
+[ 60%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/QSIError.cpp.o
+[ 60%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/HostIO_CyUSB.cpp.o
+[ 60%] Building CXX object libqsi/CMakeFiles/qsiapitest.dir/demo_src/qsiapitest.cpp.o
+[ 61%] Linking CXX executable qsiapitest
+[ 61%] Built target qsiapitest
+[ 62%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/CCDCamera.cpp.o
+[ 62%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/CameraID.cpp.o
+[ 63%] Building C object libqsi/CMakeFiles/qsiapidemo.dir/ConvertUTF.c.o
+[ 63%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/Filter.cpp.o
+[ 63%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/FilterWheel.cpp.o
+[ 64%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/HotPixelMap.cpp.o
+[ 64%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/QSI_PacketWrapper.cpp.o
+[ 65%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/QSI_USBWrapper.cpp.o
+[ 65%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/qsiapi.cpp.o
+[ 65%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/QSIFeatures.cpp.o
+[ 66%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/VidPid.cpp.o
+[ 66%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/QSIModelInfo.cpp.o
+[ 67%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/ICameraEeprom.cpp.o
+[ 67%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/QSI_Interface.cpp.o
+[ 67%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/QSILog.cpp.o
+[ 68%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/HostIO_TCP.cpp.o
+[ 68%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/HostIO_USB.cpp.o
+[ 69%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/IHostIO.cpp.o
+[ 69%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/HostConnection.cpp.o
+[ 69%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/QSIError.cpp.o
+[ 70%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/HostIO_CyUSB.cpp.o
+[ 70%] Building CXX object libqsi/CMakeFiles/qsiapidemo.dir/demo_src/qsidemo.cpp.o
+[ 71%] Linking CXX executable qsiapidemo
+[ 71%] Built target qsiapidemo
+[ 71%] Generating libsbig.so.4.9.9
+[ 71%] Generating libsbig.so.4
+[ 72%] Generating libsbig.so
+[ 72%] Built target imported_sbig
+[ 72%] Generating libRicohCameraSDKCpp.so.1.1.0
+[ 72%] Generating libRicohCameraSDKCpp.so.1
+[ 73%] Generating libRicohCameraSDKCpp.so
+[ 73%] Built target imported_RicohCameraSDKCpp
+[ 73%] Generating libmtpricoh.so.9.3.0
+[ 74%] Generating libmtpricoh.so.9
+[ 74%] Generating libmtpricoh.so
+[ 74%] Built target imported_mtpricoh
+[ 75%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/libpktriggercord.c.o
+[ 75%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/pslr.c.o
+[ 75%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/pslr_model.c.o
+[ 76%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/pslr_lens.c.o
+[ 76%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/pslr_enum.c.o
+[ 77%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/pslr_utils.c.o
+[ 77%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/pslr_log.c.o
+[ 77%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/pslr_scsi.c.o
+[ 78%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/src/external/js0n/js0n.c.o
+[ 78%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/src/pktriggercord-servermode.c.o
+[ 79%] Linking C shared library libpktriggercord.so
+[ 79%] Built target pktriggercord
+[ 79%] Generating 95-pentax.rules
+[ 80%] Generating 95-samsung.rules
+[ 80%] Built target udev_rules
+[ 80%] Generating libtoupcam.so.59.30594
+[ 81%] Generating libtoupcam.so.59
+[ 81%] Generating libtoupcam.so
+[ 81%] Built target imported_toupcam
+[ 81%] Generating libaltaircam.so.59.30594
+[ 82%] Generating libaltaircam.so.59
+[ 82%] Generating libaltaircam.so
+[ 82%] Built target imported_altaircam
+[ 82%] Generating libbressercam.so.59.30594
+[ 82%] Generating libbressercam.so.59
+[ 83%] Generating libbressercam.so
+[ 83%] Built target imported_bressercam
+[ 84%] Generating libmallincam.so.59.30594
+[ 84%] Generating libmallincam.so.59
+[ 85%] Generating libmallincam.so
+[ 85%] Built target imported_mallincam
+[ 86%] Generating libmeadecam.so.59.30594
+[ 86%] Generating libmeadecam.so.59
+[ 86%] Generating libmeadecam.so
+[ 86%] Built target imported_meadecam
+[ 86%] Generating libnncam.so.59.30594
+[ 87%] Generating libnncam.so.59
+[ 87%] Generating libnncam.so
+[ 87%] Built target imported_nncam
+[ 88%] Generating libogmacam.so.59.30594
+[ 88%] Generating libogmacam.so.59
+[ 88%] Generating libogmacam.so
+[ 88%] Built target imported_ogmacam
+[ 88%] Generating libomegonprocam.so.59.30594
+[ 89%] Generating libomegonprocam.so.59
+[ 89%] Generating libomegonprocam.so
+[ 89%] Built target imported_omegonprocam
+[ 90%] Generating libstarshootg.so.59.30594
+[ 90%] Generating libstarshootg.so.59
+[ 91%] Generating libstarshootg.so
+[ 91%] Built target imported_starshootg
+[ 91%] Generating libtscam.so.59.30594
+[ 92%] Generating libtscam.so.59
+[ 92%] Generating libtscam.so
+[ 92%] Built target imported_tscam
+[ 93%] Generating libsvbonycam.so.57.27348
+[ 93%] Generating libsvbonycam.so.57
+[ 93%] Generating libsvbonycam.so
+[ 93%] Built target imported_svbonycam
+[ 94%] Generating libSVBCameraSDK.so.1.13.4
+[ 94%] Generating libSVBCameraSDK.so.1
+[ 95%] Generating libSVBCameraSDK.so
+[ 95%] Built target imported_SVBCameraSDK
+[ 95%] Generating libPlayerOneCamera.so.3.10.0
+[ 96%] Generating libPlayerOneCamera.so.3
+[ 96%] Generating libPlayerOneCamera.so
+[ 96%] Built target imported_PlayerOneCamera
+[ 96%] Generating libPlayerOnePW.so.1.2.3
+[ 97%] Generating libPlayerOnePW.so.1
+[ 97%] Generating libPlayerOnePW.so
+[ 97%] Built target imported_PlayerOnePW
+[ 98%] Generating liboasisfocuser.so.2.0.2
+[ 98%] Generating liboasisfocuser.so.2
+[ 99%] Generating liboasisfocuser.so
+[ 99%] Built target imported_oasisfocuser
+[ 99%] Generating liboasisfilterwheel.so.1.2.1
+[ 99%] Generating liboasisfilterwheel.so.1
+[100%] Generating liboasisfilterwheel.so
+[100%] Built target imported_oasisfilterwheel
+[ 24%] Built target apogee
+[ 25%] Built target imported_ASICamera2
+[ 26%] Built target imported_EFWFilter
+[ 27%] Built target imported_USB2ST4Conv
+[ 29%] Built target imported_EAFFocuser
+[ 30%] Built target imported_CAARotator
+[ 31%] Built target imported_atikcameras
+[ 32%] Built target imported_flycapture
+[ 32%] Built target fishcamp
+[ 38%] Built target fli
+[ 39%] Built target imported_flipro
+[ 41%] Built target imported_flialgo
+[ 42%] Built target imported_gxccd
+[ 43%] Built target imported_inovasdk
+[ 44%] Built target imported_qhyccd
+[ 52%] Built target qsiapi
+[ 61%] Built target qsiapitest
+[ 71%] Built target qsiapidemo
+[ 72%] Built target imported_sbig
+[ 73%] Built target imported_RicohCameraSDKCpp
+[ 74%] Built target imported_mtpricoh
+[ 79%] Built target pktriggercord
+[ 80%] Built target udev_rules
+[ 81%] Built target imported_toupcam
+[ 82%] Built target imported_altaircam
+[ 83%] Built target imported_bressercam
+[ 85%] Built target imported_mallincam
+[ 86%] Built target imported_meadecam
+[ 87%] Built target imported_nncam
+[ 88%] Built target imported_ogmacam
+[ 89%] Built target imported_omegonprocam
+[ 91%] Built target imported_starshootg
+[ 92%] Built target imported_tscam
+[ 93%] Built target imported_svbonycam
+[ 95%] Built target imported_SVBCameraSDK
+[ 96%] Built target imported_PlayerOneCamera
+[ 97%] Built target imported_PlayerOnePW
+[ 99%] Built target imported_oasisfocuser
+[100%] Built target imported_oasisfilterwheel
+Install the project...
+-- Install configuration: "Debug"
+-- Installing: /usr/lib/x86_64-linux-gnu/libapogee.so.3.2
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libapogee.so.3
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libapogee.so
+-- Installing: /usr/include/libapogee/Alta.h
+-- Installing: /usr/include/libapogee/AltaCcdAcqParams.h
+-- Installing: /usr/include/libapogee/AltaData.h
+-- Installing: /usr/include/libapogee/AltaEthernetIo.h
+-- Installing: /usr/include/libapogee/AltaF.h
+-- Installing: /usr/include/libapogee/AltaIo.h
+-- Installing: /usr/include/libapogee/AltaModeFsm.h
+-- Installing: /usr/include/libapogee/AltaUsbIo.h
+-- Installing: /usr/include/libapogee/ApgLogger.h
+-- Installing: /usr/include/libapogee/ApgTimer.h
+-- Installing: /usr/include/libapogee/ApnCamData.h
+-- Installing: /usr/include/libapogee/ApnUsbSys.h
+-- Installing: /usr/include/libapogee/ApogeeCam.h
+-- Installing: /usr/include/libapogee/ApogeeFilterWheel.h
+-- Installing: /usr/include/libapogee/Ascent.h
+-- Installing: /usr/include/libapogee/AscentBasedIo.h
+-- Installing: /usr/include/libapogee/AscentBasedUsbIo.h
+-- Installing: /usr/include/libapogee/AscentData.h
+-- Installing: /usr/include/libapogee/Aspen.h
+-- Installing: /usr/include/libapogee/AspenData.h
+-- Installing: /usr/include/libapogee/AspenEthernetIo.h
+-- Installing: /usr/include/libapogee/AspenFx2.h
+-- Installing: /usr/include/libapogee/AspenIo.h
+-- Installing: /usr/include/libapogee/AspenUsbIo.h
+-- Installing: /usr/include/libapogee/COMHelper.h
+-- Installing: /usr/include/libapogee/CamCfgMatrix.h
+-- Installing: /usr/include/libapogee/CamGen2Base.h
+-- Installing: /usr/include/libapogee/CamGen2CcdAcqParams.h
+-- Installing: /usr/include/libapogee/CamGen2ModeFsm.h
+-- Installing: /usr/include/libapogee/CamHelpers.h
+-- Installing: /usr/include/libapogee/CamRegMirror.h
+-- Installing: /usr/include/libapogee/CamUsbIo.h
+-- Installing: /usr/include/libapogee/CameraInfo.h
+-- Installing: /usr/include/libapogee/CameraIo.h
+-- Installing: /usr/include/libapogee/CameraStatusRegs.h
+-- Installing: /usr/include/libapogee/CcdAcqParams.h
+-- Installing: /usr/include/libapogee/DefDllExport.h
+-- Installing: /usr/include/libapogee/DeviceStrHelpers.h
+-- Installing: /usr/include/libapogee/FilterWheelIo.h
+-- Installing: /usr/include/libapogee/FindDeviceEthernet.h
+-- Installing: /usr/include/libapogee/FindDeviceUsb.h
+-- Installing: /usr/include/libapogee/HiC.h
+-- Installing: /usr/include/libapogee/IAltaSerialPortIo.h
+-- Installing: /usr/include/libapogee/ICamIo.h
+-- Installing: /usr/include/libapogee/ILog.h
+-- Installing: /usr/include/libapogee/ITimer.h
+-- Installing: /usr/include/libapogee/IUsb.h
+-- Installing: /usr/include/libapogee/ImgFix.h
+-- Installing: /usr/include/libapogee/LoggerException.h
+-- Installing: /usr/include/libapogee/ModeFsm.h
+-- Installing: /usr/include/libapogee/PlatformData.h
+-- Installing: /usr/include/libapogee/PromFx2Io.h
+-- Installing: /usr/include/libapogee/Quad.h
+-- Installing: /usr/include/libapogee/UdpSocketBase.h
+-- Installing: /usr/include/libapogee/apgHelper.h
+-- Installing: /usr/include/libapogee/doc.h
+-- Installing: /usr/include/libapogee/helpers.h
+-- Installing: /usr/include/libapogee/libCurlWrap.h
+-- Installing: /usr/include/libapogee/parseCfgTabDelim.h
+-- Installing: /usr/include/libapogee/resource.h
+-- Installing: /usr/include/libapogee/versionNo.h
+-- Installing: /etc/Apogee/camera/A12HC.txt
+-- Installing: /etc/Apogee/camera/A12HR.txt
+-- Installing: /etc/Apogee/camera/A12HS.txt
+-- Installing: /etc/Apogee/camera/A16HR.txt
+-- Installing: /etc/Apogee/camera/A16HS.txt
+-- Installing: /etc/Apogee/camera/A694S.txt
+-- Installing: /etc/Apogee/camera/A694V.txt
+-- Installing: /etc/Apogee/camera/AR2.txt
+-- Installing: /etc/Apogee/camera/AR2D.txt
+-- Installing: /etc/Apogee/camera/AR2F.txt
+-- Installing: /etc/Apogee/camera/AR2FD.txt
+-- Installing: /etc/Apogee/camera/AR2Fa.txt
+-- Installing: /etc/Apogee/camera/AR2S.txt
+-- Installing: /etc/Apogee/camera/AR2V.txt
+-- Installing: /etc/Apogee/camera/AR2Vb.txt
+-- Installing: /etc/Apogee/camera/AR2a.txt
+-- Installing: /etc/Apogee/camera/AR4.txt
+-- Installing: /etc/Apogee/camera/AR4D.txt
+-- Installing: /etc/Apogee/camera/AR4F.txt
+-- Installing: /etc/Apogee/camera/AR4FD.txt
+-- Installing: /etc/Apogee/camera/AR4Fb.txt
+-- Installing: /etc/Apogee/camera/AR4V.txt
+-- Installing: /etc/Apogee/camera/AR4Vb.txt
+-- Installing: /etc/Apogee/camera/AR5.txt
+-- Installing: /etc/Apogee/camera/AR5F.txt
+-- Installing: /etc/Apogee/camera/AR5FL.txt
+-- Installing: /etc/Apogee/camera/AR5L.txt
+-- Installing: /etc/Apogee/camera/AR5V.txt
+-- Installing: /etc/Apogee/camera/AS2.txt
+-- Installing: /etc/Apogee/camera/AS2S.txt
+-- Installing: /etc/Apogee/camera/AS4.txt
+-- Installing: /etc/Apogee/camera/AS5.txt
+-- Installing: /etc/Apogee/camera/AS5F.txt
+-- Installing: /etc/Apogee/camera/AS5S.txt
+-- Installing: /etc/Apogee/camera/AV1.txt
+-- Installing: /etc/Apogee/camera/AV2.txt
+-- Installing: /etc/Apogee/camera/AV2S.txt
+-- Installing: /etc/Apogee/camera/AV2V.txt
+-- Installing: /etc/Apogee/camera/AV2Vb.txt
+-- Installing: /etc/Apogee/camera/AV4A.txt
+-- Installing: /etc/Apogee/camera/AV4B.txt
+-- Installing: /etc/Apogee/camera/AV4D.txt
+-- Installing: /etc/Apogee/camera/AV4E.txt
+-- Installing: /etc/Apogee/camera/AV4V.txt
+-- Installing: /etc/Apogee/camera/AV4Vb.txt
+-- Installing: /etc/Apogee/camera/AV5.txt
+-- Installing: /etc/Apogee/camera/AV5S.txt
+-- Installing: /etc/Apogee/camera/AV5V.txt
+-- Installing: /etc/Apogee/camera/AV6.txt
+-- Installing: /etc/Apogee/camera/AV7.txt
+-- Installing: /etc/Apogee/camera/CG42AIMOV.txt
+-- Installing: /etc/Apogee/camera/CG42NIMOV.txt
+-- Installing: /etc/Apogee/camera/CG47V.txt
+-- Installing: /etc/Apogee/camera/F10140V.txt
+-- Installing: /etc/Apogee/camera/F16HR1.txt
+-- Installing: /etc/Apogee/camera/F16HR1B.txt
+-- Installing: /etc/Apogee/camera/F16HS1.txt
+-- Installing: /etc/Apogee/camera/F16HS1B.txt
+-- Installing: /etc/Apogee/camera/F29050S.txt
+-- Installing: /etc/Apogee/camera/F29050V.txt
+-- Installing: /etc/Apogee/camera/F3041V.txt
+-- Installing: /etc/Apogee/camera/F30V.txt
+-- Installing: /etc/Apogee/camera/F30VAIMO.txt
+-- Installing: /etc/Apogee/camera/F4000V.txt
+-- Installing: /etc/Apogee/camera/F47DDV.txt
+-- Installing: /etc/Apogee/camera/F47V12.txt
+-- Installing: /etc/Apogee/camera/F6V.txt
+-- Installing: /etc/Apogee/camera/F77V.txt
+-- Installing: /etc/Apogee/camera/FA674R.txt
+-- Installing: /etc/Apogee/camera/FA694R.txt
+-- Installing: /etc/Apogee/camera/FA814R.txt
+-- Installing: /etc/Apogee/camera/FAD674R.txt
+-- Installing: /etc/Apogee/camera/FAD694R.txt
+-- Installing: /etc/Apogee/camera/FAD814R.txt
+-- Installing: /etc/Apogee/camera/FCG16070.txt
+-- Installing: /etc/Apogee/camera/FCG16M.txt
+-- Installing: /etc/Apogee/camera/FCG285.txt
+-- Installing: /etc/Apogee/camera/FCG285A.txt
+-- Installing: /etc/Apogee/camera/FCG42.txt
+-- Installing: /etc/Apogee/camera/FCG42S.txt
+-- Installing: /etc/Apogee/camera/FCG6.txt
+-- Installing: /etc/Apogee/camera/FCG77.txt
+-- Installing: /etc/Apogee/camera/FCG77REGA.txt
+-- Installing: /etc/Apogee/camera/FCG77S.txt
+-- Installing: /etc/Apogee/camera/FCG77SREGA.txt
+-- Installing: /etc/Apogee/camera/FCG8300.txt
+-- Installing: /etc/Apogee/camera/FCG8300S.txt
+-- Installing: /etc/Apogee/camera/FEHR1AQ.txt
+-- Installing: /etc/Apogee/camera/FEHR1BQ.txt
+-- Installing: /etc/Apogee/camera/FEHR2c.txt
+-- Installing: /etc/Apogee/camera/FEHR2i.txt
+-- Installing: /etc/Apogee/camera/FEHS1A.txt
+-- Installing: /etc/Apogee/camera/FEHS1B.txt
+-- Installing: /etc/Apogee/camera/FEHS2c.txt
+-- Installing: /etc/Apogee/camera/FEHS2i.txt
+-- Installing: /etc/Apogee/camera/FEV1.txt
+-- Installing: /etc/Apogee/camera/FEV2.txt
+-- Installing: /etc/Apogee/camera/FF10140S.txt
+-- Installing: /etc/Apogee/camera/FF1109R.txt
+-- Installing: /etc/Apogee/camera/FF16000R.txt
+-- Installing: /etc/Apogee/camera/FF16000R2.txt
+-- Installing: /etc/Apogee/camera/FF16000S.txt
+-- Installing: /etc/Apogee/camera/FF29050R.txt
+-- Installing: /etc/Apogee/camera/FF30R.txt
+-- Installing: /etc/Apogee/camera/FF30S.txt
+-- Installing: /etc/Apogee/camera/FF4000R.txt
+-- Installing: /etc/Apogee/camera/FF4000S.txt
+-- Installing: /etc/Apogee/camera/FF42R.txt
+-- Installing: /etc/Apogee/camera/FF47R.txt
+-- Installing: /etc/Apogee/camera/FF47R12.txt
+-- Installing: /etc/Apogee/camera/FF47S12.txt
+-- Installing: /etc/Apogee/camera/FF50100RD.txt
+-- Installing: /etc/Apogee/camera/FF50100S.txt
+-- Installing: /etc/Apogee/camera/FF6R.txt
+-- Installing: /etc/Apogee/camera/FF6RA.txt
+-- Installing: /etc/Apogee/camera/FF6S.txt
+-- Installing: /etc/Apogee/camera/FF77R.txt
+-- Installing: /etc/Apogee/camera/FF77S.txt
+-- Installing: /etc/Apogee/camera/FF8300R.txt
+-- Installing: /etc/Apogee/camera/FF9R.txt
+-- Installing: /etc/Apogee/camera/FF9S.txt
+-- Installing: /etc/Apogee/camera/FKHR1A.txt
+-- Installing: /etc/Apogee/camera/FKHR1At.txt
+-- Installing: /etc/Apogee/camera/FKHR1B.txt
+-- Installing: /etc/Apogee/camera/FKHR1B8.txt
+-- Installing: /etc/Apogee/camera/FKHR1D.txt
+-- Installing: /etc/Apogee/camera/FKHR1Db.txt
+-- Installing: /etc/Apogee/camera/FKHR1c.txt
+-- Installing: /etc/Apogee/camera/FKHR1i.txt
+-- Installing: /etc/Apogee/camera/FKHR3c8.txt
+-- Installing: /etc/Apogee/camera/FKHR3i.txt
+-- Installing: /etc/Apogee/camera/FKHR4AQ.txt
+-- Installing: /etc/Apogee/camera/FKHR4BQ.txt
+-- Installing: /etc/Apogee/camera/FKHR5A.txt
+-- Installing: /etc/Apogee/camera/FKHR5B.txt
+-- Installing: /etc/Apogee/camera/FKHR5C.txt
+-- Installing: /etc/Apogee/camera/FKHR6A.txt
+-- Installing: /etc/Apogee/camera/FKHR6B.txt
+-- Installing: /etc/Apogee/camera/FKHR6C.txt
+-- Installing: /etc/Apogee/camera/FKHS1.txt
+-- Installing: /etc/Apogee/camera/FKHS1A.txt
+-- Installing: /etc/Apogee/camera/FKHS1B.txt
+-- Installing: /etc/Apogee/camera/FKHS1B8.txt
+-- Installing: /etc/Apogee/camera/FKHS1c.txt
+-- Installing: /etc/Apogee/camera/FKHS1i.txt
+-- Installing: /etc/Apogee/camera/FKHS3c8.txt
+-- Installing: /etc/Apogee/camera/FKHS3i.txt
+-- Installing: /etc/Apogee/camera/FKHS4.txt
+-- Installing: /etc/Apogee/camera/FKHS5.txt
+-- Installing: /etc/Apogee/camera/FKHS6.txt
+-- Installing: /etc/Apogee/camera/FKV1.txt
+-- Installing: /etc/Apogee/camera/FKV1B.txt
+-- Installing: /etc/Apogee/camera/FKV3.txt
+-- Installing: /etc/Apogee/camera/FKV4.txt
+-- Installing: /etc/Apogee/camera/FKV5.txt
+-- Installing: /etc/Apogee/camera/FKV6.txt
+-- Installing: /etc/Apogee/camera/FKV6B.txt
+-- Installing: /etc/Apogee/camera/FM12HC.txt
+-- Installing: /etc/Apogee/camera/FM12HR.txt
+-- Installing: /etc/Apogee/camera/FM12HS.txt
+-- Installing: /etc/Apogee/camera/FM16HR3.txt
+-- Installing: /etc/Apogee/camera/FM16HS1.txt
+-- Installing: /etc/Apogee/camera/FR2.txt
+-- Installing: /etc/Apogee/camera/FR230.txt
+-- Installing: /etc/Apogee/camera/FR230b.txt
+-- Installing: /etc/Apogee/camera/FR2F.txt
+-- Installing: /etc/Apogee/camera/FR3041.txt
+-- Installing: /etc/Apogee/camera/FS230.txt
+-- Installing: /etc/Apogee/camera/FS230b.txt
+-- Installing: /etc/Apogee/camera/FS3041.txt
+-- Installing: /etc/Apogee/camera/FV1.txt
+-- Installing: /etc/Apogee/camera/FV1B.txt
+-- Installing: /etc/Apogee/camera/H12HC.txt
+-- Installing: /etc/Apogee/camera/H12HCi.txt
+-- Installing: /etc/Apogee/camera/H12HR.txt
+-- Installing: /etc/Apogee/camera/H12HRi.txt
+-- Installing: /etc/Apogee/camera/H12HS.txt
+-- Installing: /etc/Apogee/camera/H12HSi.txt
+-- Installing: /etc/Apogee/camera/H16HR.txt
+-- Installing: /etc/Apogee/camera/H16HRi.txt
+-- Installing: /etc/Apogee/camera/H16HS.txt
+-- Installing: /etc/Apogee/camera/H16HSi.txt
+-- Installing: /etc/Apogee/camera/HV1.txt
+-- Installing: /etc/Apogee/camera/K12HC2.txt
+-- Installing: /etc/Apogee/camera/K12HC2B.txt
+-- Installing: /etc/Apogee/camera/K12HC3.txt
+-- Installing: /etc/Apogee/camera/K12HC3i.txt
+-- Installing: /etc/Apogee/camera/K12HC4.txt
+-- Installing: /etc/Apogee/camera/K12HC5.txt
+-- Installing: /etc/Apogee/camera/K12HC5B.txt
+-- Installing: /etc/Apogee/camera/K12HC7.txt
+-- Installing: /etc/Apogee/camera/K12HC9.txt
+-- Installing: /etc/Apogee/camera/K12HR10B.txt
+-- Installing: /etc/Apogee/camera/K12HR2.txt
+-- Installing: /etc/Apogee/camera/K12HR2B.txt
+-- Installing: /etc/Apogee/camera/K12HR3.txt
+-- Installing: /etc/Apogee/camera/K12HR3i.txt
+-- Installing: /etc/Apogee/camera/K12HR4.txt
+-- Installing: /etc/Apogee/camera/K12HR5.txt
+-- Installing: /etc/Apogee/camera/K12HR5B.txt
+-- Installing: /etc/Apogee/camera/K12HR6.txt
+-- Installing: /etc/Apogee/camera/K12HR6B.txt
+-- Installing: /etc/Apogee/camera/K12HR6B2.txt
+-- Installing: /etc/Apogee/camera/K12HR7.txt
+-- Installing: /etc/Apogee/camera/K12HR9.txt
+-- Installing: /etc/Apogee/camera/K12HS10B.txt
+-- Installing: /etc/Apogee/camera/K12HS2.txt
+-- Installing: /etc/Apogee/camera/K12HS2B.txt
+-- Installing: /etc/Apogee/camera/K12HS3.txt
+-- Installing: /etc/Apogee/camera/K12HS3i.txt
+-- Installing: /etc/Apogee/camera/K12HS4.txt
+-- Installing: /etc/Apogee/camera/K12HS5.txt
+-- Installing: /etc/Apogee/camera/K12HS5B.txt
+-- Installing: /etc/Apogee/camera/K12HS6.txt
+-- Installing: /etc/Apogee/camera/K12HS6B.txt
+-- Installing: /etc/Apogee/camera/K12HS6B2.txt
+-- Installing: /etc/Apogee/camera/K12HS7.txt
+-- Installing: /etc/Apogee/camera/K12HS9.txt
+-- Installing: /etc/Apogee/camera/K16HC1.txt
+-- Installing: /etc/Apogee/camera/K16HC2.txt
+-- Installing: /etc/Apogee/camera/K16HC2B.txt
+-- Installing: /etc/Apogee/camera/K16HR1.txt
+-- Installing: /etc/Apogee/camera/K16HR10B.txt
+-- Installing: /etc/Apogee/camera/K16HR2.txt
+-- Installing: /etc/Apogee/camera/K16HR2B.txt
+-- Installing: /etc/Apogee/camera/K16HR3.txt
+-- Installing: /etc/Apogee/camera/K16HR31.txt
+-- Installing: /etc/Apogee/camera/K16HR3i.txt
+-- Installing: /etc/Apogee/camera/K16HR3ns.txt
+-- Installing: /etc/Apogee/camera/K16HR5.txt
+-- Installing: /etc/Apogee/camera/K16HR5B.txt
+-- Installing: /etc/Apogee/camera/K16HR6.txt
+-- Installing: /etc/Apogee/camera/K16HR6B.txt
+-- Installing: /etc/Apogee/camera/K16HR6B4.txt
+-- Installing: /etc/Apogee/camera/K16HR7.txt
+-- Installing: /etc/Apogee/camera/K16HR8.txt
+-- Installing: /etc/Apogee/camera/K16HR9.txt
+-- Installing: /etc/Apogee/camera/K16HS1.txt
+-- Installing: /etc/Apogee/camera/K16HS10B.txt
+-- Installing: /etc/Apogee/camera/K16HS2.txt
+-- Installing: /etc/Apogee/camera/K16HS2B.txt
+-- Installing: /etc/Apogee/camera/K16HS3.txt
+-- Installing: /etc/Apogee/camera/K16HS3i.txt
+-- Installing: /etc/Apogee/camera/K16HS5.txt
+-- Installing: /etc/Apogee/camera/K16HS5B.txt
+-- Installing: /etc/Apogee/camera/K16HS6.txt
+-- Installing: /etc/Apogee/camera/K16HS6B.txt
+-- Installing: /etc/Apogee/camera/K16HS7.txt
+-- Installing: /etc/Apogee/camera/K16HS8.txt
+-- Installing: /etc/Apogee/camera/K16HS9.txt
+-- Installing: /etc/Apogee/camera/KV1.txt
+-- Installing: /etc/Apogee/camera/KV2.txt
+-- Installing: /etc/Apogee/camera/KV2B.txt
+-- Installing: /etc/Apogee/camera/KV3.txt
+-- Installing: /etc/Apogee/camera/KV3B.txt
+-- Installing: /etc/Apogee/camera/KV4.txt
+-- Installing: /etc/Apogee/camera/KV4B.txt
+-- Installing: /etc/Apogee/camera/KV5.txt
+-- Installing: /etc/Apogee/camera/KV5ns.txt
+-- Installing: /etc/Apogee/camera/KV6.txt
+-- Installing: /etc/Apogee/camera/KV6B.txt
+-- Installing: /etc/Apogee/camera/KV6B2.txt
+-- Installing: /etc/Apogee/camera/KV7.txt
+-- Installing: /etc/Apogee/camera/KV7B.txt
+-- Installing: /etc/Apogee/camera/KV8B.txt
+-- Installing: /etc/Apogee/camera/KV9.txt
+-- Installing: /etc/Apogee/camera/M12HC.txt
+-- Installing: /etc/Apogee/camera/M12HC7.txt
+-- Installing: /etc/Apogee/camera/M12HC7i.txt
+-- Installing: /etc/Apogee/camera/M12HCB.txt
+-- Installing: /etc/Apogee/camera/M12HCC.txt
+-- Installing: /etc/Apogee/camera/M12HCi.txt
+-- Installing: /etc/Apogee/camera/M12HR.txt
+-- Installing: /etc/Apogee/camera/M12HR7.txt
+-- Installing: /etc/Apogee/camera/M12HR7i.txt
+-- Installing: /etc/Apogee/camera/M12HRB.txt
+-- Installing: /etc/Apogee/camera/M12HRC.txt
+-- Installing: /etc/Apogee/camera/M12HRi.txt
+-- Installing: /etc/Apogee/camera/M12HS.txt
+-- Installing: /etc/Apogee/camera/M12HS7.txt
+-- Installing: /etc/Apogee/camera/M12HS7i.txt
+-- Installing: /etc/Apogee/camera/M12HSB.txt
+-- Installing: /etc/Apogee/camera/M12HSC.txt
+-- Installing: /etc/Apogee/camera/M12HSi.txt
+-- Installing: /etc/Apogee/camera/M16HR230.txt
+-- Installing: /etc/Apogee/camera/M16HR3.txt
+-- Installing: /etc/Apogee/camera/M16HR3B.txt
+-- Installing: /etc/Apogee/camera/M16HR3C.txt
+-- Installing: /etc/Apogee/camera/M16HR3F.txt
+-- Installing: /etc/Apogee/camera/M16HR3i.txt
+-- Installing: /etc/Apogee/camera/M16HR5.txt
+-- Installing: /etc/Apogee/camera/M16HR5B.txt
+-- Installing: /etc/Apogee/camera/M16HR5i.txt
+-- Installing: /etc/Apogee/camera/M16HR7.txt
+-- Installing: /etc/Apogee/camera/M16HR7i.txt
+-- Installing: /etc/Apogee/camera/M16HS1.txt
+-- Installing: /etc/Apogee/camera/M16HS1B.txt
+-- Installing: /etc/Apogee/camera/M16HS1C.txt
+-- Installing: /etc/Apogee/camera/M16HS1F.txt
+-- Installing: /etc/Apogee/camera/M16HS1i.txt
+-- Installing: /etc/Apogee/camera/M16HS230.txt
+-- Installing: /etc/Apogee/camera/M16HS7.txt
+-- Installing: /etc/Apogee/camera/M16HS7i.txt
+-- Installing: /etc/Apogee/camera/MV1.txt
+-- Installing: /etc/Apogee/camera/MV1B.txt
+-- Installing: /etc/Apogee/camera/MV1i.txt
+-- Installing: /etc/Apogee/camera/MV1nimo.txt
+-- Installing: /etc/Apogee/camera/MV2.txt
+-- Installing: /etc/Apogee/camera/MV230.txt
+-- Installing: /etc/Apogee/camera/MV230b.txt
+-- Installing: /etc/Apogee/camera/MV230t.txt
+-- Installing: /etc/Apogee/camera/MV2B.txt
+-- Installing: /etc/Apogee/camera/MV2C.txt
+-- Installing: /etc/Apogee/camera/MV2CN.txt
+-- Installing: /etc/Apogee/camera/MV2i.txt
+-- Installing: /etc/Apogee/camera/MV4.txt
+-- Installing: /etc/Apogee/camera/MV4B.txt
+-- Installing: /etc/Apogee/camera/MV7.txt
+-- Installing: /etc/Apogee/camera/MV7i.txt
+-- Installing: /etc/Apogee/camera/NA674R.txt
+-- Installing: /etc/Apogee/camera/NA694R.txt
+-- Installing: /etc/Apogee/camera/NA814R.txt
+-- Installing: /etc/Apogee/camera/NAD674R.txt
+-- Installing: /etc/Apogee/camera/NAD694R.txt
+-- Installing: /etc/Apogee/camera/NAD814R.txt
+-- Installing: /etc/Apogee/camera/NCG16.txt
+-- Installing: /etc/Apogee/camera/NCG16070.txt
+-- Installing: /etc/Apogee/camera/NCG16070B.txt
+-- Installing: /etc/Apogee/camera/NCG16070S.txt
+-- Installing: /etc/Apogee/camera/NCG16M.txt
+-- Installing: /etc/Apogee/camera/NCG285.txt
+-- Installing: /etc/Apogee/camera/NCG285A.txt
+-- Installing: /etc/Apogee/camera/NCG285S.txt
+-- Installing: /etc/Apogee/camera/NCG285SA.txt
+-- Installing: /etc/Apogee/camera/NCG42.txt
+-- Installing: /etc/Apogee/camera/NCG42S.txt
+-- Installing: /etc/Apogee/camera/NCG47.txt
+-- Installing: /etc/Apogee/camera/NCG6.txt
+-- Installing: /etc/Apogee/camera/NCG77.txt
+-- Installing: /etc/Apogee/camera/NCG77REGA.txt
+-- Installing: /etc/Apogee/camera/NCG77S.txt
+-- Installing: /etc/Apogee/camera/NCG77SREGA.txt
+-- Installing: /etc/Apogee/camera/NCG77V.txt
+-- Installing: /etc/Apogee/camera/NCG77VREGA.txt
+-- Installing: /etc/Apogee/camera/NCG8050S.txt
+-- Installing: /etc/Apogee/camera/NCG8300.txt
+-- Installing: /etc/Apogee/camera/NCG8300S.txt
+-- Installing: /etc/Apogee/camera/NCG9S.txt
+-- Installing: /etc/Apogee/camera/NF10140S.txt
+-- Installing: /etc/Apogee/camera/NF1109R.txt
+-- Installing: /etc/Apogee/camera/NF16000R.txt
+-- Installing: /etc/Apogee/camera/NF16000R2.txt
+-- Installing: /etc/Apogee/camera/NF16000S.txt
+-- Installing: /etc/Apogee/camera/NF29050R.txt
+-- Installing: /etc/Apogee/camera/NF30R.txt
+-- Installing: /etc/Apogee/camera/NF30S.txt
+-- Installing: /etc/Apogee/camera/NF32R.txt
+-- Installing: /etc/Apogee/camera/NF32S.txt
+-- Installing: /etc/Apogee/camera/NF4000R.txt
+-- Installing: /etc/Apogee/camera/NF4000S.txt
+-- Installing: /etc/Apogee/camera/NF42R.txt
+-- Installing: /etc/Apogee/camera/NF47R.txt
+-- Installing: /etc/Apogee/camera/NF47R12.txt
+-- Installing: /etc/Apogee/camera/NF47S12.txt
+-- Installing: /etc/Apogee/camera/NF50100RD.txt
+-- Installing: /etc/Apogee/camera/NF50100S.txt
+-- Installing: /etc/Apogee/camera/NF6R.txt
+-- Installing: /etc/Apogee/camera/NF6RA.txt
+-- Installing: /etc/Apogee/camera/NF6S.txt
+-- Installing: /etc/Apogee/camera/NF77R.txt
+-- Installing: /etc/Apogee/camera/NF77S.txt
+-- Installing: /etc/Apogee/camera/NF8300R.txt
+-- Installing: /etc/Apogee/camera/NF8300S.txt
+-- Installing: /etc/Apogee/camera/NF9R.txt
+-- Installing: /etc/Apogee/camera/NF9S.txt
+-- Installing: /etc/Apogee/camera/NR230.txt
+-- Installing: /etc/Apogee/camera/NR230b.txt
+-- Installing: /etc/Apogee/camera/NR3041.txt
+-- Installing: /etc/Apogee/camera/NS230.txt
+-- Installing: /etc/Apogee/camera/NS230b.txt
+-- Installing: /etc/Apogee/camera/NS3041.txt
+-- Installing: /etc/Apogee/camera/NoOpH.txt
+-- Installing: /etc/Apogee/camera/NoOpV.txt
+-- Installing: /etc/Apogee/camera/VF50100.txt
+-- Installing: /etc/Apogee/camera/XAV1.txt
+-- Installing: /etc/Apogee/camera/apnmatrix.txt
+-- Installing: /lib/udev/rules.d/99-apogee.rules
+-- Installing: /lib/udev/rules.d/99-asi.rules
+-- Installing: /usr/include/libasi/ASICamera2.h
+-- Installing: /usr/include/libasi/EFW_filter.h
+-- Installing: /usr/include/libasi/USB2ST4_Conv.h
+-- Installing: /usr/include/libasi/EAF_focuser.h
+-- Installing: /usr/include/libasi/CAA_API.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libASICamera2.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libASICamera2.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libASICamera2.so.1.41
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libEFWFilter.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libEFWFilter.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libEFWFilter.so.1.7.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libUSB2ST4Conv.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libUSB2ST4Conv.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libUSB2ST4Conv.so.1.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libEAFFocuser.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libEAFFocuser.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libEAFFocuser.so.1.7.7
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libCAARotator.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libCAARotator.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libCAARotator.so.1.5.9
+-- Installing: /lib/udev/rules.d/99-atik.rules
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libatikcameras.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libatikcameras.so.2
+-- Installing: /usr/lib/x86_64-linux-gnu/libatikcameras.so.2.2.22
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflycapture.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflycapture.so.2
+-- Installing: /usr/lib/x86_64-linux-gnu/libflycapture.so.2.13.3.31
+-- Installing: /usr/include/libatik/AtikCameras.h
+-- Installing: /usr/include/libatik/AtikDefs.h
+-- Installing: /usr/include/libfishcamp/fishcamp.h
+-- Installing: /usr/include/libfishcamp/fishcamp_common.h
+-- Installing: /usr/lib/x86_64-linux-gnu/libfishcamp.so.1.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libfishcamp.so.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libfishcamp.so
+-- Installing: /lib/firmware/gdr_usb.hex
+-- Installing: /lib/firmware/Guider_mono_rev16_intel.srec
+-- Installing: /lib/udev/rules.d/99-fishcamp.rules
+-- Installing: /usr/include/libfli.h
+-- Installing: /usr/lib/x86_64-linux-gnu/libfli.so.2.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libfli.so.2
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libfli.so
+-- Installing: /lib/udev/rules.d/99-fli.rules
+-- Installing: /usr/include/libflipro.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflipro.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflipro.so.2
+-- Installing: /usr/lib/x86_64-linux-gnu/libflipro.so.2.1.4
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflialgo.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflialgo.so.2
+-- Installing: /usr/lib/x86_64-linux-gnu/libflialgo.so.2.1.4
+-- Installing: /lib/udev/rules.d/99-miccd.rules
+-- Installing: /usr/include/libmicam/gxccd.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libgxccd.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libgxccd.so.0
+-- Installing: /usr/lib/x86_64-linux-gnu/libgxccd.so.0.12.1
+-- Installing: /lib/udev/rules.d/99-inovaplx.rules
+-- Installing: /usr/include/inovasdk/inovasdk.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libinovasdk.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libinovasdk.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libinovasdk.so.1.3.6
+-- Installing: /lib/udev/rules.d/85-qhyccd.rules
+-- Installing: /usr/include/libqhy/qhyccd.h
+-- Installing: /usr/include/libqhy/qhyccderr.h
+-- Installing: /usr/include/libqhy/qhyccdcamdef.h
+-- Installing: /usr/include/libqhy/qhyccdstruct.h
+-- Installing: /lib/firmware/qhy/IC16200A.HEX
+-- Installing: /lib/firmware/qhy/IC16803.HEX
+-- Installing: /lib/firmware/qhy/IC8300.HEX
+-- Installing: /lib/firmware/qhy/IC90A.HEX
+-- Installing: /lib/firmware/qhy/IMG0H.HEX
+-- Installing: /lib/firmware/qhy/IMG2P.HEX
+-- Installing: /lib/firmware/qhy/IMG2S.HEX
+-- Installing: /lib/firmware/qhy/IMG50.HEX
+-- Installing: /lib/firmware/qhy/Origin678C.img
+-- Installing: /lib/firmware/qhy/POLEMASTER.HEX
+-- Installing: /lib/firmware/qhy/QHY0204.img
+-- Installing: /lib/firmware/qhy/QHY09000A.HEX
+-- Installing: /lib/firmware/qhy/QHY10.HEX
+-- Installing: /lib/firmware/qhy/QHY10768.img
+-- Installing: /lib/firmware/qhy/QHY11.HEX
+-- Installing: /lib/firmware/qhy/QHY12.HEX
+-- Installing: /lib/firmware/qhy/QHY1253.img
+-- Installing: /lib/firmware/qhy/QHY128.img
+-- Installing: /lib/firmware/qhy/QHY128PRO.img
+-- Installing: /lib/firmware/qhy/QHY15.HEX
+-- Installing: /lib/firmware/qhy/QHY16.HEX
+-- Installing: /lib/firmware/qhy/QHY16000.HEX
+-- Installing: /lib/firmware/qhy/QHY160002AD.HEX
+-- Installing: /lib/firmware/qhy/QHY16200A.HEX
+-- Installing: /lib/firmware/qhy/QHY163.img
+-- Installing: /lib/firmware/qhy/QHY165.img
+-- Installing: /lib/firmware/qhy/QHY168.img
+-- Installing: /lib/firmware/qhy/QHY16803A.HEX
+-- Installing: /lib/firmware/qhy/QHY174.img
+-- Installing: /lib/firmware/qhy/QHY178.img
+-- Installing: /lib/firmware/qhy/QHY183.img
+-- Installing: /lib/firmware/qhy/QHY183A.img
+-- Installing: /lib/firmware/qhy/QHY1920.img
+-- Installing: /lib/firmware/qhy/QHY2.HEX
+-- Installing: /lib/firmware/qhy/QHY20.HEX
+-- Installing: /lib/firmware/qhy/QHY2020.img
+-- Installing: /lib/firmware/qhy/QHY21.HEX
+-- Installing: /lib/firmware/qhy/QHY22.HEX
+-- Installing: /lib/firmware/qhy/QHY224.img
+-- Installing: /lib/firmware/qhy/QHY23.HEX
+-- Installing: /lib/firmware/qhy/QHY247.img
+-- Installing: /lib/firmware/qhy/QHY268.img
+-- Installing: /lib/firmware/qhy/QHY26800A.img
+-- Installing: /lib/firmware/qhy/QHY27.HEX
+-- Installing: /lib/firmware/qhy/QHY28.HEX
+-- Installing: /lib/firmware/qhy/QHY29.HEX
+-- Installing: /lib/firmware/qhy/QHY290.img
+-- Installing: /lib/firmware/qhy/QHY294.img
+-- Installing: /lib/firmware/qhy/QHY294PRO.img
+-- Installing: /lib/firmware/qhy/QHY2E.HEX
+-- Installing: /lib/firmware/qhy/QHY2PRO.HEX
+-- Installing: /lib/firmware/qhy/QHY342.img
+-- Installing: /lib/firmware/qhy/QHY342PRO.img
+-- Installing: /lib/firmware/qhy/QHY367.img
+-- Installing: /lib/firmware/qhy/QHY367PRO.img
+-- Installing: /lib/firmware/qhy/QHY4040.img
+-- Installing: /lib/firmware/qhy/QHY4040PRO.img
+-- Installing: /lib/firmware/qhy/QHY410.img
+-- Installing: /lib/firmware/qhy/QHY411.img
+-- Installing: /lib/firmware/qhy/QHY411ERIS.img
+-- Installing: /lib/firmware/qhy/QHY42.img
+-- Installing: /lib/firmware/qhy/QHY42PRO.img
+-- Installing: /lib/firmware/qhy/QHY432.img
+-- Installing: /lib/firmware/qhy/QHY461.img
+-- Installing: /lib/firmware/qhy/QHY487.img
+-- Installing: /lib/firmware/qhy/QHY5.HEX
+-- Installing: /lib/firmware/qhy/QHY530.img
+-- Installing: /lib/firmware/qhy/QHY533.img
+-- Installing: /lib/firmware/qhy/QHY550.img
+-- Installing: /lib/firmware/qhy/QHY585.img
+-- Installing: /lib/firmware/qhy/QHY5II.HEX
+-- Installing: /lib/firmware/qhy/QHY5III174.img
+-- Installing: /lib/firmware/qhy/QHY5III178.img
+-- Installing: /lib/firmware/qhy/QHY5III185.img
+-- Installing: /lib/firmware/qhy/QHY5III200.img
+-- Installing: /lib/firmware/qhy/QHY5III224.img
+-- Installing: /lib/firmware/qhy/QHY5III290.img
+-- Installing: /lib/firmware/qhy/QHY5III334.img
+-- Installing: /lib/firmware/qhy/QHY5III415.img
+-- Installing: /lib/firmware/qhy/QHY5III462.img
+-- Installing: /lib/firmware/qhy/QHY5III482.img
+-- Installing: /lib/firmware/qhy/QHY5III485.img
+-- Installing: /lib/firmware/qhy/QHY5III568.img
+-- Installing: /lib/firmware/qhy/QHY5III585.img
+-- Installing: /lib/firmware/qhy/QHY5III678.img
+-- Installing: /lib/firmware/qhy/QHY5III715.img
+-- Installing: /lib/firmware/qhy/QHY5LOADER.HEX
+-- Installing: /lib/firmware/qhy/QHY6.HEX
+-- Installing: /lib/firmware/qhy/QHY600.img
+-- Installing: /lib/firmware/qhy/QHY6060.img
+-- Installing: /lib/firmware/qhy/QHY6060PRO.img
+-- Installing: /lib/firmware/qhy/QHY661.img
+-- Installing: /lib/firmware/qhy/QHY695A.HEX
+-- Installing: /lib/firmware/qhy/QHY7.HEX
+-- Installing: /lib/firmware/qhy/QHY8.HEX
+-- Installing: /lib/firmware/qhy/QHY811.img
+-- Installing: /lib/firmware/qhy/QHY814A.HEX
+-- Installing: /lib/firmware/qhy/QHY8L.HEX
+-- Installing: /lib/firmware/qhy/QHY8M.HEX
+-- Installing: /lib/firmware/qhy/QHY8PRO.HEX
+-- Installing: /lib/firmware/qhy/QHY90A.HEX
+-- Installing: /lib/firmware/qhy/QHY9701.img
+-- Installing: /lib/firmware/qhy/QHY990.img
+-- Installing: /lib/firmware/qhy/QHY991.img
+-- Installing: /lib/firmware/qhy/QHY992.img
+-- Installing: /lib/firmware/qhy/QHY9S.HEX
+-- Installing: /lib/firmware/qhy/miniCam5.HEX
+-- Installing: /lib/firmware/qhy/miniCam8.img
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libqhyccd.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libqhyccd.so.20
+-- Installing: /usr/lib/x86_64-linux-gnu/libqhyccd.so.26.2.1
+-- Installing: /usr/include/qsiapi.h
+-- Installing: /usr/include/QSIError.h
+-- Installing: /usr/lib/x86_64-linux-gnu/libqsiapi.so.7.6.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libqsiapi.so.7
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libqsiapi.so
+-- Installing: /usr/bin/qsiapitest
+-- Installing: /usr/bin/qsiapidemo
+-- Installing: /lib/udev/rules.d/51-sbig-debian.rules
+-- Installing: /usr/include/libsbig/sbigudrv.h
+-- Installing: /lib/firmware/sbigucam.hex
+-- Installing: /lib/firmware/sbiglcam.hex
+-- Installing: /lib/firmware/sbigfcam.hex
+-- Installing: /lib/firmware/sbigpcam.hex
+-- Installing: /lib/firmware/stfga.bin
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libsbig.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libsbig.so.4
+-- Installing: /usr/lib/x86_64-linux-gnu/libsbig.so.4.9.9
+-- Installing: /lib/udev/rules.d/99-pentax.rules
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_event_listener.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/shutter_speed.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/still_image_capture_format.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_time.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/iso.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_image_list.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_device.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/white_balance.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/error.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/capture_setting.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/hyper_operation_enable.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_storage.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/storage_writing.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/point.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/still_image_quality.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/response.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/f_number.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/export.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_image.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/exposure_compensation.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_device_detector.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_device_setting.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/live_view_specification.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/exposure_program.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/version.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/user_capture_settings_mode.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/capture_method.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/capture.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_status.hpp
+-- Installing: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_storage_list.hpp
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libRicohCameraSDKCpp.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libRicohCameraSDKCpp.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libRicohCameraSDKCpp.so.1.1.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmtpricoh.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmtpricoh.so.9
+-- Installing: /usr/lib/x86_64-linux-gnu/libmtpricoh.so.9.3.0
+-- Installing: /lib/udev/rules.d/95-pentax.rules
+-- Installing: /lib/udev/rules.d/95-samsung.rules
+-- Installing: /usr/share/pktriggercord/pentax_settings.json
+-- Up-to-date: /usr/include/libpktriggercord
+-- Installing: /usr/include/libpktriggercord/pslr_lens.h
+-- Installing: /usr/include/libpktriggercord/pslr_utils.h
+-- Installing: /usr/include/libpktriggercord/pktriggercord-servermode.h
+-- Installing: /usr/include/libpktriggercord/pslr_log.h
+-- Installing: /usr/include/libpktriggercord/pslr.h
+-- Installing: /usr/include/libpktriggercord/pslr_scsi.h
+-- Up-to-date: /usr/include/libpktriggercord/src
+-- Up-to-date: /usr/include/libpktriggercord/src/external
+-- Up-to-date: /usr/include/libpktriggercord/src/external/js0n
+-- Installing: /usr/include/libpktriggercord/src/external/js0n/js0n.h
+-- Installing: /usr/include/libpktriggercord/pslr_enum.h
+-- Installing: /usr/include/libpktriggercord/pslr_model.h
+-- Up-to-date: /usr/include/libpktriggercord
+-- Installing: /usr/include/libpktriggercord/libpktriggercord.h
+-- Installing: /usr/lib/x86_64-linux-gnu/libpktriggercord.so.0.85.03
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libpktriggercord.so.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libpktriggercord.so
+-- Installing: /lib/udev/rules.d/99-toupcam.rules
+-- Installing: /usr/include/libtoupcam/toupcam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libtoupcam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libtoupcam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libtoupcam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-altaircam.rules
+-- Installing: /usr/include/libaltaircam/altaircam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libaltaircam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libaltaircam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libaltaircam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-bressercam.rules
+-- Installing: /usr/include/libbressercam/bressercam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libbressercam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libbressercam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libbressercam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-mallincam.rules
+-- Installing: /usr/include/libmallincam/mallincam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmallincam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmallincam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libmallincam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-meadecam.rules
+-- Installing: /usr/include/libmeadecam/meadecam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmeadecam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmeadecam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libmeadecam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-nncam.rules
+-- Installing: /usr/include/libnncam/nncam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libnncam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libnncam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libnncam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-ogmacam.rules
+-- Installing: /usr/include/libogmacam/ogmacam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libogmacam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libogmacam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libogmacam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-omegonprocam.rules
+-- Installing: /usr/include/libomegonprocam/omegonprocam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libomegonprocam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libomegonprocam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libomegonprocam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-starshootg.rules
+-- Installing: /usr/include/libstarshootg/starshootg.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libstarshootg.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libstarshootg.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libstarshootg.so.59.30594
+-- Installing: /lib/udev/rules.d/99-tscam.rules
+-- Installing: /usr/include/libtscam/tscam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libtscam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libtscam.so.59
+-- Installing: /usr/lib/x86_64-linux-gnu/libtscam.so.59.30594
+-- Installing: /lib/udev/rules.d/99-svbonycam.rules
+-- Installing: /usr/include/libsvbonycam/svbonycam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libsvbonycam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libsvbonycam.so.57
+-- Installing: /usr/lib/x86_64-linux-gnu/libsvbonycam.so.57.27348
+-- Installing: /lib/udev/rules.d/90-svbonyusb.rules
+-- Installing: /usr/include/libsvbony/SVBCameraSDK.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libSVBCameraSDK.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libSVBCameraSDK.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libSVBCameraSDK.so.1.13.4
+-- Installing: /lib/udev/rules.d/99-player_one_astronomy.rules
+-- Installing: /usr/include/libplayerone/PlayerOneCamera.h
+-- Installing: /usr/include/libplayerone/PlayerOnePW.h
+-- Installing: /usr/include/libplayerone/ConvFuncs.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libPlayerOneCamera.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libPlayerOneCamera.so.3
+-- Installing: /usr/lib/x86_64-linux-gnu/libPlayerOneCamera.so.3.10.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libPlayerOnePW.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libPlayerOnePW.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/libPlayerOnePW.so.1.2.3
+-- Installing: /lib/udev/rules.d/99-astroasis.rules
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/liboasisfocuser.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/liboasisfocuser.so.2
+-- Installing: /usr/lib/x86_64-linux-gnu/liboasisfocuser.so.2.0.2
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/liboasisfilterwheel.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/liboasisfilterwheel.so.1
+-- Installing: /usr/lib/x86_64-linux-gnu/liboasisfilterwheel.so.1.2.1
+-- Installing: /usr/include/libastroasis/AOFocus.h
+-- Installing: /usr/include/libastroasis/OasisFilterWheel.h
+###############################################################
+################### Build drivers #############################
+###############################################################
+-- Found FFMPEG: /usr/lib/x86_64-linux-gnu/libavcodec.so;/usr/lib/x86_64-linux-gnu/libavdevice.so;/usr/lib/x86_64-linux-gnu/libavformat.so;/usr/lib/x86_64-linux-gnu/libavutil.so;/usr/lib/x86_64-linux-gnu/libswscale.so, /usr/include/x86_64-linux-gnu
+-- Since FFMPEG was found, INDI Webcam Driver can be built
+-- Since an up to date nutclient was not found, INDI NUT Driver will not be built
+-- Found libftdi1: /usr/lib/x86_64-linux-gnu/libftdi1.so
+-- Configuring done (0.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/pajafleger/INDI_KStars-Kit/default/build/indi-3rdparty
+[ 24%] Built target apogee
+[ 25%] Built target imported_ASICamera2
+[ 26%] Built target imported_EFWFilter
+[ 27%] Built target imported_USB2ST4Conv
+[ 29%] Built target imported_EAFFocuser
+[ 30%] Built target imported_CAARotator
+[ 31%] Built target imported_atikcameras
+[ 32%] Built target imported_flycapture
+[ 32%] Built target fishcamp
+[ 38%] Built target fli
+[ 39%] Built target imported_flipro
+[ 41%] Built target imported_flialgo
+[ 42%] Built target imported_gxccd
+[ 43%] Built target imported_inovasdk
+[ 44%] Built target imported_qhyccd
+[ 52%] Built target qsiapi
+[ 61%] Built target qsiapitest
+[ 71%] Built target qsiapidemo
+[ 72%] Built target imported_sbig
+[ 73%] Built target imported_RicohCameraSDKCpp
+[ 74%] Built target imported_mtpricoh
+[ 75%] Building C object libpktriggercord/CMakeFiles/pktriggercord.dir/libpktriggercord.c.o
+[ 76%] Linking C shared library libpktriggercord.so
+[ 79%] Built target pktriggercord
+[ 80%] Built target udev_rules
+[ 81%] Built target imported_toupcam
+[ 82%] Built target imported_altaircam
+[ 83%] Built target imported_bressercam
+[ 85%] Built target imported_mallincam
+[ 86%] Built target imported_meadecam
+[ 87%] Built target imported_nncam
+[ 88%] Built target imported_ogmacam
+[ 89%] Built target imported_omegonprocam
+[ 91%] Built target imported_starshootg
+[ 92%] Built target imported_tscam
+[ 93%] Built target imported_svbonycam
+[ 95%] Built target imported_SVBCameraSDK
+[ 96%] Built target imported_PlayerOneCamera
+[ 97%] Built target imported_PlayerOnePW
+[ 99%] Built target imported_oasisfocuser
+[100%] Built target imported_oasisfilterwheel
+[ 24%] Built target apogee
+[ 25%] Built target imported_ASICamera2
+[ 26%] Built target imported_EFWFilter
+[ 27%] Built target imported_USB2ST4Conv
+[ 29%] Built target imported_EAFFocuser
+[ 30%] Built target imported_CAARotator
+[ 31%] Built target imported_atikcameras
+[ 32%] Built target imported_flycapture
+[ 32%] Built target fishcamp
+[ 38%] Built target fli
+[ 39%] Built target imported_flipro
+[ 41%] Built target imported_flialgo
+[ 42%] Built target imported_gxccd
+[ 43%] Built target imported_inovasdk
+[ 44%] Built target imported_qhyccd
+[ 52%] Built target qsiapi
+[ 61%] Built target qsiapitest
+[ 71%] Built target qsiapidemo
+[ 72%] Built target imported_sbig
+[ 73%] Built target imported_RicohCameraSDKCpp
+[ 74%] Built target imported_mtpricoh
+[ 79%] Built target pktriggercord
+[ 80%] Built target udev_rules
+[ 81%] Built target imported_toupcam
+[ 82%] Built target imported_altaircam
+[ 83%] Built target imported_bressercam
+[ 85%] Built target imported_mallincam
+[ 86%] Built target imported_meadecam
+[ 87%] Built target imported_nncam
+[ 88%] Built target imported_ogmacam
+[ 89%] Built target imported_omegonprocam
+[ 91%] Built target imported_starshootg
+[ 92%] Built target imported_tscam
+[ 93%] Built target imported_svbonycam
+[ 95%] Built target imported_SVBCameraSDK
+[ 96%] Built target imported_PlayerOneCamera
+[ 97%] Built target imported_PlayerOnePW
+[ 99%] Built target imported_oasisfocuser
+[100%] Built target imported_oasisfilterwheel
+Install the project...
+-- Install configuration: "Debug"
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libapogee.so.3.2
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libapogee.so.3
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libapogee.so
+-- Up-to-date: /usr/include/libapogee/Alta.h
+-- Up-to-date: /usr/include/libapogee/AltaCcdAcqParams.h
+-- Up-to-date: /usr/include/libapogee/AltaData.h
+-- Up-to-date: /usr/include/libapogee/AltaEthernetIo.h
+-- Up-to-date: /usr/include/libapogee/AltaF.h
+-- Up-to-date: /usr/include/libapogee/AltaIo.h
+-- Up-to-date: /usr/include/libapogee/AltaModeFsm.h
+-- Up-to-date: /usr/include/libapogee/AltaUsbIo.h
+-- Up-to-date: /usr/include/libapogee/ApgLogger.h
+-- Up-to-date: /usr/include/libapogee/ApgTimer.h
+-- Up-to-date: /usr/include/libapogee/ApnCamData.h
+-- Up-to-date: /usr/include/libapogee/ApnUsbSys.h
+-- Up-to-date: /usr/include/libapogee/ApogeeCam.h
+-- Up-to-date: /usr/include/libapogee/ApogeeFilterWheel.h
+-- Up-to-date: /usr/include/libapogee/Ascent.h
+-- Up-to-date: /usr/include/libapogee/AscentBasedIo.h
+-- Up-to-date: /usr/include/libapogee/AscentBasedUsbIo.h
+-- Up-to-date: /usr/include/libapogee/AscentData.h
+-- Up-to-date: /usr/include/libapogee/Aspen.h
+-- Up-to-date: /usr/include/libapogee/AspenData.h
+-- Up-to-date: /usr/include/libapogee/AspenEthernetIo.h
+-- Up-to-date: /usr/include/libapogee/AspenFx2.h
+-- Up-to-date: /usr/include/libapogee/AspenIo.h
+-- Up-to-date: /usr/include/libapogee/AspenUsbIo.h
+-- Up-to-date: /usr/include/libapogee/COMHelper.h
+-- Up-to-date: /usr/include/libapogee/CamCfgMatrix.h
+-- Up-to-date: /usr/include/libapogee/CamGen2Base.h
+-- Up-to-date: /usr/include/libapogee/CamGen2CcdAcqParams.h
+-- Up-to-date: /usr/include/libapogee/CamGen2ModeFsm.h
+-- Up-to-date: /usr/include/libapogee/CamHelpers.h
+-- Up-to-date: /usr/include/libapogee/CamRegMirror.h
+-- Up-to-date: /usr/include/libapogee/CamUsbIo.h
+-- Up-to-date: /usr/include/libapogee/CameraInfo.h
+-- Up-to-date: /usr/include/libapogee/CameraIo.h
+-- Up-to-date: /usr/include/libapogee/CameraStatusRegs.h
+-- Up-to-date: /usr/include/libapogee/CcdAcqParams.h
+-- Up-to-date: /usr/include/libapogee/DefDllExport.h
+-- Up-to-date: /usr/include/libapogee/DeviceStrHelpers.h
+-- Up-to-date: /usr/include/libapogee/FilterWheelIo.h
+-- Up-to-date: /usr/include/libapogee/FindDeviceEthernet.h
+-- Up-to-date: /usr/include/libapogee/FindDeviceUsb.h
+-- Up-to-date: /usr/include/libapogee/HiC.h
+-- Up-to-date: /usr/include/libapogee/IAltaSerialPortIo.h
+-- Up-to-date: /usr/include/libapogee/ICamIo.h
+-- Up-to-date: /usr/include/libapogee/ILog.h
+-- Up-to-date: /usr/include/libapogee/ITimer.h
+-- Up-to-date: /usr/include/libapogee/IUsb.h
+-- Up-to-date: /usr/include/libapogee/ImgFix.h
+-- Up-to-date: /usr/include/libapogee/LoggerException.h
+-- Up-to-date: /usr/include/libapogee/ModeFsm.h
+-- Up-to-date: /usr/include/libapogee/PlatformData.h
+-- Up-to-date: /usr/include/libapogee/PromFx2Io.h
+-- Up-to-date: /usr/include/libapogee/Quad.h
+-- Up-to-date: /usr/include/libapogee/UdpSocketBase.h
+-- Up-to-date: /usr/include/libapogee/apgHelper.h
+-- Up-to-date: /usr/include/libapogee/doc.h
+-- Up-to-date: /usr/include/libapogee/helpers.h
+-- Up-to-date: /usr/include/libapogee/libCurlWrap.h
+-- Up-to-date: /usr/include/libapogee/parseCfgTabDelim.h
+-- Up-to-date: /usr/include/libapogee/resource.h
+-- Up-to-date: /usr/include/libapogee/versionNo.h
+-- Up-to-date: /etc/Apogee/camera/A12HC.txt
+-- Up-to-date: /etc/Apogee/camera/A12HR.txt
+-- Up-to-date: /etc/Apogee/camera/A12HS.txt
+-- Up-to-date: /etc/Apogee/camera/A16HR.txt
+-- Up-to-date: /etc/Apogee/camera/A16HS.txt
+-- Up-to-date: /etc/Apogee/camera/A694S.txt
+-- Up-to-date: /etc/Apogee/camera/A694V.txt
+-- Up-to-date: /etc/Apogee/camera/AR2.txt
+-- Up-to-date: /etc/Apogee/camera/AR2D.txt
+-- Up-to-date: /etc/Apogee/camera/AR2F.txt
+-- Up-to-date: /etc/Apogee/camera/AR2FD.txt
+-- Up-to-date: /etc/Apogee/camera/AR2Fa.txt
+-- Up-to-date: /etc/Apogee/camera/AR2S.txt
+-- Up-to-date: /etc/Apogee/camera/AR2V.txt
+-- Up-to-date: /etc/Apogee/camera/AR2Vb.txt
+-- Up-to-date: /etc/Apogee/camera/AR2a.txt
+-- Up-to-date: /etc/Apogee/camera/AR4.txt
+-- Up-to-date: /etc/Apogee/camera/AR4D.txt
+-- Up-to-date: /etc/Apogee/camera/AR4F.txt
+-- Up-to-date: /etc/Apogee/camera/AR4FD.txt
+-- Up-to-date: /etc/Apogee/camera/AR4Fb.txt
+-- Up-to-date: /etc/Apogee/camera/AR4V.txt
+-- Up-to-date: /etc/Apogee/camera/AR4Vb.txt
+-- Up-to-date: /etc/Apogee/camera/AR5.txt
+-- Up-to-date: /etc/Apogee/camera/AR5F.txt
+-- Up-to-date: /etc/Apogee/camera/AR5FL.txt
+-- Up-to-date: /etc/Apogee/camera/AR5L.txt
+-- Up-to-date: /etc/Apogee/camera/AR5V.txt
+-- Up-to-date: /etc/Apogee/camera/AS2.txt
+-- Up-to-date: /etc/Apogee/camera/AS2S.txt
+-- Up-to-date: /etc/Apogee/camera/AS4.txt
+-- Up-to-date: /etc/Apogee/camera/AS5.txt
+-- Up-to-date: /etc/Apogee/camera/AS5F.txt
+-- Up-to-date: /etc/Apogee/camera/AS5S.txt
+-- Up-to-date: /etc/Apogee/camera/AV1.txt
+-- Up-to-date: /etc/Apogee/camera/AV2.txt
+-- Up-to-date: /etc/Apogee/camera/AV2S.txt
+-- Up-to-date: /etc/Apogee/camera/AV2V.txt
+-- Up-to-date: /etc/Apogee/camera/AV2Vb.txt
+-- Up-to-date: /etc/Apogee/camera/AV4A.txt
+-- Up-to-date: /etc/Apogee/camera/AV4B.txt
+-- Up-to-date: /etc/Apogee/camera/AV4D.txt
+-- Up-to-date: /etc/Apogee/camera/AV4E.txt
+-- Up-to-date: /etc/Apogee/camera/AV4V.txt
+-- Up-to-date: /etc/Apogee/camera/AV4Vb.txt
+-- Up-to-date: /etc/Apogee/camera/AV5.txt
+-- Up-to-date: /etc/Apogee/camera/AV5S.txt
+-- Up-to-date: /etc/Apogee/camera/AV5V.txt
+-- Up-to-date: /etc/Apogee/camera/AV6.txt
+-- Up-to-date: /etc/Apogee/camera/AV7.txt
+-- Up-to-date: /etc/Apogee/camera/CG42AIMOV.txt
+-- Up-to-date: /etc/Apogee/camera/CG42NIMOV.txt
+-- Up-to-date: /etc/Apogee/camera/CG47V.txt
+-- Up-to-date: /etc/Apogee/camera/F10140V.txt
+-- Up-to-date: /etc/Apogee/camera/F16HR1.txt
+-- Up-to-date: /etc/Apogee/camera/F16HR1B.txt
+-- Up-to-date: /etc/Apogee/camera/F16HS1.txt
+-- Up-to-date: /etc/Apogee/camera/F16HS1B.txt
+-- Up-to-date: /etc/Apogee/camera/F29050S.txt
+-- Up-to-date: /etc/Apogee/camera/F29050V.txt
+-- Up-to-date: /etc/Apogee/camera/F3041V.txt
+-- Up-to-date: /etc/Apogee/camera/F30V.txt
+-- Up-to-date: /etc/Apogee/camera/F30VAIMO.txt
+-- Up-to-date: /etc/Apogee/camera/F4000V.txt
+-- Up-to-date: /etc/Apogee/camera/F47DDV.txt
+-- Up-to-date: /etc/Apogee/camera/F47V12.txt
+-- Up-to-date: /etc/Apogee/camera/F6V.txt
+-- Up-to-date: /etc/Apogee/camera/F77V.txt
+-- Up-to-date: /etc/Apogee/camera/FA674R.txt
+-- Up-to-date: /etc/Apogee/camera/FA694R.txt
+-- Up-to-date: /etc/Apogee/camera/FA814R.txt
+-- Up-to-date: /etc/Apogee/camera/FAD674R.txt
+-- Up-to-date: /etc/Apogee/camera/FAD694R.txt
+-- Up-to-date: /etc/Apogee/camera/FAD814R.txt
+-- Up-to-date: /etc/Apogee/camera/FCG16070.txt
+-- Up-to-date: /etc/Apogee/camera/FCG16M.txt
+-- Up-to-date: /etc/Apogee/camera/FCG285.txt
+-- Up-to-date: /etc/Apogee/camera/FCG285A.txt
+-- Up-to-date: /etc/Apogee/camera/FCG42.txt
+-- Up-to-date: /etc/Apogee/camera/FCG42S.txt
+-- Up-to-date: /etc/Apogee/camera/FCG6.txt
+-- Up-to-date: /etc/Apogee/camera/FCG77.txt
+-- Up-to-date: /etc/Apogee/camera/FCG77REGA.txt
+-- Up-to-date: /etc/Apogee/camera/FCG77S.txt
+-- Up-to-date: /etc/Apogee/camera/FCG77SREGA.txt
+-- Up-to-date: /etc/Apogee/camera/FCG8300.txt
+-- Up-to-date: /etc/Apogee/camera/FCG8300S.txt
+-- Up-to-date: /etc/Apogee/camera/FEHR1AQ.txt
+-- Up-to-date: /etc/Apogee/camera/FEHR1BQ.txt
+-- Up-to-date: /etc/Apogee/camera/FEHR2c.txt
+-- Up-to-date: /etc/Apogee/camera/FEHR2i.txt
+-- Up-to-date: /etc/Apogee/camera/FEHS1A.txt
+-- Up-to-date: /etc/Apogee/camera/FEHS1B.txt
+-- Up-to-date: /etc/Apogee/camera/FEHS2c.txt
+-- Up-to-date: /etc/Apogee/camera/FEHS2i.txt
+-- Up-to-date: /etc/Apogee/camera/FEV1.txt
+-- Up-to-date: /etc/Apogee/camera/FEV2.txt
+-- Up-to-date: /etc/Apogee/camera/FF10140S.txt
+-- Up-to-date: /etc/Apogee/camera/FF1109R.txt
+-- Up-to-date: /etc/Apogee/camera/FF16000R.txt
+-- Up-to-date: /etc/Apogee/camera/FF16000R2.txt
+-- Up-to-date: /etc/Apogee/camera/FF16000S.txt
+-- Up-to-date: /etc/Apogee/camera/FF29050R.txt
+-- Up-to-date: /etc/Apogee/camera/FF30R.txt
+-- Up-to-date: /etc/Apogee/camera/FF30S.txt
+-- Up-to-date: /etc/Apogee/camera/FF4000R.txt
+-- Up-to-date: /etc/Apogee/camera/FF4000S.txt
+-- Up-to-date: /etc/Apogee/camera/FF42R.txt
+-- Up-to-date: /etc/Apogee/camera/FF47R.txt
+-- Up-to-date: /etc/Apogee/camera/FF47R12.txt
+-- Up-to-date: /etc/Apogee/camera/FF47S12.txt
+-- Up-to-date: /etc/Apogee/camera/FF50100RD.txt
+-- Up-to-date: /etc/Apogee/camera/FF50100S.txt
+-- Up-to-date: /etc/Apogee/camera/FF6R.txt
+-- Up-to-date: /etc/Apogee/camera/FF6RA.txt
+-- Up-to-date: /etc/Apogee/camera/FF6S.txt
+-- Up-to-date: /etc/Apogee/camera/FF77R.txt
+-- Up-to-date: /etc/Apogee/camera/FF77S.txt
+-- Up-to-date: /etc/Apogee/camera/FF8300R.txt
+-- Up-to-date: /etc/Apogee/camera/FF9R.txt
+-- Up-to-date: /etc/Apogee/camera/FF9S.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR1A.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR1At.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR1B.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR1B8.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR1D.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR1Db.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR1c.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR1i.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR3c8.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR3i.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR4AQ.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR4BQ.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR5A.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR5B.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR5C.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR6A.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR6B.txt
+-- Up-to-date: /etc/Apogee/camera/FKHR6C.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS1.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS1A.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS1B.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS1B8.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS1c.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS1i.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS3c8.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS3i.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS4.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS5.txt
+-- Up-to-date: /etc/Apogee/camera/FKHS6.txt
+-- Up-to-date: /etc/Apogee/camera/FKV1.txt
+-- Up-to-date: /etc/Apogee/camera/FKV1B.txt
+-- Up-to-date: /etc/Apogee/camera/FKV3.txt
+-- Up-to-date: /etc/Apogee/camera/FKV4.txt
+-- Up-to-date: /etc/Apogee/camera/FKV5.txt
+-- Up-to-date: /etc/Apogee/camera/FKV6.txt
+-- Up-to-date: /etc/Apogee/camera/FKV6B.txt
+-- Up-to-date: /etc/Apogee/camera/FM12HC.txt
+-- Up-to-date: /etc/Apogee/camera/FM12HR.txt
+-- Up-to-date: /etc/Apogee/camera/FM12HS.txt
+-- Up-to-date: /etc/Apogee/camera/FM16HR3.txt
+-- Up-to-date: /etc/Apogee/camera/FM16HS1.txt
+-- Up-to-date: /etc/Apogee/camera/FR2.txt
+-- Up-to-date: /etc/Apogee/camera/FR230.txt
+-- Up-to-date: /etc/Apogee/camera/FR230b.txt
+-- Up-to-date: /etc/Apogee/camera/FR2F.txt
+-- Up-to-date: /etc/Apogee/camera/FR3041.txt
+-- Up-to-date: /etc/Apogee/camera/FS230.txt
+-- Up-to-date: /etc/Apogee/camera/FS230b.txt
+-- Up-to-date: /etc/Apogee/camera/FS3041.txt
+-- Up-to-date: /etc/Apogee/camera/FV1.txt
+-- Up-to-date: /etc/Apogee/camera/FV1B.txt
+-- Up-to-date: /etc/Apogee/camera/H12HC.txt
+-- Up-to-date: /etc/Apogee/camera/H12HCi.txt
+-- Up-to-date: /etc/Apogee/camera/H12HR.txt
+-- Up-to-date: /etc/Apogee/camera/H12HRi.txt
+-- Up-to-date: /etc/Apogee/camera/H12HS.txt
+-- Up-to-date: /etc/Apogee/camera/H12HSi.txt
+-- Up-to-date: /etc/Apogee/camera/H16HR.txt
+-- Up-to-date: /etc/Apogee/camera/H16HRi.txt
+-- Up-to-date: /etc/Apogee/camera/H16HS.txt
+-- Up-to-date: /etc/Apogee/camera/H16HSi.txt
+-- Up-to-date: /etc/Apogee/camera/HV1.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC2.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC2B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC3.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC3i.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC4.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC5.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC5B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC7.txt
+-- Up-to-date: /etc/Apogee/camera/K12HC9.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR10B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR2.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR2B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR3.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR3i.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR4.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR5.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR5B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR6.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR6B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR6B2.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR7.txt
+-- Up-to-date: /etc/Apogee/camera/K12HR9.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS10B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS2.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS2B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS3.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS3i.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS4.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS5.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS5B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS6.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS6B.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS6B2.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS7.txt
+-- Up-to-date: /etc/Apogee/camera/K12HS9.txt
+-- Up-to-date: /etc/Apogee/camera/K16HC1.txt
+-- Up-to-date: /etc/Apogee/camera/K16HC2.txt
+-- Up-to-date: /etc/Apogee/camera/K16HC2B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR1.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR10B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR2.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR2B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR3.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR31.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR3i.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR3ns.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR5.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR5B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR6.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR6B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR6B4.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR7.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR8.txt
+-- Up-to-date: /etc/Apogee/camera/K16HR9.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS1.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS10B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS2.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS2B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS3.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS3i.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS5.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS5B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS6.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS6B.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS7.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS8.txt
+-- Up-to-date: /etc/Apogee/camera/K16HS9.txt
+-- Up-to-date: /etc/Apogee/camera/KV1.txt
+-- Up-to-date: /etc/Apogee/camera/KV2.txt
+-- Up-to-date: /etc/Apogee/camera/KV2B.txt
+-- Up-to-date: /etc/Apogee/camera/KV3.txt
+-- Up-to-date: /etc/Apogee/camera/KV3B.txt
+-- Up-to-date: /etc/Apogee/camera/KV4.txt
+-- Up-to-date: /etc/Apogee/camera/KV4B.txt
+-- Up-to-date: /etc/Apogee/camera/KV5.txt
+-- Up-to-date: /etc/Apogee/camera/KV5ns.txt
+-- Up-to-date: /etc/Apogee/camera/KV6.txt
+-- Up-to-date: /etc/Apogee/camera/KV6B.txt
+-- Up-to-date: /etc/Apogee/camera/KV6B2.txt
+-- Up-to-date: /etc/Apogee/camera/KV7.txt
+-- Up-to-date: /etc/Apogee/camera/KV7B.txt
+-- Up-to-date: /etc/Apogee/camera/KV8B.txt
+-- Up-to-date: /etc/Apogee/camera/KV9.txt
+-- Up-to-date: /etc/Apogee/camera/M12HC.txt
+-- Up-to-date: /etc/Apogee/camera/M12HC7.txt
+-- Up-to-date: /etc/Apogee/camera/M12HC7i.txt
+-- Up-to-date: /etc/Apogee/camera/M12HCB.txt
+-- Up-to-date: /etc/Apogee/camera/M12HCC.txt
+-- Up-to-date: /etc/Apogee/camera/M12HCi.txt
+-- Up-to-date: /etc/Apogee/camera/M12HR.txt
+-- Up-to-date: /etc/Apogee/camera/M12HR7.txt
+-- Up-to-date: /etc/Apogee/camera/M12HR7i.txt
+-- Up-to-date: /etc/Apogee/camera/M12HRB.txt
+-- Up-to-date: /etc/Apogee/camera/M12HRC.txt
+-- Up-to-date: /etc/Apogee/camera/M12HRi.txt
+-- Up-to-date: /etc/Apogee/camera/M12HS.txt
+-- Up-to-date: /etc/Apogee/camera/M12HS7.txt
+-- Up-to-date: /etc/Apogee/camera/M12HS7i.txt
+-- Up-to-date: /etc/Apogee/camera/M12HSB.txt
+-- Up-to-date: /etc/Apogee/camera/M12HSC.txt
+-- Up-to-date: /etc/Apogee/camera/M12HSi.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR230.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR3.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR3B.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR3C.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR3F.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR3i.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR5.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR5B.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR5i.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR7.txt
+-- Up-to-date: /etc/Apogee/camera/M16HR7i.txt
+-- Up-to-date: /etc/Apogee/camera/M16HS1.txt
+-- Up-to-date: /etc/Apogee/camera/M16HS1B.txt
+-- Up-to-date: /etc/Apogee/camera/M16HS1C.txt
+-- Up-to-date: /etc/Apogee/camera/M16HS1F.txt
+-- Up-to-date: /etc/Apogee/camera/M16HS1i.txt
+-- Up-to-date: /etc/Apogee/camera/M16HS230.txt
+-- Up-to-date: /etc/Apogee/camera/M16HS7.txt
+-- Up-to-date: /etc/Apogee/camera/M16HS7i.txt
+-- Up-to-date: /etc/Apogee/camera/MV1.txt
+-- Up-to-date: /etc/Apogee/camera/MV1B.txt
+-- Up-to-date: /etc/Apogee/camera/MV1i.txt
+-- Up-to-date: /etc/Apogee/camera/MV1nimo.txt
+-- Up-to-date: /etc/Apogee/camera/MV2.txt
+-- Up-to-date: /etc/Apogee/camera/MV230.txt
+-- Up-to-date: /etc/Apogee/camera/MV230b.txt
+-- Up-to-date: /etc/Apogee/camera/MV230t.txt
+-- Up-to-date: /etc/Apogee/camera/MV2B.txt
+-- Up-to-date: /etc/Apogee/camera/MV2C.txt
+-- Up-to-date: /etc/Apogee/camera/MV2CN.txt
+-- Up-to-date: /etc/Apogee/camera/MV2i.txt
+-- Up-to-date: /etc/Apogee/camera/MV4.txt
+-- Up-to-date: /etc/Apogee/camera/MV4B.txt
+-- Up-to-date: /etc/Apogee/camera/MV7.txt
+-- Up-to-date: /etc/Apogee/camera/MV7i.txt
+-- Up-to-date: /etc/Apogee/camera/NA674R.txt
+-- Up-to-date: /etc/Apogee/camera/NA694R.txt
+-- Up-to-date: /etc/Apogee/camera/NA814R.txt
+-- Up-to-date: /etc/Apogee/camera/NAD674R.txt
+-- Up-to-date: /etc/Apogee/camera/NAD694R.txt
+-- Up-to-date: /etc/Apogee/camera/NAD814R.txt
+-- Up-to-date: /etc/Apogee/camera/NCG16.txt
+-- Up-to-date: /etc/Apogee/camera/NCG16070.txt
+-- Up-to-date: /etc/Apogee/camera/NCG16070B.txt
+-- Up-to-date: /etc/Apogee/camera/NCG16070S.txt
+-- Up-to-date: /etc/Apogee/camera/NCG16M.txt
+-- Up-to-date: /etc/Apogee/camera/NCG285.txt
+-- Up-to-date: /etc/Apogee/camera/NCG285A.txt
+-- Up-to-date: /etc/Apogee/camera/NCG285S.txt
+-- Up-to-date: /etc/Apogee/camera/NCG285SA.txt
+-- Up-to-date: /etc/Apogee/camera/NCG42.txt
+-- Up-to-date: /etc/Apogee/camera/NCG42S.txt
+-- Up-to-date: /etc/Apogee/camera/NCG47.txt
+-- Up-to-date: /etc/Apogee/camera/NCG6.txt
+-- Up-to-date: /etc/Apogee/camera/NCG77.txt
+-- Up-to-date: /etc/Apogee/camera/NCG77REGA.txt
+-- Up-to-date: /etc/Apogee/camera/NCG77S.txt
+-- Up-to-date: /etc/Apogee/camera/NCG77SREGA.txt
+-- Up-to-date: /etc/Apogee/camera/NCG77V.txt
+-- Up-to-date: /etc/Apogee/camera/NCG77VREGA.txt
+-- Up-to-date: /etc/Apogee/camera/NCG8050S.txt
+-- Up-to-date: /etc/Apogee/camera/NCG8300.txt
+-- Up-to-date: /etc/Apogee/camera/NCG8300S.txt
+-- Up-to-date: /etc/Apogee/camera/NCG9S.txt
+-- Up-to-date: /etc/Apogee/camera/NF10140S.txt
+-- Up-to-date: /etc/Apogee/camera/NF1109R.txt
+-- Up-to-date: /etc/Apogee/camera/NF16000R.txt
+-- Up-to-date: /etc/Apogee/camera/NF16000R2.txt
+-- Up-to-date: /etc/Apogee/camera/NF16000S.txt
+-- Up-to-date: /etc/Apogee/camera/NF29050R.txt
+-- Up-to-date: /etc/Apogee/camera/NF30R.txt
+-- Up-to-date: /etc/Apogee/camera/NF30S.txt
+-- Up-to-date: /etc/Apogee/camera/NF32R.txt
+-- Up-to-date: /etc/Apogee/camera/NF32S.txt
+-- Up-to-date: /etc/Apogee/camera/NF4000R.txt
+-- Up-to-date: /etc/Apogee/camera/NF4000S.txt
+-- Up-to-date: /etc/Apogee/camera/NF42R.txt
+-- Up-to-date: /etc/Apogee/camera/NF47R.txt
+-- Up-to-date: /etc/Apogee/camera/NF47R12.txt
+-- Up-to-date: /etc/Apogee/camera/NF47S12.txt
+-- Up-to-date: /etc/Apogee/camera/NF50100RD.txt
+-- Up-to-date: /etc/Apogee/camera/NF50100S.txt
+-- Up-to-date: /etc/Apogee/camera/NF6R.txt
+-- Up-to-date: /etc/Apogee/camera/NF6RA.txt
+-- Up-to-date: /etc/Apogee/camera/NF6S.txt
+-- Up-to-date: /etc/Apogee/camera/NF77R.txt
+-- Up-to-date: /etc/Apogee/camera/NF77S.txt
+-- Up-to-date: /etc/Apogee/camera/NF8300R.txt
+-- Up-to-date: /etc/Apogee/camera/NF8300S.txt
+-- Up-to-date: /etc/Apogee/camera/NF9R.txt
+-- Up-to-date: /etc/Apogee/camera/NF9S.txt
+-- Up-to-date: /etc/Apogee/camera/NR230.txt
+-- Up-to-date: /etc/Apogee/camera/NR230b.txt
+-- Up-to-date: /etc/Apogee/camera/NR3041.txt
+-- Up-to-date: /etc/Apogee/camera/NS230.txt
+-- Up-to-date: /etc/Apogee/camera/NS230b.txt
+-- Up-to-date: /etc/Apogee/camera/NS3041.txt
+-- Up-to-date: /etc/Apogee/camera/NoOpH.txt
+-- Up-to-date: /etc/Apogee/camera/NoOpV.txt
+-- Up-to-date: /etc/Apogee/camera/VF50100.txt
+-- Up-to-date: /etc/Apogee/camera/XAV1.txt
+-- Up-to-date: /etc/Apogee/camera/apnmatrix.txt
+-- Up-to-date: /lib/udev/rules.d/99-apogee.rules
+-- Up-to-date: /lib/udev/rules.d/99-asi.rules
+-- Up-to-date: /usr/include/libasi/ASICamera2.h
+-- Up-to-date: /usr/include/libasi/EFW_filter.h
+-- Up-to-date: /usr/include/libasi/USB2ST4_Conv.h
+-- Up-to-date: /usr/include/libasi/EAF_focuser.h
+-- Up-to-date: /usr/include/libasi/CAA_API.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libASICamera2.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libASICamera2.so.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libASICamera2.so.1.41
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libEFWFilter.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libEFWFilter.so.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libEFWFilter.so.1.7.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libUSB2ST4Conv.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libUSB2ST4Conv.so.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libUSB2ST4Conv.so.1.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libEAFFocuser.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libEAFFocuser.so.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libEAFFocuser.so.1.7.7
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libCAARotator.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libCAARotator.so.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libCAARotator.so.1.5.9
+-- Up-to-date: /lib/udev/rules.d/99-atik.rules
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libatikcameras.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libatikcameras.so.2
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libatikcameras.so.2.2.22
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflycapture.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflycapture.so.2
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflycapture.so.2.13.3.31
+-- Up-to-date: /usr/include/libatik/AtikCameras.h
+-- Up-to-date: /usr/include/libatik/AtikDefs.h
+-- Up-to-date: /usr/include/libfishcamp/fishcamp.h
+-- Up-to-date: /usr/include/libfishcamp/fishcamp_common.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libfishcamp.so.1.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libfishcamp.so.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libfishcamp.so
+-- Up-to-date: /lib/firmware/gdr_usb.hex
+-- Up-to-date: /lib/firmware/Guider_mono_rev16_intel.srec
+-- Up-to-date: /lib/udev/rules.d/99-fishcamp.rules
+-- Up-to-date: /usr/include/libfli.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libfli.so.2.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libfli.so.2
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libfli.so
+-- Up-to-date: /lib/udev/rules.d/99-fli.rules
+-- Up-to-date: /usr/include/libflipro.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflipro.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflipro.so.2
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflipro.so.2.1.4
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflialgo.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflialgo.so.2
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libflialgo.so.2.1.4
+-- Up-to-date: /lib/udev/rules.d/99-miccd.rules
+-- Up-to-date: /usr/include/libmicam/gxccd.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libgxccd.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libgxccd.so.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libgxccd.so.0.12.1
+-- Up-to-date: /lib/udev/rules.d/99-inovaplx.rules
+-- Up-to-date: /usr/include/inovasdk/inovasdk.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libinovasdk.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libinovasdk.so.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libinovasdk.so.1.3.6
+-- Up-to-date: /lib/udev/rules.d/85-qhyccd.rules
+-- Up-to-date: /usr/include/libqhy/qhyccd.h
+-- Up-to-date: /usr/include/libqhy/qhyccderr.h
+-- Up-to-date: /usr/include/libqhy/qhyccdcamdef.h
+-- Up-to-date: /usr/include/libqhy/qhyccdstruct.h
+-- Up-to-date: /lib/firmware/qhy/IC16200A.HEX
+-- Up-to-date: /lib/firmware/qhy/IC16803.HEX
+-- Up-to-date: /lib/firmware/qhy/IC8300.HEX
+-- Up-to-date: /lib/firmware/qhy/IC90A.HEX
+-- Up-to-date: /lib/firmware/qhy/IMG0H.HEX
+-- Up-to-date: /lib/firmware/qhy/IMG2P.HEX
+-- Up-to-date: /lib/firmware/qhy/IMG2S.HEX
+-- Up-to-date: /lib/firmware/qhy/IMG50.HEX
+-- Up-to-date: /lib/firmware/qhy/Origin678C.img
+-- Up-to-date: /lib/firmware/qhy/POLEMASTER.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY0204.img
+-- Up-to-date: /lib/firmware/qhy/QHY09000A.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY10.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY10768.img
+-- Up-to-date: /lib/firmware/qhy/QHY11.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY12.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY1253.img
+-- Up-to-date: /lib/firmware/qhy/QHY128.img
+-- Up-to-date: /lib/firmware/qhy/QHY128PRO.img
+-- Up-to-date: /lib/firmware/qhy/QHY15.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY16.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY16000.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY160002AD.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY16200A.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY163.img
+-- Up-to-date: /lib/firmware/qhy/QHY165.img
+-- Up-to-date: /lib/firmware/qhy/QHY168.img
+-- Up-to-date: /lib/firmware/qhy/QHY16803A.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY174.img
+-- Up-to-date: /lib/firmware/qhy/QHY178.img
+-- Up-to-date: /lib/firmware/qhy/QHY183.img
+-- Up-to-date: /lib/firmware/qhy/QHY183A.img
+-- Up-to-date: /lib/firmware/qhy/QHY1920.img
+-- Up-to-date: /lib/firmware/qhy/QHY2.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY20.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY2020.img
+-- Up-to-date: /lib/firmware/qhy/QHY21.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY22.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY224.img
+-- Up-to-date: /lib/firmware/qhy/QHY23.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY247.img
+-- Up-to-date: /lib/firmware/qhy/QHY268.img
+-- Up-to-date: /lib/firmware/qhy/QHY26800A.img
+-- Up-to-date: /lib/firmware/qhy/QHY27.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY28.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY29.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY290.img
+-- Up-to-date: /lib/firmware/qhy/QHY294.img
+-- Up-to-date: /lib/firmware/qhy/QHY294PRO.img
+-- Up-to-date: /lib/firmware/qhy/QHY2E.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY2PRO.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY342.img
+-- Up-to-date: /lib/firmware/qhy/QHY342PRO.img
+-- Up-to-date: /lib/firmware/qhy/QHY367.img
+-- Up-to-date: /lib/firmware/qhy/QHY367PRO.img
+-- Up-to-date: /lib/firmware/qhy/QHY4040.img
+-- Up-to-date: /lib/firmware/qhy/QHY4040PRO.img
+-- Up-to-date: /lib/firmware/qhy/QHY410.img
+-- Up-to-date: /lib/firmware/qhy/QHY411.img
+-- Up-to-date: /lib/firmware/qhy/QHY411ERIS.img
+-- Up-to-date: /lib/firmware/qhy/QHY42.img
+-- Up-to-date: /lib/firmware/qhy/QHY42PRO.img
+-- Up-to-date: /lib/firmware/qhy/QHY432.img
+-- Up-to-date: /lib/firmware/qhy/QHY461.img
+-- Up-to-date: /lib/firmware/qhy/QHY487.img
+-- Up-to-date: /lib/firmware/qhy/QHY5.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY530.img
+-- Up-to-date: /lib/firmware/qhy/QHY533.img
+-- Up-to-date: /lib/firmware/qhy/QHY550.img
+-- Up-to-date: /lib/firmware/qhy/QHY585.img
+-- Up-to-date: /lib/firmware/qhy/QHY5II.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY5III174.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III178.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III185.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III200.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III224.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III290.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III334.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III415.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III462.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III482.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III485.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III568.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III585.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III678.img
+-- Up-to-date: /lib/firmware/qhy/QHY5III715.img
+-- Up-to-date: /lib/firmware/qhy/QHY5LOADER.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY6.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY600.img
+-- Up-to-date: /lib/firmware/qhy/QHY6060.img
+-- Up-to-date: /lib/firmware/qhy/QHY6060PRO.img
+-- Up-to-date: /lib/firmware/qhy/QHY661.img
+-- Up-to-date: /lib/firmware/qhy/QHY695A.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY7.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY8.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY811.img
+-- Up-to-date: /lib/firmware/qhy/QHY814A.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY8L.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY8M.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY8PRO.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY90A.HEX
+-- Up-to-date: /lib/firmware/qhy/QHY9701.img
+-- Up-to-date: /lib/firmware/qhy/QHY990.img
+-- Up-to-date: /lib/firmware/qhy/QHY991.img
+-- Up-to-date: /lib/firmware/qhy/QHY992.img
+-- Up-to-date: /lib/firmware/qhy/QHY9S.HEX
+-- Up-to-date: /lib/firmware/qhy/miniCam5.HEX
+-- Up-to-date: /lib/firmware/qhy/miniCam8.img
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libqhyccd.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libqhyccd.so.20
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libqhyccd.so.26.2.1
+-- Up-to-date: /usr/include/qsiapi.h
+-- Up-to-date: /usr/include/QSIError.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libqsiapi.so.7.6.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libqsiapi.so.7
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libqsiapi.so
+-- Up-to-date: /usr/bin/qsiapitest
+-- Up-to-date: /usr/bin/qsiapidemo
+-- Up-to-date: /lib/udev/rules.d/51-sbig-debian.rules
+-- Up-to-date: /usr/include/libsbig/sbigudrv.h
+-- Up-to-date: /lib/firmware/sbigucam.hex
+-- Up-to-date: /lib/firmware/sbiglcam.hex
+-- Up-to-date: /lib/firmware/sbigfcam.hex
+-- Up-to-date: /lib/firmware/sbigpcam.hex
+-- Up-to-date: /lib/firmware/stfga.bin
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libsbig.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libsbig.so.4
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libsbig.so.4.9.9
+-- Up-to-date: /lib/udev/rules.d/99-pentax.rules
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_event_listener.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/shutter_speed.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/still_image_capture_format.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_time.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/iso.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_image_list.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_device.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/white_balance.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/error.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/capture_setting.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/hyper_operation_enable.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_storage.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/storage_writing.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/point.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/still_image_quality.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/response.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/f_number.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/export.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_image.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/exposure_compensation.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_device_detector.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_device_setting.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/live_view_specification.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/exposure_program.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/version.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/user_capture_settings_mode.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/capture_method.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/capture.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_status.hpp
+-- Up-to-date: /usr/include/libricohcamerasdk/ricoh_camera_sdk/camera_storage_list.hpp
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libRicohCameraSDKCpp.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libRicohCameraSDKCpp.so.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libRicohCameraSDKCpp.so.1.1.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmtpricoh.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmtpricoh.so.9
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmtpricoh.so.9.3.0
+-- Up-to-date: /lib/udev/rules.d/95-pentax.rules
+-- Up-to-date: /lib/udev/rules.d/95-samsung.rules
+-- Up-to-date: /usr/share/pktriggercord/pentax_settings.json
+-- Up-to-date: /usr/include/libpktriggercord
+-- Up-to-date: /usr/include/libpktriggercord/pslr_lens.h
+-- Up-to-date: /usr/include/libpktriggercord/pslr_utils.h
+-- Up-to-date: /usr/include/libpktriggercord/pktriggercord-servermode.h
+-- Up-to-date: /usr/include/libpktriggercord/pslr_log.h
+-- Up-to-date: /usr/include/libpktriggercord/pslr.h
+-- Up-to-date: /usr/include/libpktriggercord/pslr_scsi.h
+-- Up-to-date: /usr/include/libpktriggercord/src
+-- Up-to-date: /usr/include/libpktriggercord/src/external
+-- Up-to-date: /usr/include/libpktriggercord/src/external/js0n
+-- Up-to-date: /usr/include/libpktriggercord/src/external/js0n/js0n.h
+-- Up-to-date: /usr/include/libpktriggercord/pslr_enum.h
+-- Up-to-date: /usr/include/libpktriggercord/pslr_model.h
+-- Up-to-date: /usr/include/libpktriggercord
+-- Up-to-date: /usr/include/libpktriggercord/libpktriggercord.h
+-- Installing: /usr/lib/x86_64-linux-gnu/libpktriggercord.so.0.85.03
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libpktriggercord.so.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libpktriggercord.so
+-- Up-to-date: /lib/udev/rules.d/99-toupcam.rules
+-- Up-to-date: /usr/include/libtoupcam/toupcam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libtoupcam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libtoupcam.so.59
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libtoupcam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-altaircam.rules
+-- Up-to-date: /usr/include/libaltaircam/altaircam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libaltaircam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libaltaircam.so.59
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libaltaircam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-bressercam.rules
+-- Up-to-date: /usr/include/libbressercam/bressercam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libbressercam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libbressercam.so.59
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libbressercam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-mallincam.rules
+-- Up-to-date: /usr/include/libmallincam/mallincam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmallincam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmallincam.so.59
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmallincam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-meadecam.rules
+-- Up-to-date: /usr/include/libmeadecam/meadecam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmeadecam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmeadecam.so.59
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libmeadecam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-nncam.rules
+-- Up-to-date: /usr/include/libnncam/nncam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libnncam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libnncam.so.59
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libnncam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-ogmacam.rules
+-- Up-to-date: /usr/include/libogmacam/ogmacam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libogmacam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libogmacam.so.59
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libogmacam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-omegonprocam.rules
+-- Up-to-date: /usr/include/libomegonprocam/omegonprocam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libomegonprocam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libomegonprocam.so.59
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libomegonprocam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-starshootg.rules
+-- Up-to-date: /usr/include/libstarshootg/starshootg.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libstarshootg.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libstarshootg.so.59
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libstarshootg.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-tscam.rules
+-- Up-to-date: /usr/include/libtscam/tscam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libtscam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libtscam.so.59
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libtscam.so.59.30594
+-- Up-to-date: /lib/udev/rules.d/99-svbonycam.rules
+-- Up-to-date: /usr/include/libsvbonycam/svbonycam.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libsvbonycam.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libsvbonycam.so.57
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libsvbonycam.so.57.27348
+-- Up-to-date: /lib/udev/rules.d/90-svbonyusb.rules
+-- Up-to-date: /usr/include/libsvbony/SVBCameraSDK.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libSVBCameraSDK.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libSVBCameraSDK.so.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libSVBCameraSDK.so.1.13.4
+-- Up-to-date: /lib/udev/rules.d/99-player_one_astronomy.rules
+-- Up-to-date: /usr/include/libplayerone/PlayerOneCamera.h
+-- Up-to-date: /usr/include/libplayerone/PlayerOnePW.h
+-- Up-to-date: /usr/include/libplayerone/ConvFuncs.h
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libPlayerOneCamera.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libPlayerOneCamera.so.3
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libPlayerOneCamera.so.3.10.0
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libPlayerOnePW.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libPlayerOnePW.so.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/libPlayerOnePW.so.1.2.3
+-- Up-to-date: /lib/udev/rules.d/99-astroasis.rules
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/liboasisfocuser.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/liboasisfocuser.so.2
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/liboasisfocuser.so.2.0.2
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/liboasisfilterwheel.so
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/liboasisfilterwheel.so.1
+-- Up-to-date: /usr/lib/x86_64-linux-gnu/liboasisfilterwheel.so.1.2.1
+-- Up-to-date: /usr/include/libastroasis/AOFocus.h
+-- Up-to-date: /usr/include/libastroasis/OasisFilterWheel.h

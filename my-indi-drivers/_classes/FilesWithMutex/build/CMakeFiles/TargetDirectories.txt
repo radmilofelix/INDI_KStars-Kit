@@ -1,0 +1,3 @@
+/home/pi/ObservatorySources/_classes/FilesWithMutex/build/CMakeFiles/FilesWithMutex.dir
+/home/pi/ObservatorySources/_classes/FilesWithMutex/build/CMakeFiles/edit_cache.dir
+/home/pi/ObservatorySources/_classes/FilesWithMutex/build/CMakeFiles/rebuild_cache.dir

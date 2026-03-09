@@ -1,0 +1,2 @@
+/usr/bin/indi_rormag_ip
+/usr/share/indi/indi_rormag_ip.xml

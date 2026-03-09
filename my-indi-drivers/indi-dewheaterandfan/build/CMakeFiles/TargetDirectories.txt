@@ -1,0 +1,7 @@
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-dewheaterandfan/build/CMakeFiles/indi_dewheaterandfan.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-dewheaterandfan/build/CMakeFiles/edit_cache.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-dewheaterandfan/build/CMakeFiles/rebuild_cache.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-dewheaterandfan/build/CMakeFiles/list_install_components.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-dewheaterandfan/build/CMakeFiles/install.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-dewheaterandfan/build/CMakeFiles/install/local.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-dewheaterandfan/build/CMakeFiles/install/strip.dir

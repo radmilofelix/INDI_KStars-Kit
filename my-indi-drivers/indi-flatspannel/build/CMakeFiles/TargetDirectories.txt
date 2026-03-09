@@ -1,0 +1,7 @@
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-flatspannel/build/CMakeFiles/indi_flatspannel.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-flatspannel/build/CMakeFiles/edit_cache.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-flatspannel/build/CMakeFiles/rebuild_cache.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-flatspannel/build/CMakeFiles/list_install_components.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-flatspannel/build/CMakeFiles/install.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-flatspannel/build/CMakeFiles/install/local.dir
+/add1/install/INDI_KStars-Kit/my-indi-drivers/indi-flatspannel/build/CMakeFiles/install/strip.dir

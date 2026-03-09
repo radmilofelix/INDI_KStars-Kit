@@ -1,0 +1,2 @@
+/usr/bin/indi_rorweather_ip
+/usr/share/indi/indi_rorweather_ip.xml

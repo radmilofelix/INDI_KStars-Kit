@@ -1,0 +1,889 @@
+Work folder(indilib setup): /home/radmilo/projects/INDI_KStars-Kit
+
+
+
+###############################################################
+############### Build INDI 3rd party drivers ##################
+###############################################################
+-- Found FFMPEG: /usr/lib/x86_64-linux-gnu/libavcodec.so;/usr/lib/x86_64-linux-gnu/libavdevice.so;/usr/lib/x86_64-linux-gnu/libavformat.so;/usr/lib/x86_64-linux-gnu/libavutil.so;/usr/lib/x86_64-linux-gnu/libswscale.so, /usr/include/x86_64-linux-gnu
+-- Since FFMPEG was found, INDI Webcam Driver can be built
+-- Since an up to date nutclient was not found, INDI NUT Driver will not be built
+-- Found Libusb-1.0 via pkg-config: Includes=/usr/include/libusb-1.0 Libraries=usb-1.0
+-- Checking for module 'libusbp-1'
+--   Found libusbp-1, version 1.3.1
+-- Using LIBUSBP-1 (libusbp) (from system or bundled source).
+-- USB1 found, but LIBUSBP-1 already configured. Skipping USB1 to avoid conflicts.
+-- LibBluetooth not found. Bluetooth support will be disabled.
+-- Found bundled pololu-tic-software at '/home/radmilo/projects/INDI_KStars-Kit/IndiSources/indi-3rdparty/indi-ticfocuser-ng/pololu-tic-software'. Attempting to build and link.
+-- Checking for module 'yaml'
+--   Package 'yaml', required by 'virtual:world', not found
+-- System YAML (yaml) not found. Building bundled libyaml.
+-- Could NOT find XKB (missing:  XKB_LIBRARY XKB_INCLUDE_DIR) (Required is at least version "0.5.0")
+-- Qt6 (version 6.8.2) found.
+-- Successfully configured using bundled pololu-tic-software library 'lib'.
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Building unit tests
+-- GTEST_BOTH_LIBRARIES GTest::gtest;GTest::gtest_main
+-- GTEST_MAIN_LIBRARIES GTest::gtest_main
+-- GTEST_LIBRARIES GTest::gtest
+-- GTEST_INCLUDE_DIRS 
+-- GMOCK_LIBRARIES /usr/lib/x86_64-linux-gnu/libgmock.a
+-- GMOCK_INCLUDE_DIRS /usr/include
+-- Found INDI: /usr/lib/x86_64-linux-gnu/libindidriver.so;/usr/lib/x86_64-linux-gnu/libindilx200.so (found version "2.1.9") 
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found INDI: /usr/lib/x86_64-linux-gnu/libindidriver.so;/usr/lib/x86_64-linux-gnu/libindiAlignmentDriver.so (found version "2.1.9") 
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Using indi bundled hid library
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found CameraTemperature in libraw_metadata_common_t 'libraw/libraw_types.h'
+-- Found SensorTemperature in libraw_metadata_common_t 'libraw/libraw_types.h'
+-- Found QSI: /usr/lib/x86_64-linux-gnu/libqsiapi.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libqsiapi: /usr/lib/x86_64-linux-gnu/libqsiapi.so
+-- Found SBIG: /usr/lib/x86_64-linux-gnu/libsbig.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libsbig: /usr/lib/x86_64-linux-gnu/libsbig.so
+-- Found Atik Library: /usr/lib/x86_64-linux-gnu/libatikcameras.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libatik: /usr/lib/x86_64-linux-gnu/libatikcameras.so
+-- Found Toupcam: /usr/lib/x86_64-linux-gnu/libtoupcam.so
+-- Found Altaircam: /usr/lib/x86_64-linux-gnu/libaltaircam.so
+-- Found Bressercam: /usr/lib/x86_64-linux-gnu/libbressercam.so
+-- Found MALLINCAM: /usr/lib/x86_64-linux-gnu/libmallincam.so
+-- Found MeadeCam: /usr/lib/x86_64-linux-gnu/libmeadecam.so
+-- Found Nncam: /usr/lib/x86_64-linux-gnu/libnncam.so
+-- Found Ogmacam: /usr/lib/x86_64-linux-gnu/libogmacam.so
+-- Found OmegonProCam: /usr/lib/x86_64-linux-gnu/libomegonprocam.so
+-- Found StarshootG: /usr/lib/x86_64-linux-gnu/libstarshootg.so
+-- Found Tscam: /usr/lib/x86_64-linux-gnu/libtscam.so
+-- Found Svbonycam: /usr/lib/x86_64-linux-gnu/libsvbonycam.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libsbig: /usr/lib/x86_64-linux-gnu/libtoupcam.so
+-- Found libaltaircam: /usr/lib/x86_64-linux-gnu/libaltaircam.so
+-- Found libbressercam: /usr/lib/x86_64-linux-gnu/libbressercam.so
+-- Found libogmacam: /usr/lib/x86_64-linux-gnu/libogmacam.so
+-- Found libtscam: /usr/lib/x86_64-linux-gnu/libtscam.so
+-- Found libsvbonycam: /usr/lib/x86_64-linux-gnu/libsvbonycam.so
+-- Found libstarshootg: /usr/lib/x86_64-linux-gnu/libstarshootg.so
+-- Found libnncam: /usr/lib/x86_64-linux-gnu/libnncam.so
+-- Found libmallincam: /usr/lib/x86_64-linux-gnu/libmallincam.so
+-- Found libomegonprocam: /usr/lib/x86_64-linux-gnu/libomegonprocam.so
+-- Found libmeadecam: /usr/lib/x86_64-linux-gnu/libmeadecam.so
+-- Found INOVASDK: /usr/lib/x86_64-linux-gnu/libinovasdk.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libinovasdk: /usr/lib/x86_64-linux-gnu/libinovasdk.so
+-- Found FLI: /usr/lib/x86_64-linux-gnu/libfli.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libfli: /usr/lib/x86_64-linux-gnu/libfli.so
+-- Found FLIPRO: /usr/lib/x86_64-linux-gnu/libflipro.so
+-- GLIBC version 2.41 found. Building Kepler camera.
+-- Found APOGEE: /usr/lib/x86_64-linux-gnu/libapogee.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libapogee: /usr/lib/x86_64-linux-gnu/libapogee.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libdc1394: /usr/lib/x86_64-linux-gnu/libdc1394.so
+-- Found MI Library: /usr/lib/x86_64-linux-gnu/libgxccd.so
+-- Found libmicam: /usr/lib/x86_64-linux-gnu/libgxccd.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found FISHCAMP: /usr/lib/x86_64-linux-gnu/libfishcamp.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found FISHCAMP: /usr/lib/x86_64-linux-gnu/libfishcamp.so
+-- Found ASI: /usr/lib/x86_64-linux-gnu/libASICamera2.so;/usr/lib/x86_64-linux-gnu/libEFWFilter.so;/usr/lib/x86_64-linux-gnu/libUSB2ST4Conv.so;/usr/lib/x86_64-linux-gnu/libEAFFocuser.so;/usr/lib/x86_64-linux-gnu/libCAARotator.so
+-- Found libasi: /usr/lib/x86_64-linux-gnu/libASICamera2.so;/usr/lib/x86_64-linux-gnu/libEFWFilter.so;/usr/lib/x86_64-linux-gnu/libUSB2ST4Conv.so;/usr/lib/x86_64-linux-gnu/libEAFFocuser.so;/usr/lib/x86_64-linux-gnu/libCAARotator.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Using indi bundled hid library
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found QHY: /usr/lib/x86_64-linux-gnu/libqhyccd.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libqhyccd: /usr/lib/x86_64-linux-gnu/libqhyccd.so
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Using indi bundled json library
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found libgps: /usr/lib/x86_64-linux-gnu/libgps.so
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libftdi1: /usr/lib/x86_64-linux-gnu/libftdi1.so
+-- Found LIMESUITE: /usr/lib/x86_64-linux-gnu/libLimeSuite.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found LIMESUITE: /usr/lib/x86_64-linux-gnu/libLimeSuite.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Using indi bundled json library
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libftdi1: /usr/lib/x86_64-linux-gnu/libftdi1.so
+-- Found INDI: /usr/lib/x86_64-linux-gnu/libindidriver.so;/usr/lib/x86_64-linux-gnu/libindilx200.so (found version "2.1.9") 
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found INDI: /usr/lib/x86_64-linux-gnu/libindidriver.so;/usr/lib/x86_64-linux-gnu/libindiAlignmentDriver.so (found version "2.1.9") 
+-- Found libzmq: /usr/lib/x86_64-linux-gnu/libzmq.so
+-- Using indi bundled json library
+-- Found PENTAX libraries: /usr/lib/x86_64-linux-gnu/libRicohCameraSDKCpp.so;/usr/lib/x86_64-linux-gnu/libmtpricoh.so.9.3.0;/usr/lib/x86_64-linux-gnu/libpktriggercord.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found PENTAX libraries: /usr/lib/x86_64-linux-gnu/libRicohCameraSDKCpp.so;/usr/lib/x86_64-linux-gnu/libmtpricoh.so.9.3.0;/usr/lib/x86_64-linux-gnu/libpktriggercord.so
+-- Found SVBONY libraries : /usr/lib/x86_64-linux-gnu/libSVBCameraSDK.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found libsvbony: /usr/lib/x86_64-linux-gnu/libSVBCameraSDK.so
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found PLAYERONE: /usr/lib/x86_64-linux-gnu/libPlayerOneCamera.so;/usr/lib/x86_64-linux-gnu/libPlayerOnePW.so
+-- Found libplayerone: /usr/lib/x86_64-linux-gnu/libPlayerOneCamera.so;/usr/lib/x86_64-linux-gnu/libPlayerOnePW.so
+-- Found CFITSIO: /usr/lib/x86_64-linux-gnu/libcfitsio.so
+-- Found Astroasis Library: /usr/lib/x86_64-linux-gnu/liboasisfocuser.so;/usr/lib/x86_64-linux-gnu/liboasisfilterwheel.so
+-- Found libastroasis: /usr/lib/x86_64-linux-gnu/liboasisfocuser.so;/usr/lib/x86_64-linux-gnu/liboasisfilterwheel.so
+-- Using indi bundled hid library
+-- Found libnova: /usr/lib/x86_64-linux-gnu/libnova.so
+-- ############################################################################
+-- ######### All libraries are found. Building all INDI 3rd party drivers now.
+-- ############################################################################
+-- Configuring done (1.2s)
+-- Generating done (0.4s)
+-- Build files have been written to: /home/radmilo/projects/INDI_KStars-Kit/IndiSources/build/indi-3rdparty
+[  1%] Built target indi_lx200aok
+[  1%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/bootloader/CMakeFiles/bootloader.dir/bootloader.cpp.o
+[  2%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_baud_rate.c.o
+[ 11%] Built target indi_eqmod_telescope
+[ 11%] Built target indi_staradventurergti_telescope
+[ 11%] Built target indi_azgti_telescope
+[ 14%] Built target indi_staradventurer2i_telescope
+[ 17%] Built target test_eqmod
+[ 17%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_current_limit.c.o
+[ 17%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/bootloader/CMakeFiles/bootloader.dir/bootloader_data.cpp.o
+[ 17%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/bootloader/CMakeFiles/bootloader.dir/firmware_archive.cpp.o
+[ 18%] Built target indi_starbook_telescope
+[ 18%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_device.c.o
+[ 19%] Built target indi_sx_ccd
+[ 20%] Built target indi_starbook_ten
+[ 21%] Built target indi_sx_wheel
+[ 21%] Built target indi_sx_ao
+[ 21%] Built target sx_ccd_test
+[ 21%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/bootloader/CMakeFiles/bootloader.dir/libtinyxml2/tinyxml2.cpp.o
+[ 21%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_get_settings.c.o
+[ 21%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_set_settings.c.o
+[ 21%] Built target indi_maxdomeii
+[ 21%] Built target indi_nexdome
+[ 21%] Built target indi_talon6
+[ 21%] Built target indi_rolloffino
+[ 22%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_error.c.o
+[ 22%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_handle.c.o
+[ 22%] Built target indi_shelyakeshel_spectrograph
+[ 23%] Built target indi_shelyakspox_spectrograph
+[ 24%] Built target indi_aagcloudwatcher_ng
+[ 24%] Built target aagcloudwatcher_test_ng
+[ 24%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_names.c.o
+[ 25%] Built target indi_celestron_aux
+[ 25%] Built target gphoto_camera_test
+[ 26%] Built target indi_gphoto_ccd
+[ 26%] Building CXX object indi-qsi/CMakeFiles/indi_qsi_ccd.dir/qsi_ccd.cpp.o
+[ 27%] Building CXX object indi-atik/CMakeFiles/indi_atik_ccd.dir/atik_ccd.cpp.o
+[ 27%] Building CXX object indi-sbig/CMakeFiles/indi_sbig_ccd.dir/sbig_ccd.cpp.o
+[ 27%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_settings.c.o
+[ 27%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_settings_fix.c.o
+[ 28%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_settings_read_from_string.c.o
+[ 28%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_settings_to_string.c.o
+[ 28%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_string.c.o
+[ 28%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/tic_variables.c.o
+[ 28%] Building C object indi-ticfocuser-ng/pololu_tic_software_build_dir/lib/CMakeFiles/lib.dir/libyaml/yaml.c.o
+[ 28%] Building CXX object indi-atik/CMakeFiles/indi_atik_wheel.dir/atik_wheel.cpp.o
+[ 28%] Building CXX object indi-toupbase/CMakeFiles/indi_toupcam_ccd.dir/indi_toupbase.cpp.o
+[ 28%] Building CXX object indi-toupbase/CMakeFiles/indi_toupcam_ccd.dir/libtoupbase.cpp.o
+[ 28%] Linking CXX static library libbootloader.a
+[ 28%] Built target bootloader
+[ 28%] Building CXX object indi-toupbase/CMakeFiles/indi_toupcam_wheel.dir/indi_toupwheel.cpp.o
+[ 28%] Building CXX object indi-toupbase/CMakeFiles/indi_toupcam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 29%] Linking C shared library ../../../libpololu-tic-1.so
+[ 29%] Built target lib
+[ 29%] Building CXX object indi-toupbase/CMakeFiles/indi_toupcam_focuser.dir/indi_focuser.cpp.o
+[ 29%] Linking CXX executable indi_qsi_ccd
+[ 29%] Linking CXX executable indi_atik_wheel
+[ 29%] Linking CXX executable indi_atik_ccd
+[ 29%] Built target indi_qsi_ccd
+[ 29%] Linking CXX executable indi_sbig_ccd
+[ 29%] Building CXX object indi-toupbase/CMakeFiles/toupcam_test.dir/toupcam_test.cpp.o
+[ 30%] Building CXX object indi-toupbase/CMakeFiles/indi_toupcam_wheel.dir/libtoupbase.cpp.o
+[ 30%] Built target indi_atik_wheel
+[ 30%] Building CXX object indi-toupbase/CMakeFiles/indi_altaircam_ccd.dir/indi_toupbase.cpp.o
+[ 30%] Built target indi_atik_ccd
+[ 30%] Building CXX object indi-toupbase/CMakeFiles/indi_toupcam_focuser.dir/libtoupbase.cpp.o
+[ 30%] Building CXX object indi-toupbase/CMakeFiles/indi_altaircam_wheel.dir/indi_toupwheel.cpp.o
+[ 30%] Built target indi_sbig_ccd
+[ 30%] Building CXX object indi-toupbase/CMakeFiles/indi_altaircam_focuser.dir/indi_focuser.cpp.o
+[ 30%] Linking CXX executable indi_toupcam_wheel
+[ 31%] Linking CXX executable toupcam_test
+[ 32%] Building CXX object indi-toupbase/CMakeFiles/indi_bressercam_ccd.dir/indi_toupbase.cpp.o
+[ 32%] Built target toupcam_test
+[ 32%] Building CXX object indi-toupbase/CMakeFiles/indi_bressercam_wheel.dir/indi_toupwheel.cpp.o
+[ 32%] Built target indi_toupcam_wheel
+[ 32%] Building CXX object indi-toupbase/CMakeFiles/indi_bressercam_wheel.dir/libtoupbase.cpp.o
+[ 33%] Linking CXX executable indi_toupcam_ccd
+[ 33%] Linking CXX executable indi_toupcam_focuser
+[ 33%] Built target indi_toupcam_focuser
+[ 33%] Built target indi_toupcam_ccd
+[ 33%] Building CXX object indi-toupbase/CMakeFiles/indi_altaircam_focuser.dir/libtoupbase.cpp.o
+[ 33%] Building CXX object indi-toupbase/CMakeFiles/indi_bressercam_focuser.dir/indi_focuser.cpp.o
+[ 33%] Building CXX object indi-toupbase/CMakeFiles/indi_altaircam_wheel.dir/libtoupbase.cpp.o
+[ 33%] Building CXX object indi-toupbase/CMakeFiles/indi_ogmacam_ccd.dir/indi_toupbase.cpp.o
+[ 34%] Building CXX object indi-toupbase/CMakeFiles/indi_ogmacam_wheel.dir/indi_toupwheel.cpp.o
+[ 35%] Linking CXX executable indi_altaircam_focuser
+[ 35%] Linking CXX executable indi_altaircam_wheel
+[ 36%] Building CXX object indi-toupbase/CMakeFiles/indi_altaircam_ccd.dir/libtoupbase.cpp.o
+[ 36%] Linking CXX executable indi_bressercam_wheel
+[ 36%] Built target indi_altaircam_focuser
+[ 36%] Building CXX object indi-toupbase/CMakeFiles/indi_ogmacam_focuser.dir/indi_focuser.cpp.o
+[ 36%] Built target indi_altaircam_wheel
+[ 36%] Building CXX object indi-toupbase/CMakeFiles/indi_ogmacam_focuser.dir/libtoupbase.cpp.o
+[ 36%] Built target indi_bressercam_wheel
+[ 36%] Building CXX object indi-toupbase/CMakeFiles/indi_tscam_ccd.dir/indi_toupbase.cpp.o
+[ 36%] Building CXX object indi-toupbase/CMakeFiles/indi_altaircam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 37%] Building CXX object indi-toupbase/CMakeFiles/indi_bressercam_focuser.dir/libtoupbase.cpp.o
+[ 37%] Building CXX object indi-toupbase/CMakeFiles/indi_bressercam_ccd.dir/libtoupbase.cpp.o
+[ 37%] Building CXX object indi-toupbase/CMakeFiles/indi_tscam_ccd.dir/libtoupbase.cpp.o
+[ 37%] Building CXX object indi-toupbase/CMakeFiles/indi_ogmacam_wheel.dir/libtoupbase.cpp.o
+[ 37%] Linking CXX executable indi_bressercam_focuser
+[ 37%] Building CXX object indi-toupbase/CMakeFiles/indi_bressercam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 38%] Building CXX object indi-toupbase/CMakeFiles/indi_tscam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 38%] Linking CXX executable indi_ogmacam_wheel
+[ 38%] Built target indi_bressercam_focuser
+[ 39%] Building CXX object indi-toupbase/CMakeFiles/indi_tscam_wheel.dir/indi_toupwheel.cpp.o
+[ 39%] Linking CXX executable indi_ogmacam_focuser
+[ 39%] Building CXX object indi-toupbase/CMakeFiles/indi_ogmacam_ccd.dir/libtoupbase.cpp.o
+[ 39%] Built target indi_ogmacam_wheel
+[ 39%] Building CXX object indi-toupbase/CMakeFiles/indi_tscam_focuser.dir/indi_focuser.cpp.o
+[ 39%] Built target indi_ogmacam_focuser
+[ 40%] Building CXX object indi-toupbase/CMakeFiles/indi_svbonycam_ccd.dir/indi_toupbase.cpp.o
+[ 40%] Building CXX object indi-toupbase/CMakeFiles/indi_ogmacam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 40%] Building CXX object indi-toupbase/CMakeFiles/indi_tscam_focuser.dir/libtoupbase.cpp.o
+[ 40%] Linking CXX executable indi_altaircam_ccd
+[ 40%] Building CXX object indi-toupbase/CMakeFiles/indi_tscam_wheel.dir/libtoupbase.cpp.o
+[ 40%] Built target indi_altaircam_ccd
+[ 41%] Building CXX object indi-toupbase/CMakeFiles/indi_svbonycam_focuser.dir/indi_focuser.cpp.o
+[ 41%] Building CXX object indi-toupbase/CMakeFiles/indi_svbonycam_wheel.dir/indi_toupwheel.cpp.o
+[ 41%] Linking CXX executable indi_tscam_focuser
+[ 41%] Linking CXX executable indi_bressercam_ccd
+[ 41%] Linking CXX executable indi_tscam_wheel
+[ 41%] Linking CXX executable indi_tscam_ccd
+[ 41%] Built target indi_tscam_focuser
+[ 41%] Building CXX object indi-toupbase/CMakeFiles/indi_starshootg_ccd.dir/indi_toupbase.cpp.o
+[ 41%] Built target indi_bressercam_ccd
+[ 41%] Built target indi_tscam_wheel
+[ 41%] Building CXX object indi-toupbase/CMakeFiles/indi_starshootg_wheel.dir/indi_toupwheel.cpp.o
+[ 41%] Building CXX object indi-toupbase/CMakeFiles/indi_starshootg_wheel.dir/libtoupbase.cpp.o
+[ 41%] Built target indi_tscam_ccd
+[ 42%] Building CXX object indi-toupbase/CMakeFiles/indi_starshootg_focuser.dir/indi_focuser.cpp.o
+[ 42%] Building CXX object indi-toupbase/CMakeFiles/indi_svbonycam_ccd.dir/libtoupbase.cpp.o
+[ 43%] Linking CXX executable indi_ogmacam_ccd
+[ 43%] Building CXX object indi-toupbase/CMakeFiles/indi_svbonycam_wheel.dir/libtoupbase.cpp.o
+[ 43%] Building CXX object indi-toupbase/CMakeFiles/indi_nncam_ccd.dir/indi_toupbase.cpp.o
+[ 43%] Building CXX object indi-toupbase/CMakeFiles/indi_svbonycam_focuser.dir/libtoupbase.cpp.o
+[ 43%] Building CXX object indi-toupbase/CMakeFiles/indi_svbonycam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 43%] Built target indi_ogmacam_ccd
+[ 43%] Building CXX object indi-toupbase/CMakeFiles/indi_nncam_wheel.dir/indi_toupwheel.cpp.o
+[ 44%] Linking CXX executable indi_svbonycam_wheel
+[ 44%] Linking CXX executable indi_svbonycam_focuser
+[ 45%] Linking CXX executable indi_starshootg_wheel
+[ 45%] Building CXX object indi-toupbase/CMakeFiles/indi_starshootg_focuser.dir/libtoupbase.cpp.o
+[ 45%] Built target indi_svbonycam_wheel
+[ 45%] Built target indi_svbonycam_focuser
+[ 46%] Building CXX object indi-toupbase/CMakeFiles/indi_nncam_focuser.dir/indi_focuser.cpp.o
+[ 46%] Building CXX object indi-toupbase/CMakeFiles/indi_nncam_focuser.dir/libtoupbase.cpp.o
+[ 46%] Built target indi_starshootg_wheel
+[ 46%] Building CXX object indi-toupbase/CMakeFiles/indi_mallincam_ccd.dir/indi_toupbase.cpp.o
+[ 46%] Building CXX object indi-toupbase/CMakeFiles/indi_starshootg_ccd.dir/libtoupbase.cpp.o
+[ 46%] Linking CXX executable indi_starshootg_focuser
+[ 46%] Building CXX object indi-toupbase/CMakeFiles/indi_starshootg_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 46%] Building CXX object indi-toupbase/CMakeFiles/indi_nncam_wheel.dir/libtoupbase.cpp.o
+[ 46%] Built target indi_starshootg_focuser
+[ 46%] Building CXX object indi-toupbase/CMakeFiles/indi_mallincam_wheel.dir/indi_toupwheel.cpp.o
+[ 47%] Building CXX object indi-toupbase/CMakeFiles/indi_mallincam_focuser.dir/indi_focuser.cpp.o
+[ 47%] Building CXX object indi-toupbase/CMakeFiles/indi_nncam_ccd.dir/libtoupbase.cpp.o
+[ 48%] Linking CXX executable indi_nncam_wheel
+[ 48%] Linking CXX executable indi_svbonycam_ccd
+[ 48%] Linking CXX executable indi_nncam_focuser
+[ 48%] Building CXX object indi-toupbase/CMakeFiles/indi_nncam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 48%] Built target indi_nncam_wheel
+[ 48%] Building CXX object indi-toupbase/CMakeFiles/indi_omegonprocam_ccd.dir/indi_toupbase.cpp.o
+[ 48%] Built target indi_svbonycam_ccd
+[ 48%] Built target indi_nncam_focuser
+[ 49%] Building CXX object indi-toupbase/CMakeFiles/indi_omegonprocam_wheel.dir/indi_toupwheel.cpp.o
+[ 49%] Building CXX object indi-toupbase/CMakeFiles/indi_omegonprocam_focuser.dir/indi_focuser.cpp.o
+[ 49%] Building CXX object indi-toupbase/CMakeFiles/indi_mallincam_wheel.dir/libtoupbase.cpp.o
+[ 49%] Building CXX object indi-toupbase/CMakeFiles/indi_mallincam_ccd.dir/libtoupbase.cpp.o
+[ 49%] Building CXX object indi-toupbase/CMakeFiles/indi_mallincam_focuser.dir/libtoupbase.cpp.o
+[ 49%] Linking CXX executable indi_starshootg_ccd
+[ 50%] Linking CXX executable indi_mallincam_wheel
+[ 50%] Building CXX object indi-toupbase/CMakeFiles/indi_mallincam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 50%] Linking CXX executable indi_mallincam_focuser
+[ 50%] Built target indi_starshootg_ccd
+[ 50%] Building CXX object indi-toupbase/CMakeFiles/indi_omegonprocam_wheel.dir/libtoupbase.cpp.o
+[ 50%] Building CXX object indi-toupbase/CMakeFiles/omegonprocam_test.dir/omegonprocam_test.cpp.o
+[ 50%] Building CXX object indi-toupbase/CMakeFiles/indi_omegonprocam_focuser.dir/libtoupbase.cpp.o
+[ 50%] Built target indi_mallincam_wheel
+[ 50%] Built target indi_mallincam_focuser
+[ 50%] Building CXX object indi-toupbase/CMakeFiles/indi_meadecam_ccd.dir/indi_toupbase.cpp.o
+[ 50%] Building CXX object indi-toupbase/CMakeFiles/indi_meadecam_wheel.dir/indi_toupwheel.cpp.o
+[ 50%] Linking CXX executable indi_omegonprocam_wheel
+[ 51%] Linking CXX executable omegonprocam_test
+[ 51%] Linking CXX executable indi_nncam_ccd
+[ 51%] Linking CXX executable indi_omegonprocam_focuser
+[ 51%] Building CXX object indi-toupbase/CMakeFiles/indi_omegonprocam_ccd.dir/libtoupbase.cpp.o
+[ 51%] Built target omegonprocam_test
+[ 52%] Building CXX object indi-toupbase/CMakeFiles/indi_omegonprocam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 52%] Built target indi_omegonprocam_wheel
+[ 52%] Building CXX object indi-toupbase/CMakeFiles/indi_meadecam_focuser.dir/indi_focuser.cpp.o
+[ 52%] Built target indi_omegonprocam_focuser
+[ 52%] Building CXX object indi-toupbase/CMakeFiles/indi_meadecam_focuser.dir/libtoupbase.cpp.o
+[ 52%] Built target indi_nncam_ccd
+[ 53%] Built target indi_beefocus
+[ 54%] Building CXX object indi-inovaplx/CMakeFiles/indi_inovaplx_ccd.dir/inovaplx_ccd.cpp.o
+[ 55%] Building CXX object indi-fli/CMakeFiles/indi_fli_focus.dir/fli_pdf.cpp.o
+[ 55%] Building CXX object indi-toupbase/CMakeFiles/indi_meadecam_wheel.dir/libtoupbase.cpp.o
+[ 55%] Building CXX object indi-fli/CMakeFiles/indi_fli_wheel.dir/fli_cfw.cpp.o
+[ 55%] Linking CXX executable indi_mallincam_ccd
+[ 55%] Linking CXX executable indi_meadecam_wheel
+[ 56%] Building CXX object indi-toupbase/CMakeFiles/indi_meadecam_ccd.dir/libtoupbase.cpp.o
+[ 56%] Built target indi_mallincam_ccd
+[ 56%] Building CXX object indi-fli/CMakeFiles/indi_fli_ccd.dir/fli_ccd.cpp.o
+[ 57%] Linking CXX executable indi_meadecam_focuser
+[ 57%] Built target indi_meadecam_wheel
+[ 57%] Linking CXX executable indi_fli_focus
+[ 57%] Building CXX object indi-fli/CMakeFiles/indi_kepler_ccd.dir/kepler.cpp.o
+[ 57%] Linking CXX executable indi_inovaplx_ccd
+[ 57%] Built target indi_meadecam_focuser
+[ 57%] Building CXX object indi-toupbase/CMakeFiles/indi_meadecam_ccd.dir/toupbase_ccd_hotplug_handler.cpp.o
+[ 57%] Building CXX object indi-fli/CMakeFiles/test_kepler_merged.dir/test_kepler_merged.cpp.o
+[ 57%] Linking CXX executable indi_fli_wheel
+[ 57%] Built target indi_fli_focus
+[ 57%] Linking CXX executable indi_omegonprocam_ccd
+[ 57%] Building CXX object indi-apogee/CMakeFiles/indi_apogee_ccd.dir/apogee_ccd.cpp.o
+[ 57%] Built target indi_inovaplx_ccd
+[ 57%] Building CXX object indi-apogee/CMakeFiles/indi_apogee_wheel.dir/apogee_cfw.cpp.o
+[ 57%] Built target indi_fli_wheel
+[ 58%] Built target indi_ffmv_ccd
+[ 58%] Building CXX object indi-mi/CMakeFiles/indi_mi_ccd.dir/mi_ccd.cpp.o
+[ 58%] Linking CXX executable test_kepler_merged
+[ 58%] Built target indi_omegonprocam_ccd
+[ 59%] Building CXX object indi-mi/CMakeFiles/indi_mi_sfw.dir/mi_sfw.cpp.o
+[ 59%] Built target test_kepler_merged
+[ 60%] Built target firmata
+[ 61%] Built target indi_weatherradio
+[ 61%] Built target indi_duino_powerbox
+[ 61%] Building CXX object indi-fishcamp/CMakeFiles/indi_fishcamp_ccd.dir/indi_fishcamp.cpp.o
+[ 61%] Linking CXX executable indi_fli_ccd
+[ 61%] Built target indi_fli_ccd
+[ 62%] Building CXX object indi-asi/CMakeFiles/indi_asi_ccd.dir/asi_base.cpp.o
+[ 62%] Linking CXX executable indi_apogee_wheel
+[ 62%] Linking CXX executable indi_meadecam_ccd
+[ 62%] Linking CXX executable indi_mi_sfw
+[ 62%] Built target indi_apogee_wheel
+[ 63%] Linking CXX executable indi_apogee_ccd
+[ 64%] Building CXX object indi-asi/CMakeFiles/indi_asi_single_ccd.dir/asi_base.cpp.o
+[ 64%] Linking CXX executable indi_kepler_ccd
+[ 64%] Linking CXX executable indi_mi_ccd
+[ 64%] Built target indi_meadecam_ccd
+[ 64%] Built target indi_mi_sfw
+[ 64%] Building CXX object indi-asi/CMakeFiles/indi_asi_wheel.dir/asi_wheel.cpp.o
+[ 65%] Building CXX object indi-asi/CMakeFiles/indi_asi_st4.dir/asi_st4.cpp.o
+[ 65%] Built target indi_apogee_ccd
+[ 66%] Building CXX object indi-asi/CMakeFiles/indi_asi_focuser.dir/asi_focuser.cpp.o
+[ 66%] Linking CXX executable indi_fishcamp_ccd
+[ 66%] Built target indi_kepler_ccd
+[ 66%] Built target indi_mi_ccd
+[ 66%] Building CXX object indi-asi/CMakeFiles/indi_asi_rotator.dir/asi_rotator.cpp.o
+[ 67%] Building CXX object indi-asi/CMakeFiles/asi_camera_test.dir/asi_camera_test.cpp.o
+[ 67%] Built target indi_fishcamp_ccd
+[ 67%] Building CXX object indi-asi/CMakeFiles/asi_multi_camera_test.dir/asi_multi_camera_test.cpp.o
+[ 67%] Linking CXX executable asi_camera_test
+[ 67%] Built target asi_camera_test
+[ 69%] Built target indi_dsi_ccd
+[ 70%] Building CXX object indi-qhy/CMakeFiles/indi_qhy_ccd.dir/qhy_ccd.cpp.o
+[ 70%] Linking CXX executable asi_multi_camera_test
+[ 70%] Linking CXX executable indi_asi_st4
+[ 70%] Building CXX object indi-asi/CMakeFiles/indi_asi_ccd.dir/asi_ccd.cpp.o
+[ 70%] Building CXX object indi-asi/CMakeFiles/indi_asi_wheel.dir/asi_wheel_hotplug_handler.cpp.o
+[ 70%] Built target asi_multi_camera_test
+[ 70%] Building CXX object indi-asi/CMakeFiles/indi_asi_ccd.dir/asi_ccd_hotplug_handler.cpp.o
+[ 70%] Built target indi_asi_st4
+[ 70%] Building CXX object indi-qhy/CMakeFiles/qhy_ccd_test.dir/qhy_ccd_test.cpp.o
+[ 70%] Building CXX object indi-asi/CMakeFiles/indi_asi_single_ccd.dir/asi_single_ccd.cpp.o
+[ 70%] Building CXX object indi-asi/CMakeFiles/indi_asi_focuser.dir/asi_focuser_hotplug_handler.cpp.o
+[ 70%] Linking CXX executable indi_asi_rotator
+[ 70%] Built target indi_asi_rotator
+[ 71%] Building CXX object indi-qhy/CMakeFiles/qhy_video_test.dir/qhy_video_test.cpp.o
+[ 71%] Linking CXX executable qhy_ccd_test
+[ 71%] Built target qhy_ccd_test
+[ 71%] Building CXX object indi-qhy/CMakeFiles/indi_qhy_focuser.dir/qhy_focuser.cpp.o
+[ 71%] Linking CXX executable indi_asi_wheel
+[ 71%] Building CXX object indi-asi/CMakeFiles/indi_asi_single_ccd.dir/usb_utils.cpp.o
+[ 71%] Building CXX object indi-asi/CMakeFiles/indi_asi_ccd.dir/usb_utils.cpp.o
+[ 71%] Linking CXX executable qhy_video_test
+[ 71%] Built target indi_asi_wheel
+[ 72%] Built target indi_gpsd
+[ 72%] Building CXX object indi-qhy/CMakeFiles/indi_qhy_ccd.dir/qhy_ccd_hotplug_handler.cpp.o
+[ 72%] Built target indi_gpsnmea
+[ 73%] Built target indi_rtklib
+[ 73%] Linking CXX executable indi_asi_focuser
+[ 74%] Built target indi_mgenautoguider
+[ 75%] Linking CXX executable indi_limesdr_receiver
+[ 75%] Built target qhy_video_test
+[ 76%] Built target indi_seletek_rotator
+[ 77%] Built target indi_dragonfly_dome
+[ 77%] Built target indi_dragonfly
+[ 78%] Built target indi_armadillo_focus
+[ 78%] Built target indi_beaver_dome
+[ 78%] Built target indi_webcam_ccd
+[ 79%] Built target indi_platypus_focus
+[ 79%] Built target indi_weewx_json
+[ 81%] Built target indi_nightscape_ccd
+[ 83%] Built target nstest
+[ 83%] Built target indi_lx200stargo
+[ 83%] Built target indi_avalonud_telescope
+[ 83%] Built target indi_avalonud_focuser
+[ 83%] Building CXX object indi-pentax/CMakeFiles/indi_pentax.dir/indi_pentax.cpp.o
+[ 84%] Built target indi_avalonud_aux
+[ 84%] Built target indi_limesdr_receiver
+[ 84%] Built target indi_asi_focuser
+[ 84%] Building CXX object indi-svbony/CMakeFiles/indi_svbony_ccd.dir/svbony_base.cpp.o
+[ 86%] Built target indi_bresserexos2
+[ 86%] Built target indi_orion_ssg3_ccd
+[ 86%] Building CXX object indi-pentax/CMakeFiles/indi_pentax.dir/pktriggercord_ccd.cpp.o
+[ 86%] Building CXX object indi-svbony/CMakeFiles/indi_svbony_ccd.dir/svbony_ccd.cpp.o
+[ 86%] Linking CXX executable indi_asi_single_ccd
+[ 86%] Linking CXX executable indi_asi_ccd
+[ 86%] Built target indi_asi_single_ccd
+[ 86%] Building CXX object indi-playerone/CMakeFiles/indi_playerone_ccd.dir/playerone_base.cpp.o
+[ 86%] Built target indi_asi_ccd
+[ 87%] Building CXX object indi-playerone/CMakeFiles/indi_playerone_single_ccd.dir/playerone_base.cpp.o
+[ 87%] Linking CXX executable indi_qhy_ccd
+[ 87%] Building CXX object indi-playerone/CMakeFiles/indi_playerone_single_ccd.dir/playerone_single_ccd.cpp.o
+[ 87%] Building CXX object indi-svbony/CMakeFiles/indi_svbony_ccd.dir/svbony_ccd_hotplug_handler.cpp.o
+[ 87%] Built target indi_qhy_ccd
+[ 87%] Building CXX object indi-playerone/CMakeFiles/indi_playerone_wheel.dir/playerone_wheel.cpp.o
+[ 88%] Building CXX object indi-pentax/CMakeFiles/indi_pentax.dir/gphoto_readimage.cpp.o
+[ 88%] Building CXX object indi-playerone/CMakeFiles/indi_playerone_ccd.dir/playerone_ccd.cpp.o
+[ 88%] Building CXX object indi-playerone/CMakeFiles/indi_playerone_ccd.dir/playerone_ccd_hotplug_handler.cpp.o
+[ 88%] Linking CXX executable indi_playerone_wheel
+[ 88%] Building CXX object indi-pentax/CMakeFiles/indi_pentax.dir/pentax_ccd.cpp.o
+[ 88%] Linking CXX executable indi_playerone_single_ccd
+[ 88%] Built target indi_playerone_wheel
+[ 88%] Building CXX object indi-playerone/CMakeFiles/playerone_camera_test.dir/playerone_camera_test.cpp.o
+[ 88%] Linking CXX executable playerone_camera_test
+[ 88%] Linking CXX executable indi_svbony_ccd
+[ 89%] Linking CXX executable indi_qhy_focuser
+[ 89%] Built target playerone_camera_test
+[ 89%] Building CXX object indi-astroasis/CMakeFiles/indi_oasis_focuser.dir/oasis_focuser.cpp.o
+[ 89%] Built target indi_playerone_single_ccd
+[ 89%] Building CXX object indi-astroasis/CMakeFiles/indi_oasis_filter_wheel.dir/oasis_filter_wheel.cpp.o
+[ 89%] Built target indi_svbony_ccd
+[ 90%] Built target indi_ocs
+[ 90%] Built target indi_qhy_focuser
+[ 90%] Built target indi_openogma
+[ 91%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/cli/CMakeFiles/cli.dir/cli.cpp.o
+[ 92%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/TicFocuser.cpp.o
+[ 92%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/LibUsbConnection.cpp.o
+[ 92%] Linking CXX executable indi_playerone_ccd
+[ 92%] Linking CXX executable indi_oasis_focuser
+[ 92%] Built target indi_playerone_ccd
+[ 92%] Built target gui_autogen_timestamp_deps
+[ 92%] Built target blink_pin
+[ 93%] Built target read_digital_pin
+[ 93%] Built target read_analog_pin
+[ 93%] Built target indi_oasis_focuser
+[ 93%] Built target ask_digital_pin
+[ 93%] Built target read_string
+[ 94%] Built target ask_analog_pin
+[ 95%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/PololuUsbConnection.cpp.o
+[ 96%] Built target indi_duino
+[ 96%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/cli/CMakeFiles/cli.dir/print_status.cpp.o
+[ 96%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/SerialConnection.cpp.o
+[ 96%] Built target gui_autogen
+[ 96%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/UsbConnectionBase.cpp.o
+[ 96%] Building CXX object indi-pentax/CMakeFiles/indi_pentax.dir/pentax_event_handler.cpp.o
+[ 96%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/driver_interfaces/PololuUsbInterface.cpp.o
+[ 96%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o
+[ 96%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/driver_interfaces/TiclibInterface.cpp.o
+[ 96%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/ticlib/StreamSerial.cpp.o
+[ 96%] Linking CXX executable ../../../ticcmd
+[ 96%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/ticlib/TicBase.cpp.o
+[ 97%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/ticlib/TicUsb.cpp.o
+[ 97%] Building CXX object indi-ticfocuser-ng/CMakeFiles/indi_ticfocuser-ng.dir/connection/ticlib/TicDefs.cpp.o
+[ 97%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/main.cpp.o
+[ 97%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/main_controller.cpp.o
+[ 97%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/BallScrollBar.cpp.o
+[ 97%] Built target cli
+[ 97%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/InputWizard.cpp.o
+[ 97%] Linking CXX executable indi_ticfocuser-ng
+[ 97%] Built target indi_ticfocuser-ng
+[ 97%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/bootloader_window.cpp.o
+[ 97%] Linking CXX executable indi_oasis_filter_wheel
+[ 97%] Built target indi_oasis_filter_wheel
+[ 97%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/current_spin_box.cpp.o
+[ 97%] Linking CXX executable indi_pentax
+[ 98%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/elided_label.cpp.o
+[ 98%] Built target indi_pentax
+[ 99%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/main_window.cpp.o
+[ 99%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/qt/time_spin_box.cpp.o
+[ 99%] Building CXX object indi-ticfocuser-ng/pololu_tic_software_build_dir/gui/CMakeFiles/gui.dir/to_string.cpp.o
+[ 99%] Linking CXX executable ../../../ticgui
+[100%] Built target gui
+[  0%] Built target indi_lx200aok
+[  1%] Built target bootloader
+[  4%] Built target indi_azgti_telescope
+[  7%] Built target indi_staradventurergti_telescope
+[ 10%] Built target indi_staradventurer2i_telescope
+[ 13%] Built target indi_eqmod_telescope
+[ 16%] Built target test_eqmod
+[ 17%] Built target indi_starbook_telescope
+[ 21%] Built target lib
+[ 23%] Built target indi_sx_ccd
+[ 23%] Built target sx_ccd_test
+[ 23%] Built target indi_sx_wheel
+[ 23%] Built target indi_sx_ao
+[ 23%] Built target indi_maxdomeii
+[ 24%] Built target indi_starbook_ten
+[ 24%] Built target indi_nexdome
+[ 24%] Built target indi_talon6
+[ 25%] Built target indi_rolloffino
+[ 25%] Built target indi_aagcloudwatcher_ng
+[ 25%] Built target indi_shelyakeshel_spectrograph
+[ 26%] Built target indi_shelyakspox_spectrograph
+[ 26%] Built target aagcloudwatcher_test_ng
+[ 27%] Built target indi_celestron_aux
+[ 28%] Built target indi_gphoto_ccd
+[ 28%] Built target gphoto_camera_test
+[ 29%] Built target indi_atik_ccd
+[ 29%] Built target indi_sbig_ccd
+[ 29%] Built target indi_qsi_ccd
+[ 29%] Built target indi_atik_wheel
+[ 31%] Built target indi_toupcam_wheel
+[ 31%] Built target toupcam_test
+[ 32%] Built target indi_toupcam_ccd
+[ 32%] Built target indi_toupcam_focuser
+[ 34%] Built target indi_altaircam_wheel
+[ 34%] Built target indi_altaircam_focuser
+[ 34%] Built target indi_altaircam_ccd
+[ 35%] Built target indi_bressercam_ccd
+[ 37%] Built target indi_bressercam_wheel
+[ 37%] Built target indi_bressercam_focuser
+[ 37%] Built target indi_ogmacam_ccd
+[ 38%] Built target indi_ogmacam_wheel
+[ 38%] Built target indi_ogmacam_focuser
+[ 39%] Built target indi_tscam_wheel
+[ 40%] Built target indi_tscam_ccd
+[ 42%] Built target indi_starshootg_ccd
+[ 42%] Built target indi_svbonycam_focuser
+[ 42%] Built target indi_tscam_focuser
+[ 42%] Built target indi_svbonycam_wheel
+[ 43%] Built target indi_svbonycam_ccd
+[ 44%] Built target indi_starshootg_focuser
+[ 45%] Built target indi_starshootg_wheel
+[ 45%] Built target indi_nncam_ccd
+[ 46%] Built target indi_mallincam_focuser
+[ 47%] Built target indi_nncam_wheel
+[ 47%] Built target indi_mallincam_ccd
+[ 48%] Built target indi_nncam_focuser
+[ 49%] Built target indi_mallincam_wheel
+[ 50%] Built target indi_omegonprocam_focuser
+[ 50%] Built target indi_omegonprocam_wheel
+[ 51%] Built target indi_omegonprocam_ccd
+[ 53%] Built target indi_meadecam_wheel
+[ 53%] Built target indi_beefocus
+[ 53%] Built target omegonprocam_test
+[ 54%] Built target indi_meadecam_focuser
+[ 55%] Built target indi_meadecam_ccd
+[ 56%] Built target indi_inovaplx_ccd
+[ 57%] Built target indi_fli_focus
+[ 57%] Built target indi_fli_wheel
+[ 58%] Built target test_kepler_merged
+[ 58%] Built target indi_apogee_ccd
+[ 58%] Built target indi_apogee_wheel
+[ 58%] Built target indi_fli_ccd
+[ 58%] Built target indi_kepler_ccd
+[ 59%] Built target indi_mi_ccd
+[ 59%] Built target indi_ffmv_ccd
+[ 60%] Built target indi_mi_sfw
+[ 62%] Built target indi_duino_powerbox
+[ 62%] Built target indi_weatherradio
+[ 62%] Built target firmata
+[ 62%] Built target indi_fishcamp_ccd
+[ 63%] Built target indi_asi_ccd
+[ 64%] Built target indi_asi_st4
+[ 64%] Built target indi_asi_wheel
+[ 65%] Built target indi_asi_single_ccd
+[ 66%] Built target asi_camera_test
+[ 66%] Built target indi_asi_rotator
+[ 67%] Built target indi_asi_focuser
+[ 67%] Built target asi_multi_camera_test
+[ 69%] Built target indi_dsi_ccd
+[ 70%] Built target qhy_video_test
+[ 70%] Built target qhy_ccd_test
+[ 71%] Built target indi_qhy_ccd
+[ 71%] Built target indi_gpsnmea
+[ 72%] Built target indi_gpsd
+[ 73%] Built target indi_qhy_focuser
+[ 77%] Built target indi_mgenautoguider
+[ 77%] Built target indi_dragonfly_dome
+[ 77%] Built target indi_seletek_rotator
+[ 77%] Built target indi_rtklib
+[ 78%] Built target indi_limesdr_receiver
+[ 78%] Built target indi_dragonfly
+[ 78%] Built target indi_armadillo_focus
+[ 79%] Built target indi_beaver_dome
+[ 82%] Built target nstest
+[ 82%] Built target indi_platypus_focus
+[ 83%] Built target indi_nightscape_ccd
+[ 83%] Built target indi_weewx_json
+[ 83%] Built target indi_webcam_ccd
+[ 84%] Built target indi_avalonud_telescope
+[ 84%] Built target indi_lx200stargo
+[ 84%] Built target indi_avalonud_focuser
+[ 86%] Built target indi_bresserexos2
+[ 86%] Built target indi_avalonud_aux
+[ 87%] Built target indi_orion_ssg3_ccd
+[ 87%] Built target indi_svbony_ccd
+[ 88%] Built target indi_pentax
+[ 88%] Built target indi_playerone_wheel
+[ 89%] Built target indi_playerone_single_ccd
+[ 89%] Built target indi_playerone_ccd
+[ 89%] Built target indi_oasis_filter_wheel
+[ 89%] Built target playerone_camera_test
+[ 89%] Built target indi_oasis_focuser
+[ 90%] Built target indi_ocs
+[ 90%] Built target indi_openogma
+[ 90%] Built target gui_autogen_timestamp_deps
+[ 91%] Built target cli
+[ 91%] Built target read_analog_pin
+[ 92%] Built target blink_pin
+[ 92%] Built target read_digital_pin
+[ 92%] Built target ask_digital_pin
+[ 95%] Built target indi_ticfocuser-ng
+[ 96%] Built target ask_analog_pin
+[ 96%] Built target read_string
+[ 97%] Built target indi_duino
+[ 97%] Built target gui_autogen
+[100%] Built target gui
+Install the project...
+-- Install configuration: "Debug"
+-- Up-to-date: /usr/include/libpololu-tic-1/tic.h
+-- Up-to-date: /usr/include/libpololu-tic-1/tic.hpp
+-- Up-to-date: /usr/include/libpololu-tic-1/tic_protocol.h
+-- Up-to-date: /usr/lib/pkgconfig/libpololu-tic-1.pc
+-- Installing: /usr/lib/libpololu-tic-1.so.1.8.3
+-- Up-to-date: /usr/lib/libpololu-tic-1.so
+-- Installing: /usr/bin/ticcmd
+-- Set non-toolchain portion of runtime path of "/usr/bin/ticcmd" to ""
+-- Installing: /usr/bin/ticgui
+-- Set non-toolchain portion of runtime path of "/usr/bin/ticgui" to ""
+-- Installing: /usr/bin/indi_ticfocuser-ng
+-- Set non-toolchain portion of runtime path of "/usr/bin/indi_ticfocuser-ng" to ""
+-- Up-to-date: /usr/share/indi/indi_ticfocuser-ng.xml
+-- Up-to-date: /usr/bin/indi_eqmod_telescope
+-- Up-to-date: /usr/share/indi/indi_eqmod.xml
+-- Up-to-date: /usr/share/indi/indi_eqmod_sk.xml
+-- Up-to-date: /usr/share/indi/indi_eqmod_simulator_sk.xml
+-- Up-to-date: /usr/share/indi/indi_align_sk.xml
+-- Up-to-date: /usr/share/indi/indi_eqmod_scope_limits_sk.xml
+-- Up-to-date: /usr/bin/indi_azgti_telescope
+-- Up-to-date: /usr/bin/indi_staradventurergti_telescope
+-- Up-to-date: /usr/bin/indi_staradventurer2i_telescope
+-- Up-to-date: /usr/bin/indi_lx200aok
+-- Up-to-date: /usr/share/indi/indi_aok.xml
+-- Up-to-date: /usr/bin/indi_starbook_telescope
+-- Up-to-date: /usr/share/indi/indi_starbook_telescope.xml
+-- Up-to-date: /usr/bin/indi_starbook_ten
+-- Up-to-date: /usr/share/indi/indi_starbook_ten.xml
+-- Up-to-date: /usr/bin/indi_sx_ccd
+-- Up-to-date: /usr/bin/indi_sx_wheel
+-- Up-to-date: /usr/bin/indi_sx_ao
+-- Up-to-date: /usr/bin/sx_ccd_test
+-- Up-to-date: /usr/share/indi/indi_sx.xml
+-- Up-to-date: /lib/udev/rules.d/99-sx.rules
+-- Up-to-date: /usr/bin/indi_maxdomeii
+-- Up-to-date: /usr/share/indi/indi_maxdomeii.xml
+-- Up-to-date: /usr/bin/indi_nexdome
+-- Up-to-date: /usr/share/indi/indi_nexdome.xml
+-- Up-to-date: /usr/bin/indi_talon6
+-- Up-to-date: /usr/share/indi/indi_talon6.xml
+-- Up-to-date: /usr/bin/indi_rolloffino
+-- Up-to-date: /usr/share/indi/indi_rolloffino.xml
+-- Up-to-date: /usr/bin/indi_shelyakeshel_spectrograph
+-- Up-to-date: /usr/bin/indi_shelyakspox_spectrograph
+-- Up-to-date: /usr/share/indi/indi_shelyak.xml
+-- Up-to-date: /usr/bin/indi_aagcloudwatcher_ng
+-- Up-to-date: /usr/bin/aagcloudwatcher_test_ng
+-- Up-to-date: /usr/share/indi/indi_aagcloudwatcher_ng.xml
+-- Up-to-date: /usr/share/indi/indi_aagcloudwatcher_ng_sk.xml
+-- Up-to-date: /usr/bin/indi_celestron_aux
+-- Up-to-date: /usr/share/indi/indi_celestronaux.xml
+-- Up-to-date: /usr/bin/indi_gphoto_ccd
+-- Up-to-date: /usr/share/indi/indi_gphoto.xml
+-- Up-to-date: /usr/bin/gphoto_camera_test
+-- Up-to-date: /lib/udev/rules.d/85-disable-dslr-automout.rules
+-- Installing: /usr/bin/indi_qsi_ccd
+-- Installing: /usr/share/indi/indi_qsi.xml
+-- Installing: /lib/udev/rules.d/99-qsi.rules
+-- Installing: /usr/bin/indi_sbig_ccd
+-- Installing: /usr/share/indi/indi_sbig.xml
+-- Installing: /usr/bin/indi_atik_ccd
+-- Installing: /usr/bin/indi_atik_wheel
+-- Installing: /usr/share/indi/indi_atik.xml
+-- Installing: /usr/bin/indi_toupcam_ccd
+-- Installing: /usr/bin/indi_toupcam_wheel
+-- Installing: /usr/bin/indi_toupcam_focuser
+-- Installing: /usr/share/indi/indi_toupcam.xml
+-- Installing: /usr/bin/indi_altaircam_ccd
+-- Installing: /usr/bin/indi_altaircam_wheel
+-- Installing: /usr/bin/indi_altaircam_focuser
+-- Installing: /usr/share/indi/indi_altaircam.xml
+-- Installing: /usr/bin/indi_bressercam_ccd
+-- Installing: /usr/bin/indi_bressercam_wheel
+-- Installing: /usr/bin/indi_bressercam_focuser
+-- Installing: /usr/share/indi/indi_bressercam.xml
+-- Installing: /usr/bin/indi_ogmacam_ccd
+-- Installing: /usr/bin/indi_ogmacam_wheel
+-- Installing: /usr/bin/indi_ogmacam_focuser
+-- Installing: /usr/share/indi/indi_ogmacam.xml
+-- Installing: /usr/bin/indi_tscam_ccd
+-- Installing: /usr/bin/indi_tscam_wheel
+-- Installing: /usr/bin/indi_tscam_focuser
+-- Installing: /usr/share/indi/indi_tscam.xml
+-- Installing: /usr/bin/indi_svbonycam_ccd
+-- Installing: /usr/bin/indi_svbonycam_wheel
+-- Installing: /usr/bin/indi_svbonycam_focuser
+-- Installing: /usr/share/indi/indi_svbonycam.xml
+-- Installing: /usr/bin/indi_starshootg_ccd
+-- Installing: /usr/bin/indi_starshootg_wheel
+-- Installing: /usr/bin/indi_starshootg_focuser
+-- Installing: /usr/share/indi/indi_starshootg.xml
+-- Installing: /usr/bin/indi_nncam_ccd
+-- Installing: /usr/bin/indi_nncam_wheel
+-- Installing: /usr/bin/indi_nncam_focuser
+-- Installing: /usr/share/indi/indi_nncam.xml
+-- Installing: /usr/bin/indi_mallincam_ccd
+-- Installing: /usr/bin/indi_mallincam_wheel
+-- Installing: /usr/bin/indi_mallincam_focuser
+-- Installing: /usr/share/indi/indi_mallincam.xml
+-- Installing: /usr/bin/indi_omegonprocam_ccd
+-- Installing: /usr/bin/indi_omegonprocam_wheel
+-- Installing: /usr/bin/indi_omegonprocam_focuser
+-- Installing: /usr/share/indi/indi_omegonprocam.xml
+-- Installing: /usr/bin/indi_meadecam_ccd
+-- Installing: /usr/bin/indi_meadecam_wheel
+-- Installing: /usr/bin/indi_meadecam_focuser
+-- Installing: /usr/share/indi/indi_meadecam.xml
+-- Up-to-date: /usr/bin/indi_beefocus
+-- Up-to-date: /usr/share/indi/indi_beefocus.xml
+-- Installing: /usr/bin/indi_inovaplx_ccd
+-- Installing: /usr/share/indi/indi_inovaplx_ccd.xml
+-- Installing: /usr/bin/indi_fli_focus
+-- Installing: /usr/bin/indi_fli_wheel
+-- Installing: /usr/bin/indi_fli_ccd
+-- Installing: /usr/share/indi/indi_fli.xml
+-- Installing: /usr/bin/indi_kepler_ccd
+-- Installing: /usr/share/indi/indi_flipro.xml
+-- Installing: /usr/bin/indi_apogee_ccd
+-- Installing: /usr/bin/indi_apogee_wheel
+-- Installing: /usr/share/indi/indi_apogee.xml
+-- Up-to-date: /usr/bin/indi_ffmv_ccd
+-- Up-to-date: /usr/share/indi/indi_ffmv.xml
+-- Up-to-date: /lib/udev/rules.d/99-fireflymv.rules
+-- Installing: /usr/bin/indi_mi_ccd
+-- Installing: /usr/bin/indi_mi_sfw
+-- Installing: /usr/share/indi/indi_miccd.xml
+-- Up-to-date: /usr/bin/indi_duino
+-- Up-to-date: /usr/share/indi/indi_duino.xml
+-- Up-to-date: /usr/bin/indi_weatherradio
+-- Up-to-date: /usr/share/indi/indi_weatherradio.xml
+-- Up-to-date: /usr/bin/indi_duino_powerbox
+-- Up-to-date: /usr/share/indi/various_sk.xml
+-- Up-to-date: /usr/share/indi/simple_switcher_sk.xml
+-- Up-to-date: /usr/share/indi/switcher_sk.xml
+-- Up-to-date: /usr/share/indi/digital_inputs_sk.xml
+-- Up-to-date: /usr/share/indi/stepper_sk.xml
+-- Up-to-date: /usr/share/indi/focuser_sk.xml
+-- Up-to-date: /usr/share/indi/cosmos_sk.xml
+-- Up-to-date: /usr/share/indi/meteostation_sk.xml
+-- Up-to-date: /usr/share/indi/meteostationSQM_sk.xml
+-- Up-to-date: /usr/share/indi/servo_sk.xml
+-- Installing: /usr/bin/indi_fishcamp_ccd
+-- Installing: /usr/share/indi/indi_fishcamp.xml
+-- Installing: /usr/bin/indi_asi_ccd
+-- Installing: /usr/bin/indi_asi_single_ccd
+-- Installing: /usr/bin/indi_asi_wheel
+-- Installing: /usr/bin/indi_asi_st4
+-- Installing: /usr/bin/indi_asi_focuser
+-- Installing: /usr/bin/indi_asi_rotator
+-- Installing: /usr/bin/asi_camera_test
+-- Installing: /usr/bin/asi_multi_camera_test
+-- Installing: /usr/share/indi/indi_asi.xml
+-- Up-to-date: /usr/bin/indi_dsi_ccd
+-- Up-to-date: /usr/share/indi/indi_dsi.xml
+-- Up-to-date: /lib/udev/rules.d/99-meadedsi.rules
+-- Up-to-date: /lib/firmware/meade-deepskyimager.hex
+-- Installing: /usr/bin/indi_qhy_ccd
+-- Installing: /usr/share/indi/indi_qhy.xml
+-- Installing: /usr/bin/qhy_ccd_test
+-- Installing: /usr/bin/qhy_video_test
+-- Installing: /usr/bin/indi_qhy_focuser
+-- Up-to-date: /usr/bin/indi_gpsd
+-- Up-to-date: /usr/share/indi/indi_gpsd.xml
+-- Up-to-date: /usr/bin/indi_gpsnmea
+-- Up-to-date: /usr/share/indi/indi_gpsnmea.xml
+-- Up-to-date: /usr/bin/indi_rtklib
+-- Up-to-date: /usr/share/indi/indi_rtklib.xml
+-- Up-to-date: /usr/bin/indi_mgenautoguider
+-- Up-to-date: /usr/share/indi/indi_mgenautoguider.xml
+-- Installing: /usr/bin/indi_limesdr_receiver
+-- Up-to-date: /usr/share/indi/indi_limesdr.xml
+-- Up-to-date: /usr/bin/indi_seletek_rotator
+-- Up-to-date: /usr/bin/indi_dragonfly_dome
+-- Up-to-date: /usr/bin/indi_dragonfly
+-- Up-to-date: /usr/bin/indi_beaver_dome
+-- Up-to-date: /usr/bin/indi_armadillo_focus
+-- Up-to-date: /usr/bin/indi_platypus_focus
+-- Up-to-date: /usr/share/indi/indi_lunatico.xml
+-- Up-to-date: /lib/udev/rules.d/99-armadilloplatypus.rules
+-- Up-to-date: /usr/bin/indi_webcam_ccd
+-- Up-to-date: /usr/share/indi/indi_webcam.xml
+-- Up-to-date: /usr/bin/indi_weewx_json
+-- Up-to-date: /usr/share/indi/indi_weewx_json.xml
+-- Up-to-date: /usr/bin/indi_nightscape_ccd
+-- Up-to-date: /usr/share/indi/indi_nightscape.xml
+-- Up-to-date: /lib/udev/rules.d/99-nightscape.rules
+-- Up-to-date: /usr/bin/indi_lx200stargo
+-- Up-to-date: /usr/share/indi/indi_avalon.xml
+-- Up-to-date: /usr/bin/indi_avalonud_telescope
+-- Up-to-date: /usr/bin/indi_avalonud_focuser
+-- Up-to-date: /usr/bin/indi_avalonud_aux
+-- Up-to-date: /usr/share/indi/indi_avalonud.xml
+-- Installing: /usr/bin/indi_pentax
+-- Installing: /usr/share/indi/indi_pentax.xml
+-- Installing: /usr/bin/indi_svbony_ccd
+-- Installing: /usr/share/indi/indi_svbony_ccd.xml
+-- Up-to-date: /usr/bin/indi_bresserexos2
+-- Up-to-date: /usr/share/indi/indi_bresserexos2.xml
+-- Up-to-date: /usr/bin/indi_orion_ssg3_ccd
+-- Up-to-date: /usr/share/indi/indi_orion_ssg3.xml
+-- Up-to-date: /lib/udev/rules.d/99-orionssg3.rules
+-- Installing: /usr/bin/indi_playerone_ccd
+-- Installing: /usr/bin/indi_playerone_single_ccd
+-- Installing: /usr/bin/indi_playerone_wheel
+-- Installing: /usr/bin/playerone_camera_test
+-- Installing: /usr/share/indi/indi_playerone.xml
+-- Installing: /usr/bin/indi_oasis_focuser
+-- Installing: /usr/bin/indi_oasis_filter_wheel
+-- Installing: /usr/share/indi/indi_astroasis.xml
+-- Up-to-date: /usr/bin/indi_ocs
+-- Up-to-date: /usr/share/indi/indi_ocs.xml
+-- Up-to-date: /usr/bin/indi_openogma
+-- Up-to-date: /usr/share/indi/indi_openogma.xml
+-- Up-to-date: /lib/udev/rules.d/99-openogma.rules
+Resetting all USB subsystems, wait until it's done...
+0000:01:00.00000:01:00.00000:04:00.30000:04:00.30000:04:00.40000:04:00.4
+USB susbsystems reset finished.
+Reapplying udev rules...
+done.
+

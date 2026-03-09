@@ -1,0 +1,32 @@
+# Regulus Focuser (Newtonian/MCT) - BAUD 115200
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="A10MDYW3", MODE="0666", SYMLINK+="indi-regulusfocuser"
+#SUBSYSTEMS=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="A10MDYW4", MODE="0666", SYMLINK+="indi-regulusfocuser"
+
+# Dew Controller (Observatory/Spare) - BAUD 115200
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="AQ03IIE8", MODE="0666", SYMLINK+="indi-dewcontroller"
+#SUBSYSTEMS=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="AQ03IIE5", MODE="0666", SYMLINK+="indi-dewcontroller"
+
+# Flats Pannel (Observatory[black]/Spare[cyan]) - BAUD 115200
+#SUBSYSTEMS=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="AQ03IIE7", MODE="0666", SYMLINK+="indi-flatspannel"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="AQ03IIED", MODE="0666", SYMLINK+="indi-flatspannel"
+
+# iOptron CEM70 (old MB/new MB) - BAUD 115200
+#SUBSYSTEMS=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6015", ATTRS{serial}=="D308NGEZ", MODE="0666", SYMLINK+="indi-ioptroncem70"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6015", ATTRS{serial}=="D30ACH1A", MODE="0666", SYMLINK+="indi-ioptroncem70" 
+
+
+# ZWO ASO 120 mini
+#SUBSYSTEMS=="usb", ATTRS{idVendor}=="03c3", ATTRS{idProduct}=="120c", MODE="0666", SYMLINK+="indi-ZWO120"
+
+# ZWO ASI 294
+#SUBSYSTEMS=="usb", ATTRS{idVendor}=="03c3", ATTRS{idProduct}=="294e", MODE="0666", SYMLINK+="indi-ZWO294"
+
+# ZWO EFW (filterwheel)
+#SUBSYSTEMS=="usb", ATTRS{idVendor}=="03c3", ATTRS{idProduct}=="1f01", MODE="0666", SYMLINK+="indi-ZWO-EFW"
+
+# ZWO ASI EFF (focuser)
+#SUBSYSTEMS=="usb", ATTRS{idVendor}=="03c3", ATTRS{idProduct}=="1f10", MODE="0666", SYMLINK+="indi-ZWO-EFF"
+
+# ZWO ASI 585
+#SUBSYSTEMS=="usb", ATTRS{idVendor}=="03c3", ATTRS{idProduct}=="585b", MODE="0666", SYMLINK+="indi-ZWO585"
+

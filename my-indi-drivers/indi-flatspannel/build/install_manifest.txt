@@ -1,0 +1,2 @@
+/usr/bin/indi_flatspannel
+/usr/share/indi/indi_flatspannel.xml

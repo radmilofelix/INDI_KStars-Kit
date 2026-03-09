@@ -1,0 +1,188 @@
+Work folder(indilib setup): /add1/install/INDI_KStars-Kit
+Number of CPUs: 4
+Running script as root...
+
+
+################################################################
+####################### All build start ########################
+##################### 2026-03-02T03:04:03 ######################
+################################################################
+
+
+################################################################
+######################## Upgrade system ########################
+##################### 2026-03-02T03:04:03 ######################
+################################################################
+Hit:1 http://deb.debian.org/debian trixie InRelease
+Hit:2 http://deb.debian.org/debian trixie-updates InRelease
+Hit:3 http://archive.raspberrypi.com/debian trixie InRelease
+Hit:4 http://deb.debian.org/debian-security trixie-security InRelease
+Get:5 http://deb.debian.org/debian trixie/main arm64 Components [4,620 kB]
+Get:6 http://deb.debian.org/debian trixie/contrib arm64 Components [37.0 kB]
+Get:7 http://deb.debian.org/debian trixie/non-free arm64 Components [1,864 B]
+Get:8 http://deb.debian.org/debian trixie/non-free-firmware arm64 Components [24.2 kB]
+Fetched 4,683 kB in 2s (2,293 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+
+################################################################
+#################### Install prerequisites #####################
+##################### 2026-03-02T03:04:10 ######################
+################################################################
+COMMAND: apt-get install -y appstream aria2 axel breeze-icon-theme build-essential cdbs cmake dkms extra-cmake-modules fxload gettext git kdoctools5 kinit-dev kio libavcodec-dev libavdevice-dev libbluetooth-dev libboost-dev libboost-regex-dev libcfitsio-dev libcurl4-gnutls-dev libdc1394-dev libeigen3-dev libev-dev libfftw3-dev libftdi1-2 libftdi1-dev libftdi-dev libgmock-dev libgphoto2-dev libgps-dev libgsl0-dev libgsl-dev libgtest-dev libindi-dev libjpeg-dev libkf5auth-dev libkf5config-dev libkf5coreaddons-dev libkf5crash-dev libkf5declarative-dev libkf5doctools-dev libkf5i18n-dev libkf5kio-dev libkf5kcmutils-dev libkf5newstuff-dev libkf5notifications-dev libkf5notifyconfig-dev libkf5package-dev libkf5plotting-dev libkf5xmlgui-dev libkrb5-dev liblimesuite-dev libnova-dev libopencv-dev libqt5core5a libqt5datavisualization5-dev libqt5gui5 libqt5qml5 libqt5svg5-dev libqt5websockets5-dev libqt5widgets5 libraw-dev librtlsdr-dev libsecret-1-dev libtheora-dev libtiff-dev libudev-dev libusb-1.0-0-dev libusb-dev libwxgtk3.2-dev libxisf0 libxisf-dev libzmq3-dev limesuite limesuite-udev pkg-config python3-ftdi1 qml-module-qtquick-controls qt5keychain-dev qt6-base-dev qtbase5-dev qtdeclarative5-dev wcslib-dev wget xplanet xplanet-images zlib1g-dev
+Installing the packages from the list...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+appstream is already the newest version (1.0.5-1).
+aria2 is already the newest version (1.37.0+debian-3).
+axel is already the newest version (2.17.14-2).
+breeze-icon-theme is already the newest version (4:5.116.0-1).
+build-essential is already the newest version (12.12).
+cdbs is already the newest version (0.4.173).
+cmake is already the newest version (3.31.6-2).
+dkms is already the newest version (3.2.2-1~deb13u1).
+extra-cmake-modules is already the newest version (6.13.0-1).
+fxload is already the newest version (0.0.20081013-3).
+gettext is already the newest version (0.23.1-2).
+git is already the newest version (1:2.47.3-0+deb13u1).
+kdoctools5 is already the newest version (5.116.0-1).
+kinit-dev is already the newest version (5.116.0-1).
+kio is already the newest version (5.116.0-1).
+libavcodec-dev is already the newest version (8:7.1.3-0+deb13u1+rpt1).
+libavdevice-dev is already the newest version (8:7.1.3-0+deb13u1+rpt1).
+libbluetooth-dev is already the newest version (5.82-1.1+rpt1).
+libboost-dev is already the newest version (1.83.0.2+b2).
+libboost-regex-dev is already the newest version (1.83.0.2+b2).
+libcfitsio-dev is already the newest version (4.6.2-2).
+libcurl4-gnutls-dev is already the newest version (8.14.1-2+deb13u2).
+libdc1394-dev is already the newest version (2.2.6-5).
+libeigen3-dev is already the newest version (3.4.0-5).
+libev-dev is already the newest version (1:4.33-2.1+b1).
+libfftw3-dev is already the newest version (3.3.10-2+b1).
+libftdi1-2 is already the newest version (1.5-10).
+libftdi1-dev is already the newest version (1.5-10).
+libftdi-dev is already the newest version (0.20-4+b2).
+libgmock-dev is already the newest version (1.16.0-1).
+libgphoto2-dev is already the newest version (2.5.31-4).
+libgps-dev is already the newest version (3.25-5).
+libgsl-dev is already the newest version (2.8+dfsg-5).
+libgtest-dev is already the newest version (1.16.0-1).
+libindi-dev is already the newest version (1.9.9+dfsg-3+b5).
+libjpeg-dev is already the newest version (1:2.1.5-4).
+libkf5auth-dev is already the newest version (5.116.0-1).
+libkf5config-dev is already the newest version (5.116.0-1).
+libkf5coreaddons-dev is already the newest version (5.116.0-1).
+libkf5crash-dev is already the newest version (5.116.0-1).
+libkf5declarative-dev is already the newest version (5.116.0-1).
+libkf5doctools-dev is already the newest version (5.116.0-1).
+libkf5i18n-dev is already the newest version (5.116.0-1).
+libkf5kio-dev is already the newest version (5.116.0-1).
+libkf5kcmutils-dev is already the newest version (5.116.0-1).
+libkf5newstuff-dev is already the newest version (5.116.0-2).
+libkf5notifications-dev is already the newest version (5.116.0-1).
+libkf5notifyconfig-dev is already the newest version (5.116.0-1).
+libkf5package-dev is already the newest version (5.116.0-1).
+libkf5plotting-dev is already the newest version (5.116.0-1).
+libkf5xmlgui-dev is already the newest version (5.116.0-1).
+libkrb5-dev is already the newest version (1.21.3-5).
+liblimesuite-dev is already the newest version (23.11.0+dfsg-3+b2).
+libnova-dev is already the newest version (0.16-5.1+b1).
+libopencv-dev is already the newest version (4.10.0+dfsg-5).
+libqt5core5t64 is already the newest version (5.15.15+dfsg-6).
+libqt5datavisualization5-dev is already the newest version (5.15.15-2+b1).
+libqt5gui5t64 is already the newest version (5.15.15+dfsg-6).
+libqt5qml5 is already the newest version (5.15.15+dfsg-3).
+libqt5svg5-dev is already the newest version (5.15.15-2).
+libqt5websockets5-dev is already the newest version (5.15.15-2).
+libqt5widgets5t64 is already the newest version (5.15.15+dfsg-6).
+libraw-dev is already the newest version (0.21.4-2).
+librtlsdr-dev is already the newest version (2.0.2-2+b1).
+libsecret-1-dev is already the newest version (0.21.7-1).
+libtheora-dev is already the newest version (1.2.0~alpha1+dfsg-6).
+libtiff-dev is already the newest version (4.7.0-3+deb13u1).
+libudev-dev is already the newest version (257.9-1~deb13u1).
+libusb-1.0-0-dev is already the newest version (2:1.0.28-1).
+libusb-dev is already the newest version (2:0.1.12-35+b1).
+libwxgtk3.2-dev is already the newest version (3.2.8+dfsg-2).
+libxisf0 is already the newest version (0.2.13-1).
+libxisf-dev is already the newest version (0.2.13-1).
+libzmq3-dev is already the newest version (4.3.5-1+b3).
+limesuite is already the newest version (23.11.0+dfsg-3+b2).
+limesuite-udev is already the newest version (23.11.0+dfsg-3).
+pkg-config is already the newest version (1.8.1-4).
+python3-ftdi1 is already the newest version (1.5-10).
+qml-module-qtquick-controls is already the newest version (5.15.15-2).
+qt5keychain-dev is already the newest version (0.15.0-1).
+qt6-base-dev is already the newest version (6.8.2+dfsg-9+deb13u1).
+qtbase5-dev is already the newest version (5.15.15+dfsg-6).
+qtdeclarative5-dev is already the newest version (5.15.15+dfsg-3).
+wcslib-dev is already the newest version (8.4+ds-1).
+wget is already the newest version (1.25.0-2).
+xplanet is already the newest version (1.3.1-3+b4).
+xplanet-images is already the newest version (1.3.1-3).
+zlib1g-dev is already the newest version (1:1.3.dfsg+really1.3.1-1+b1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+
+################################################################
+######################## Build LibXISF #########################
+##################### 2026-03-02T03:04:11 ######################
+################################################################
+Forced LibXISF version defined!
+Forced LibXISF version: v0_2_13
+REPO_VERSION: v0.2.13
+
+
+################################################################
+####################### Build INDI Core ########################
+##################### 2026-03-02T03:04:11 ######################
+################################################################
+Forced INDIcore version defined!
+Forced INDIcore version: v2_1_9
+REPO_VERSION: v2.1.9
+
+
+################################################################
+################# Build INDI 3rd party drivers #################
+##################### 2026-03-02T03:04:12 ######################
+################################################################
+Forced INDIcore version defined!
+Forced INDIcore version: v2_1_9
+REPO_VERSION: v2.1.9
+
+
+################################################################
+####################### Build libraries ########################
+##################### 2026-03-02T03:04:15 ######################
+################################################################
+
+
+################################################################
+######################## Build drivers #########################
+##################### 2026-03-02T03:04:15 ######################
+################################################################
+
+
+################################################################
+##################### Build StellarSolver ######################
+##################### 2026-03-02T03:04:16 ######################
+################################################################
+Forced StellarSolver version defined!
+Forced StellarSolver version: v2_7
+REPO_VERSION: 2.7
+Building with StellarSolverTester
+
+
+################################################################
+######################### Build KStars #########################
+##################### 2026-03-02T03:04:17 ######################
+################################################################
+Forced KStars version defined!
+Forced KStars version: v3_8_1
+REPO_VERSION: origin/stable-3.8.1

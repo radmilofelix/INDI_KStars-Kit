@@ -1,0 +1,3 @@
+/home/pi/ObservatorySources/_classes/AppSettings/build/CMakeFiles/AppSettings.dir
+/home/pi/ObservatorySources/_classes/AppSettings/build/CMakeFiles/edit_cache.dir
+/home/pi/ObservatorySources/_classes/AppSettings/build/CMakeFiles/rebuild_cache.dir

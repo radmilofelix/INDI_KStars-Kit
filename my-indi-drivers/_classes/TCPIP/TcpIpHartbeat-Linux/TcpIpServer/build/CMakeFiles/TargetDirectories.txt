@@ -1,0 +1,3 @@
+/home/pi/ObservatorySources/_classes/TCPIP/TcpIpHartbeat-Linux/TcpIpServer/build/CMakeFiles/TcpIpServer.dir
+/home/pi/ObservatorySources/_classes/TCPIP/TcpIpHartbeat-Linux/TcpIpServer/build/CMakeFiles/edit_cache.dir
+/home/pi/ObservatorySources/_classes/TCPIP/TcpIpHartbeat-Linux/TcpIpServer/build/CMakeFiles/rebuild_cache.dir

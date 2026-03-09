@@ -1,0 +1,112 @@
+CURRENTFOLDER=$PWD
+echo "Current folder(INDI drivers setup): $CURRENTFOLDER"
+
+if [[ ! -d $CURRENTFOLDER/$SOURCEFOLDER ]];
+then
+echo "No source folder, exiting program"
+exit
+fi
+
+if [[ ! -d $CURRENTFOLDER/$SOURCEFOLDER/build ]];
+then
+echo "Missing build folder. Creating it."
+mkdir $CURRENTFOLDER/$SOURCEFOLDER/build
+fi
+
+PARENTFOLDER="$(dirname "$CURRENTFOLDER")"
+
+ReadSettings()
+{
+	CONFIG_FILE="$PARENTFOLDER/settings.cfg"
+
+	if [[ -f "$CONFIG_FILE" ]]; then
+		while IFS='=' read -r key value;
+		do
+			# Skip comments and empty lines
+			[[ "$key" =~ ^#.*$ || -z "$key" ]] && continue
+        
+			# Trim potential whitespace and assign to variable
+			key=$(echo "$key" | tr -d '[:space:]')
+			value=$(echo "$value" | tr -d '[:space:]')
+        
+			# Assign the value to a variable named after the key
+			# declare will make the variable local #declare "$key=$value"
+			
+			#echo "key = $key"
+
+			if [[ "$key" == "BUILDSOURCESFOLDER" ]]
+			then
+				BUILDSOURCESFOLDER=$value
+			fi
+
+		done < "$CONFIG_FILE"
+	else
+		echo "Config file not found."
+	fi
+}
+
+
+
+updateCmakeModules()
+{
+	ReadSettings
+	echo "BUILDSOURCESFOLDER(updateCmakeModules): $BUILDSOURCESFOLDER"
+	CMAKEMODULESFOLDER=$PARENTFOLDER/$BUILDSOURCESFOLDER/indi/cmake_modules
+
+    cp $CMAKEMODULESFOLDER/CMakeCommon.cmake $SOURCEFOLDER/cmake_modules
+    cp $CMAKEMODULESFOLDER/FindINDI.cmake $SOURCEFOLDER/cmake_modules
+    cp $CMAKEMODULESFOLDER/UnityBuild.cmake $SOURCEFOLDER/cmake_modules
+}
+
+updateModbusCmakeFolder()
+{
+	ReadSettings
+	echo "BUILDSOURCESFOLDER(updateCmakeModules): $BUILDSOURCESFOLDER"
+	CMAKEMODULESFOLDER=$PARENTFOLDER/$BUILDSOURCESFOLDER/indi-3rdparty/cmake_modules
+
+    cp $CMAKEMODULESFOLDER/FindMODBUS.cmake $SOURCEFOLDER/cmake_modules
+}
+
+
+
+makeall()
+{
+    updateCmakeModules
+    cd $CURRENTFOLDER/$SOURCEFOLDER/build
+    echo "****************************************************************************************************"
+    echo "Processing: $PWD"
+    echo
+    rm  -fr ./*
+    cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+    make
+    sudo make install
+    echo "****************************************************************************************************"
+    echo 
+}
+
+cleanall()
+{
+    cd $CURRENTFOLDER/$SOURCEFOLDER/build
+    echo
+    echo "****************************************************************************************************"
+    echo "Processing: $PWD"
+    echo
+    sudo rm -fr ./*
+    echo "****************************************************************************************************"
+    echo 
+}
+
+help()
+{
+    echo
+    echo `basename "$0"` help:
+    echo "Usage: `basename "$0"` <makeall | cleanall >"
+    echo
+}
+
+if [ -z $1 ]
+then
+	help
+fi
+
+$1
