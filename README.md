@@ -16,5 +16,10 @@ To build INDI & KStars run: _**./INDI_KStars-Kit.sh BuildAll**_
 
 To install KStars and build INDI (only on Ubuntu sustems) run: **_./INDI_KStars-Kit.sh InstallAll**_
 
-The script will also install an USB reset script and an UDEV rules file for the devices connected bt USB.
+The script will also install an USB reset script and a file containing UDEV rules for the devices connected bt USB.
+
+The configuration file (settings.cfg) has several sections:
+In the [settings] section you can change the folders where the components will be built, you can change the versions of the components as well as enable or disablie additional components (Stellar Tester, PHD2 or Xisf file library).
+The [prerequisites] section defines the dependencies needed that will be installed.
+
 
