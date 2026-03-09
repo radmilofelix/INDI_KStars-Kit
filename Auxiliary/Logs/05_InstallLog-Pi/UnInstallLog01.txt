@@ -1,6 +1,0 @@
-Work folder(indilib setup): /home/pi/installations/INDI_KStars-Kit
-Number of CPUs: 4
-Running script as root...
-Deleting INDI
-Deleting INDI 3rdparty
-Deleting stellarsolver
