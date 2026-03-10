@@ -298,6 +298,14 @@ Copy-UDEV-Rules()
     echo "UDEV rules for INDI serial drivers installed in /lib/udev/rules.d"
 }
 
+WarnForCustomDriverSettings()
+{
+    echo "             Warning!"
+    echo "Check the settings in the custom drivers (my-indi-drivers)."
+    echo "For instance, focuser driver can be built for several focuser models."
+    echo
+    Y_OrN_ToContinueKeypress
+}
 
 BuildAll()
 {
