@@ -309,6 +309,7 @@ WarnForCustomDriverSettings()
 
 BuildAll()
 {
+    WarnForCustomDriverSettings
     DisplayMessageInFrame "All build start" 64 2 time
     InstallPrerequisites
     if [ $BUILDLIBXISF == "true" ];
@@ -342,6 +343,7 @@ BuildAll()
 
 InstallAll()
 {
+    WarnForCustomDriverSettings
     InstallPrerequisites
     InstallKStars
     BuildAfterInstall
